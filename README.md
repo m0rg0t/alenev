@@ -28,6 +28,7 @@ Instagram
 - [Instagram](https://instagram.com/antonlenev)
 - [Twitter or X](https://twitter.com/m0rg0t)
 - [Gtihub](https://github.com/m0rg0t/)
+- [LinkedIn](https://www.linkedin.com/in/anton-lenev-98414530/)
 
 ## Podcasts
 
