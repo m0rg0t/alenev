@@ -1,4 +1,4 @@
-# Anton Lenev
+![image](https://github.com/m0rg0t/alenev/assets/634236/e09b3196-e36f-453d-bbf4-6529c54c9286)# Anton Lenev
 
 ## About 
 
@@ -19,11 +19,11 @@ Instagram
 
 ### OwlEye
 
-[https://owleye.space/]
+https://owleye.space/
 
 OwlEye helps to navigate visually impaired people in closed spaces and helps regular people to keep distance on personal communications during covid-19 times, all in form of beatuful owl necklace :-)
 
-Github repository with code and additional instructions - [https://github.com/m0rg0t/OwlEye]
+Github repository with code and additional instructions - https://github.com/m0rg0t/OwlEye
 
 ### Поиск авиабилетов (Windows Store)
 
@@ -35,8 +35,13 @@ Github repository with code and additional instructions - [https://github.com/m0
 
 ### Neural astrology
 
+### Былина о Святогоре
+
+https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor
+
 ## Articles
 
+- [OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate](https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/)
 - [Owl Necklace With LED Eyes](https://www.instructables.com/Owl-Necklace-With-LED-Eyes/)
 - [Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/)
 - [Ожерелье OwlEye — помощь слабовидящим](https://habr.com/ru/articles/754234/)
