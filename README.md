@@ -1,4 +1,4 @@
-![image](https://github.com/m0rg0t/alenev/assets/634236/e09b3196-e36f-453d-bbf4-6529c54c9286)# Anton Lenev
+# Anton Lenev
 
 ## About 
 
@@ -29,6 +29,8 @@ Github repository with code and additional instructions - https://github.com/m0r
 
 ### Где участковый?
 
+https://openpolice.ru/apps/pc-where-is-policeman/
+
 ### Rybinsk secrets
 
 ### Neural tarot
@@ -49,6 +51,8 @@ https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor
 
 ## Mentions
 
+- [Слабовидящему поможет сова](https://gazeta-rybinsk.ru/2020/11/21/77291)
+- [Программист из Рыбинска создал мобильное приложение для дальтоников](https://yarreg.ru/n3yud/)
 - [https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html](https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html)
 - [Антон Ленев («Где жить хорошо») о конкурсе BudgetApps](https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html)
 - [Рыбинец запустил проект «Районы города глазами Midjourney»](https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/)
