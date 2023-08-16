@@ -2,6 +2,24 @@
 
 ## About 
 
+<table>
+  <tr>
+    <td style="text-align: center">
+      <center>
+        <img src="https://github.com/m0rg0t/alenev/assets/634236/646678de-1523-42d4-b6eb-caeb089e72fe" width="40%" height="auto">
+      </center>
+    </td>
+    <td>
+      <center>
+        <img src="https://github.com/m0rg0t/alenev/assets/634236/48e8b494-29eb-445f-8976-c0cadd4ac01f" width="40%" height="auto">
+      </center>
+    </td>
+  </tr>
+</table>
+
+
+
+
 ## Links to social networks and services
 
 Instagram
