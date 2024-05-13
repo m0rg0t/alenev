@@ -117,6 +117,8 @@ https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor
 - https://www.m24.ru/videos/svyaz/27042014/50447
 - https://smartnews.ru/regions/vologda/13437.html#item-198861
 - https://vk.com/wall4443423_2328
+- https://yarreg.ru/n3yud/
+- https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps
 
 ![image](https://github.com/m0rg0t/alenev/assets/634236/abb2048e-8d1e-4c0c-aa99-416ea8c58ca0)
 ![image](https://github.com/m0rg0t/alenev/assets/634236/494ba2a8-8cdc-45fc-8c5b-59befdfcdb6a)
