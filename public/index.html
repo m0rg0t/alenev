@@ -1,244 +1,221 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Anton Lenev, featuring projects, articles, videos, and social links.">
-    <title>Anton Lenev - Personal Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMc4/6Z4FATC9bHHbT5Kr7pS1w5ieder9k5j6io" crossorigin="anonymous">
+    <title>Anton Lenev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             color: #333;
-            background: #f0f0f0;
+            background: #f7f9fc;
         }
-
         header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
+            background-color: #23395d;
+            color: white;
+            padding: 1rem;
             text-align: center;
         }
-
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #23395d;
         }
-
         nav a {
             color: white;
-            padding: 1rem 2rem;
+            padding: 15px;
             text-decoration: none;
-            transition: background 0.3s ease;
         }
-
         nav a:hover {
-            background: #555;
+            background-color: #2f4a77;
         }
-
-        .content {
+        .container {
             max-width: 1000px;
-            margin: 2rem auto;
+            margin: 0 auto;
             padding: 1rem;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        h1 {
-            text-align: center;
-            margin-bottom: 0.5rem;
+        h1, h2, h3 {
+            color: #23395d;
         }
-
-        h2 {
-            margin-top: 2rem;
-            border-bottom: 2px solid #444;
-            padding-bottom: 0.5rem;
-        }
-
-        .about img {
-            width: 200px;
-            height: auto;
-            margin: 1rem;
-            border-radius: 50%;
-        }
-
-        .social-links ul,
-        .pet-projects ul,
-        .mentions ul,
-        .articles ul {
-            list-style: none;
+        ul {
+            list-style-type: none;
             padding: 0;
         }
-
-        .social-links li,
-        .pet-projects li,
-        .mentions li,
-        .articles li {
+        ul li {
             margin: 0.5rem 0;
         }
-
-        .social-links a {
+        a {
+            color: #23395d;
             text-decoration: none;
-            color: #333;
-            transition: color 0.3s ease;
+            transition: color 0.3s;
         }
-
-        .social-links a:hover {
-            color: #007bff;
+        a:hover {
+            color: #2f4a77;
         }
-
-        img.inline-image {
-            width: 150px;
+        .images img {
+            max-width: 100%;
             height: auto;
-            margin: 5px;
+            margin: 0.5rem;
+            transition: transform 0.3s;
         }
-
+        .images img:hover {
+            transform: scale(1.05);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        .footer {
+            background-color: #23395d;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
             }
-        }
-
-        footer {
-            text-align: center;
-            background: #333;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            .grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Anton Lenev</h1>
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#social">Social</a>
+        <a href="#links">Social Links</a>
         <a href="#podcasts">Podcasts</a>
         <a href="#videos">Videos</a>
         <a href="#projects">Projects</a>
         <a href="#articles">Articles</a>
         <a href="#mentions">Mentions</a>
     </nav>
-    <div class="content">
-        <section id="about" class="about">
+    <div class="container">
+        <section id="about">
             <h2>About</h2>
-            <div>
-                <img src="https://github.com/m0rg0t/alenev/assets/634236/646678de-1523-42d4-b6eb-caeb089e72fe" alt="Anton Image 1">
-                <img src="https://github.com/m0rg0t/alenev/assets/634236/48e8b494-29eb-445f-8976-c0cadd4ac01f" alt="Anton Image 2">
+            <div class="grid">
+                <img src="https://github.com/m0rg0t/alenev/assets/634236/646678de-1523-42d4-b6eb-caeb089e72fe" alt="Anton Lenev"/>
+                <img src="https://github.com/m0rg0t/alenev/assets/634236/48e8b494-29eb-445f-8976-c0cadd4ac01f" alt="Anton Lenev Art"/>
             </div>
         </section>
-
-        <section id="social" class="social-links">
-            <h2>Links to Social Networks and Services</h2>
+        <section id="links">
+            <h2>Links to social networks and services</h2>
             <ul>
-                <li><a href="https://t.me/AntonLenev"><i class="fab fa-telegram"></i> Telegram</a></li>
-                <li><a href="https://vk.com/m0rg0t"><i class="fab fa-vk"></i> VK</a></li>
-                <li><a href="https://instagram.com/antonlenev"><i class="fab fa-instagram"></i> Instagram</a></li>
-                <li><a href="https://twitter.com/m0rg0t"><i class="fab fa-twitter"></i> Twitter or X</a></li>
-                <li><a href="https://github.com/m0rg0t/"><i class="fab fa-github"></i> Github</a></li>
-                <li><a href="https://www.linkedin.com/in/anton-lenev-98414530/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://t.me/AntonLenev">Telegram</a></li>
+                <li><a href="https://vk.com/m0rg0t">VK</a></li>
+                <li><a href="https://instagram.com/antonlenev">Instagram</a></li>
+                <li><a href="https://twitter.com/m0rg0t">Twitter or X</a></li>
+                <li><a href="https://github.com/m0rg0t/">Github</a></li>
+                <li><a href="https://www.linkedin.com/in/anton-lenev-98414530/">LinkedIn</a></li>
                 <li><a href="https://solvery.io/ru/mentor/antonlenev">Solvery - ментор</a></li>
                 <li><a href="https://www.litres.ru/author/anton-lenev/">Litres - чтец</a></li>
             </ul>
         </section>
-
         <section id="podcasts">
             <h2>Podcasts</h2>
-            <p><a href="https://cosplay.mave.digital/">Подкаст "Косплей и прочие штуки"</a></p>
+            <p><a href="https://cosplay.mave.digital/">Подкаст &quot;Косплей и прочие штуки&quot;</a></p>
         </section>
-
         <section id="videos">
             <h2>Videos</h2>
-            <div>
-                <h3>Странное браузерное API — Антон Ленёв — Дринкап</h3>
-                <p><a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend">YouTube Video</a></p>
-            </div>
-            <div>
-                <h3>[IT Friday] Антон Ленев - Особенности разработки мобильных приложений для Windows Phone и Windows 8</h3>
-                <p><a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8">YouTube Video</a></p>
-            </div>
-            <div>
-                <h3>Антон Ленёв — Заменят ли алгоритмы дизайнеров в рекламе?</h3>
-                <p><a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi">YouTube Video</a></p>
-            </div>
-            <div>
-                <h3>Где жить хорошо? (хакатон)</h3>
-                <p><a href="https://www.m24.ru/videos/svyaz/27042014/50447">M24 Video</a></p>
-            </div>
-        </section>
+            <h3>Странное браузерное API — Антон Ленёв — Дринкап</h3>
+            <p><a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend">Watch here</a></p>
 
-        <section id="projects" class="pet-projects">
-            <h2>Pet Projects and Other Stuff</h2>
-            <h3>Бренд украшений для волос "Skull pin"</h3>
-            <p><a href="https://vk.com/skull_pin">https://vk.com/skull_pin</a> - заколки для волос, гребни и прочие украшения создаваемые с помощью 3D печати и не только</p>
+            <h3>[IT Friday] Антон Ленев - Особенности разработки мобильных приложений для Windows Phone и Windows 8</h3>
+            <p><a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8">Watch here</a></p>
+
+            <h3>Антон Ленёв — Заменят ли алгоритмы дизайнеров в рекламе?</h3>
+            <p><a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi">Watch here</a></p>
+
+            <h3>Где жить хорошо? (хакатон)</h3>
+            <p><a href="https://www.m24.ru/videos/svyaz/27042014/50447">Watch here</a></p>
+        </section>
+        <section id="projects">
+            <h2>Pet projects and other stuff</h2>
+            <h3>Бренд украшений для волос &quot;Skull pin&quot;</h3>
+            <p><a href="https://vk.com/skull_pin">Подробнее</a></p>
+
             <h3>OwlEye</h3>
-            <p><a href="https://owleye.space/">https://owleye.space/</a></p>
-            <p>OwlEye helps to navigate visually impaired people in closed spaces and helps regular people to keep distance on personal communications during COVID-19 times, all in the form of a beautiful owl necklace :-)</p>
-            <p>Github repository with code and additional instructions - <a href="https://github.com/m0rg0t/OwlEye">https://github.com/m0rg0t/OwlEye</a></p>
+            <p><a href="https://owleye.space/">Подробнее</a></p>
+            <p>Github repository with code and additional instructions - <a href="https://github.com/m0rg0t/OwlEye">Explore</a></p>
+
             <h3>Поиск авиабилетов (Windows Store)</h3>
-            <p>Уже "мертвый" за давностью времени проект</p>
+            <p>Уже &quot;мертвый&quot; за давностью времени проект</p>
+
             <h3>Где участковый?</h3>
-            <p><a href="https://openpolice.ru/apps/pc-where-is-policeman/">https://openpolice.ru/apps/pc-where-is-policeman/</a></p>
+            <p><a href="https://openpolice.ru/apps/pc-where-is-policeman/">OpenPolice</a></p>
+
             <h3>Rybinsk secrets</h3>
-            <p>Туристический проект для города Рыбинска (в разработке)</p>
+            <p>Туристический проект для города рыбинска (в разработке)</p>
+
             <h3>Былина о Святогоре</h3>
-            <p><a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor">https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor</a></p>
+            <p><a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor">Yandex Dialogs</a></p>
+
             <h3>VK Mini apps</h3>
             <ul>
-                <li>Таро <a href="https://vk.com/app51769331?mid=4443423">https://vk.com/app51769331?mid=4443423</a></li>
-                <li>Астропрогноз <a href="https://vk.com/app51788038_4443423">https://vk.com/app51788038_4443423</a></li>
-                <li>Магические камни <a href="https://vk.com/app51896624_4443423">https://vk.com/app51896624_4443423</a></li>
-                <li>Руны <a href="https://vk.com/app51819171_4443423">https://vk.com/app51819171_4443423</a></li>
+                <li><a href="https://vk.com/app51769331?mid=4443423">Таро</a></li>
+                <li><a href="https://vk.com/app51788038_4443423">Астропрогноз</a></li>
+                <li><a href="https://vk.com/app51896624_4443423">Магические камни</a></li>
+                <li><a href="https://vk.com/app51819171_4443423">Руны</a></li>
             </ul>
         </section>
-
-        <section id="articles" class="articles">
-            <h2>Articles and Guest in Podcasts</h2>
+        <section id="articles">
+            <h2>Articles and guest in podcasts</h2>
             <ul>
                 <li><a href="https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/">OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate</a></li>
                 <li><a href="https://www.instructables.com/Owl-Necklace-With-LED-Eyes/">Owl Necklace With LED Eyes</a></li>
-                <li><a href="https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/">Dead Space 2 Cosplay — Creating the “Advanced Suit” Suit of Isaac Clarke</a></li>
+                <li><a href="https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Suit/">Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke</a></li>
                 <li><a href="https://habr.com/ru/articles/754234/">Ожерелье OwlEye — помощь слабовидящим</a></li>
                 <li><a href="https://mariniverse.com/nebezdela-3-11">Антон Ленёв. Костюм из коврика для йоги</a></li>
             </ul>
         </section>
-
-        <section id="mentions" class="mentions">
+        <section id="mentions">
             <h2>Mentions</h2>
             <ul>
                 <li><a href="https://gazeta-rybinsk.ru/2020/11/21/77291">Слабовидящему поможет сова</a></li>
                 <li><a href="https://yarreg.ru/n3yud/">Программист из Рыбинска создал мобильное приложение для дальтоников</a></li>
-                <li><a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html">Рыбинский хищник: Антон Ленеёв про косплей и Comic-Con</a></li>
-                <li><a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html">Антон Ленев (“Где жить хорошо”) о конкурсе BudgetApps</a></li>
-                <li><a href="https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/">Рыбинец запустил проект “Районы города глазами Midjourney”</a></li>
-                <li>Тинькофф конкурс (3 место) - <a href="https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808">Facebook Photo</a></li>
-                <li><a href="https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps">Открытые финансовые данные BudgetApps</a></li>
-                <!-- Additional mentions follow the same pattern -->
+                <li><a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html">Подробнее...</a></li>
+                <li><a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html">Антон Ленев («Где жить хорошо») о конкурсе BudgetApps</a></li>
+                <li><a href="https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/">Рыбинец запустил проект «Районы города глазами Midjourney»</a></li>
+                <li>Тинькофф конкурс (3 место) - <a href="https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808">Смотреть фото</a></li>
+                <li><a href="https://www.facebook.com/photo/?fbid=478720675574159&set=a.378710025575225">Подробнее...</a></li>
+                <li><a href="https://www.facebook.com/photo/?fbid=448239478631419&set=a.424824814306219">Подробнее...</a></li>
+                <li><a href="https://www.facebook.com/photo/?fbid=501238709973723&set=a.268597993237797">Подробнее...</a></li>
+                <li><a href="https://ryabinsk.bezformata.com/listnews/menyayushij-realnost/71003462/">Подробнее...</a></li>
+                <li><a href="https://gazeta-rybinsk.ru/2018/11/17/40482">Подробнее...</a></li>
+                <li><a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.apps4russia.ru%2Fru%2Fitogi-konkursa%2F&h=AT031ScaPo5yxafEZT_VodzQMDWAd5d129H8BYMzp0_B3d2CdqrJa7QvEYRvCMJ8dEfx5_3OYEHwsDGr5GtZ9MXrSvNFj8kiSN_4h9_ahOfyhQAuaD1y60f20w45vUicwc68&s=1">Подробнее...</a></li>
+                <li><a href="https://gazeta-rybinsk.ru/2015/04/29/18147">Подробнее...</a></li>
+                <li><a href="https://gazeta-rybinsk.ru/2018/11/13/40444">Подробнее...</a></li>
+                <li><a href="https://www.m24.ru/videos/svyaz/27042014/50447">Подробнее...</a></li>
+                <li><a href="https://smartnews.ru/regions/vologda/13437.html#item-198861">Подробнее...</a></li>
+                <li><a href="https://vk.com/wall4443423_2328">Подробнее...</a></li>
+                <li><a href="https://yarreg.ru/n3yud/">Подробнее...</a></li>
+                <li><a href="https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps">Подробнее...</a></li>
             </ul>
         </section>
-
-        <div>
-            <img src="https://github.com/m0rg0t/alenev/assets/634236/abb2048e-8d1e-4c0c-aa99-416ea8c58ca0" alt="Decorative Image" class="inline-image">
-            <img src="https://github.com/m0rg0t/alenev/assets/634236/494ba2a8-8cdc-45fc-8c5b-59befdfcdb6a" alt="Decorative Image" class="inline-image">
-            <img src="https://github.com/m0rg0t/alenev/assets/634236/b7437c59-f425-4659-911c-6f4876294734" alt="Decorative Image" class="inline-image">
-            <img src="https://github.com/m0rg0t/alenev/assets/634236/6547b51e-cd5d-4957-92aa-628727c5641a" alt="Decorative Image" class="inline-image">
-            <img src="https://github.com/m0rg0t/alenev/assets/634236/21b1ff8a-e024-447f-a75b-7934e074e068" alt="Decorative Image" class="inline-image">
+        <div class="images">
+            <img src="https://github.com/m0rg0t/alenev/assets/634236/abb2048e-8d1e-4c0c-aa99-416ea8c58ca0" alt="Art by Anton Lenev">
+            <img src="https://github.com/m0rg0t/alenev/assets/634236/494ba2a8-8cdc-45fc-8c5b-59befdfcdb6a" alt="Art by Anton Lenev">
+            <img src="https://github.com/m0rg0t/alenev/assets/634236/b7437c59-f425-4659-911c-6f4876294734" alt="Art by Anton Lenev">
+            <img src="https://github.com/m0rg0t/alenev/assets/634236/6547b51e-cd5d-4957-92aa-628727c5641a" alt="Art by Anton Lenev">
+            <img src="https://github.com/m0rg0t/alenev/assets/634236/21b1ff8a-e024-447f-a75b-7934e074e068" alt="Art by Anton Lenev">
         </div>
     </div>
-    <footer>
-        <p>&copy; 2023 Anton Lenev. All rights reserved.</p>
+    <footer class="footer">
+        &copy; 2023 Anton Lenev
     </footer>
 </body>
-
 </html>
+```

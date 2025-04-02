@@ -88,17 +88,21 @@ async function generateHtmlTemplate(htmlContent: string) {
     8. Добавь навигационное меню для разделов.
     9. Оптимизируй для SEO.
     
-    Не делай никаких дополнений или изменений в фактическом контенте страницы, только измени его представление и структуру.
     Возврати полностью готовый к использованию HTML код (включая все стили, скрипты и т.д.).
+    Также можешь использовать nano и микро CSS фреймфорки наподобие Pico.css, Skeleton и т.д.
+    Не используй Bootstrap или Tailwind CSS.
+
+    Можешь делать небольшое summary в начале об Антоне Леневе.
 
     Вот HTML контент для преобразования:
     ${htmlContent}
+
+    !важно! Не добавляй никаких комментариев или пояснений к коду, просто верни готовый HTML код.
     `;
 
     const completion = await openai.chat.completions.create({
       messages: [{ role: "system", content: prompt }],
-      model: "gpt-4o",
-      temperature: 0.9,
+      model: "gpt-4o"
     });
 
     return completion.choices[0]?.message?.content || '';
@@ -140,7 +144,7 @@ async function startStaticServer(port: number = 3000) {
   // Запускаем HTTP-сервер с использованием встроенного файлового сервера Bun
   const server = Bun.serve({
     routes: {
-      '/': () => new Response('Сервер запущен. Перейдите по /index.html для просмотра сайта.'),
+      '/': () => Response.redirect("/index.html"),
     },
     port: port,
     fetch(req) {
