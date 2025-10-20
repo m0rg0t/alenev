@@ -1,0 +1,205 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Другие проекты - Антон Ленёв">
+  <h1>🎯 Другие проекты</h1>
+
+  <section class="section">
+    <h2>VK Mini Apps</h2>
+    <p class="intro-text">
+      Коллекция мини-приложений для социальной сети ВКонтакте, включающая различные развлекательные и познавательные проекты.
+    </p>
+
+    <div class="apps-grid">
+      <article class="app-card">
+        <h3>🔮 Таро</h3>
+        <p>Гадание на картах Таро прямо в VK</p>
+        <a href="https://vk.com/app51769331?mid=4443423" target="_blank" rel="noopener">Открыть приложение</a>
+      </article>
+
+      <article class="app-card">
+        <h3>⭐ Астропрогноз</h3>
+        <p>Астрологические прогнозы и гороскопы</p>
+        <a href="https://vk.com/app51788038_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+      </article>
+
+      <article class="app-card">
+        <h3>💎 Магические камни</h3>
+        <p>Узнайте о свойствах различных камней</p>
+        <a href="https://vk.com/app51896624_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+      </article>
+
+      <article class="app-card">
+        <h3>ᚱ Руны</h3>
+        <p>Гадание на рунах и их толкование</p>
+        <a href="https://vk.com/app51819171_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Яндекс Навыки</h2>
+
+    <article class="project">
+      <h3>Былина о Святогоре</h3>
+      <p>
+        Голосовой навык для Яндекс.Алисы, рассказывающий древнерусскую былину о богатыре Святогоре.
+        Интерактивное повествование с элементами выбора развития сюжета.
+      </p>
+      <a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor" target="_blank" rel="noopener">
+        Открыть в Яндекс.Диалогах
+      </a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Творческие проекты</h2>
+
+    <article class="project">
+      <h3>Бренд украшений "Skull Pin"</h3>
+      <p>
+        Уникальные украшения для волос: заколки, гребни и другие аксессуары, создаваемые с помощью 3D печати
+        и традиционных ремесленных техник.
+      </p>
+      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Благотворительность</h2>
+
+    <article class="project">
+      <h3>Сольвери - Ментор</h3>
+      <p>
+        Менторство в области программирования и разработки. Помогаю начинающим разработчикам
+        освоить профессию и решить сложные технические задачи.
+      </p>
+      <a href="https://solvery.io/ru/mentor/antonlenev" target="_blank" rel="noopener">Профиль на Solvery</a>
+    </article>
+  </section>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-accent);
+    }
+
+    .intro-text {
+      color: var(--color-text-muted);
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .app-card {
+      background: var(--color-surface);
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .app-card:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    }
+
+    .app-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .app-card p {
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .app-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .app-card a:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .project {
+      background: var(--color-surface);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--color-primary);
+      transition: all 0.3s;
+    }
+
+    .project:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2);
+    }
+
+    .project h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+    }
+
+    .project p {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .project a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .project a:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .apps-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

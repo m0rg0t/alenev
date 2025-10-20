@@ -1,0 +1,148 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="IT Проекты - Антон Ленёв">
+  <h1>💻 IT Проекты и Разработка</h1>
+
+  <section class="section">
+    <h2>Pet Проекты</h2>
+
+    <article class="project">
+      <h3>OwlEye</h3>
+      <p>
+        Украшение-ожерелье в виде совы, помогающее слабовидящим людям ориентироваться в закрытых пространствах.
+        Во время COVID-19 также помогает соблюдать социальную дистанцию.
+      </p>
+      <div class="links">
+        <a href="https://owleye.space/" target="_blank" rel="noopener">Сайт проекта</a>
+        <a href="https://github.com/m0rg0t/OwlEye" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Skull Pin</h3>
+      <p>
+        Бренд украшений для волос - заколки, гребни и другие украшения, создаваемые с помощью 3D печати.
+      </p>
+      <div class="links">
+        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Где участковый?</h3>
+      <p>Приложение для поиска участковых по адресу.</p>
+      <div class="links">
+        <a href="https://openpolice.ru/apps/pc-where-is-policeman/" target="_blank" rel="noopener">OpenPolice</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>Rybinsk Secrets</h3>
+      <p>Туристический проект для города Рыбинска (в разработке).</p>
+    </article>
+
+    <article class="project">
+      <h3>Поиск авиабилетов</h3>
+      <p>Приложение для Windows Store (устаревший проект).</p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Выступления</h2>
+
+    <article class="talk">
+      <h3>Странное браузерное API — Дринкап</h3>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend" target="_blank" rel="noopener">Смотреть на YouTube</a>
+      </div>
+    </article>
+
+    <article class="talk">
+      <h3>Особенности разработки мобильных приложений для Windows Phone и Windows 8</h3>
+      <div class="links">
+        <a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8" target="_blank" rel="noopener">Смотреть на YouTube</a>
+      </div>
+    </article>
+
+    <article class="talk">
+      <h3>Заменят ли алгоритмы дизайнеров в рекламе?</h3>
+      <div class="links">
+        <a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi" target="_blank" rel="noopener">Смотреть на YouTube</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Опыт работы</h2>
+    <p>CTO/Frontend Developer в Viewst Inc</p>
+    <p>Образование: Рыбинская Государственная Авиационная Технологическая Академия им. П.А. Соловьёва (2006-2011)</p>
+    <div class="links">
+      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 репозиториев)</a>
+      <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
+    </div>
+  </section>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1.5rem;
+      color: var(--color-accent);
+    }
+
+    .project, .talk {
+      background: var(--color-surface);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .project h3, .talk h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project p {
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+
+    .links a {
+      padding: 0.5rem 1rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+    }
+
+    .links a:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+  </style>
+</BaseLayout>

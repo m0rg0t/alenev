@@ -1,0 +1,190 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { useTranslations } from '../i18n';
+
+const t = useTranslations('ru');
+---
+
+<BaseLayout title="Антон Ленёв - Программист, Косплеер, Подкастер">
+  <section class="hero">
+    <h1>Антон Ленёв</h1>
+    <p class="subtitle">{t('about.description')}</p>
+
+    <div class="about-images">
+      <img src="https://github.com/m0rg0t/alenev/assets/634236/646678de-1523-42d4-b6eb-caeb089e72fe" alt="Anton Lenev" />
+      <img src="https://github.com/m0rg0t/alenev/assets/634236/48e8b494-29eb-445f-8976-c0cadd4ac01f" alt="Anton Lenev Art" />
+    </div>
+  </section>
+
+  <section class="categories">
+    <h2>Категории</h2>
+    <div class="grid">
+      <a href="/it" class="card">
+        <h3>💻 IT</h3>
+        <p>Проекты, выступления и статьи о разработке</p>
+      </a>
+
+      <a href="/podcasts" class="card">
+        <h3>🎙️ Подкасты</h3>
+        <p>Подкаст "Косплей и прочие штуки"</p>
+      </a>
+
+      <a href="/audiobooks" class="card">
+        <h3>🎧 Аудиокниги</h3>
+        <p>Озвучка на Litres</p>
+      </a>
+
+      <a href="/cosplay" class="card">
+        <h3>🎭 Косплей</h3>
+        <p>Фото и видео костюмов</p>
+      </a>
+
+      <a href="/publications" class="card">
+        <h3>📝 Публикации</h3>
+        <p>Статьи и упоминания в СМИ</p>
+      </a>
+
+      <a href="/other" class="card">
+        <h3>🎯 Другое</h3>
+        <p>VK Mini apps, Яндекс навыки и другие проекты</p>
+      </a>
+    </div>
+  </section>
+
+  <section class="social">
+    <h2>{t('social.title')}</h2>
+    <div class="social-links">
+      <a href="https://t.me/AntonLenev" target="_blank" rel="noopener">Telegram</a>
+      <a href="https://github.com/m0rg0t/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://vk.com/m0rg0t" target="_blank" rel="noopener">VK</a>
+      <a href="https://instagram.com/antonlenev" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://twitter.com/m0rg0t" target="_blank" rel="noopener">Twitter</a>
+      <a href="https://www.linkedin.com/in/anton-lenev-98414530/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+  <style>
+    .hero {
+      text-align: center;
+      padding: 3rem 0;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .subtitle {
+      font-size: 1.25rem;
+      color: var(--color-text-muted);
+      margin-bottom: 2rem;
+    }
+
+    .about-images {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .about-images img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s;
+    }
+
+    .about-images img:hover {
+      transform: scale(1.05);
+    }
+
+    .categories {
+      margin-top: 4rem;
+    }
+
+    .categories h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--color-surface);
+      padding: 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--color-text);
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--color-primary);
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.3);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: var(--color-text-muted);
+    }
+
+    .social {
+      margin-top: 4rem;
+    }
+
+    .social h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-links a {
+      padding: 0.75rem 1.5rem;
+      background: var(--color-surface);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--color-text);
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .social-links a:hover {
+      border-color: var(--color-accent);
+      background: var(--color-primary);
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .about-images img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</BaseLayout>

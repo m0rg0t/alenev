@@ -1,24 +1,15 @@
 {
-  "name": "alenev",
-  "module": "index.ts",
+  "name": "alenev-astro",
   "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest",
-    "@types/fs-extra": "^11.0.4"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
-    "fs-extra": "^11.3.0",
-    "marked": "^15.0.7",
-    "openai": "^4.91.1"
-  },
-  "scripts": {
-    "generate": "bun run index.ts",
-    "serve": "bun run index.ts --serve",
-    "serve:port": "bun run index.ts --serve --port",
-    "generate-and-serve": "bun run index.ts --serve-after-generate"
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^5.14.7"
   }
 }

@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Публикации - Антон Ленёв">
+  <h1>📝 Публикации и Статьи</h1>
+
+  <section class="section">
+    <h2>Мои статьи</h2>
+
+    <article class="publication">
+      <h3>OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate</h3>
+      <p>Подробное описание проекта OwlEye на Instructables</p>
+      <a href="https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/" target="_blank" rel="noopener">Читать на Instructables</a>
+    </article>
+
+    <article class="publication">
+      <h3>Ожерелье OwlEye — помощь слабовидящим</h3>
+      <p>Статья о проекте OwlEye на Хабр</p>
+      <a href="https://habr.com/ru/articles/754234/" target="_blank" rel="noopener">Читать на Хабр</a>
+    </article>
+
+    <article class="publication">
+      <h3>Owl Necklace With LED Eyes</h3>
+      <p>Инструкция по созданию ожерелья-совы со светодиодными глазами</p>
+      <a href="https://www.instructables.com/Owl-Necklace-With-LED-Eyes/" target="_blank" rel="noopener">Читать на Instructables</a>
+    </article>
+
+    <article class="publication">
+      <h3>Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke</h3>
+      <p>Детальная инструкция по созданию костюма из Dead Space 2</p>
+      <a href="https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/" target="_blank" rel="noopener">Читать на Instructables</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Упоминания в СМИ</h2>
+
+    <article class="mention">
+      <h3>Слабовидящему поможет сова</h3>
+      <a href="https://gazeta-rybinsk.ru/2020/11/21/77291" target="_blank" rel="noopener">Газета Рыбинск</a>
+    </article>
+
+    <article class="mention">
+      <h3>Программист из Рыбинска создал мобильное приложение для дальтоников</h3>
+      <a href="https://yarreg.ru/n3yud/" target="_blank" rel="noopener">Ярославская Регион</a>
+    </article>
+
+    <article class="mention">
+      <h3>Рыбинский хищник Антон Ленёв про косплей и Comic Con</h3>
+      <a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html" target="_blank" rel="noopener">Черемуха</a>
+    </article>
+
+    <article class="mention">
+      <h3>Антон Ленев о конкурсе BudgetApps</h3>
+      <a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html" target="_blank" rel="noopener">AppTractor</a>
+    </article>
+
+    <article class="mention">
+      <h3>Рыбинец запустил проект «Районы города глазами Midjourney»</h3>
+      <a href="https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/" target="_blank" rel="noopener">RybinskNote</a>
+    </article>
+
+    <article class="mention">
+      <h3>Определены победители конкурса Минфина России на открытых финансовых данных BudgetApps</h3>
+      <a href="https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps" target="_blank" rel="noopener">Министерство Финансов РФ</a>
+    </article>
+
+    <article class="mention">
+      <h3>Видео: Где жить хорошо? (хакатон)</h3>
+      <a href="https://www.m24.ru/videos/svyaz/27042014/50447" target="_blank" rel="noopener">М24</a>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Достижения</h2>
+
+    <article class="achievement">
+      <h3>🏆 Тинькофф конкурс (3 место)</h3>
+      <a href="https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808" target="_blank" rel="noopener">Смотреть фото</a>
+    </article>
+  </section>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      background: linear-gradient(135deg, #3b82f6, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .section {
+      margin-bottom: 4rem;
+    }
+
+    .section h2 {
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      color: var(--color-accent);
+    }
+
+    .publication, .mention, .achievement {
+      background: var(--color-surface);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--color-primary);
+      transition: all 0.3s;
+    }
+
+    .publication:hover, .mention:hover, .achievement:hover {
+      transform: translateX(4px);
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2);
+    }
+
+    .publication h3, .mention h3, .achievement h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-text);
+    }
+
+    .publication p {
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .publication a, .mention a, .achievement a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      transition: all 0.3s;
+      margin-top: 0.5rem;
+    }
+
+    .publication a:hover, .mention a:hover, .achievement a:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+  </style>
+</BaseLayout>
