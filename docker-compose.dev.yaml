@@ -5,11 +5,13 @@ services:
     image: oven/bun:1
     container_name: alenev-dev
     working_dir: /app
+    env_file:
+      - .env
     volumes:
       - .:/app
       - /app/node_modules
     ports:
-      - "4321:4321"
+      - "${PORT_DEV:-4321}:4321"
     command: sh -c "bun install && bun run dev --host 0.0.0.0"
     environment:
       - NODE_ENV=development
