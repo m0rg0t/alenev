@@ -1,5 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+// Get all archives to check which publications have archived versions
+const archives = await getCollection('archives');
+const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 ---
 
 <BaseLayout title="Публикации - Антон Ленев">
@@ -11,25 +16,67 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <article class="publication">
       <h3>OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate</h3>
       <p>Подробное описание проекта OwlEye на Instructables</p>
-      <a href="https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/" target="_blank" rel="noopener">Читать на Instructables</a>
+      <div class="links">
+        <a href="https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/" target="_blank" rel="noopener">Оригинал</a>
+        {archivesByUrl.has("https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="publication">
       <h3>Ожерелье OwlEye — помощь слабовидящим</h3>
       <p>Статья о проекте OwlEye на Хабр</p>
-      <a href="https://habr.com/ru/articles/754234/" target="_blank" rel="noopener">Читать на Хабр</a>
+      <div class="links">
+        <a href="https://habr.com/ru/articles/754234/" target="_blank" rel="noopener">Оригинал</a>
+        {archivesByUrl.has("https://habr.com/ru/articles/754234/") && (
+          <a href={`/archive/${archivesByUrl.get("https://habr.com/ru/articles/754234/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="publication">
       <h3>Owl Necklace With LED Eyes</h3>
       <p>Инструкция по созданию ожерелья-совы со светодиодными глазами</p>
-      <a href="https://www.instructables.com/Owl-Necklace-With-LED-Eyes/" target="_blank" rel="noopener">Читать на Instructables</a>
+      <div class="links">
+        <a href="https://www.instructables.com/Owl-Necklace-With-LED-Eyes/" target="_blank" rel="noopener">Оригинал</a>
+        {archivesByUrl.has("https://www.instructables.com/Owl-Necklace-With-LED-Eyes/") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.instructables.com/Owl-Necklace-With-LED-Eyes/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="publication">
       <h3>Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke</h3>
       <p>Детальная инструкция по созданию костюма из Dead Space 2</p>
-      <a href="https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/" target="_blank" rel="noopener">Читать на Instructables</a>
+      <div class="links">
+        <a href="https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/" target="_blank" rel="noopener">Оригинал</a>
+        {archivesByUrl.has("https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="publication">
+      <h3>DALL·E 2 — мои первые эксперименты с возможностями нейросети</h3>
+      <p>Опыт работы с генеративной нейросетью DALL·E 2 и эксперименты с генерацией изображений</p>
+      <div class="links">
+        <a href="https://habr.com/ru/articles/680136/" target="_blank" rel="noopener">Читать на Хабр</a>
+        {archivesByUrl.has("https://habr.com/ru/articles/680136/") && (
+          <a href={`/archive/${archivesByUrl.get("https://habr.com/ru/articles/680136/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="publication">
+      <h3>Как делается косплей. Создание костюма Advanced Suit Айзека Кларка из Dead Space 2</h3>
+      <p>Подробный разбор процесса создания костюма: от выбора материалов до программирования Arduino для подсветки</p>
+      <div class="links">
+        <a href="https://habr.com/ru/articles/482280/" target="_blank" rel="noopener">Читать на Хабр</a>
+        {archivesByUrl.has("https://habr.com/ru/articles/482280/") && (
+          <a href={`/archive/${archivesByUrl.get("https://habr.com/ru/articles/482280/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
   </section>
 
@@ -38,37 +85,142 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <article class="mention">
       <h3>Слабовидящему поможет сова</h3>
-      <a href="https://gazeta-rybinsk.ru/2020/11/21/77291" target="_blank" rel="noopener">Газета Рыбинск</a>
+      <div class="links">
+        <a href="https://gazeta-rybinsk.ru/2020/11/21/77291" target="_blank" rel="noopener">Газета Рыбинск</a>
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2020/11/21/77291") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2020/11/21/77291")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Программист из Рыбинска создал мобильное приложение для дальтоников</h3>
-      <a href="https://yarreg.ru/n3yud/" target="_blank" rel="noopener">Ярославская Регион</a>
+      <div class="links">
+        <a href="https://yarreg.ru/n3yud/" target="_blank" rel="noopener">Ярославская Регион</a>
+        {archivesByUrl.has("https://yarreg.ru/n3yud/") && (
+          <a href={`/archive/${archivesByUrl.get("https://yarreg.ru/n3yud/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Рыбинский хищник Антон Ленев про косплей и Comic Con</h3>
-      <a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html" target="_blank" rel="noopener">Черемуха</a>
+      <div class="links">
+        <a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html" target="_blank" rel="noopener">Черемуха</a>
+        {archivesByUrl.has("https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Антон Ленев о конкурсе BudgetApps</h3>
-      <a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html" target="_blank" rel="noopener">AppTractor</a>
+      <div class="links">
+        <a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html" target="_blank" rel="noopener">AppTractor</a>
+        {archivesByUrl.has("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Рыбинец запустил проект «Районы города глазами Midjourney»</h3>
-      <a href="https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/" target="_blank" rel="noopener">RybinskNote</a>
+      <div class="links">
+        <a href="https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/" target="_blank" rel="noopener">RybinskNote</a>
+        {archivesByUrl.has("https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Определены победители конкурса Минфина России на открытых финансовых данных BudgetApps</h3>
-      <a href="https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps" target="_blank" rel="noopener">Министерство Финансов РФ</a>
+      <div class="links">
+        <a href="https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps" target="_blank" rel="noopener">Министерство Финансов РФ</a>
+        {archivesByUrl.has("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps") && (
+          <a href={`/archive/${archivesByUrl.get("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
 
     <article class="mention">
       <h3>Видео: Где жить хорошо? (хакатон)</h3>
-      <a href="https://www.m24.ru/videos/svyaz/27042014/50447" target="_blank" rel="noopener">М24</a>
+      <div class="links">
+        <a href="https://www.m24.ru/videos/svyaz/27042014/50447" target="_blank" rel="noopener">М24</a>
+        {archivesByUrl.has("https://www.m24.ru/videos/svyaz/27042014/50447") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.m24.ru/videos/svyaz/27042014/50447")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Хобби айтишника: от косплея до 3D-печати костюмов и озвучки аудиокниг</h3>
+      <div class="links">
+        <a href="https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig" target="_blank" rel="noopener">Tproger</a>
+        {archivesByUrl.has("https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig") && (
+          <a href={`/archive/${archivesByUrl.get("https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Пятничный косплей: Хищники (Антон Ленев и Вета Соколова)</h3>
+      <div class="links">
+        <a href="https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html" target="_blank" rel="noopener">Игромания</a>
+        {archivesByUrl.has("https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim</h3>
+      <div class="links">
+        <a href="https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/" target="_blank" rel="noopener">Канобу</a>
+        {archivesByUrl.has("https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/") && (
+          <a href={`/archive/${archivesByUrl.get("https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Dead Space 2 — Isaac Clarke (фотосет)</h3>
+      <div class="links">
+        <a href="https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev" target="_blank" rel="noopener">DTF</a>
+        {archivesByUrl.has("https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev") && (
+          <a href={`/archive/${archivesByUrl.get("https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Как делается косплей. Создание костюма Dead Space 2</h3>
+      <div class="links">
+        <a href="https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2" target="_blank" rel="noopener">DTF</a>
+        {archivesByUrl.has("https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2") && (
+          <a href={`/archive/${archivesByUrl.get("https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Программист из Рыбинска создал уникальное приложение для дальтоников</h3>
+      <div class="links">
+        <a href="https://www.ridus.ru/news/151954.html" target="_blank" rel="noopener">Ридус</a>
+        {archivesByUrl.has("https://www.ridus.ru/news/151954.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.ridus.ru/news/151954.html")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
+      <h3>Подкаст «Косплей и прочие штуки» — как, зачем и о чем?</h3>
+      <div class="links">
+        <a href="https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532" target="_blank" rel="noopener">Пикабу</a>
+        {archivesByUrl.has("https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532") && (
+          <a href={`/archive/${archivesByUrl.get("https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
   </section>
 
@@ -77,7 +229,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <article class="achievement">
       <h3>🏆 Тинькофф конкурс (3 место)</h3>
-      <a href="https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808" target="_blank" rel="noopener">Смотреть фото</a>
+      <div class="links">
+        <a href="https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808" target="_blank" rel="noopener">Смотреть фото</a>
+        {archivesByUrl.has("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808")}`} class="archive-link">Архив</a>
+        )}
+      </div>
     </article>
   </section>
 
@@ -140,10 +297,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .mention:nth-child(5) { border-left-color: var(--color-primary); }
     .mention:nth-child(6) { border-left-color: var(--color-accent); }
     .mention:nth-child(7) { border-left-color: var(--color-accent-alt); }
+    .mention:nth-child(8) { border-left-color: var(--color-secondary); }
+    .mention:nth-child(9) { border-left-color: var(--color-primary); }
+    .mention:nth-child(10) { border-left-color: var(--color-accent); }
+    .mention:nth-child(11) { border-left-color: var(--color-accent-alt); }
+    .mention:nth-child(12) { border-left-color: var(--color-secondary); }
+    .mention:nth-child(13) { border-left-color: var(--color-primary); }
+    .mention:nth-child(14) { border-left-color: var(--color-accent); }
+
+    .publication:nth-child(5) { border-left-color: var(--color-primary); }
+    .publication:nth-child(6) { border-left-color: var(--color-accent); }
 
     :global([data-theme="dark"]) .publication:nth-child(2),
+    :global([data-theme="dark"]) .publication:nth-child(6),
     :global([data-theme="dark"]) .mention:nth-child(2),
-    :global([data-theme="dark"]) .mention:nth-child(6) {
+    :global([data-theme="dark"]) .mention:nth-child(6),
+    :global([data-theme="dark"]) .mention:nth-child(10),
+    :global([data-theme="dark"]) .mention:nth-child(14) {
       border-left-color: var(--color-accent);
     }
 
@@ -161,7 +331,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: none;
     }
 
-    .publication a, .mention a, .achievement a {
+    .links {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 0.5rem;
+    }
+
+    .publication .links a, .mention .links a, .achievement .links a {
       display: inline-block;
       padding: 0.5rem 1rem;
       background: var(--color-primary);
@@ -172,13 +349,22 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       font-weight: 700;
       text-transform: uppercase;
       box-shadow: 2px 2px 0 var(--color-border);
-      margin-top: 0.5rem;
+      margin-top: 0;
     }
 
-    .publication a:hover, .mention a:hover, .achievement a:hover {
+    .publication .links a:hover, .mention .links a:hover, .achievement .links a:hover {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
       background: var(--color-primary-dark);
+    }
+
+    .archive-link {
+      background: var(--color-accent-alt) !important;
+      color: #1a1a1a !important;
+    }
+
+    .archive-link:hover {
+      background: #5ab868 !important;
     }
 
     @media (max-width: 768px) {
@@ -190,7 +376,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         box-shadow: 3px 3px 0 var(--color-border);
       }
 
-      .publication a, .mention a, .achievement a {
+      .publication .links a, .mention .links a, .achievement .links a {
         min-height: 44px;
         display: inline-flex;
         align-items: center;

@@ -12,9 +12,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         Подкаст о косплее, поп-культуре, творчестве и всём, что с этим связано.
         Обсуждаем создание костюмов, участие в мероприятиях, интересные проекты и делимся опытом.
       </p>
-      <div class="podcast-link">
+      <div class="podcast-links">
         <a href="https://cosplay.mave.digital/" target="_blank" rel="noopener" class="btn-primary">
-          Слушать подкаст
+          Mave
+        </a>
+        <a href="https://open.spotify.com/show/73jsU2vpqrcqpFkRQzU3j2" target="_blank" rel="noopener" class="btn-platform spotify">
+          Spotify
+        </a>
+        <a href="https://podcasts.apple.com/ru/podcast/косплей-и-прочие-штуки/id1520630151" target="_blank" rel="noopener" class="btn-platform apple">
+          Apple Podcasts
+        </a>
+        <a href="https://music.yandex.ru/album/11222632" target="_blank" rel="noopener" class="btn-platform yandex">
+          Яндекс.Музыка
         </a>
       </div>
     </div>
@@ -94,11 +103,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: none;
     }
 
-    .podcast-link {
+    .podcast-links {
       margin-top: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
     }
 
-    .btn-primary {
+    .btn-primary, .btn-platform {
       display: inline-block;
       padding: 1rem 2rem;
       background: var(--color-primary);
@@ -111,10 +124,38 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       box-shadow: 4px 4px 0 var(--color-border);
     }
 
-    .btn-primary:hover {
+    .btn-primary:hover, .btn-platform:hover {
       transform: translate(-2px, -2px);
       box-shadow: 6px 6px 0 var(--color-border);
+    }
+
+    .btn-primary:hover {
       background: var(--color-primary-dark);
+    }
+
+    .btn-platform.spotify {
+      background: #1DB954;
+    }
+
+    .btn-platform.spotify:hover {
+      background: #1aa34a;
+    }
+
+    .btn-platform.apple {
+      background: #FC3C44;
+    }
+
+    .btn-platform.apple:hover {
+      background: #e0353c;
+    }
+
+    .btn-platform.yandex {
+      background: #FFCC00;
+      color: #1a1a1a;
+    }
+
+    .btn-platform.yandex:hover {
+      background: #e6b800;
     }
 
     .section {
@@ -153,10 +194,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         box-shadow: 4px 4px 0 var(--color-border);
       }
 
-      .btn-primary {
+      .btn-primary, .btn-platform {
         min-height: 44px;
         display: inline-flex;
         align-items: center;
+        padding: 0.75rem 1.5rem;
+      }
+
+      .podcast-links {
+        gap: 0.75rem;
       }
     }
   </style>
