@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Публикации - Антон Ленёв">
+<BaseLayout title="Публикации - Антон Ленев">
   <h1>📝 Публикации и Статьи</h1>
 
   <section class="section">
@@ -47,7 +47,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </article>
 
     <article class="mention">
-      <h3>Рыбинский хищник Антон Ленёв про косплей и Comic Con</h3>
+      <h3>Рыбинский хищник Антон Ленев про косплей и Comic Con</h3>
       <a href="https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html" target="_blank" rel="noopener">Черемуха</a>
     </article>
 
@@ -82,13 +82,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <style>
+    /* Page Title */
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      background: linear-gradient(135deg, #3b82f6, #06b6d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    [data-theme="dark"] h1 {
+      color: #1a1a1a;
     }
 
     .section {
@@ -96,35 +104,61 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
 
     .section h2 {
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
-      color: var(--color-accent);
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
     }
 
     .publication, .mention, .achievement {
       background: var(--color-surface);
-      padding: 1.5rem;
-      border-radius: 8px;
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
       margin-bottom: 1.5rem;
-      border-left: 4px solid var(--color-primary);
-      transition: all 0.3s;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
     .publication:hover, .mention:hover, .achievement:hover {
-      transform: translateX(4px);
-      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.2);
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+      border-left-color: var(--color-secondary);
+    }
+
+    .publication:nth-child(2) { border-left-color: var(--color-accent); }
+    .publication:nth-child(3) { border-left-color: var(--color-accent-alt); }
+    .publication:nth-child(4) { border-left-color: var(--color-secondary); }
+
+    .mention:nth-child(2) { border-left-color: var(--color-accent); }
+    .mention:nth-child(3) { border-left-color: var(--color-accent-alt); }
+    .mention:nth-child(4) { border-left-color: var(--color-secondary); }
+    .mention:nth-child(5) { border-left-color: var(--color-primary); }
+    .mention:nth-child(6) { border-left-color: var(--color-accent); }
+    .mention:nth-child(7) { border-left-color: var(--color-accent-alt); }
+
+    [data-theme="dark"] .publication:nth-child(2),
+    [data-theme="dark"] .mention:nth-child(2),
+    [data-theme="dark"] .mention:nth-child(6) {
+      border-left-color: var(--color-accent);
     }
 
     .publication h3, .mention h3, .achievement h3 {
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       margin-bottom: 0.75rem;
       color: var(--color-text);
+      text-transform: uppercase;
     }
 
     .publication p {
       color: var(--color-text-muted);
       margin-bottom: 1rem;
       line-height: 1.6;
+      text-transform: none;
     }
 
     .publication a, .mention a, .achievement a {
@@ -133,15 +167,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: var(--color-primary);
       color: white;
       text-decoration: none;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      transition: all 0.3s;
+      border: var(--border-width) solid var(--color-border);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 2px 2px 0 var(--color-border);
       margin-top: 0.5rem;
     }
 
     .publication a:hover, .mention a:hover, .achievement a:hover {
-      background: var(--color-accent);
-      transform: translateY(-2px);
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0 var(--color-border);
+      background: var(--color-primary-dark);
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .publication, .mention, .achievement {
+        box-shadow: 3px 3px 0 var(--color-border);
+      }
+
+      .publication a, .mention a, .achievement a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
     }
   </style>
 </BaseLayout>

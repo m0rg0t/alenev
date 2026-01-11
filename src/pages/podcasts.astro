@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Подкасты - Антон Ленёв">
+<BaseLayout title="Подкасты - Антон Ленев">
   <h1>🎙️ Подкасты</h1>
 
   <section class="podcast-main">
@@ -26,35 +26,64 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <style>
+    /* Page Title */
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      background: linear-gradient(135deg, #3b82f6, #06b6d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    [data-theme="dark"] h1 {
+      color: #1a1a1a;
     }
 
     .podcast-main {
       margin-bottom: 3rem;
     }
 
+    /* Featured Podcast Card */
     .podcast-card {
       background: var(--color-surface);
-      padding: 2rem;
-      border-radius: 12px;
-      border: 1px solid var(--color-primary);
+      padding: 2.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 6px 6px 0 var(--color-border);
+      text-align: center;
     }
 
     .podcast-card.featured {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
-      border: 2px solid var(--color-primary);
+      background: var(--color-accent);
+      border-left: 8px solid var(--color-primary);
     }
 
     .podcast-card h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+    }
+
+    [data-theme="dark"] .podcast-card.featured h2,
+    [data-theme="dark"] .podcast-card.featured .description {
+      color: #1a1a1a;
+    }
+
+    /* Dark mode: better button contrast on yellow */
+    [data-theme="dark"] .podcast-card.featured .btn-primary {
+      background: #1a1a1a;
       color: var(--color-accent);
+      border-color: #1a1a1a;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    [data-theme="dark"] .podcast-card.featured .btn-primary:hover {
+      background: #333333;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
     }
 
     .description {
@@ -62,6 +91,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       line-height: 1.8;
       font-size: 1.1rem;
       margin-bottom: 1.5rem;
+      text-transform: none;
     }
 
     .podcast-link {
@@ -74,17 +104,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: var(--color-primary);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 500;
-      transition: all 0.3s;
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      border: var(--border-width) solid var(--color-border);
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 4px 4px 0 var(--color-border);
     }
 
     .btn-primary:hover {
-      background: var(--color-accent);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--color-border);
+      background: var(--color-primary-dark);
     }
 
     .section {
@@ -92,14 +122,42 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     }
 
     .section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 1rem;
-      color: var(--color-accent);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      background: var(--color-accent-alt);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    [data-theme="dark"] .section h2 {
+      color: #1a1a1a;
     }
 
     .section p {
       color: var(--color-text-muted);
       line-height: 1.6;
+      text-transform: none;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .podcast-card {
+        padding: 1.5rem;
+        box-shadow: 4px 4px 0 var(--color-border);
+      }
+
+      .btn-primary {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
     }
   </style>
 </BaseLayout>

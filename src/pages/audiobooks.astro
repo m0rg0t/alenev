@@ -276,6 +276,19 @@ const audiobooks = [
       color: #1a1a1a;
     }
 
+    /* Dark mode: better button contrast on yellow */
+    [data-theme="dark"] .platform-card .btn-primary {
+      background: #1a1a1a;
+      color: var(--color-accent);
+      border-color: #1a1a1a;
+      box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
+    }
+
+    [data-theme="dark"] .platform-card .btn-primary:hover {
+      background: #333333;
+      box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
+    }
+
     .platform-card p {
       color: var(--color-text);
       line-height: 1.8;

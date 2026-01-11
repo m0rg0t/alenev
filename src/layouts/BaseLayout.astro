@@ -16,19 +16,64 @@ const t = useTranslations(lang);
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description || t('about.description')} />
+    <meta name="keywords" content="Антон Ленев, Антон Ленёв, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+
+    <!-- Google Fonts: Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Theme initialization (prevents flash) -->
+    <script is:inline>
+      (function() {
+        const getTheme = () => {
+          if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+          return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        };
+        document.documentElement.setAttribute('data-theme', getTheme());
+      })();
+    </script>
+
     <style>
+      /* ===== NEO-BRUTALISM DESIGN SYSTEM ===== */
+
       :root {
-        --color-bg: #0f172a;
-        --color-surface: #1e293b;
-        --color-text: #f1f5f9;
-        --color-text-muted: #94a3b8;
-        --color-primary: #3b82f6;
-        --color-accent: #06b6d4;
+        /* Light Theme (Default) */
+        --color-bg: #FFFBF5;
+        --color-surface: #FFFFFF;
+        --color-surface-alt: #FFF5E6;
+        --color-text: #1a1a1a;
+        --color-text-muted: #4a4a4a;
+        --color-primary: #FF6B35;
+        --color-primary-dark: #E85A24;
+        --color-secondary: #FF4444;
+        --color-accent: #FFD93D;
+        --color-accent-alt: #6BCB77;
+        --color-border: #1a1a1a;
+
+        /* Neo-Brutalist Properties */
+        --border-width: 3px;
+        --shadow-offset: 4px;
+        --shadow-offset-hover: 6px;
         --max-width: 1200px;
+      }
+
+      [data-theme="dark"] {
+        --color-bg: #1a1a1a;
+        --color-surface: #2a2a2a;
+        --color-surface-alt: #333333;
+        --color-text: #FFFBF5;
+        --color-text-muted: #b0b0b0;
+        --color-primary: #FF8C5A;
+        --color-primary-dark: #FF6B35;
+        --color-secondary: #FF6666;
+        --color-accent: #FFE566;
+        --color-accent-alt: #8FD99F;
+        --color-border: #FFFBF5;
       }
 
       * {
@@ -38,10 +83,17 @@ const t = useTranslations(lang);
       }
 
       body {
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
         background: var(--color-bg);
         color: var(--color-text);
         line-height: 1.6;
+        font-size: 16px;
+      }
+
+      h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
       }
 
       .container {
@@ -50,71 +102,393 @@ const t = useTranslations(lang);
         padding: 0 1rem;
       }
 
+      /* ===== HEADER & NAVIGATION ===== */
+
       header {
-        background: var(--color-surface);
+        background: var(--color-accent);
         padding: 1rem 0;
         position: sticky;
         top: 0;
         z-index: 100;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        border-bottom: var(--border-width) solid var(--color-border);
+      }
+
+      [data-theme="dark"] header {
+        background: var(--color-surface);
+      }
+
+      .header-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: nowrap;
+      }
+
+      .nav-toggle {
+        display: none;
+        flex-direction: column;
+        gap: 4px;
+        background: var(--color-surface);
+        border: var(--border-width) solid var(--color-border);
+        cursor: pointer;
+        padding: 8px;
+        box-shadow: 2px 2px 0 var(--color-border);
+      }
+
+      .nav-toggle span {
+        width: 24px;
+        height: 3px;
+        background: var(--color-text);
+        display: block;
       }
 
       nav {
         display: flex;
-        gap: 2rem;
+        gap: 0.25rem;
         align-items: center;
         flex-wrap: wrap;
+        flex: 1;
       }
 
       nav a {
         color: var(--color-text);
         text-decoration: none;
-        transition: color 0.3s;
-        font-weight: 500;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        padding: 0.5rem 0.75rem;
+        border: var(--border-width) solid transparent;
+      }
+
+      [data-theme="dark"] nav a {
+        color: var(--color-text);
       }
 
       nav a:hover {
-        color: var(--color-accent);
+        background: var(--color-text);
+        color: var(--color-bg);
+        border-color: var(--color-border);
+      }
+
+      .header-controls {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        flex-shrink: 0;
       }
 
       .lang-switcher {
-        margin-left: auto;
         display: flex;
-        gap: 0.5rem;
+        gap: 0;
       }
 
       .lang-switcher a {
-        padding: 0.25rem 0.75rem;
-        border: 1px solid var(--color-primary);
-        border-radius: 4px;
-        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+        border: var(--border-width) solid var(--color-border);
+        background: var(--color-surface);
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: var(--color-text);
+      }
+
+      .lang-switcher a:first-child {
+        border-right: none;
       }
 
       .lang-switcher a.active {
-        background: var(--color-primary);
+        background: var(--color-text);
+        color: var(--color-bg);
       }
+
+      .lang-switcher a:hover:not(.active) {
+        background: var(--color-primary);
+        color: white;
+      }
+
+      /* Theme Toggle Button */
+      .theme-toggle {
+        background: var(--color-surface);
+        border: var(--border-width) solid var(--color-border);
+        padding: 0.5rem 0.75rem;
+        cursor: pointer;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 2px 2px 0 var(--color-border);
+        color: var(--color-text);
+      }
+
+      /* Dark mode: high contrast theme toggle */
+      [data-theme="dark"] .theme-toggle {
+        background: var(--color-accent);
+        color: #1a1a1a;
+        border-color: #1a1a1a;
+        box-shadow: 2px 2px 0 #1a1a1a;
+      }
+
+      .theme-toggle:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 3px 3px 0 var(--color-border);
+      }
+
+      [data-theme="dark"] .theme-toggle:hover {
+        box-shadow: 3px 3px 0 #1a1a1a;
+      }
+
+      .theme-toggle:active {
+        transform: translate(1px, 1px);
+        box-shadow: 1px 1px 0 var(--color-border);
+      }
+
+      [data-theme="dark"] .theme-toggle:active {
+        box-shadow: 1px 1px 0 #1a1a1a;
+      }
+
+      .theme-toggle .icon-sun { display: none; }
+      .theme-toggle .icon-moon { display: block; }
+
+      [data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+      [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+
+      /* ===== MAIN CONTENT ===== */
 
       main {
         min-height: calc(100vh - 200px);
         padding: 2rem 0;
       }
 
+      /* ===== FOOTER ===== */
+
       footer {
-        background: var(--color-surface);
+        background: var(--color-text);
         padding: 2rem 0;
         margin-top: 4rem;
         text-align: center;
-        color: var(--color-text-muted);
+        color: var(--color-bg);
+        border-top: var(--border-width) solid var(--color-border);
       }
 
+      footer p {
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      /* ===== GLOBAL COMPONENTS ===== */
+
+      /* Cards */
+      .card {
+        background: var(--color-surface);
+        padding: 1.5rem;
+        border: var(--border-width) solid var(--color-border);
+        text-decoration: none;
+        color: var(--color-text);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+        display: block;
+      }
+
+      .card:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+      }
+
+      .card h3 {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+      }
+
+      .card p {
+        color: var(--color-text-muted);
+        font-size: 0.9rem;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-block;
+        padding: 0.75rem 1.5rem;
+        background: var(--color-primary);
+        color: white;
+        text-decoration: none;
+        border: var(--border-width) solid var(--color-border);
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 0.875rem;
+        box-shadow: 3px 3px 0 var(--color-border);
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 0 var(--color-border);
+        background: var(--color-primary-dark);
+      }
+
+      .btn:active {
+        transform: translate(1px, 1px);
+        box-shadow: 2px 2px 0 var(--color-border);
+      }
+
+      .btn-secondary {
+        background: var(--color-surface);
+        color: var(--color-text);
+      }
+
+      .btn-secondary:hover {
+        background: var(--color-accent);
+      }
+
+      /* Grid */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.5rem;
+      }
+
+      /* Section Headers */
+      .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+        background: var(--color-accent);
+        padding: 0.5rem 1rem;
+        border: var(--border-width) solid var(--color-border);
+        box-shadow: 3px 3px 0 var(--color-border);
+        color: var(--color-text);
+      }
+
+      [data-theme="dark"] .section-title {
+        color: #1a1a1a;
+      }
+
+      /* Global: ensure dark text on accent backgrounds in dark mode */
+      [data-theme="dark"] .accent-bg,
+      [data-theme="dark"] [style*="background"][style*="accent"] {
+        color: #1a1a1a;
+      }
+
+      /* Project Cards */
+      .project {
+        background: var(--color-surface);
+        padding: 1.5rem 1.5rem 1.5rem 2rem;
+        border: var(--border-width) solid var(--color-border);
+        margin-bottom: 1.5rem;
+        border-left: 8px solid var(--color-primary);
+        box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+      }
+
+      .project:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+        border-left-color: var(--color-secondary);
+      }
+
+      .project h3 {
+        margin-bottom: 0.5rem;
+      }
+
+      .project p {
+        color: var(--color-text-muted);
+        margin-bottom: 1rem;
+      }
+
+      .project .links {
+        display: flex;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+      }
+
+      .project .links a {
+        padding: 0.5rem 1rem;
+        background: var(--color-primary);
+        color: white;
+        text-decoration: none;
+        border: var(--border-width) solid var(--color-border);
+        font-weight: 700;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        box-shadow: 2px 2px 0 var(--color-border);
+      }
+
+      .project .links a:hover {
+        transform: translate(-1px, -1px);
+        box-shadow: 3px 3px 0 var(--color-border);
+      }
+
+      /* ===== RESPONSIVE DESIGN ===== */
+
       @media (max-width: 768px) {
+        :root {
+          --border-width: 2px;
+          --shadow-offset: 3px;
+          --shadow-offset-hover: 4px;
+        }
+
+        .nav-toggle {
+          display: flex;
+        }
+
+        .header-inner {
+          flex-wrap: wrap;
+        }
+
         nav {
+          display: none;
+          flex-direction: column;
+          width: 100%;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: var(--color-accent);
+          border-bottom: var(--border-width) solid var(--color-border);
+          padding: 0;
+        }
+
+        nav.open {
+          display: flex;
+        }
+
+        nav a {
+          width: 100%;
+          text-align: center;
+          padding: 1rem;
+          border-bottom: 1px solid var(--color-border);
+          min-height: 44px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .header-controls {
+          margin-left: auto;
+        }
+
+        h1 { font-size: 2rem; }
+        h2 { font-size: 1.5rem; }
+
+        .grid {
+          grid-template-columns: 1fr;
           gap: 1rem;
         }
 
-        .lang-switcher {
-          margin-left: 0;
-          width: 100%;
+        .card, .project {
+          box-shadow: 3px 3px 0 var(--color-border);
+        }
+
+        .btn {
+          min-height: 44px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      /* Reduce motion for accessibility */
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          transform: none !important;
         }
       }
     </style>
@@ -122,20 +496,35 @@ const t = useTranslations(lang);
   <body>
     <header>
       <div class="container">
-        <nav>
-          <a href={lang === 'en' ? '/en' : '/'}>{t('nav.home')}</a>
-          <a href={lang === 'en' ? '/en/it' : '/it'}>{t('nav.it')}</a>
-          <a href={lang === 'en' ? '/en/podcasts' : '/podcasts'}>{t('nav.podcasts')}</a>
-          <a href={lang === 'en' ? '/en/audiobooks' : '/audiobooks'}>{t('nav.audiobooks')}</a>
-          <a href={lang === 'en' ? '/en/cosplay' : '/cosplay'}>{t('nav.cosplay')}</a>
-          <a href={lang === 'en' ? '/en/publications' : '/publications'}>{t('nav.publications')}</a>
-          <a href={lang === 'en' ? '/en/other' : '/other'}>{t('nav.other')}</a>
+        <div class="header-inner">
+          <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-          <div class="lang-switcher">
-            <a href="/" class={lang === 'ru' ? 'active' : ''}>RU</a>
-            <a href="/en" class={lang === 'en' ? 'active' : ''}>EN</a>
+          <nav id="main-nav">
+            <a href={lang === 'en' ? '/en' : '/'}>{t('nav.home')}</a>
+            <a href={lang === 'en' ? '/en/it' : '/it'}>{t('nav.it')}</a>
+            <a href={lang === 'en' ? '/en/podcasts' : '/podcasts'}>{t('nav.podcasts')}</a>
+            <a href={lang === 'en' ? '/en/audiobooks' : '/audiobooks'}>{t('nav.audiobooks')}</a>
+            <a href={lang === 'en' ? '/en/cosplay' : '/cosplay'}>{t('nav.cosplay')}</a>
+            <a href={lang === 'en' ? '/en/publications' : '/publications'}>{t('nav.publications')}</a>
+            <a href={lang === 'en' ? '/en/other' : '/other'}>{t('nav.other')}</a>
+          </nav>
+
+          <div class="header-controls">
+            <div class="lang-switcher">
+              <a href="/" class={lang === 'ru' ? 'active' : ''}>RU</a>
+              <a href="/en" class={lang === 'en' ? 'active' : ''}>EN</a>
+            </div>
+
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+              <span class="icon-sun">&#9728;</span>
+              <span class="icon-moon">&#9790;</span>
+            </button>
           </div>
-        </nav>
+        </div>
       </div>
     </header>
 
@@ -148,5 +537,27 @@ const t = useTranslations(lang);
         <p>&copy; 2025 Anton Lenev</p>
       </div>
     </footer>
+
+    <script is:inline>
+      // Theme toggle functionality
+      window.toggleTheme = function() {
+        const current = document.documentElement.getAttribute('data-theme');
+        const newTheme = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+      };
+
+      // Listen for system preference changes
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+        if (!localStorage.getItem('theme')) {
+          document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
+        }
+      });
+
+      // Mobile navigation toggle
+      window.toggleNav = function() {
+        document.getElementById('main-nav').classList.toggle('open');
+      };
+    </script>
   </body>
 </html>
