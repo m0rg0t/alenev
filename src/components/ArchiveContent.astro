@@ -1,0 +1,421 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { getLangFromUrl, useTranslations } from '../i18n';
+
+interface Props {
+  entry: CollectionEntry<'archives'>;
+}
+
+const { entry } = Astro.props;
+const { data } = entry;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+const categoryLabels = {
+  article: lang === 'ru' ? 'Статья' : 'Article',
+  media: lang === 'ru' ? 'СМИ' : 'Media',
+  achievement: lang === 'ru' ? 'Достижение' : 'Achievement',
+};
+
+const formatDate = (date: Date) => {
+  return date.toLocaleDateString(lang === 'ru' ? 'ru-RU' : 'en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+};
+---
+
+<article class="archive-article">
+  <header class="archive-header">
+    <div class="archive-meta-top">
+      <span class="archive-badge" data-category={data.category}>
+        {categoryLabels[data.category]}
+      </span>
+      <span class="archive-source">{data.sourceName}</span>
+    </div>
+
+    <h1>{data.title}</h1>
+
+    {data.description && (
+      <p class="archive-description">{data.description}</p>
+    )}
+
+    <div class="archive-meta">
+      {data.publishDate && (
+        <span class="meta-item">
+          <span class="meta-label">{lang === 'ru' ? 'Опубликовано:' : 'Published:'}</span>
+          {formatDate(data.publishDate)}
+        </span>
+      )}
+      <span class="meta-item">
+        <span class="meta-label">{lang === 'ru' ? 'Архивировано:' : 'Archived:'}</span>
+        {formatDate(data.archiveDate)}
+      </span>
+    </div>
+
+    <a href={data.originalUrl} class="original-link" target="_blank" rel="noopener">
+      {lang === 'ru' ? 'Открыть оригинал' : 'View Original'} &rarr;
+    </a>
+  </header>
+
+  {data.coverImage && (
+    <div class="cover-image-wrapper">
+      <img src={data.coverImage} alt={data.title} class="cover-image" loading="lazy" />
+    </div>
+  )}
+
+  <div class="archive-content">
+    <slot />
+  </div>
+
+  {data.videos && data.videos.length > 0 && (
+    <section class="archive-videos">
+      <h2>{lang === 'ru' ? 'Видео' : 'Videos'}</h2>
+      <div class="videos-grid">
+        {data.videos.map((video) => (
+          <div class="video-wrapper">
+            <video controls poster={video.thumbnail} preload="metadata">
+              <source src={video.url} type="video/mp4" />
+              {lang === 'ru' ? 'Ваш браузер не поддерживает видео.' : 'Your browser does not support video.'}
+            </video>
+            {video.title && <p class="video-title">{video.title}</p>}
+          </div>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {data.images && data.images.length > 0 && (
+    <section class="archive-gallery">
+      <h2>{lang === 'ru' ? 'Галерея' : 'Gallery'}</h2>
+      <div class="gallery-grid">
+        {data.images.map((img, index) => (
+          <a href={img} target="_blank" rel="noopener" class="gallery-item">
+            <img src={img} alt={`${data.title} - ${index + 1}`} loading="lazy" />
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {data.tags && data.tags.length > 0 && (
+    <footer class="archive-footer">
+      <div class="tags">
+        {data.tags.map((tag) => (
+          <span class="tag">{tag}</span>
+        ))}
+      </div>
+    </footer>
+  )}
+</article>
+
+<style>
+  .archive-article {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .archive-header {
+    margin-bottom: 2rem;
+  }
+
+  .archive-meta-top {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .archive-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 2px 2px 0 var(--color-border);
+  }
+
+  .archive-badge[data-category="article"] {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  .archive-badge[data-category="media"] {
+    background: var(--color-accent);
+    color: #1a1a1a;
+  }
+
+  .archive-badge[data-category="achievement"] {
+    background: var(--color-accent-alt);
+    color: #1a1a1a;
+  }
+
+  .archive-source {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .archive-header h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: none;
+  }
+
+  .archive-description {
+    font-size: 1.1rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .archive-meta {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .meta-item {
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+  }
+
+  .meta-label {
+    font-weight: 700;
+    margin-right: 0.5rem;
+  }
+
+  .original-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-accent);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 3px 3px 0 var(--color-border);
+  }
+
+  .original-link:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--color-border);
+  }
+
+  .cover-image-wrapper {
+    margin-bottom: 2rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    overflow: hidden;
+  }
+
+  .cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .archive-content {
+    background: var(--color-surface);
+    padding: 2rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    margin-bottom: 2rem;
+  }
+
+  .archive-content :global(h1),
+  .archive-content :global(h2),
+  .archive-content :global(h3) {
+    text-transform: none;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .archive-content :global(h1:first-child),
+  .archive-content :global(h2:first-child) {
+    margin-top: 0;
+  }
+
+  .archive-content :global(p) {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+  }
+
+  .archive-content :global(img) {
+    max-width: 100%;
+    height: auto;
+    border: var(--border-width) solid var(--color-border);
+    margin: 1rem 0;
+  }
+
+  .archive-content :global(a) {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .archive-content :global(a:hover) {
+    color: var(--color-primary-dark);
+  }
+
+  .archive-content :global(code) {
+    background: var(--color-surface-alt);
+    padding: 0.2rem 0.4rem;
+    border-radius: 2px;
+    font-size: 0.9em;
+  }
+
+  .archive-content :global(pre) {
+    background: var(--color-text);
+    color: var(--color-bg);
+    padding: 1rem;
+    overflow-x: auto;
+    border: var(--border-width) solid var(--color-border);
+    margin: 1rem 0;
+  }
+
+  .archive-content :global(pre code) {
+    background: none;
+    padding: 0;
+  }
+
+  .archive-content :global(blockquote) {
+    border-left: 4px solid var(--color-primary);
+    padding-left: 1rem;
+    margin: 1rem 0;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .archive-content :global(ul),
+  .archive-content :global(ol) {
+    margin: 1rem 0;
+    padding-left: 2rem;
+  }
+
+  .archive-content :global(li) {
+    margin-bottom: 0.5rem;
+  }
+
+  .archive-content :global(hr) {
+    border: none;
+    border-top: var(--border-width) solid var(--color-border);
+    margin: 2rem 0;
+  }
+
+  .archive-videos,
+  .archive-gallery {
+    margin-bottom: 2rem;
+  }
+
+  .archive-videos h2,
+  .archive-gallery h2 {
+    display: inline-block;
+    background: var(--color-primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 3px 3px 0 var(--color-border);
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .videos-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .video-wrapper {
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    overflow: hidden;
+    background: var(--color-surface);
+  }
+
+  .video-wrapper video {
+    width: 100%;
+    display: block;
+  }
+
+  .video-title {
+    padding: 1rem;
+    font-weight: 500;
+    border-top: var(--border-width) solid var(--color-border);
+  }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .gallery-item {
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 3px 3px 0 var(--color-border);
+    overflow: hidden;
+    display: block;
+  }
+
+  .gallery-item:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--color-border);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .archive-footer {
+    padding-top: 1rem;
+    border-top: var(--border-width) solid var(--color-border);
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--color-surface-alt);
+    font-size: 0.75rem;
+    font-weight: 500;
+    border: 2px solid var(--color-border);
+    text-transform: lowercase;
+  }
+
+  @media (max-width: 768px) {
+    .archive-header h1 {
+      font-size: 1.5rem;
+    }
+
+    .archive-content {
+      padding: 1.5rem;
+    }
+
+    .archive-meta {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item img {
+      height: 120px;
+    }
+  }
+</style>

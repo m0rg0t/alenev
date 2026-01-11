@@ -17,6 +17,9 @@ export const ui = {
     'about.title': 'Об Антоне Леневе',
     'about.description': 'Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска',
     'social.title': 'Социальные сети',
+    'archive.original': 'Оригинал',
+    'archive.archived': 'Архив',
+    'archive.backToPublications': 'Назад к публикациям',
   },
   en: {
     'nav.home': 'Home',
@@ -29,6 +32,9 @@ export const ui = {
     'about.title': 'About Anton Lenev',
     'about.description': 'Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk',
     'social.title': 'Social Networks',
+    'archive.original': 'Original',
+    'archive.archived': 'Archive',
+    'archive.backToPublications': 'Back to Publications',
   },
 } as const;
 

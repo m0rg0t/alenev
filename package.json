@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "archive": "bun run scripts/archive-fetcher/index.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.0",
