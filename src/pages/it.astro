@@ -98,7 +98,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
-    [data-theme="dark"] h1 {
+    :global([data-theme="dark"]) h1 {
       color: #1a1a1a;
     }
 
@@ -141,7 +141,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .project:nth-child(4) { border-left-color: var(--color-secondary); }
     .project:nth-child(5) { border-left-color: var(--color-primary); }
 
-    [data-theme="dark"] .project:nth-child(2) { border-left-color: var(--color-accent); }
+    :global([data-theme="dark"]) .project:nth-child(2) { border-left-color: var(--color-accent); }
 
     .project h3, .talk h3 {
       font-size: 1.3rem;

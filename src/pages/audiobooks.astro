@@ -131,7 +131,7 @@ const audiobooks = [
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
-    [data-theme="dark"] h1 {
+    :global([data-theme="dark"]) h1 {
       color: #1a1a1a;
     }
 
@@ -175,7 +175,7 @@ const audiobooks = [
       text-transform: uppercase;
     }
 
-    [data-theme="dark"] .books h2 {
+    :global([data-theme="dark"]) .books h2 {
       color: #1a1a1a;
     }
 
@@ -271,20 +271,20 @@ const audiobooks = [
       text-transform: uppercase;
     }
 
-    [data-theme="dark"] .platform-card h2,
-    [data-theme="dark"] .platform-card p {
+    :global([data-theme="dark"]) .platform-card h2,
+    :global([data-theme="dark"]) .platform-card p {
       color: #1a1a1a;
     }
 
     /* Dark mode: better button contrast on yellow */
-    [data-theme="dark"] .platform-card .btn-primary {
+    :global([data-theme="dark"]) .platform-card .btn-primary {
       background: #1a1a1a;
       color: var(--color-accent);
       border-color: #1a1a1a;
       box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
     }
 
-    [data-theme="dark"] .platform-card .btn-primary:hover {
+    :global([data-theme="dark"]) .platform-card .btn-primary:hover {
       background: #333333;
       box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
     }

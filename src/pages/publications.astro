@@ -95,7 +95,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
-    [data-theme="dark"] h1 {
+    :global([data-theme="dark"]) h1 {
       color: #1a1a1a;
     }
 
@@ -141,9 +141,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .mention:nth-child(6) { border-left-color: var(--color-accent); }
     .mention:nth-child(7) { border-left-color: var(--color-accent-alt); }
 
-    [data-theme="dark"] .publication:nth-child(2),
-    [data-theme="dark"] .mention:nth-child(2),
-    [data-theme="dark"] .mention:nth-child(6) {
+    :global([data-theme="dark"]) .publication:nth-child(2),
+    :global([data-theme="dark"]) .mention:nth-child(2),
+    :global([data-theme="dark"]) .mention:nth-child(6) {
       border-left-color: var(--color-accent);
     }
 

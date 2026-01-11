@@ -88,7 +88,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
-    [data-theme="dark"] h1 {
+    :global([data-theme="dark"]) h1 {
       color: #1a1a1a;
     }
 
@@ -141,27 +141,27 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .cosplay-project:nth-child(2) { border-left-color: var(--color-accent); }
     .cosplay-project:nth-child(3) { border-left-color: var(--color-accent-alt); }
 
-    [data-theme="dark"] .cosplay-project:nth-child(2) { border-left-color: var(--color-accent); }
+    :global([data-theme="dark"]) .cosplay-project:nth-child(2) { border-left-color: var(--color-accent); }
 
     .cosplay-project.featured {
       background: var(--color-accent);
       border-left: 8px solid var(--color-primary);
     }
 
-    [data-theme="dark"] .cosplay-project.featured h3,
-    [data-theme="dark"] .cosplay-project.featured p {
+    :global([data-theme="dark"]) .cosplay-project.featured h3,
+    :global([data-theme="dark"]) .cosplay-project.featured p {
       color: #1a1a1a;
     }
 
     /* Dark mode: better button contrast on yellow */
-    [data-theme="dark"] .cosplay-project.featured .links a {
+    :global([data-theme="dark"]) .cosplay-project.featured .links a {
       background: #1a1a1a;
       color: var(--color-accent);
       border-color: #1a1a1a;
       box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
     }
 
-    [data-theme="dark"] .cosplay-project.featured .links a:hover {
+    :global([data-theme="dark"]) .cosplay-project.featured .links a:hover {
       background: #333333;
       box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
     }
@@ -226,7 +226,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: uppercase;
     }
 
-    [data-theme="dark"] .gallery h2 {
+    :global([data-theme="dark"]) .gallery h2 {
       color: #1a1a1a;
     }
 

@@ -82,7 +82,7 @@ const t = useTranslations('en');
       letter-spacing: -0.03em;
     }
 
-    [data-theme="dark"] .hero h1 {
+    :global([data-theme="dark"]) .hero h1 {
       color: #1a1a1a;
     }
 
@@ -96,7 +96,7 @@ const t = useTranslations('en');
       margin-right: auto;
     }
 
-    [data-theme="dark"] .subtitle {
+    :global([data-theme="dark"]) .subtitle {
       color: #1a1a1a;
     }
 
@@ -179,8 +179,8 @@ const t = useTranslations('en');
     .card:nth-child(5) { border-left: 6px solid var(--color-primary); }
     .card:nth-child(6) { border-left: 6px solid var(--color-accent); }
 
-    [data-theme="dark"] .card:nth-child(2),
-    [data-theme="dark"] .card:nth-child(6) {
+    :global([data-theme="dark"]) .card:nth-child(2),
+    :global([data-theme="dark"]) .card:nth-child(6) {
       border-left-color: var(--color-accent);
     }
 
@@ -216,7 +216,7 @@ const t = useTranslations('en');
       box-shadow: 3px 3px 0 var(--color-border);
     }
 
-    [data-theme="dark"] .social h2 {
+    :global([data-theme="dark"]) .social h2 {
       color: #1a1a1a;
     }
 
@@ -251,7 +251,7 @@ const t = useTranslations('en');
     .social-links a:nth-child(3n) { background: var(--color-accent); color: var(--color-text); }
     .social-links a:nth-child(3n):hover { background: var(--color-primary); color: white; }
 
-    [data-theme="dark"] .social-links a:nth-child(3n) { color: #1a1a1a; }
+    :global([data-theme="dark"]) .social-links a:nth-child(3n) { color: #1a1a1a; }
 
     /* ===== RESPONSIVE ===== */
     @media (max-width: 768px) {

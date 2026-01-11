@@ -39,7 +39,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
-    [data-theme="dark"] h1 {
+    :global([data-theme="dark"]) h1 {
       color: #1a1a1a;
     }
 
@@ -68,20 +68,20 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: uppercase;
     }
 
-    [data-theme="dark"] .podcast-card.featured h2,
-    [data-theme="dark"] .podcast-card.featured .description {
+    :global([data-theme="dark"]) .podcast-card.featured h2,
+    :global([data-theme="dark"]) .podcast-card.featured .description {
       color: #1a1a1a;
     }
 
     /* Dark mode: better button contrast on yellow */
-    [data-theme="dark"] .podcast-card.featured .btn-primary {
+    :global([data-theme="dark"]) .podcast-card.featured .btn-primary {
       background: #1a1a1a;
       color: var(--color-accent);
       border-color: #1a1a1a;
       box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.3);
     }
 
-    [data-theme="dark"] .podcast-card.featured .btn-primary:hover {
+    :global([data-theme="dark"]) .podcast-card.featured .btn-primary:hover {
       background: #333333;
       box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.3);
     }
@@ -133,7 +133,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       text-transform: uppercase;
     }
 
-    [data-theme="dark"] .section h2 {
+    :global([data-theme="dark"]) .section h2 {
       color: #1a1a1a;
     }
 
