@@ -23,28 +23,6 @@ images:
 
 ![Owl Necklace With LED Eyes](https://content.instructables.com/FTK/GEK4/KYZUIP1G/FTKGEK4KYZUIP1G.jpg?auto=webp&fit=bounds&frame=1&height=1024auto=webp&frame=1&height=300)![Owl Necklace With LED Eyes](https://content.instructables.com/FLJ/5D1G/KYZUIQLN/FLJ5D1GKYZUIQLN.jpg?auto=webp&fit=bounds&frame=1&height=1024auto=webp&frame=1&height=300)![Owl Necklace With LED Eyes](https://content.instructables.com/FZS/9PHG/KYZUIQLO/FZS9PHGKYZUIQLO.jpg?auto=webp&fit=bounds&frame=1&height=1024auto=webp&frame=1&height=300)
 
-[![anton.lenev](/assets/img/pixel.png)
-
-![anton.lenev](https://content.instructables.com/FQY/5PK2/K6X2RTBN/FQY5PK2K6X2RTBN.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/member/anton.lenev/)By [anton.lenev](/member/anton.lenev/)[https://antonlenev.ru](https://antonlenev.ru/)Follow
-
-[More by the author:](/member/anton.lenev/)
-
-[![OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ](/assets/img/pixel.png)
-
-![OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ](https://content.instructables.com/FLY/GABL/KYZUKO4K/FLYGABLKYZUKO4K.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/)
-
-[![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](/assets/img/pixel.png)
-
-![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](https://content.instructables.com/F8G/A2E4/K8WKS8BP/F8GA2E4K8WKS8BP.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/)
-
-[Fusion Projects »](/teachers/projects?fusion=)
-
 Ones i find chip that i was going to use cosplay, and then i decide - why not to make some interesting jewelry?
 
 And here we are, with owl with led eyes activated by sound :)
@@ -74,13 +52,7 @@ Also you could just install regular led eyes with batteries or any other stuff
 
 ### Attachments
 
-*   [![download {{ file.name }}](/assets/img/pixel.png)
-    
-    ![download {{ file.name }}](https://content.instructables.com/FJ7/CUMK/KYYF8Z9Y/FJ7CUMKKYYF8Z9Y.png?auto=webp&frame=1)
-    
-    owl.stl](https://content.instructables.com/F1Z/IKE9/KYYF31UA/F1ZIKE9KYYF31UA.stl)
-    
-    [Download](https://content.instructables.com/F1Z/IKE9/KYYF31UA/F1ZIKE9KYYF31UA.stl)View in 3D
+- [owl.stl](https://content.instructables.com/F1Z/IKE9/KYYF31UA/F1ZIKE9KYYF31UA.stl)
     
 
 ## Step 1: Draw Concept of Owl Necklace
@@ -93,13 +65,7 @@ And of course I measure distance between owl eyes so led would feet in nicely
 
 ### Attachments
 
-*   [![download {{ file.name }}](/assets/img/pixel.png)
-    
-    ![download {{ file.name }}](https://content.instructables.com/static/image/file.default.gif)
-    
-    Owl Necklace With LED Eyes - Step #1](https://content.instructables.com/FR7/B406/KYYF3FCF/FR7B406KYYF3FCF.mov)
-    
-    [Download](https://content.instructables.com/FR7/B406/KYYF3FCF/FR7B406KYYF3FCF.mov)
+- [Owl Necklace With LED Eyes - Step #1](https://content.instructables.com/FR7/B406/KYYF3FCF/FR7B406KYYF3FCF.mov)
     
 
 ## Step 2: Design Owl Model in Fusion 360
@@ -116,13 +82,7 @@ And after it i export created body as stl
 
 ### Attachments
 
-*   [![download {{ file.name }}](/assets/img/pixel.png)
-    
-    ![download {{ file.name }}](https://content.instructables.com/FLI/CXN5/KYZUIW51/FLICXN5KYZUIW51.png?auto=webp&frame=1)
-    
-    F1ZIKE9KYYF31UA.vnd.ms-pki.stl](https://content.instructables.com/FLU/UYG9/KYZUIPCA/FLUUYG9KYZUIPCA.stl)
-    
-    [Download](https://content.instructables.com/FLU/UYG9/KYZUIPCA/FLUUYG9KYZUIPCA.stl)View in 3D
+- [F1ZIKE9KYYF31UA.vnd.ms-pki.stl](https://content.instructables.com/FLU/UYG9/KYZUIPCA/FLUUYG9KYZUIPCA.stl)
     
 
 ## Step 3: Printing Owl 3d Model

@@ -34,22 +34,9 @@ images:
 
 ---
 
-Обновлено 17.05.2023
-
-# Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3
-
-[Леи Радна](/authors/920/)
-
-[Всё о кино и аниме](https://kanobu.ru/?utm_source=igromania_button)
-
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - изображение обложка](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/preview/9b459f274856c1ea_original.jpg)
 
-[
-
-Ещё больше интересных видео на YouTube канале Игромании!
-
-](https://www.youtube.com/channel/UC_Q1vhf7wcR_zGlc5ahAg0A)
 
 В этот раз, чтобы угодить всем, одна половина героев нашей подборки принадлежит к сильному полу, а вторая — к прекрасному. Напомним нашим читателям, что косплей — это весёлое и творческое хобби для всех без исключения, вне зависимости от пола и возраста.
 
@@ -109,7 +96,6 @@ images:
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 18](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/2e927178d5b230c2_1200xH.jpg)
 
-Еще более нетривиальный выбор персонажа — герой серии Wolfenstein, американский шпион по прозвищу Бласко, бравый капитан с исконно арийской внешностью, но не самым расово верным происхождением. В роли Бласковица выступает [Святослав Любимов](https://vk.com/kensatsu_kan), фотограф же — Денис Мурин, между прочим, [автор](https://www.igromania.ru/author/589/Denis_Murin.html) многих наших публикаций.
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 19](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/0e979769af1df2a5_1200xH.jpg)
 
@@ -154,28 +140,3 @@ images:
 А сколько раз вы умирали во время игры в Dark Souls 3? Или даже не пытались включать счётчик?
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 32](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/5b840fe23b78d84a_1200xH.jpg)
-
-[Пятничный косплей: LoL, Overwatch, DC Comics, Payday, Dragon Age, Borderlands](/article/29875/Pyatnichnyy_kospley_LoL_Overwatch_DC_Comics_Payday_Dragon_Age_Borderlands.html)
-
-[Пятничный косплей: DC Comics, Star Wars, «Игра престолов», Tekken 7](/article/29911/Pyatnichnyy_kospley_DC_Comics_Star_Wars_Igra_prestolov_Tekken_7.html)
-
-Больше по темеНовости компаний
-
-[Самые необычные конструкции роботов четвертого этапа чемпионата «Битва роботов»](/news/160871/samyie-neobyichnyie-konstruktsii-robotov-chetvertogo-etapa-chempionata-bitva-robotov/)[Самые запоминающиеся дизайны роботов второго этапа чемпионата «Битва Роботов»](/news/160863/samyie-zapominayuschiesya-dizajnyi-robotov-vtorogo-etapa-chempionata-bitva-robotov/)[Пять самых интересных конструкций первого этапа чемпионата «Битва Роботов»](/news/160721/pyat-samyih-interesnyih-konstruktsij-pervogo-etapa-chempionata-bitva-robotov/)
-
-[Читать ещё](/novosti-kompanij/)
-
-[Леи Радна](/authors/920/)
-
-Поделиться
-
-Отложить
-
-Комментарии
-
-Чтобы оставить комментарий, Войдите или Зарегистрируйтесь
-
-[Всё о кино и аниме](https://kanobu.ru/?utm_source=igromania_button)
-
-
-[Разместить рекламу](/ad/)

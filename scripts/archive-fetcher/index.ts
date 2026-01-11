@@ -9,6 +9,7 @@
  *   --slug <name>     Custom slug for the archive (default: auto-generated)
  *   --category <cat>  Category: article, media, achievement (default: article)
  *   --dry-run         Show what would be created without writing files
+ *   --download-video  Download videos via yt-dlp (if installed)
  *
  * Example:
  *   bun run scripts/archive-fetcher/index.ts https://habr.com/ru/articles/754234/ --slug habr-owleye
@@ -18,6 +19,7 @@ import * as cheerio from "cheerio";
 import TurndownService from "turndown";
 import * as fs from "fs";
 import * as path from "path";
+import { spawnSync } from "child_process";
 import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -30,6 +32,7 @@ const url = args.find((arg) => arg.startsWith("http"));
 const slugArg = args.indexOf("--slug");
 const categoryArg = args.indexOf("--category");
 const dryRun = args.includes("--dry-run");
+const downloadVideo = args.includes("--download-video");
 
 const customSlug = slugArg !== -1 ? args[slugArg + 1] : null;
 const category =
@@ -49,6 +52,7 @@ Options:
   --slug <name>     Custom slug for the archive (default: auto-generated from URL)
   --category <cat>  Category: article, media, achievement (default: article)
   --dry-run         Show what would be created without writing files
+  --download-video  Download videos via yt-dlp (if installed)
 
 Example:
   bun run scripts/archive-fetcher/index.ts https://habr.com/ru/articles/754234/ --slug habr-owleye --category article
@@ -108,6 +112,101 @@ function getSourceName(url: string): string {
   return hostname;
 }
 
+function normalizeCharset(charset?: string | null): string | undefined {
+  if (!charset) return undefined;
+  const cleaned = charset.toLowerCase().trim().replace(/["']/g, "");
+  if (cleaned === "utf8") return "utf-8";
+  if (cleaned === "utf-8") return "utf-8";
+  if (["windows-1251", "win-1251", "cp1251"].includes(cleaned)) {
+    return "windows-1251";
+  }
+  if (["windows-1252", "win-1252", "cp1252"].includes(cleaned)) {
+    return "windows-1252";
+  }
+  return cleaned;
+}
+
+function extractCharsetFromContentType(contentType?: string | null): string | undefined {
+  if (!contentType) return undefined;
+  const match = contentType.match(/charset=([^;]+)/i);
+  return match ? match[1].trim() : undefined;
+}
+
+async function readResponseText(response: Response): Promise<string> {
+  const buffer = Buffer.from(await response.arrayBuffer());
+  let charset = normalizeCharset(
+    extractCharsetFromContentType(response.headers.get("content-type"))
+  );
+
+  if (!charset) {
+    const sniff = buffer.toString("latin1");
+    const metaMatch =
+      sniff.match(/<meta[^>]*charset=["']?([^"'>\s]+)/i) ||
+      sniff.match(/<meta[^>]*content=["'][^"']*charset=([^"'>\s]+)/i);
+    charset = normalizeCharset(metaMatch?.[1]);
+  }
+
+  if (!charset) {
+    return buffer.toString("utf8");
+  }
+
+  try {
+    return new TextDecoder(charset).decode(buffer);
+  } catch {
+    return buffer.toString("utf8");
+  }
+}
+
+function cleanMarkdown(content: string): string {
+  const junkPatterns: RegExp[] = [
+    /^\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C$/,
+    /^\u041E\u0431\u043D\u043E\u0432\u043B\u0435\u043D\u043E /,
+    /\u2014 \u0440\u0435\u043A\u043B\u0430\u043C\u0430 \u043D\u0430 \u0441\u0430\u0439\u0442\u0435/,
+    /\u0415\u0449\u0451 \u0431\u043E\u043B\u044C\u0448\u0435 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u044B\u0445 \u0432\u0438\u0434\u0435\u043E/,
+    /\u0412\u0440\u0435\u043C\u044F \u043D\u0430 \u043F\u0440\u043E\u0447\u0442\u0435\u043D\u0438\u0435/,
+    /\u041E\u0445\u0432\u0430\u0442 \u0438 \u0447\u0438\u0442\u0430\u0442\u0435\u043B\u0438/,
+    /\u043E\u0442\u043A\u0440\u044B\u0442\u0438\u0439.*\u043F\u043E\u043A\u0430\u0437\u043E\u0432/,
+    /^\*   \[\u041D\u0430\u0448\u0438\]/,
+    /^\*   \d{2}:\d{2}$/,
+    /^\*   \d+ [\u0430-\u044F\u0410-\u042F\u0401\u0451]+ \d+$/,
+    /\u0412\u0441\u0451 \u043E \u043A\u0438\u043D\u043E \u0438 \u0430\u043D\u0438\u043C\u0435/,
+    /!\[\u0410\u0432\u0430\u0442\u0430\u0440\u043A\u0430 \u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F/,
+    /!\[\u041B\u043E\u0433\u043E\u0442\u0438\u043F \u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438/,
+    /habrastorage.org.*avatars/,
+    /\/ru\/users\//,
+    /\/author\//,
+    /\/company\//,
+    /\/authors\//,
+    /\/ru\/hubs\//,
+    /youtube.com\/channel/,
+    /^\u0434\u043B\u044F$/,
+    /^\d+$/,
+    /^\[$/,
+    /^\]$/,
+    /^\u041F\u043E\u0434\u0435\u043B\u0438\u0442\u044C\u0441\u044F$/,
+    /^\u041E\u0442\u043B\u043E\u0436\u0438\u0442\u044C$/,
+    /^\u041A\u043E\u043C\u043C\u0435\u043D\u0442\u0430\u0440\u0438\u0438\b/,
+    /^\u0411\u043E\u043B\u044C\u0448\u0435 \u043F\u043E \u0442\u0435\u043C\u0435/,
+    /\u0412\u043E\u0439\u0434\u0438\u0442\u0435 \u0438\u043B\u0438 \u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0442\u0435\u0441\u044C/,
+    /\u0420\u0430\u0437\u043C\u0435\u0441\u0442\u0438\u0442\u044C \u0440\u0435\u043A\u043B\u0430\u043C\u0443/,
+    /^More by the author:$/,
+    /^Fusion Projects/,
+    /assets\/img\/pixel\.png/,
+    /^\]\(\/?/,
+    /\u043C\u0435\u0434\u0438\u0430\u043A\u0438\u0442.*\u043A\u043E\u043D\u0442\u0430\u043A\u0442\u044B/,
+  ];
+
+  const cleaned = content
+    .split("\n")
+    .filter((line) => {
+      const trimmed = line.trim();
+      return !junkPatterns.some((pattern) => pattern.test(trimmed));
+    })
+    .join("\n");
+
+  return cleaned.replace(/\n{3,}/g, "\n\n");
+}
+
 // Fetch and parse page content
 async function fetchPage(url: string): Promise<{
   title: string;
@@ -131,7 +230,7 @@ async function fetchPage(url: string): Promise<{
     throw new Error(`Failed to fetch: ${response.status} ${response.statusText}`);
   }
 
-  const html = await response.text();
+  const html = await readResponseText(response);
   const $ = cheerio.load(html);
 
   // Remove unwanted elements
@@ -229,7 +328,7 @@ async function fetchPage(url: string): Promise<{
     },
   });
 
-  const content = turndown.turndown(contentHtml);
+  const content = cleanMarkdown(turndown.turndown(contentHtml));
 
   return {
     title,
@@ -289,6 +388,9 @@ async function createArchive(
     console.log("\n[DRY RUN] Would create:");
     console.log(`  - src/content/archives/${slug}.md`);
     console.log(`  - public/archives/${slug}/`);
+    if (downloadVideo) {
+      console.log(`  - (video) public/archives/${slug}/`);
+    }
     return;
   }
 
@@ -301,6 +403,15 @@ async function createArchive(
   }
   if (!fs.existsSync(publicDir)) {
     fs.mkdirSync(publicDir, { recursive: true });
+  }
+  if (downloadVideo) {
+    const outputTemplate = path.join(publicDir, "%(title)s.%(ext)s");
+    const result = spawnSync("yt-dlp", ["-o", outputTemplate, url], {
+      stdio: "inherit",
+    });
+    if (result.error || result.status !== 0) {
+      console.log("  Video download skipped (yt-dlp not available or failed).");
+    }
   }
 
   // Download images

@@ -22,28 +22,6 @@ images:
 
 ![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](https://content.instructables.com/F3D/F0TY/K8WKLUHD/F3DF0TYK8WKLUHD.jpg?auto=webp&fit=bounds&frame=1&height=1024&width=1024auto=webp&frame=1&height=300)![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](https://content.instructables.com/FCH/78SW/K8WKLUFW/FCH78SWK8WKLUFW.jpg?auto=webp&fit=bounds&frame=1&height=1024&width=1024auto=webp&frame=1&height=300)
 
-[![anton.lenev](/assets/img/pixel.png)
-
-![anton.lenev](https://content.instructables.com/FQY/5PK2/K6X2RTBN/FQY5PK2K6X2RTBN.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/member/anton.lenev/)By [anton.lenev](/member/anton.lenev/)[https://antonlenev.ru](https://antonlenev.ru/)Follow
-
-[More by the author:](/member/anton.lenev/)
-
-[![OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ](/assets/img/pixel.png)
-
-![OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ](https://content.instructables.com/FLY/GABL/KYZUKO4K/FLYGABLKYZUKO4K.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/)
-
-[![Owl Necklace With LED Eyes](/assets/img/pixel.png)
-
-![Owl Necklace With LED Eyes](https://content.instructables.com/FTK/GEK4/KYZUIP1G/FTKGEK4KYZUIP1G.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/Owl-Necklace-With-LED-Eyes/)
-
-[Fusion Projects »](/teachers/projects?fusion=)
-
 I have been planning to do a cosplay on Isaac Clarke from Dead Space 2 for a long time so I tried to make as many interesting technical solutions as possible. Finally, I was able to get to it.
 
 If some points do not seem to be clear enough - please let me know and I will try to explain some descriptions more detailed.

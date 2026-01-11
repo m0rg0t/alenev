@@ -22,28 +22,6 @@ images:
 
 ![OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ](https://content.instructables.com/FLY/GABL/KYZUKO4K/FLYGABLKYZUKO4K.jpg?auto=webp&fit=bounds&frame=1&height=1024auto=webp&frame=1&height=300)
 
-[![anton.lenev](/assets/img/pixel.png)
-
-![anton.lenev](https://content.instructables.com/FQY/5PK2/K6X2RTBN/FQY5PK2K6X2RTBN.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/member/anton.lenev/)By [anton.lenev](/member/anton.lenev/)[https://antonlenev.ru](https://antonlenev.ru/)Follow
-
-[More by the author:](/member/anton.lenev/)
-
-[![Owl Necklace With LED Eyes](/assets/img/pixel.png)
-
-![Owl Necklace With LED Eyes](https://content.instructables.com/FTK/GEK4/KYZUIP1G/FTKGEK4KYZUIP1G.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/Owl-Necklace-With-LED-Eyes/)
-
-[![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](/assets/img/pixel.png)
-
-![Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke](https://content.instructables.com/F8G/A2E4/K8WKS8BP/F8GA2E4K8WKS8BP.jpg?auto=webp&crop=1%3A1&frame=1&width=130)
-
-](/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/)
-
-[Fusion Projects »](/teachers/projects?fusion=)
-
 Ones i was going to take part in Junction 2020 hackathon, and i get an idea - why not to try to make simple device what can help visually impaired better navigate in space and that look like necklace?
 
 And thats why i decide to make OwlEye project (not perfect, but a good start for next versions and everyone who decide to make same device for people who need them).
@@ -90,13 +68,7 @@ But unfortunately i have no time to print it, so left it until next update of th
 
 ### Attachments
 
-*   [![download {{ file.name }}](/assets/img/pixel.png)
-    
-    ![download {{ file.name }}](https://content.instructables.com/FRI/EAFX/KYZUIEZ3/FRIEAFXKYZUIEZ3.png?auto=webp&frame=1)
-    
-    Owl.stl](https://content.instructables.com/F17/ZXPK/KYZUJJRZ/F17ZXPKKYZUJJRZ.stl)
-    
-    [Download](https://content.instructables.com/F17/ZXPK/KYZUJJRZ/F17ZXPKKYZUJJRZ.stl)View in 3D
+- [Owl.stl](https://content.instructables.com/F17/ZXPK/KYZUJJRZ/F17ZXPKKYZUJJRZ.stl)
     
 
 ## Step 4: Create Scheme for Owl Functionality
