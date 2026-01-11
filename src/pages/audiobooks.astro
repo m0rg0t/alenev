@@ -1,8 +1,83 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const audiobooks = [
+  {
+    title: "Адские секретарши и властный босс",
+    author: "Татьяна Охитина",
+    cover: "adskie-sekretarshi.jpg",
+    url: "https://www.litres.ru/audiobook/tatyana-ohitina-31323612/adskie-sekretarshi-i-vlastnyy-boss-71470699/"
+  },
+  {
+    title: "И пришёл Хрюка…",
+    author: "Ник Винсент",
+    cover: "i-prishel-hruka.jpg",
+    url: "https://www.litres.ru/audiobook/nik-vinsent-33147955/i-prishel-hruka-71420611/"
+  },
+  {
+    title: "Бумажный дом",
+    author: "Такаши Итияма",
+    cover: "bumazhniy-dom.jpg",
+    url: "https://www.litres.ru/audiobook/takashi-itiyama/bumazhnyy-dom-70874453/"
+  },
+  {
+    title: "Сумеречный охотник 2",
+    author: "Илья Соломенный",
+    cover: "sumerechniy-ohotnik-2.jpg",
+    url: "https://www.litres.ru/audiobook/ilya-solomennyy/sumerechnyy-ohotnik-2-70459078/"
+  },
+  {
+    title: "Илья Муромец и Калин-царь",
+    author: "Народное творчество",
+    cover: "ilya-muromec.jpg",
+    url: "https://www.litres.ru/audiobook/eposy-legendy-i-skazaniya/ilya-muromec-i-kalin-car-70489246/"
+  },
+  {
+    title: "Сумеречный охотник",
+    author: "Илья Соломенный",
+    cover: "sumerechniy-ohotnik.jpg",
+    url: "https://www.litres.ru/audiobook/ilya-solomennyy/sumerechnyy-ohotnik-70246126/"
+  },
+  {
+    title: "Загадать желание",
+    author: "Катя Ли",
+    cover: "zagadat-zhelanie.jpg",
+    url: "https://www.litres.ru/audiobook/katya-li-32368102/zagadat-zhelanie-69829357/"
+  },
+  {
+    title: "Семен Подъячев",
+    author: "Максим Горький",
+    cover: "semen-podyachev.jpg",
+    url: "https://www.litres.ru/audiobook/maksim-gorkiy/semen-podyachev-69842725/"
+  },
+  {
+    title: "О наших достижениях",
+    author: "Максим Горький",
+    cover: "o-nashih-dostizheniyah.jpg",
+    url: "https://www.litres.ru/audiobook/maksim-gorkiy/o-nashih-dostizheniyah-69647014/"
+  },
+  {
+    title: "Интроверт",
+    author: "Джон Смит",
+    cover: "introvert.jpg",
+    url: "https://www.litres.ru/audiobook/dzhon-smit-32488950/introvert-kak-introvertam-obresti-vnutrennuu-silu-zavo-69541339/"
+  },
+  {
+    title: "Сага о бессмертных духах. Книга 0",
+    author: "Виталий Кириллов",
+    cover: "saga-o-bessmertnyh-duhah.jpg",
+    url: "https://www.litres.ru/audiobook/vitaliy-aleksandrovi/saga-o-bessmertnyh-duhah-kniga-0-predystoriya-ordena-69546844/"
+  },
+  {
+    title: "Первая прогулка богдыхана",
+    author: "Влас Дорошевич",
+    cover: "pervaya-progulka-bogdyhana.jpg",
+    url: "https://www.litres.ru/audiobook/vlas-doroshevich/pervaya-progulka-bogdyhana-69549196/"
+  }
+];
 ---
 
-<BaseLayout title="Аудиокниги - Антон Ленёв">
+<BaseLayout title="Аудиокниги - Антон Ленев">
   <h1>🎧 Аудиокниги</h1>
 
   <section class="intro">
@@ -25,32 +100,39 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <section class="section">
-    <h2>О процессе озвучки</h2>
-    <div class="process">
-      <div class="process-item">
-        <h3>📖 Подготовка</h3>
-        <p>Внимательное изучение текста, понимание характеров персонажей и общей атмосферы произведения.</p>
-      </div>
-      <div class="process-item">
-        <h3>🎤 Запись</h3>
-        <p>Профессиональная студийная запись с вниманием к каждой детали звучания.</p>
-      </div>
-      <div class="process-item">
-        <h3>🎵 Постобработка</h3>
-        <p>Тщательная обработка звука для создания комфортного прослушивания.</p>
-      </div>
+  <section class="books">
+    <h2>Мои аудиокниги</h2>
+    <div class="books-grid">
+      {audiobooks.map((book) => (
+        <article class="book-card">
+          <a href={book.url} target="_blank" rel="noopener">
+            <img src={`/audiobooks/${book.cover}`} alt={book.title} />
+            <div class="book-info">
+              <h3>{book.title}</h3>
+              <p class="author">{book.author}</p>
+            </div>
+          </a>
+        </article>
+      ))}
     </div>
   </section>
 
   <style>
+    /* Page Title */
     h1 {
       font-size: 2.5rem;
       margin-bottom: 2rem;
-      background: linear-gradient(135deg, #3b82f6, #06b6d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    [data-theme="dark"] h1 {
+      color: #1a1a1a;
     }
 
     .intro {
@@ -63,26 +145,135 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       color: var(--color-text);
       background: var(--color-surface);
       padding: 2rem;
-      border-radius: 8px;
-      border-left: 4px solid var(--color-primary);
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
 
     .platform {
       margin-bottom: 3rem;
     }
 
-    .platform-card {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(6, 182, 212, 0.1));
-      padding: 2rem;
-      border-radius: 12px;
-      border: 2px solid var(--color-primary);
+    /* Books Section */
+    .books {
+      margin-bottom: 4rem;
+    }
+
+    .books h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
       text-align: center;
+      display: block;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      background: var(--color-accent-alt);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    [data-theme="dark"] .books h2 {
+      color: #1a1a1a;
+    }
+
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .book-card {
+      background: var(--color-surface);
+      overflow: hidden;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .book-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+    }
+
+    .book-card a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .book-card img {
+      width: 100%;
+      aspect-ratio: 2/3;
+      object-fit: cover;
+      display: block;
+      border-bottom: var(--border-width) solid var(--color-border);
+    }
+
+    .book-info {
+      padding: 1rem;
+    }
+
+    .book-info h3 {
+      font-size: 0.95rem;
+      line-height: 1.4;
+      margin-bottom: 0.5rem;
+      color: var(--color-text);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-transform: uppercase;
+    }
+
+    .book-info .author {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .books-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .book-card {
+        box-shadow: 3px 3px 0 var(--color-border);
+      }
+
+      .book-info h3 {
+        font-size: 0.85rem;
+      }
+
+      .book-info .author {
+        font-size: 0.75rem;
+      }
+    }
+
+    .platform-card {
+      background: var(--color-accent);
+      padding: 2.5rem;
+      border: var(--border-width) solid var(--color-border);
+      text-align: center;
+      box-shadow: 6px 6px 0 var(--color-border);
     }
 
     .platform-card h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      color: var(--color-accent);
+      color: var(--color-text);
+      text-transform: uppercase;
+    }
+
+    [data-theme="dark"] .platform-card h2,
+    [data-theme="dark"] .platform-card p {
+      color: #1a1a1a;
     }
 
     .platform-card p {
@@ -92,6 +283,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
+      text-transform: none;
     }
 
     .btn-primary {
@@ -100,58 +292,30 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       background: var(--color-primary);
       color: white;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      font-weight: 500;
-      transition: all 0.3s;
-      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      border: var(--border-width) solid var(--color-border);
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 4px 4px 0 var(--color-border);
     }
 
     .btn-primary:hover {
-      background: var(--color-accent);
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(6, 182, 212, 0.4);
+      transform: translate(-2px, -2px);
+      box-shadow: 6px 6px 0 var(--color-border);
+      background: var(--color-primary-dark);
     }
 
-    .section {
-      margin-top: 3rem;
-    }
+    @media (max-width: 768px) {
+      .platform-card {
+        padding: 1.5rem;
+        box-shadow: 4px 4px 0 var(--color-border);
+      }
 
-    .section h2 {
-      font-size: 1.75rem;
-      margin-bottom: 2rem;
-      text-align: center;
-      color: var(--color-accent);
-    }
-
-    .process {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .process-item {
-      background: var(--color-surface);
-      padding: 1.5rem;
-      border-radius: 8px;
-      text-align: center;
-      border: 1px solid transparent;
-      transition: all 0.3s;
-    }
-
-    .process-item:hover {
-      border-color: var(--color-primary);
-      transform: translateY(-4px);
-    }
-
-    .process-item h3 {
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
-    }
-
-    .process-item p {
-      color: var(--color-text-muted);
-      line-height: 1.6;
+      .btn-primary {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
     }
   </style>
 </BaseLayout>
