@@ -1,0 +1,311 @@
+---
+interface Props {
+  materials?: string[];
+  buildTime?: string;
+  participants?: Array<{ name: string; role?: string; url?: string }>;
+  guideUrl?: string;
+  articleUrl?: string;
+  socialLinks?: Array<{ platform: string; url: string }>;
+  lang: string;
+}
+
+const { materials, buildTime, participants, guideUrl, articleUrl, socialLinks, lang } = Astro.props;
+
+const labels = {
+  materials: lang === 'ru' ? 'Материалы' : 'Materials',
+  buildTime: lang === 'ru' ? 'Время сборки' : 'Build Time',
+  participants: lang === 'ru' ? 'Участники' : 'Participants',
+  guide: lang === 'ru' ? 'Инструкция' : 'Build Guide',
+  article: lang === 'ru' ? 'Статья' : 'Article',
+  links: lang === 'ru' ? 'Ссылки' : 'Links',
+};
+
+const hasMaterials = materials && materials.length > 0;
+const hasParticipants = participants && participants.length > 0;
+const hasSocialLinks = socialLinks && socialLinks.length > 0;
+const hasContent = hasMaterials || buildTime || hasParticipants || guideUrl || articleUrl || hasSocialLinks;
+---
+
+{hasContent && (
+  <div class="costume-meta">
+    {(hasMaterials || buildTime) && (
+      <div class="costume-meta-section">
+        {buildTime && (
+          <div class="costume-meta-row">
+            <span class="costume-meta-label">{labels.buildTime}</span>
+            <span class="costume-meta-value">{buildTime}</span>
+          </div>
+        )}
+        {hasMaterials && (
+          <div class="costume-meta-row">
+            <span class="costume-meta-label">{labels.materials}</span>
+            <div class="costume-meta-badges">
+              {materials!.map((material) => (
+                <span class="costume-material-badge">{material}</span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    )}
+
+    {hasParticipants && (
+      <div class="costume-meta-section">
+        <span class="costume-meta-label">{labels.participants}</span>
+        <div class="costume-participants">
+          {participants!.map((p) => (
+            <div class="costume-participant">
+              {p.url ? (
+                <a href={p.url} class="costume-participant-name" target="_blank" rel="noopener">
+                  {p.name}
+                </a>
+              ) : (
+                <span class="costume-participant-name">{p.name}</span>
+              )}
+              {p.role && (
+                <span class="costume-participant-role">{p.role}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {(guideUrl || articleUrl || hasSocialLinks) && (
+      <div class="costume-meta-section costume-meta-links">
+        {guideUrl && (
+          <a href={guideUrl} class="costume-guide-btn" target="_blank" rel="noopener">
+            {labels.guide} &rarr;
+          </a>
+        )}
+        {articleUrl && (
+          <a href={articleUrl} class="costume-article-btn" target="_blank" rel="noopener">
+            {labels.article} &rarr;
+          </a>
+        )}
+        {hasSocialLinks && (
+          <div class="costume-social-links">
+            {socialLinks!.map((link) => (
+              <a href={link.url} class="costume-social-btn" target="_blank" rel="noopener">
+                {link.platform}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
+    )}
+  </div>
+)}
+
+<style>
+  .costume-meta {
+    background: var(--color-surface);
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+
+  .costume-meta-section {
+    padding: 1rem 1.25rem;
+    border-bottom: var(--border-width) solid var(--color-border);
+  }
+
+  .costume-meta-section:last-child {
+    border-bottom: none;
+  }
+
+  .costume-meta-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+
+  .costume-meta-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .costume-meta-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+
+  .costume-meta-row .costume-meta-label {
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .costume-meta-value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .costume-meta-badges {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+  }
+
+  .costume-material-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: var(--color-accent);
+    color: #1a1a1a;
+    border: 2px solid var(--color-border);
+    box-shadow: 1px 1px 0 var(--color-border);
+  }
+
+  .costume-participants {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .costume-participant {
+    background: var(--color-surface-alt, var(--color-surface));
+    padding: 0.5rem 0.75rem;
+    border: 2px solid var(--color-border);
+    box-shadow: 2px 2px 0 var(--color-border);
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  :global([data-theme="dark"]) .costume-participant {
+    background: var(--color-surface-alt);
+  }
+
+  .costume-participant-name {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  a.costume-participant-name {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  a.costume-participant-name:hover {
+    color: var(--color-secondary);
+  }
+
+  .costume-participant-role {
+    font-size: 0.7rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .costume-meta-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .costume-guide-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-primary);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 3px 3px 0 var(--color-border);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .costume-guide-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--color-border);
+  }
+
+  .costume-article-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--color-accent);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 3px 3px 0 var(--color-border);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .costume-article-btn:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 5px 5px 0 var(--color-border);
+  }
+
+  .costume-social-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .costume-social-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: var(--color-surface);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: 2px 2px 0 var(--color-border);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+
+  .costume-social-btn:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0 var(--color-border);
+    background: var(--color-accent-alt);
+    color: #1a1a1a;
+  }
+
+  @media (max-width: 768px) {
+    .costume-meta {
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .costume-meta-row {
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .costume-meta-links {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .costume-guide-btn,
+    .costume-article-btn {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .costume-social-btn {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+  }
+</style>

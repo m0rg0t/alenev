@@ -1,0 +1,90 @@
+---
+interface Props {
+  images: Array<{ webp: string; thumb: string; width: number; height: number }>;
+  folder: string;
+}
+
+const { images, folder } = Astro.props;
+
+const lightboxData = images.map((img) => `/cosplay/${folder}/${img.webp}`);
+---
+
+<div class="cosplay-gallery">
+  <div class="cosplay-gallery-grid">
+    {images.map((image, index) => (
+      <button
+        class="cosplay-gallery-item"
+        data-lightbox-trigger
+        data-index={index}
+        type="button"
+        aria-label={`View photo ${index + 1}`}
+      >
+        <img
+          src={`/cosplay/${folder}/${image.thumb}`}
+          width={image.width}
+          height={image.height}
+          loading="lazy"
+          alt={`Photo ${index + 1}`}
+        />
+      </button>
+    ))}
+  </div>
+  <script type="application/json" id="lightbox-data" set:html={JSON.stringify(lightboxData)} />
+</div>
+
+<style>
+  .cosplay-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .cosplay-gallery-item {
+    display: block;
+    padding: 0;
+    margin: 0;
+    background: var(--color-surface);
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .cosplay-gallery-item:hover {
+    transform: translate(-4px, -4px) rotate(-1deg);
+    box-shadow: 8px 8px 0 var(--color-border);
+  }
+
+  .cosplay-gallery-item:nth-child(even):hover {
+    transform: translate(-4px, -4px) rotate(1deg);
+  }
+
+  .cosplay-gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 768px) {
+    .cosplay-gallery-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .cosplay-gallery-item {
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .cosplay-gallery-item:hover {
+      box-shadow: 5px 5px 0 var(--color-border);
+    }
+
+    .cosplay-gallery-item img {
+      height: 150px;
+    }
+  }
+</style>

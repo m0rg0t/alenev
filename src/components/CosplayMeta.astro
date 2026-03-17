@@ -1,0 +1,152 @@
+---
+import { useTranslations } from '../i18n';
+
+interface Props {
+  photographer?: string;
+  photographerUrl?: string;
+  location?: string;
+  date?: string;
+  event?: string;
+  tags?: string[];
+  lang: string;
+}
+
+const { photographer, photographerUrl, location, date, event, tags, lang } = Astro.props;
+
+const t = useTranslations(lang as 'ru' | 'en');
+
+const labels = {
+  photographer: lang === 'ru' ? 'Фотограф' : 'Photographer',
+  location: lang === 'ru' ? 'Локация' : 'Location',
+  date: lang === 'ru' ? 'Дата' : 'Date',
+  event: lang === 'ru' ? 'Событие' : 'Event',
+};
+
+const hasContent = photographer || location || date || event || (tags && tags.length > 0);
+---
+
+{hasContent && (
+  <div class="cosplay-meta">
+    <div class="cosplay-meta-items">
+      {date && (
+        <div class="cosplay-meta-item">
+          <span class="cosplay-meta-label">{labels.date}</span>
+          <span class="cosplay-meta-value">{date}</span>
+        </div>
+      )}
+      {photographer && (
+        <div class="cosplay-meta-item">
+          <span class="cosplay-meta-label">{labels.photographer}</span>
+          {photographerUrl ? (
+            <a href={photographerUrl} class="cosplay-meta-value cosplay-meta-link" target="_blank" rel="noopener">
+              {photographer}
+            </a>
+          ) : (
+            <span class="cosplay-meta-value">{photographer}</span>
+          )}
+        </div>
+      )}
+      {location && (
+        <div class="cosplay-meta-item">
+          <span class="cosplay-meta-label">{labels.location}</span>
+          <span class="cosplay-meta-value">{location}</span>
+        </div>
+      )}
+      {event && (
+        <div class="cosplay-meta-item">
+          <span class="cosplay-meta-label">{labels.event}</span>
+          <span class="cosplay-meta-value">{event}</span>
+        </div>
+      )}
+    </div>
+    {tags && tags.length > 0 && (
+      <div class="cosplay-meta-tags">
+        {tags.map((tag) => (
+          <span class="cosplay-meta-tag">{tag}</span>
+        ))}
+      </div>
+    )}
+  </div>
+)}
+
+<style>
+  .cosplay-meta {
+    background: var(--color-surface);
+    padding: 1rem 1.25rem;
+    border: var(--border-width) solid var(--color-border);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    margin-bottom: 1.5rem;
+  }
+
+  .cosplay-meta-items {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cosplay-meta-item {
+    display: flex;
+    gap: 0.4rem;
+    align-items: baseline;
+  }
+
+  .cosplay-meta-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--color-text-muted);
+  }
+
+  .cosplay-meta-value {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--color-text);
+  }
+
+  .cosplay-meta-link {
+    color: var(--color-primary);
+    text-decoration: underline;
+  }
+
+  .cosplay-meta-link:hover {
+    color: var(--color-secondary);
+  }
+
+  .cosplay-meta-tags {
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-top: 0.75rem;
+    padding-top: 0.75rem;
+    border-top: 2px solid var(--color-border);
+  }
+
+  .cosplay-meta-tag {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: lowercase;
+    background: var(--color-surface-alt, var(--color-surface));
+    border: 2px solid var(--color-border);
+    box-shadow: 1px 1px 0 var(--color-border);
+    color: var(--color-text);
+  }
+
+  :global([data-theme="dark"]) .cosplay-meta-tag {
+    background: var(--color-surface-alt);
+  }
+
+  @media (max-width: 768px) {
+    .cosplay-meta {
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .cosplay-meta-items {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+  }
+</style>
