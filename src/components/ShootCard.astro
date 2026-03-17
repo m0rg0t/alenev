@@ -1,0 +1,116 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  costumeSlug: string;
+  coverImage: string;
+  date?: string;
+  photographer?: string;
+  lang: string;
+}
+
+const { title, slug, costumeSlug, coverImage, date, photographer, lang } = Astro.props;
+
+const href = `/${lang === 'en' ? 'en/' : ''}cosplay/${costumeSlug}/${slug}`;
+---
+
+<a href={href} class="shoot-card">
+  <div class="shoot-card-image">
+    <img src={coverImage} alt={title} loading="lazy" />
+  </div>
+  <div class="shoot-card-body">
+    <h3 class="shoot-card-title">{title}</h3>
+    <div class="shoot-card-meta">
+      {date && (
+        <span class="shoot-meta-item">{date}</span>
+      )}
+      {photographer && (
+        <span class="shoot-badge-photographer">{photographer}</span>
+      )}
+    </div>
+  </div>
+</a>
+
+<style>
+  .shoot-card {
+    display: block;
+    background: var(--color-surface);
+    border: var(--border-width) solid var(--color-border);
+    border-left: 6px solid var(--color-primary);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden;
+  }
+
+  .shoot-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+    border-left-color: var(--color-secondary);
+  }
+
+  .shoot-card-image {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+    border-bottom: var(--border-width) solid var(--color-border);
+  }
+
+  .shoot-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .shoot-card-body {
+    padding: 0.75rem 1rem;
+  }
+
+  .shoot-card-title {
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    margin-bottom: 0.4rem;
+    line-height: 1.3;
+  }
+
+  .shoot-card-meta {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .shoot-meta-item {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .shoot-badge-photographer {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--color-accent);
+    color: #1a1a1a;
+    border: 2px solid var(--color-border);
+    box-shadow: 1px 1px 0 var(--color-border);
+  }
+
+  @media (max-width: 768px) {
+    .shoot-card {
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .shoot-card-body {
+      padding: 0.6rem 0.75rem;
+    }
+
+    .shoot-card-title {
+      font-size: 0.85rem;
+    }
+  }
+</style>

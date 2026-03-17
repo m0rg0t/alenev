@@ -1,0 +1,210 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import CostumeCard from '../../../components/CostumeCard.astro';
+import CosplayGallery from '../../../components/CosplayGallery.astro';
+import Lightbox from '../../../components/Lightbox.astro';
+import { useTranslations } from '../../../i18n';
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+
+const t = useTranslations('ru');
+
+export async function getStaticPaths() {
+  const events = (await getCollection('cosplay-events'))
+    .filter(e => e.data.lang === 'ru');
+  return events.map(entry => ({
+    params: { slug: entry.data.costumeId },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+// Read manifest if event has its own photos
+let manifest = { images: [], video: null } as { images: Array<{ webp: string; thumb: string; width: number; height: number }>; video: string | null };
+if (entry.data.folder) {
+  try {
+    const manifestPath = join(process.cwd(), 'public', 'cosplay', entry.data.folder, 'manifest.json');
+    manifest = JSON.parse(readFileSync(manifestPath, 'utf-8'));
+  } catch (e) {
+    console.warn(`Could not read manifest for event ${entry.data.folder}:`, e);
+  }
+}
+
+// Resolve linked costumes
+const allCostumes = (await getCollection('costumes'))
+  .filter(c => c.data.lang === 'ru');
+const linkedCostumes = entry.data.costumes
+  .map(slug => allCostumes.find(c => c.data.costumeId === slug))
+  .filter(Boolean);
+---
+
+<BaseLayout title={`${entry.data.title} - Косплей`}>
+  <h1>{entry.data.title}</h1>
+
+  <div class="event-info">
+    {entry.data.date && (
+      <span class="info-item">
+        <strong>{t('cosplay.date')}:</strong> {entry.data.date.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long' })}
+      </span>
+    )}
+    {entry.data.location && (
+      <span class="info-item">
+        <strong>{t('cosplay.location')}:</strong> {entry.data.location}
+      </span>
+    )}
+  </div>
+
+  <section class="description">
+    <Content />
+  </section>
+
+  {linkedCostumes.length > 0 && (
+    <section class="linked-costumes">
+      <h2>{t('cosplay.linkedCostumes')}</h2>
+      <div class="costumes-grid">
+        {linkedCostumes.map(costume => costume && (
+          <CostumeCard
+            title={costume.data.title}
+            slug={costume.data.costumeId}
+            coverImage={costume.data.coverImage}
+            character={costume.data.character}
+            franchise={costume.data.franchise}
+            lang="ru"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {manifest.images.length > 0 && entry.data.folder && (
+    <section class="gallery-section">
+      <h2>{t('cosplay.photos')} ({manifest.images.length})</h2>
+      <CosplayGallery images={manifest.images} folder={entry.data.folder} />
+      <Lightbox />
+    </section>
+  )}
+
+  <div class="back-link-wrapper">
+    <a href="/cosplay" class="back-link">&larr; {t('cosplay.backToGallery')}</a>
+  </div>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent-alt);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    :global([data-theme="dark"]) h1 {
+      color: #1a1a1a;
+    }
+
+    .event-info {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .info-item {
+      padding: 0.4rem 0.8rem;
+      background: var(--color-surface);
+      border: 2px solid var(--color-border);
+      box-shadow: 2px 2px 0 var(--color-border);
+      font-size: 0.9rem;
+      color: var(--color-text);
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      background: var(--color-surface);
+      padding: 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-accent-alt);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+
+    .description :global(p) {
+      margin-bottom: 1rem;
+    }
+
+    .description :global(p:last-child) {
+      margin-bottom: 0;
+    }
+
+    .linked-costumes {
+      margin-bottom: 3rem;
+    }
+
+    .gallery-section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      background: var(--color-accent-alt);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    :global([data-theme="dark"]) h2 {
+      color: #1a1a1a;
+    }
+
+    .costumes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .back-link-wrapper {
+      margin-top: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .back-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--color-border);
+      background: var(--color-accent);
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .costumes-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

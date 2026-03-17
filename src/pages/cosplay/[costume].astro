@@ -1,0 +1,201 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CostumeMeta from '../../components/CostumeMeta.astro';
+import ShootCard from '../../components/ShootCard.astro';
+import { useTranslations } from '../../i18n';
+
+const t = useTranslations('ru');
+
+export async function getStaticPaths() {
+  const costumes = (await getCollection('costumes'))
+    .filter(e => e.data.lang === 'ru');
+  return costumes.map(entry => ({
+    params: { costume: entry.data.costumeId },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+
+const shoots = (await getCollection('cosplay'))
+  .filter(s => s.data.lang === 'ru' && s.data.costume === entry.data.costumeId)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+---
+
+<BaseLayout title={`${entry.data.title} - Косплей`}>
+  <h1>{entry.data.title}</h1>
+
+  {entry.data.character && entry.data.franchise && (
+    <div class="badge-row">
+      <span class="badge character">{entry.data.character}</span>
+      <span class="badge franchise">{entry.data.franchise}</span>
+    </div>
+  )}
+
+  <section class="description">
+    <Content />
+  </section>
+
+  <CostumeMeta
+    materials={entry.data.materials}
+    buildTime={entry.data.buildTime}
+    participants={entry.data.participants}
+    guideUrl={entry.data.guideUrl}
+    articleUrl={entry.data.articleUrl}
+    socialLinks={entry.data.socialLinks}
+    lang="ru"
+  />
+
+  {shoots.length > 0 && (
+    <section class="shoots-section">
+      <h2>{t('cosplay.shoots')}</h2>
+      <div class="shoots-grid">
+        {shoots.map(shoot => {
+          const shootSlug = shoot.slug.replace(/ru$/, '');
+          return (
+            <ShootCard
+              title={shoot.data.title}
+              slug={shootSlug}
+              costumeSlug={entry.data.costumeId}
+              coverImage={`/cosplay/${shoot.data.folder}/${shoot.data.coverImage}`}
+              date={shoot.data.date?.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long', day: 'numeric' })}
+              photographer={shoot.data.photographer}
+              lang="ru"
+            />
+          );
+        })}
+      </div>
+    </section>
+  )}
+
+  <div class="back-link-wrapper">
+    <a href="/cosplay" class="back-link">&larr; {t('cosplay.backToGallery')}</a>
+  </div>
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    :global([data-theme="dark"]) h1 {
+      color: #1a1a1a;
+    }
+
+    .badge-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.3rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: 2px solid var(--color-border);
+      box-shadow: 2px 2px 0 var(--color-border);
+    }
+
+    .badge.character {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .badge.franchise {
+      background: var(--color-accent-alt);
+      color: var(--color-text);
+    }
+
+    :global([data-theme="dark"]) .badge.franchise {
+      color: #1a1a1a;
+    }
+
+    .description {
+      margin-bottom: 2rem;
+      background: var(--color-surface);
+      padding: 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+      line-height: 1.8;
+      color: var(--color-text);
+    }
+
+    .description :global(p) {
+      margin-bottom: 1rem;
+    }
+
+    .description :global(p:last-child) {
+      margin-bottom: 0;
+    }
+
+    .shoots-section {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    .shoots-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .back-link-wrapper {
+      margin-top: 2rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: var(--color-surface);
+      color: var(--color-text);
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .back-link:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--color-border);
+      background: var(--color-accent);
+      color: #1a1a1a;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      .shoots-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</BaseLayout>

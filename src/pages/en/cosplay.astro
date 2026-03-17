@@ -1,0 +1,130 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import CostumeCard from '../../components/CostumeCard.astro';
+import EventCard from '../../components/EventCard.astro';
+import { useTranslations } from '../../i18n';
+
+const t = useTranslations('en');
+
+const costumes = (await getCollection('costumes'))
+  .filter(entry => entry.data.lang === 'en')
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const events = (await getCollection('cosplay-events'))
+  .filter(entry => entry.data.lang === 'en')
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const allCostumes = (await getCollection('costumes'))
+  .filter(entry => entry.data.lang === 'en');
+
+function getCostumeTitles(costumeSlugs: string[]): string[] {
+  return costumeSlugs.map(slug => {
+    const found = allCostumes.find(c => c.data.costumeId === slug);
+    return found?.data.title ?? slug;
+  });
+}
+---
+
+<BaseLayout title="Cosplay - Anton Lenev">
+  <h1>{t('cosplay.title')}</h1>
+
+  <section class="intro">
+    <p class="lead">
+      Creating costumes of characters from games, movies and comics combines creativity,
+      technical skills and attention to detail. Each project is a unique challenge.
+    </p>
+  </section>
+
+  <section class="costumes-section">
+    <h2>{t('cosplay.costumes')}</h2>
+    <div class="costumes-grid">
+      {costumes.map(costume => (
+        <CostumeCard
+          title={costume.data.title}
+          slug={costume.data.costumeId}
+          coverImage={costume.data.coverImage}
+          character={costume.data.character}
+          franchise={costume.data.franchise}
+          lang="en"
+        />
+      ))}
+    </div>
+  </section>
+
+  {events.length > 0 && (
+    <section class="events-section">
+      <h2>{t('cosplay.events')}</h2>
+      <div class="events-grid">
+        {events.map(event => (
+          <EventCard
+            title={event.data.title}
+            slug={event.data.costumeId}
+            coverImage={event.data.coverImage}
+            date={event.data.date?.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+            location={event.data.location}
+            costumeTitles={getCostumeTitles(event.data.costumes)}
+            lang="en"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <style>
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    :global([data-theme="dark"]) h1 { color: #1a1a1a; }
+
+    .intro { margin-bottom: 3rem; }
+
+    .lead {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: var(--color-text);
+      background: var(--color-surface);
+      padding: 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .costumes-section, .events-section { margin-bottom: 4rem; }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    .events-section h2 { background: var(--color-accent-alt); color: var(--color-text); }
+    :global([data-theme="dark"]) .events-section h2 { color: #1a1a1a; }
+
+    .costumes-grid, .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.75rem; }
+      .costumes-grid, .events-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</BaseLayout>

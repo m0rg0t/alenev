@@ -1,0 +1,133 @@
+---
+interface Props {
+  title: string;
+  slug: string;
+  coverImage: string;
+  character?: string;
+  franchise?: string;
+  lang: string;
+}
+
+const { title, slug, coverImage, character, franchise, lang } = Astro.props;
+
+const href = `/${lang === 'en' ? 'en/' : ''}cosplay/${slug}`;
+---
+
+<a href={href} class="costume-card">
+  <div class="costume-card-image">
+    <img src={coverImage} alt={title} loading="lazy" />
+  </div>
+  <div class="costume-card-body">
+    <h3 class="costume-card-title">{title}</h3>
+    {(character || franchise) && (
+      <div class="costume-card-badges">
+        {character && (
+          <span class="costume-badge costume-badge-character">{character}</span>
+        )}
+        {franchise && (
+          <span class="costume-badge costume-badge-franchise">{franchise}</span>
+        )}
+      </div>
+    )}
+  </div>
+</a>
+
+<style>
+  .costume-card {
+    display: block;
+    background: var(--color-surface);
+    border: var(--border-width) solid var(--color-border);
+    border-left: 8px solid var(--color-primary);
+    box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    overflow: hidden;
+  }
+
+  .costume-card:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+  }
+
+  .costume-card:nth-child(4n+1) {
+    border-left-color: var(--color-primary);
+  }
+
+  .costume-card:nth-child(4n+2) {
+    border-left-color: var(--color-accent);
+  }
+
+  .costume-card:nth-child(4n+3) {
+    border-left-color: var(--color-accent-alt);
+  }
+
+  .costume-card:nth-child(4n+4) {
+    border-left-color: var(--color-secondary);
+  }
+
+  .costume-card-image {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    border-bottom: var(--border-width) solid var(--color-border);
+  }
+
+  .costume-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .costume-card-body {
+    padding: 1rem 1.25rem;
+  }
+
+  .costume-card-title {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
+  }
+
+  .costume-card-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .costume-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid var(--color-border);
+    box-shadow: 2px 2px 0 var(--color-border);
+  }
+
+  .costume-badge-character {
+    background: var(--color-accent);
+    color: #1a1a1a;
+  }
+
+  .costume-badge-franchise {
+    background: var(--color-accent-alt);
+    color: #1a1a1a;
+  }
+
+  @media (max-width: 768px) {
+    .costume-card {
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .costume-card-image {
+      aspect-ratio: 3 / 4;
+    }
+
+    .costume-card-title {
+      font-size: 1rem;
+    }
+  }
+</style>
