@@ -1,0 +1,75 @@
+{
+  "images": [
+    {
+      "original": "1.jpg",
+      "webp": "1.webp",
+      "thumb": "1.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "10.jpg",
+      "webp": "10.webp",
+      "thumb": "10.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "2.jpg",
+      "webp": "2.webp",
+      "thumb": "2.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "3.jpg",
+      "webp": "3.webp",
+      "thumb": "3.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "4.jpg",
+      "webp": "4.webp",
+      "thumb": "4.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "5.jpg",
+      "webp": "5.webp",
+      "thumb": "5.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "6.jpg",
+      "webp": "6.webp",
+      "thumb": "6.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "7.jpg",
+      "webp": "7.webp",
+      "thumb": "7.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "8.jpg",
+      "webp": "8.webp",
+      "thumb": "8.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "9.jpg",
+      "webp": "9.webp",
+      "thumb": "9.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    }
+  ],
+  "video": null
+}

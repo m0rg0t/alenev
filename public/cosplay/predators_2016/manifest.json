@@ -1,0 +1,89 @@
+{
+  "images": [
+    {
+      "original": "Антон_1.jpg",
+      "webp": "Anton_1.webp",
+      "thumb": "Anton_1.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "original": "Антон_2.jpg",
+      "webp": "Anton_2.webp",
+      "thumb": "Anton_2.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "original": "Антон_3.jpg",
+      "webp": "Anton_3.webp",
+      "thumb": "Anton_3.thumb.webp",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "original": "хищник 2о!.jpg",
+      "webp": "khishchnik_2o_.webp",
+      "thumb": "khishchnik_2o_.thumb.webp",
+      "width": 2560,
+      "height": 1440
+    },
+    {
+      "original": "хищник 3о!.jpg",
+      "webp": "khishchnik_3o_.webp",
+      "thumb": "khishchnik_3o_.thumb.webp",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "original": "хищник 4 small.jpg",
+      "webp": "khishchnik_4_small.webp",
+      "thumb": "khishchnik_4_small.thumb.webp",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "original": "хищник 4о!.jpg",
+      "webp": "khishchnik_4o_.webp",
+      "thumb": "khishchnik_4o_.thumb.webp",
+      "width": 2560,
+      "height": 1706
+    },
+    {
+      "original": "хищник 5о!.jpg",
+      "webp": "khishchnik_5o_.webp",
+      "thumb": "khishchnik_5o_.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "original": "хищник 6о!.jpg",
+      "webp": "khishchnik_6o_.webp",
+      "thumb": "khishchnik_6o_.thumb.webp",
+      "width": 1707,
+      "height": 2560
+    },
+    {
+      "original": "хищник 7о!.jpg",
+      "webp": "khishchnik_7o_.webp",
+      "thumb": "khishchnik_7o_.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "original": "хищник 8о!.jpg",
+      "webp": "khishchnik_8o_.webp",
+      "thumb": "khishchnik_8o_.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    },
+    {
+      "original": "хищник о!.jpg",
+      "webp": "khishchnik_o_.webp",
+      "thumb": "khishchnik_o_.thumb.webp",
+      "width": 2560,
+      "height": 1707
+    }
+  ],
+  "video": null
+}

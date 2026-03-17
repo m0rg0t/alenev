@@ -1,0 +1,54 @@
+{
+  "images": [
+    {
+      "original": "IMG_8110-Edit.jpg",
+      "webp": "IMG_8110-Edit.webp",
+      "thumb": "IMG_8110-Edit.thumb.webp",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "original": "IMG_8122-Edit.jpg",
+      "webp": "IMG_8122-Edit.webp",
+      "thumb": "IMG_8122-Edit.thumb.webp",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "original": "IMG_8143-Edit.jpg",
+      "webp": "IMG_8143-Edit.webp",
+      "thumb": "IMG_8143-Edit.thumb.webp",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "original": "IMG_8156-Edit.jpg",
+      "webp": "IMG_8156-Edit.webp",
+      "thumb": "IMG_8156-Edit.thumb.webp",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "original": "IMG_8164-Edit.jpg",
+      "webp": "IMG_8164-Edit.webp",
+      "thumb": "IMG_8164-Edit.thumb.webp",
+      "width": 800,
+      "height": 1200
+    },
+    {
+      "original": "IMG_8174-Edit.jpg",
+      "webp": "IMG_8174-Edit.webp",
+      "thumb": "IMG_8174-Edit.thumb.webp",
+      "width": 1200,
+      "height": 745
+    },
+    {
+      "original": "IMG_8194-Edit.jpg",
+      "webp": "IMG_8194-Edit.webp",
+      "thumb": "IMG_8194-Edit.thumb.webp",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "video": null
+}

@@ -1,0 +1,33 @@
+{
+  "images": [
+    {
+      "original": "00005.jpg",
+      "webp": "00005.webp",
+      "thumb": "00005.thumb.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "original": "00006.jpg",
+      "webp": "00006.webp",
+      "thumb": "00006.thumb.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "original": "00008.jpg",
+      "webp": "00008.webp",
+      "thumb": "00008.thumb.webp",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "original": "00009.jpg",
+      "webp": "00009.webp",
+      "thumb": "00009.thumb.webp",
+      "width": 2400,
+      "height": 1800
+    }
+  ],
+  "video": "MCCREE.mp4"
+}

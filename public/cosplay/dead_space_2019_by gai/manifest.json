@@ -1,0 +1,61 @@
+{
+  "images": [
+    {
+      "original": "MG_8280-2.jpg",
+      "webp": "MG_8280-2.webp",
+      "thumb": "MG_8280-2.thumb.webp",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "original": "MG_8280.jpg",
+      "webp": "MG_8280.webp",
+      "thumb": "MG_8280.thumb.webp",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "original": "MG_8290.jpg",
+      "webp": "MG_8290.webp",
+      "thumb": "MG_8290.thumb.webp",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "original": "MG_8293.jpg",
+      "webp": "MG_8293.webp",
+      "thumb": "MG_8293.thumb.webp",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "original": "MG_8302.jpg",
+      "webp": "MG_8302.webp",
+      "thumb": "MG_8302.thumb.webp",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "original": "MG_8318.jpg",
+      "webp": "MG_8318.webp",
+      "thumb": "MG_8318.thumb.webp",
+      "width": 1280,
+      "height": 1920
+    },
+    {
+      "original": "MG_8362 — копия.jpg",
+      "webp": "MG_8362_kopiya.webp",
+      "thumb": "MG_8362_kopiya.thumb.webp",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "original": "MG_8362.jpg",
+      "webp": "MG_8362.webp",
+      "thumb": "MG_8362.thumb.webp",
+      "width": 1920,
+      "height": 1280
+    }
+  ],
+  "video": null
+}
