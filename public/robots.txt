@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://alenev.ru/sitemap-index.xml
+
+# AI Search Crawlers — explicitly permitted for search visibility
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Training-only crawlers — block to prevent unauthorized data use
+User-agent: CCBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /

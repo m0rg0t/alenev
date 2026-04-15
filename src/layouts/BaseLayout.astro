@@ -4,23 +4,96 @@ import { getLangFromUrl, useTranslations } from '../i18n';
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  ogType?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, image, ogType = 'website' } = Astro.props;
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogDescription = description || t('about.description');
+const ogImage = image || '/images/anton-lenev.jpg';
+
+const isEnPage = Astro.url.pathname.startsWith('/en');
+const ruPath = isEnPage
+  ? (Astro.url.pathname === '/en' ? '/' : Astro.url.pathname.replace(/^\/en/, ''))
+  : Astro.url.pathname;
+const enPath = isEnPage
+  ? Astro.url.pathname
+  : '/en' + (Astro.url.pathname === '/' ? '' : Astro.url.pathname);
+const ruUrl = new URL(ruPath || '/', Astro.site).href;
+const enUrl = new URL(enPath, Astro.site).href;
+
+const schemaOrg = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Person',
+      '@id': 'https://alenev.ru/#person',
+      'name': 'Anton Alenev',
+      'alternateName': ['Антон Аленев', 'm0rg0t'],
+      'url': 'https://alenev.ru',
+      'description': 'Programmer, cosplayer, audiobook narrator and podcast host from Rybinsk, Russia.',
+      'jobTitle': ['Software Developer', 'Podcast Host', 'Audiobook Narrator', 'Cosplayer'],
+      'sameAs': [
+        'https://t.me/AntonLenev',
+        'https://github.com/m0rg0t',
+        'https://vk.com/m0rg0t',
+        'https://www.instagram.com/antonlenev/',
+        'https://www.linkedin.com/in/anton-lenev-98414530/',
+        'https://twitter.com/m0rg0t',
+      ],
+    },
+    {
+      '@type': 'WebSite',
+      '@id': 'https://alenev.ru/#website',
+      'url': 'https://alenev.ru',
+      'name': 'Anton Alenev',
+      'description': 'Personal site of Anton Alenev — programmer, cosplayer, audiobook narrator, podcast host.',
+      'inLanguage': ['ru', 'en'],
+      'author': { '@id': 'https://alenev.ru/#person' },
+    },
+  ],
+};
 ---
 
 <!DOCTYPE html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={description || t('about.description')} />
-    <meta name="keywords" content="Антон Ленев, Антон Ленёв, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
+    <meta name="description" content={ogDescription} />
+    <meta name="keywords" content="Антон Ленев, Антон Ленёв, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="ru" href={ruUrl} />
+    <link rel="alternate" hreflang="en" href={enUrl} />
+    <link rel="alternate" hreflang="x-default" href={ruUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={ogDescription} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ru_RU'} />
+    <meta property="og:site_name" content="Anton Alenev" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@m0rg0t" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={ogDescription} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Schema.org: Person + WebSite -->
+    <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
 
     <!-- Google Fonts: Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -534,7 +607,7 @@ const t = useTranslations(lang);
 
     <footer>
       <div class="container">
-        <p>&copy; 2025 Anton Lenev</p>
+        <p>&copy; {new Date().getFullYear()} Anton Lenev</p>
       </div>
     </footer>
 

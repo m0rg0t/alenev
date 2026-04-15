@@ -1,29 +1,24 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="IT Проекты - Антон Ленев">
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alenev.ru/" },
-      { "@type": "ListItem", "position": 2, "name": "IT Projects", "item": "https://alenev.ru/it/" }
-    ]
-  })} />
-  <h1>💻 IT Проекты и Разработка</h1>
+<BaseLayout
+  title="IT Projects — Anton Lenev"
+  description="IT projects, programming talks and development experience by Anton Alenev — CTO/Frontend Developer, open-source contributor."
+>
+  <h1>💻 IT Projects & Development</h1>
 
   <section class="section">
-    <h2>Pet Проекты</h2>
+    <h2>Pet Projects</h2>
 
     <article class="project">
       <h3>OwlEye</h3>
       <p>
-        Украшение-ожерелье в виде совы, помогающее слабовидящим людям ориентироваться в закрытых пространствах.
-        Во время COVID-19 также помогает соблюдать социальную дистанцию.
+        Owl-shaped necklace jewelry that helps visually impaired people navigate closed spaces.
+        During COVID-19 also helps maintain social distance.
       </p>
       <div class="links">
-        <a href="https://owleye.space/" target="_blank" rel="noopener">Сайт проекта</a>
+        <a href="https://owleye.space/" target="_blank" rel="noopener">Project Website</a>
         <a href="https://github.com/m0rg0t/OwlEye" target="_blank" rel="noopener">GitHub</a>
       </div>
     </article>
@@ -31,16 +26,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <article class="project">
       <h3>Skull Pin</h3>
       <p>
-        Бренд украшений для волос - заколки, гребни и другие украшения, создаваемые с помощью 3D печати.
+        Hair accessories brand — clips, combs and other accessories created with 3D printing.
       </p>
       <div class="links">
-        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
       </div>
     </article>
 
     <article class="project">
-      <h3>Где участковый?</h3>
-      <p>Приложение для поиска участковых по адресу.</p>
+      <h3>Where is the local officer?</h3>
+      <p>App for finding local police officers by address.</p>
       <div class="links">
         <a href="https://openpolice.ru/apps/pc-where-is-policeman/" target="_blank" rel="noopener">OpenPolice</a>
       </div>
@@ -48,46 +43,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <article class="project">
       <h3>Rybinsk Secrets</h3>
-      <p>Туристический проект для города Рыбинска (в разработке).</p>
+      <p>Tourist project for the city of Rybinsk (in development).</p>
     </article>
 
     <article class="project">
-      <h3>Поиск авиабилетов</h3>
-      <p>Приложение для Windows Store (устаревший проект).</p>
+      <h3>Flight search app</h3>
+      <p>Windows Store app (legacy project).</p>
     </article>
   </section>
 
   <section class="section">
-    <h2>Выступления</h2>
+    <h2>Talks/Presentations</h2>
 
     <article class="talk">
-      <h3>Странное браузерное API — Дринкап</h3>
+      <h3>"Strange Browser APIs" — Drinkup</h3>
       <div class="links">
-        <a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend" target="_blank" rel="noopener">Смотреть на YouTube</a>
+        <a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
     </article>
 
     <article class="talk">
-      <h3>Особенности разработки мобильных приложений для Windows Phone и Windows 8</h3>
+      <h3>Features of mobile app development for Windows Phone and Windows 8</h3>
       <div class="links">
-        <a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8" target="_blank" rel="noopener">Смотреть на YouTube</a>
+        <a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
     </article>
 
     <article class="talk">
-      <h3>Заменят ли алгоритмы дизайнеров в рекламе?</h3>
+      <h3>Will algorithms replace designers in advertising?</h3>
       <div class="links">
-        <a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi" target="_blank" rel="noopener">Смотреть на YouTube</a>
+        <a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
     </article>
   </section>
 
   <section class="section">
-    <h2>Опыт работы</h2>
-    <p>CTO/Frontend Developer в Viewst Inc</p>
-    <p>Образование: Рыбинская Государственная Авиационная Технологическая Академия им. П.А. Соловьёва (2006-2011)</p>
+    <h2>Experience</h2>
+    <p>CTO/Frontend Developer at Viewst Inc</p>
+    <p>Education: Rybinsk State Aviation Technology Academy (RGATA named after P.A. Solovyov), 2006-2011</p>
     <div class="links">
-      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 репозиториев)</a>
+      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 repositories)</a>
       <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
     </div>
   </section>

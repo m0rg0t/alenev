@@ -4,7 +4,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://antonlenev.com',
+  site: 'https://alenev.ru',
   i18n: {
     defaultLocale: 'ru',
     locales: ['ru', 'en'],

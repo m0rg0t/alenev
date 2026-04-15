@@ -8,6 +8,14 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 ---
 
 <BaseLayout title="Публикации - Антон Ленев">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alenev.ru/" },
+      { "@type": "ListItem", "position": 2, "name": "Publications", "item": "https://alenev.ru/publications/" }
+    ]
+  })} />
   <h1>📝 Публикации и Статьи</h1>
 
   <section class="section">
@@ -383,4 +391,89 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
       }
     }
   </style>
+
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Publications by Anton Alenev",
+    "author": {
+      "@type": "Person",
+      "@id": "https://alenev.ru/#person",
+      "name": "Anton Alenev"
+    },
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Article",
+          "headline": "OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate",
+          "url": "https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Instructables" },
+          "inLanguage": "en"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Article",
+          "headline": "Ожерелье OwlEye — помощь слабовидящим",
+          "url": "https://habr.com/ru/articles/754234/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Habr" },
+          "inLanguage": "ru"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Article",
+          "headline": "Owl Necklace With LED Eyes",
+          "url": "https://www.instructables.com/Owl-Necklace-With-LED-Eyes/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Instructables" },
+          "inLanguage": "en"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Article",
+          "headline": "Dead Space 2 Cosplay — Creating the Advanced Suit of Isaac Clarke",
+          "url": "https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Instructables" },
+          "inLanguage": "en"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "item": {
+          "@type": "Article",
+          "headline": "DALL·E 2 — мои первые эксперименты с возможностями нейросети",
+          "url": "https://habr.com/ru/articles/680136/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Habr" },
+          "inLanguage": "ru"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "item": {
+          "@type": "Article",
+          "headline": "Как делается косплей. Создание костюма Advanced Suit Айзека Кларка из Dead Space 2",
+          "url": "https://habr.com/ru/articles/482280/",
+          "author": { "@type": "Person", "@id": "https://alenev.ru/#person" },
+          "publisher": { "@type": "Organization", "name": "Habr" },
+          "inLanguage": "ru"
+        }
+      }
+    ]
+  })} />
 </BaseLayout>

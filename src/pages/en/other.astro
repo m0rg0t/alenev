@@ -1,89 +1,84 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Другие проекты - Антон Ленев">
-  <script type="application/ld+json" set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alenev.ru/" },
-      { "@type": "ListItem", "position": 2, "name": "Other", "item": "https://alenev.ru/other/" }
-    ]
-  })} />
-  <h1>🎯 Другие проекты</h1>
+<BaseLayout
+  title="Other Projects — Anton Lenev"
+  description="VK Mini Apps, Yandex Alice skills, the Skull Pin jewelry brand, and mentoring by Anton Alenev."
+>
+  <h1>🎯 Other Projects</h1>
 
   <section class="section">
     <h2>VK Mini Apps</h2>
     <p class="intro-text">
-      Коллекция мини-приложений для социальной сети ВКонтакте, включающая различные развлекательные и познавательные проекты.
+      A collection of mini-apps for the VKontakte social network, including various entertainment and educational projects.
     </p>
 
     <div class="apps-grid">
       <article class="app-card">
-        <h3>🔮 Таро</h3>
-        <p>Гадание на картах Таро прямо в VK</p>
-        <a href="https://vk.com/app51769331?mid=4443423" target="_blank" rel="noopener">Открыть приложение</a>
+        <h3>🔮 Tarot</h3>
+        <p>Tarot card readings right inside VK</p>
+        <a href="https://vk.com/app51769331?mid=4443423" target="_blank" rel="noopener">Open app</a>
       </article>
 
       <article class="app-card">
-        <h3>⭐ Астропрогноз</h3>
-        <p>Астрологические прогнозы и гороскопы</p>
-        <a href="https://vk.com/app51788038_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+        <h3>⭐ Astroforecast</h3>
+        <p>Astrological forecasts and horoscopes</p>
+        <a href="https://vk.com/app51788038_4443423" target="_blank" rel="noopener">Open app</a>
       </article>
 
       <article class="app-card">
-        <h3>💎 Магические камни</h3>
-        <p>Узнайте о свойствах различных камней</p>
-        <a href="https://vk.com/app51896624_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+        <h3>💎 Magic Stones</h3>
+        <p>Discover the properties of various gemstones</p>
+        <a href="https://vk.com/app51896624_4443423" target="_blank" rel="noopener">Open app</a>
       </article>
 
       <article class="app-card">
-        <h3>ᚱ Руны</h3>
-        <p>Гадание на рунах и их толкование</p>
-        <a href="https://vk.com/app51819171_4443423" target="_blank" rel="noopener">Открыть приложение</a>
+        <h3>ᚱ Runes</h3>
+        <p>Rune divination and their interpretation</p>
+        <a href="https://vk.com/app51819171_4443423" target="_blank" rel="noopener">Open app</a>
       </article>
     </div>
   </section>
 
   <section class="section">
-    <h2>Яндекс Навыки</h2>
+    <h2>Yandex Skills</h2>
 
     <article class="project">
-      <h3>Былина о Святогоре</h3>
+      <h3>Bylina o Svyatogor</h3>
       <p>
-        Голосовой навык для Яндекс.Алисы, рассказывающий древнерусскую былину о богатыре Святогоре.
-        Интерактивное повествование с элементами выбора развития сюжета.
+        A voice skill for Yandex Alice narrating an ancient Russian bylina (epic tale) about the hero Svyatogor.
+        Interactive storytelling with plot choice elements.
       </p>
       <a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor" target="_blank" rel="noopener">
-        Открыть в Яндекс.Диалогах
+        Open in Yandex Dialogs
       </a>
     </article>
   </section>
 
   <section class="section">
-    <h2>Творческие проекты</h2>
+    <h2>Creative Projects</h2>
 
     <article class="project">
-      <h3>Бренд украшений "Skull Pin"</h3>
+      <h3>Skull Pin Jewelry Brand</h3>
       <p>
-        Уникальные украшения для волос: заколки, гребни и другие аксессуары, создаваемые с помощью 3D печати
-        и традиционных ремесленных техник.
+        Unique hair accessories: clips, combs and other accessories created with 3D printing
+        and traditional craft techniques.
       </p>
-      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
     </article>
   </section>
 
   <section class="section">
-    <h2>Благотворительность</h2>
+    <h2>Charity</h2>
 
     <article class="project">
-      <h3>Сольвери - Ментор</h3>
+      <h3>Solvery — Mentor</h3>
       <p>
-        Менторство в области программирования и разработки. Помогаю начинающим разработчикам
-        освоить профессию и решить сложные технические задачи.
+        Programming and development mentoring. I help beginner developers master the profession
+        and solve complex technical problems.
       </p>
-      <a href="https://solvery.io/ru/mentor/antonlenev" target="_blank" rel="noopener">Профиль на Solvery</a>
+      <a href="https://solvery.io/ru/mentor/antonlenev" target="_blank" rel="noopener">Profile on Solvery</a>
     </article>
   </section>
 
