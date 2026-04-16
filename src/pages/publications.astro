@@ -7,7 +7,10 @@ const archives = await getCollection('archives');
 const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 ---
 
-<BaseLayout title="Публикации - Антон Ленев">
+<BaseLayout
+  title="Публикации - Антон Ленев"
+  description="Статьи и публикации Антона Ленева на Habr, Tproger, Instructables и в других изданиях. Темы: косплей, электроника, ИИ, программирование."
+>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

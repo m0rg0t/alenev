@@ -14,7 +14,7 @@ const t = useTranslations(lang);
 
 const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
 const ogDescription = description || t('about.description');
-const ogImage = image || '/images/anton-lenev.jpg';
+const ogImage = new URL(image || '/images/anton-lenev.jpg', Astro.site).href;
 
 const isEnPage = Astro.url.pathname.startsWith('/en');
 const ruPath = isEnPage
@@ -22,7 +22,7 @@ const ruPath = isEnPage
   : Astro.url.pathname;
 const enPath = isEnPage
   ? Astro.url.pathname
-  : '/en' + (Astro.url.pathname === '/' ? '' : Astro.url.pathname);
+  : '/en' + (Astro.url.pathname === '/' ? '/' : Astro.url.pathname);
 const ruUrl = new URL(ruPath || '/', Astro.site).href;
 const enUrl = new URL(enPath, Astro.site).href;
 
@@ -32,11 +32,19 @@ const schemaOrg = {
     {
       '@type': 'Person',
       '@id': 'https://alenev.ru/#person',
-      'name': 'Anton Alenev',
-      'alternateName': ['Антон Аленев', 'm0rg0t'],
+      'name': 'Anton Lenev',
+      'alternateName': ['Антон Ленев', 'Антон Ленёв', 'Anton Alenev', 'Антон Аленев', 'm0rg0t'],
       'url': 'https://alenev.ru',
       'description': 'Programmer, cosplayer, audiobook narrator and podcast host from Rybinsk, Russia.',
       'jobTitle': ['Software Developer', 'Podcast Host', 'Audiobook Narrator', 'Cosplayer'],
+      'knowsLanguage': ['ru', 'en'],
+      'image': {
+        '@type': 'ImageObject',
+        '@id': 'https://alenev.ru/#personimage',
+        'url': 'https://alenev.ru/images/anton-lenev.jpg',
+        'width': 853,
+        'height': 1280,
+      },
       'sameAs': [
         'https://t.me/AntonLenev',
         'https://github.com/m0rg0t',
@@ -50,8 +58,8 @@ const schemaOrg = {
       '@type': 'WebSite',
       '@id': 'https://alenev.ru/#website',
       'url': 'https://alenev.ru',
-      'name': 'Anton Alenev',
-      'description': 'Personal site of Anton Alenev — programmer, cosplayer, audiobook narrator, podcast host.',
+      'name': 'Anton Lenev',
+      'description': 'Personal site of Anton Lenev — programmer, cosplayer, audiobook narrator, podcast host.',
       'inLanguage': ['ru', 'en'],
       'author': { '@id': 'https://alenev.ru/#person' },
     },
@@ -83,7 +91,7 @@ const schemaOrg = {
     <meta property="og:description" content={ogDescription} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:locale" content={lang === 'en' ? 'en_US' : 'ru_RU'} />
-    <meta property="og:site_name" content="Anton Alenev" />
+    <meta property="og:site_name" content="Anton Lenev" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -588,8 +596,8 @@ const schemaOrg = {
 
           <div class="header-controls">
             <div class="lang-switcher">
-              <a href="/" class={lang === 'ru' ? 'active' : ''}>RU</a>
-              <a href="/en" class={lang === 'en' ? 'active' : ''}>EN</a>
+              <a href={ruPath || '/'} class={lang === 'ru' ? 'active' : undefined} hreflang="ru">RU</a>
+              <a href={enPath} class={lang === 'en' ? 'active' : undefined} hreflang="en">EN</a>
             </div>
 
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
