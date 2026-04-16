@@ -26,6 +26,10 @@ const enPath = isEnPage
 const ruUrl = new URL(ruPath || '/', Astro.site).href;
 const enUrl = new URL(enPath, Astro.site).href;
 
+// Pages that exist only in Russian (no English equivalent route).
+// For these, omit the EN hreflang to avoid pointing at a soft-404.
+const hasEnAlternate = !Astro.url.pathname.startsWith('/archive/');
+
 const schemaOrg = {
   '@context': 'https://schema.org',
   '@graph': [
@@ -81,7 +85,7 @@ const schemaOrg = {
 
     <!-- hreflang -->
     <link rel="alternate" hreflang="ru" href={ruUrl} />
-    <link rel="alternate" hreflang="en" href={enUrl} />
+    {hasEnAlternate && <link rel="alternate" hreflang="en" href={enUrl} />}
     <link rel="alternate" hreflang="x-default" href={ruUrl} />
 
     <!-- Open Graph -->
@@ -597,7 +601,9 @@ const schemaOrg = {
           <div class="header-controls">
             <div class="lang-switcher">
               <a href={ruPath || '/'} class={lang === 'ru' ? 'active' : undefined} hreflang="ru">RU</a>
-              <a href={enPath} class={lang === 'en' ? 'active' : undefined} hreflang="en">EN</a>
+              {hasEnAlternate && (
+                <a href={enPath} class={lang === 'en' ? 'active' : undefined} hreflang="en">EN</a>
+              )}
             </div>
 
             <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
