@@ -362,6 +362,21 @@ const schemaOrg = {
         letter-spacing: 0.05em;
       }
 
+      .footer-contact {
+        margin-bottom: 0.75rem;
+        font-size: 0.875rem;
+      }
+
+      .footer-contact a {
+        color: var(--color-accent);
+        text-decoration: underline;
+        font-weight: 700;
+      }
+
+      .footer-contact a:hover {
+        color: var(--color-primary);
+      }
+
       /* ===== GLOBAL COMPONENTS ===== */
 
       /* Cards */
@@ -621,6 +636,14 @@ const schemaOrg = {
 
     <footer>
       <div class="container">
+        <p class="footer-contact">
+          {lang === 'en' ? 'Get in touch:' : 'Связаться:'}{' '}
+          <a href="https://t.me/AntonLenev" target="_blank" rel="noopener">Telegram</a>
+          {' · '}
+          <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub</a>
+          {' · '}
+          <a href="https://www.linkedin.com/in/anton-lenev-98414530/" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
         <p>&copy; {new Date().getFullYear()} Anton Lenev</p>
       </div>
     </footer>

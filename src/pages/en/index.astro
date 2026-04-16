@@ -13,9 +13,18 @@ const t = useTranslations('en');
     <h1>Anton Lenev</h1>
     <p class="subtitle">{t('about.description')}</p>
 
+    <p class="bio">
+      Anton Lenev is a programmer from Rybinsk, Russia, working as CTO and Frontend Developer at Viewst Inc.
+      He hosts the <strong>«Cosplay and Other Things»</strong> podcast — episodes are available on Spotify, Apple Podcasts and Yandex Music.
+      As an audiobook narrator he has voiced over 12 titles on <a href="https://www.litres.ru/author/anton-lenev/" target="_blank" rel="noopener">Litres</a>.
+      He builds cosplay costumes inspired by games and films: Dead Space, Mass Effect, Skyrim, Predator, Overwatch.
+      His work has been featured on Habr, Tproger, Instructables, and in Russian regional media.
+      <a href="/en/about" class="bio-more">More about Anton →</a>
+    </p>
+
     <div class="about-images">
-      <img src="/images/anton-lenev.jpg" alt="Anton Lenev" />
-      <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" />
+      <img src="/images/anton-lenev.jpg" alt="Anton Lenev" width="853" height="1280" />
+      <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" width="1280" height="1280" />
     </div>
   </section>
 
@@ -101,6 +110,34 @@ const t = useTranslations('en');
 
     :global([data-theme="dark"]) .subtitle {
       color: #1a1a1a;
+    }
+
+    .bio {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      text-align: left;
+      background: var(--color-surface);
+      border: var(--border-width) solid var(--color-border);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .bio strong { font-weight: 700; }
+
+    .bio a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .bio a:hover { color: var(--color-secondary); }
+
+    .bio-more {
+      display: inline-block;
+      margin-top: 0.5rem;
     }
 
     .about-images {

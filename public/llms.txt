@@ -7,8 +7,11 @@
 
 ## About
 
-- [Home](https://alenev.ru/): Portfolio overview and social links for Anton Alenev.
+- [Home](https://alenev.ru/): Portfolio overview and social links for Anton Lenev.
 - [Home (English)](https://alenev.ru/en): English-language version of the site.
+- [About Anton Lenev](https://alenev.ru/about): Full biography — career as CTO at Viewst Inc,
+  audiobook narration on Litres, podcast hosting, cosplay practice, contact information.
+- [About Anton Lenev (English)](https://alenev.ru/en/about): English biography page.
 
 ## IT & Programming
 

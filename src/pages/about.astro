@@ -1,0 +1,162 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Об Антоне Леневе — программист, чтец, косплеер из Рыбинска"
+  description="Биография Антона Ленева: программист и CTO в Viewst Inc, чтец аудиокниг на Litres, ведущий подкаста «Косплей и прочие штуки», косплеер. Рыбинск, Россия."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': 'https://alenev.ru/' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Об Антоне', 'item': 'https://alenev.ru/about/' }
+    ]
+  })} />
+
+  <article class="about">
+    <h1>Об Антоне Леневе</h1>
+
+    <section class="lead">
+      <p>
+        Антон Ленев — программист, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска.
+        Совмещает работу в IT с творческими проектами уже больше десяти лет: создаёт костюмы по
+        мотивам игр и фильмов, озвучивает книги для платформы Litres, ведёт собственный подкаст
+        и регулярно публикуется в технологических и тематических изданиях.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Программирование</h2>
+      <p>
+        В IT с 2011 года. Окончил <strong>Рыбинскую государственную авиационную технологическую
+        академию имени П.А. Соловьёва</strong> (РГАТА) по направлению, связанному с программной
+        инженерией. Сейчас работает <strong>CTO и Frontend Developer в Viewst Inc</strong> —
+        отвечает за техническое направление и фронтенд-разработку продукта.
+      </p>
+      <p>
+        Среди личных проектов — <a href="https://owleye.space/" target="_blank" rel="noopener">OwlEye</a>:
+        умное ожерелье в виде совы, помогающее слабовидящим людям ориентироваться в закрытых
+        пространствах. Проект получил публикации на Habr, Instructables и в региональных СМИ.
+        Ещё один проект — <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">Skull Pin</a>,
+        бренд украшений для волос на основе 3D-печати.
+      </p>
+      <p>
+        Выступает с докладами на профильных конференциях, в том числе на <em>SPB Frontend</em>
+        и митапах по разработке мобильных приложений. <a href="/it">Подробнее о проектах и докладах →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Аудиокниги</h2>
+      <p>
+        Профессионально занимается озвучкой аудиокниг — на платформе <a href="https://www.litres.ru/author/anton-lenev/" target="_blank" rel="noopener">Litres</a>
+        опубликовано более 12 произведений в озвучке. Жанры — от художественной литературы
+        и фэнтези до классики и нон-фикшн. <a href="/audiobooks">Полный каталог →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Подкаст</h2>
+      <p>
+        Ведёт подкаст <strong>«Косплей и прочие штуки»</strong> — разговоры о косплее, поп-культуре,
+        технологиях и творчестве. Выпуски доступны на Spotify, Apple Podcasts, Яндекс.Музыке
+        и других платформах. <a href="/podcasts">Слушать подкаст →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Косплей</h2>
+      <p>
+        Создаёт костюмы по мотивам игр и фильмов — Dead Space, Mass Effect, Skyrim, Хищник,
+        Overwatch, Morozko и других. Использует EVA-фоам, 3D-печать, электронику и подсветку.
+        Работы публиковались на Habr, Instructables, Tproger, в Игромании, Канобу, ДТФ и
+        региональных изданиях. <a href="/cosplay">Галерея костюмов →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Контакты</h2>
+      <p>
+        Связаться можно через <a href="https://t.me/AntonLenev" target="_blank" rel="noopener">Telegram</a>
+        или любую из социальных сетей в подвале сайта. Открыт к сотрудничеству по проектам в озвучке,
+        выступлениям на конференциях и интервью для СМИ.
+      </p>
+    </section>
+  </article>
+
+  <style>
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    :global([data-theme="dark"]) h1 {
+      color: #1a1a1a;
+    }
+
+    .lead {
+      background: var(--color-surface);
+      padding: 1.5rem 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+      margin-bottom: 2rem;
+    }
+
+    .lead p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+
+    .block {
+      margin-bottom: 2.5rem;
+    }
+
+    .block h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    .block p {
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .block p:last-child { margin-bottom: 0; }
+
+    .block a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .block a:hover { color: var(--color-secondary); }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.75rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+</BaseLayout>

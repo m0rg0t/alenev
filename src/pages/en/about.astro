@@ -1,0 +1,163 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About Anton Lenev — programmer, narrator, cosplayer from Rybinsk"
+  description="Biography of Anton Lenev: programmer and CTO at Viewst Inc, audiobook narrator on Litres, host of the «Cosplay and Other Things» podcast, cosplayer. Rybinsk, Russia."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': 'https://alenev.ru/en/' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'About', 'item': 'https://alenev.ru/en/about/' }
+    ]
+  })} />
+
+  <article class="about">
+    <h1>About Anton Lenev</h1>
+
+    <section class="lead">
+      <p>
+        Anton Lenev is a programmer, cosplayer, audiobook narrator and podcast host based in Rybinsk, Russia.
+        He has combined a software engineering career with creative work for more than a decade — building
+        cosplay costumes inspired by games and films, narrating audiobooks for the Litres platform, hosting
+        his own podcast, and contributing to technology and pop-culture publications.
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Software Engineering</h2>
+      <p>
+        Anton has worked in IT since 2011. He graduated from the <strong>P.A. Solovyov Rybinsk State Aviation
+        Technological Academy</strong> (RGATA) with a software-engineering background. Today he serves as
+        <strong>CTO and Frontend Developer at Viewst Inc</strong>, leading the company's technical direction
+        and frontend product work.
+      </p>
+      <p>
+        Personal projects include <a href="https://owleye.space/" target="_blank" rel="noopener">OwlEye</a> —
+        a smart owl-shaped pendant that helps visually impaired people navigate indoor spaces. The project has
+        been featured on Habr, Instructables, and in Russian regional media. Another project is
+        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">Skull Pin</a>, a brand of 3D-printed
+        hair jewelry.
+      </p>
+      <p>
+        Anton speaks at industry conferences, including <em>SPB Frontend</em> and mobile-development meetups.
+        <a href="/en/it">More about projects and talks →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Audiobook Narration</h2>
+      <p>
+        Anton is a working audiobook narrator — over 12 titles narrated by him are published on
+        <a href="https://www.litres.ru/author/anton-lenev/" target="_blank" rel="noopener">Litres</a>.
+        Genres span fiction and fantasy, classical Russian literature, and non-fiction.
+        <a href="/en/audiobooks">Full catalog →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Podcast</h2>
+      <p>
+        He hosts <strong>«Cosplay and Other Things»</strong> — a Russian-language podcast about cosplay,
+        pop culture, technology and creativity. Episodes are available on Spotify, Apple Podcasts, Yandex Music
+        and other platforms. <a href="/en/podcasts">Listen to the podcast →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Cosplay</h2>
+      <p>
+        Anton builds cosplay costumes inspired by games and films — Dead Space, Mass Effect, Skyrim, Predator,
+        Overwatch, Morozko and more. Materials and techniques include EVA foam, 3D printing, electronics and
+        custom lighting. The work has been covered on Habr, Instructables, Tproger, in Igromania, Kanobu, DTF
+        and regional Russian outlets. <a href="/en/cosplay">Costume gallery →</a>
+      </p>
+    </section>
+
+    <section class="block">
+      <h2>Contact</h2>
+      <p>
+        The fastest way to reach Anton is via <a href="https://t.me/AntonLenev" target="_blank" rel="noopener">Telegram</a>
+        or any of the social profiles in the site footer. Open to collaboration on narration projects, conference
+        talks, and media interviews.
+      </p>
+    </section>
+  </article>
+
+  <style>
+    .about {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    :global([data-theme="dark"]) h1 {
+      color: #1a1a1a;
+    }
+
+    .lead {
+      background: var(--color-surface);
+      padding: 1.5rem 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+      margin-bottom: 2rem;
+    }
+
+    .lead p {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--color-text);
+    }
+
+    .block {
+      margin-bottom: 2.5rem;
+    }
+
+    .block h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    .block p {
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .block p:last-child { margin-bottom: 0; }
+
+    .block a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .block a:hover { color: var(--color-secondary); }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 1.75rem; padding: 0.5rem 1rem; }
+    }
+  </style>
+</BaseLayout>

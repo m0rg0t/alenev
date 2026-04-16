@@ -13,9 +13,18 @@ const t = useTranslations('ru');
     <h1>Антон Ленев</h1>
     <p class="subtitle">{t('about.description')}</p>
 
+    <p class="bio">
+      Антон Ленев — программист из Рыбинска, CTO и Frontend Developer в Viewst Inc.
+      Ведёт подкаст <strong>«Косплей и прочие штуки»</strong> — выпуски доступны на Spotify, Apple Podcasts и Яндекс.Музыке.
+      Озвучил более 12 аудиокниг на платформе <a href="https://www.litres.ru/author/anton-lenev/" target="_blank" rel="noopener">Litres</a>.
+      Создаёт косплей-костюмы по мотивам игр и фильмов: Dead Space, Mass Effect, Skyrim, Хищник, Overwatch.
+      Публиковался на Habr, Tproger, Instructables и в региональных СМИ.
+      <a href="/about" class="bio-more">Подробнее об Антоне →</a>
+    </p>
+
     <div class="about-images">
-      <img src="/images/anton-lenev.jpg" alt="Anton Lenev" />
-      <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" />
+      <img src="/images/anton-lenev.jpg" alt="Anton Lenev" width="853" height="1280" />
+      <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" width="1280" height="1280" />
     </div>
   </section>
 
@@ -101,6 +110,34 @@ const t = useTranslations('ru');
 
     :global([data-theme="dark"]) .subtitle {
       color: #1a1a1a;
+    }
+
+    .bio {
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--color-text);
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      text-align: left;
+      background: var(--color-surface);
+      border: var(--border-width) solid var(--color-border);
+      padding: 1.25rem 1.5rem;
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .bio strong { font-weight: 700; }
+
+    .bio a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .bio a:hover { color: var(--color-secondary); }
+
+    .bio-more {
+      display: inline-block;
+      margin-top: 0.5rem;
     }
 
     .about-images {
