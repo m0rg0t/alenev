@@ -1,6 +1,17 @@
 ---
 import { getLangFromUrl, useTranslations } from '../i18n';
 
+// Self-hosted Space Grotesk via @fontsource. Bundles latin + latin-ext woff2 files
+// into the build's _astro/ directory and emits @font-face declarations.
+// Cyrillic chars fall through to the system-font stack since the typeface has no
+// Cyrillic glyphs upstream (same behavior as the previous Google Fonts integration).
+import '@fontsource/space-grotesk/latin-400.css';
+import '@fontsource/space-grotesk/latin-500.css';
+import '@fontsource/space-grotesk/latin-700.css';
+import '@fontsource/space-grotesk/latin-ext-400.css';
+import '@fontsource/space-grotesk/latin-ext-500.css';
+import '@fontsource/space-grotesk/latin-ext-700.css';
+
 interface Props {
   title: string;
   description?: string;
@@ -107,10 +118,6 @@ const schemaOrg = {
     <!-- Schema.org: Person + WebSite -->
     <script type="application/ld+json" set:html={JSON.stringify(schemaOrg)} />
 
-    <!-- Google Fonts: Space Grotesk -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- Theme initialization (prevents flash) -->
     <script is:inline>
