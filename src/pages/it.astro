@@ -1,5 +1,49 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+// TODO: fill in `uploadDate` (YYYY-MM-DD) for each talk to enable Google video rich results.
+const talks = [
+  {
+    name: 'Странное браузерное API — Дринкап',
+    description: 'Доклад Антона Ленева на встрече SPB Frontend Drinkup о малоизвестных и необычных браузерных API.',
+    videoId: 'xdY7BrkbRUo',
+    url: 'https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend',
+    embedUrl: 'https://www.youtube.com/embed/xdY7BrkbRUo',
+    uploadDate: '', // TODO
+  },
+  {
+    name: 'Особенности разработки мобильных приложений для Windows Phone и Windows 8',
+    description: 'Доклад Антона Ленева о разработке мобильных приложений для платформ Windows Phone и Windows 8.',
+    videoId: 't1tpZejtXGo',
+    url: 'https://youtu.be/t1tpZejtXGo',
+    embedUrl: 'https://www.youtube.com/embed/t1tpZejtXGo',
+    uploadDate: '', // TODO
+  },
+  {
+    name: 'Заменят ли алгоритмы дизайнеров в рекламе?',
+    description: 'Доклад Антона Ленева о применении алгоритмов и ИИ в рекламном дизайне.',
+    videoId: 'MxjNTSK-UI4',
+    url: 'https://www.youtube.com/live/MxjNTSK-UI4',
+    embedUrl: 'https://www.youtube.com/embed/MxjNTSK-UI4',
+    uploadDate: '', // TODO
+  },
+];
+
+const videoSchemas = talks.map(t => {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    'name': t.name,
+    'description': t.description,
+    'thumbnailUrl': `https://img.youtube.com/vi/${t.videoId}/hqdefault.jpg`,
+    'contentUrl': t.url,
+    'embedUrl': t.embedUrl,
+    'author': { '@id': 'https://alenev.ru/#person' },
+    'inLanguage': 'ru',
+  };
+  if (t.uploadDate) schema.uploadDate = t.uploadDate;
+  return schema;
+});
 ---
 
 <BaseLayout
@@ -10,10 +54,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://alenev.ru/" },
-      { "@type": "ListItem", "position": 2, "name": "IT Projects", "item": "https://alenev.ru/it/" }
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://alenev.ru/" },
+      { "@type": "ListItem", "position": 2, "name": "IT Проекты", "item": "https://alenev.ru/it/" }
     ]
   })} />
+  {videoSchemas.map(schema => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))}
   <h1>💻 IT Проекты и Разработка</h1>
 
   <section class="section">
@@ -63,26 +110,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="section">
     <h2>Выступления</h2>
 
-    <article class="talk">
-      <h3>Странное браузерное API — Дринкап</h3>
-      <div class="links">
-        <a href="https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend" target="_blank" rel="noopener">Смотреть на YouTube</a>
-      </div>
-    </article>
-
-    <article class="talk">
-      <h3>Особенности разработки мобильных приложений для Windows Phone и Windows 8</h3>
-      <div class="links">
-        <a href="https://youtu.be/t1tpZejtXGo?si=CfLFsdO79bmZbcN8" target="_blank" rel="noopener">Смотреть на YouTube</a>
-      </div>
-    </article>
-
-    <article class="talk">
-      <h3>Заменят ли алгоритмы дизайнеров в рекламе?</h3>
-      <div class="links">
-        <a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi" target="_blank" rel="noopener">Смотреть на YouTube</a>
-      </div>
-    </article>
+    {talks.map(talk => (
+      <article class="talk">
+        <h3>{talk.name}</h3>
+        <p>{talk.description}</p>
+        <div class="links">
+          <a href={talk.url} target="_blank" rel="noopener">Смотреть на YouTube</a>
+        </div>
+      </article>
+    ))}
   </section>
 
   <section class="section">

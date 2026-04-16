@@ -39,9 +39,51 @@ const allCostumes = (await getCollection('costumes'))
 const linkedCostumes = entry.data.costumes
   .map(slug => allCostumes.find(c => c.data.costumeId === slug))
   .filter(Boolean);
+
+const pageUrl = `https://alenev.ru/cosplay/events/${entry.data.costumeId}/`;
+const coverImageUrl = new URL(entry.data.coverImage, 'https://alenev.ru/').href;
+
+const eventSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  'name': entry.data.title,
+  'url': pageUrl,
+  'image': coverImageUrl,
+  'performer': { '@id': 'https://alenev.ru/#person' },
+  'eventAttendanceMode': 'https://schema.org/OfflineEventAttendanceMode',
+  'eventStatus': 'https://schema.org/EventScheduled',
+  'inLanguage': 'ru',
+};
+if (entry.data.date) eventSchema.startDate = entry.data.date.toISOString().split('T')[0];
+if (entry.data.location) {
+  eventSchema.location = {
+    '@type': 'Place',
+    'name': entry.data.location,
+  };
+}
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  'itemListElement': [
+    { '@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': 'https://alenev.ru/' },
+    { '@type': 'ListItem', 'position': 2, 'name': 'Косплей', 'item': 'https://alenev.ru/cosplay/' },
+    { '@type': 'ListItem', 'position': 3, 'name': entry.data.title, 'item': pageUrl },
+  ],
+};
+
+const metaDescription = entry.data.location && entry.data.date
+  ? `${entry.data.title} — ${entry.data.location}, ${entry.data.date.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long' })}. Антон Ленев на мероприятии в косплее.`
+  : `${entry.data.title} — отчёт с мероприятия. Косплей-костюмы Антона Ленева на событии.`;
 ---
 
-<BaseLayout title={`${entry.data.title} - Косплей`}>
+<BaseLayout
+  title={`${entry.data.title} - Косплей`}
+  description={metaDescription}
+  image={entry.data.coverImage}
+>
+  <script type="application/ld+json" set:html={JSON.stringify(eventSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <h1>{entry.data.title}</h1>
 
   <div class="event-info">
