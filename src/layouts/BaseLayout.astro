@@ -416,6 +416,16 @@ const schemaOrg = {
         color: var(--color-primary);
       }
 
+      /* Dark theme inverts the footer (cream bg + dark text). The light-theme
+         link color (yellow accent) has ~1.3:1 contrast on cream — invisible.
+         Swap to dark body color; underline + weight preserve link affordance. */
+      [data-theme="dark"] .footer-contact a {
+        color: var(--color-bg);
+      }
+      [data-theme="dark"] .footer-contact a:hover {
+        color: var(--color-primary-dark);
+      }
+
       /* ===== GLOBAL COMPONENTS ===== */
 
       /* Cards */
@@ -598,6 +608,13 @@ const schemaOrg = {
           display: flex;
           align-items: center;
           justify-content: center;
+        }
+
+        /* Mobile nav dropdown has yellow accent bg in both themes.
+           Force dark text so the dark-theme cream body color doesn't bleed in. */
+        nav a,
+        [data-theme="dark"] nav a {
+          color: #1a1a1a;
         }
 
         .header-controls {
