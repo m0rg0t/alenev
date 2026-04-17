@@ -23,8 +23,14 @@ const t = useTranslations('en');
     </p>
 
     <div class="about-images">
-      <img src="/images/anton-lenev.jpg" alt="Anton Lenev" width="853" height="1280" style="max-width:300px;width:100%;height:auto;" />
-      <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" width="1280" height="1280" style="max-width:300px;width:100%;height:auto;" />
+      <picture>
+        <source type="image/webp" srcset="/images/anton-lenev-300.webp 1x, /images/anton-lenev-600.webp 2x" />
+        <img src="/images/anton-lenev.jpg" alt="Anton Lenev" width="853" height="1280" fetchpriority="high" style="max-width:300px;width:100%;height:auto;" />
+      </picture>
+      <picture>
+        <source type="image/webp" srcset="/images/anton-lenev-art-300.webp 1x, /images/anton-lenev-art-600.webp 2x" />
+        <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" width="1280" height="1280" loading="lazy" style="max-width:300px;width:100%;height:auto;" />
+      </picture>
     </div>
   </section>
 

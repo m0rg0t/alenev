@@ -1,7 +1,7 @@
-# Anton Alenev — Personal Portfolio & Blog
+# Anton Lenev — Personal Portfolio & Blog
 
-> Anton Alenev (online handles: AntonLenev, m0rg0t) is a Russian software developer,
-> cosplayer, audiobook narrator, and podcast host based in Rybinsk, Russia.
+> Anton Lenev (online handles: AntonLenev, m0rg0t; Russian spelling: Антон Ленев; also appears as Anton Alenev)
+> is a Russian software developer, cosplayer, audiobook narrator, and podcast host based in Rybinsk, Russia.
 > This site is his personal portfolio and blog covering programming, creative projects,
 > cosplay, and media production. Primary language: Russian, with an English mirror at /en.
 
@@ -16,29 +16,29 @@
 ## IT & Programming
 
 - [IT Projects](https://alenev.ru/it): Articles, presentations and open-source projects
-  by Anton Alenev covering software development, AI tooling, TypeScript, Node.js,
+  by Anton Lenev covering software development, AI tooling, TypeScript, Node.js,
   web apps, VK Mini Apps, and Yandex skills.
 
 ## Podcasts
 
 - [Podcasts](https://alenev.ru/podcasts): Episodes of "Косплей и прочие штуки"
-  (Cosplay and Other Things) — a podcast hosted by Anton Alenev covering cosplay,
+  (Cosplay and Other Things) — a podcast hosted by Anton Lenev covering cosplay,
   technology, and creative topics.
 
 ## Audiobooks
 
-- [Audiobooks](https://alenev.ru/audiobooks): Catalog of audiobooks narrated by Anton Alenev,
+- [Audiobooks](https://alenev.ru/audiobooks): Catalog of audiobooks narrated by Anton Lenev,
   available on the Litres platform.
 
 ## Cosplay
 
 - [Cosplay](https://alenev.ru/cosplay): Photography, build logs, and event coverage of
-  Anton Alenev's cosplay work — costumes of characters from games, films, and comics.
+  Anton Lenev's cosplay work — costumes of characters from games, films, and comics.
 
 ## Publications
 
 - [Publications](https://alenev.ru/publications): Bylined articles and media mentions
-  featuring Anton Alenev.
+  featuring Anton Lenev.
 
 ## Other Projects
 

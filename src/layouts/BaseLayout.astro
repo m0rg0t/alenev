@@ -76,7 +76,7 @@ const schemaOrg = {
       'name': 'Anton Lenev',
       'description': 'Personal site of Anton Lenev — programmer, cosplayer, audiobook narrator, podcast host.',
       'inLanguage': ['ru', 'en'],
-      'author': { '@id': 'https://alenev.ru/#person' },
+      'publisher': { '@id': 'https://alenev.ru/#person' },
     },
   ],
 };
@@ -95,6 +95,12 @@ const schemaOrg = {
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalUrl} />
+
+    {/* Preload hero image on homepage — it's the LCP element on desktop.
+        WebP 600w covers 2x DPR at rendered 300px width. */}
+    {(Astro.url.pathname === '/' || Astro.url.pathname === '/en/') && (
+      <link rel="preload" as="image" href="/images/anton-lenev-600.webp" type="image/webp" fetchpriority="high" />
+    )}
 
     <!-- hreflang -->
     <link rel="alternate" hreflang="ru" href={ruUrl} />
@@ -285,6 +291,12 @@ const schemaOrg = {
         font-weight: 700;
         text-decoration: none;
         color: var(--color-text);
+        min-height: 44px;
+        min-width: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
       }
 
       .lang-switcher a:first-child {
@@ -352,6 +364,23 @@ const schemaOrg = {
       main {
         min-height: calc(100vh - 200px);
         padding: 2rem 0;
+      }
+
+      /* Shared utility: short contextual intro paragraph above page content,
+         typically links to /about to surface author context on subpages. */
+      main :global(.page-intro) {
+        margin: 0 0 2rem;
+        color: var(--color-text-muted);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      main :global(.page-intro a) {
+        color: var(--color-primary-dark);
+        text-decoration: underline;
+        font-weight: 700;
+      }
+      main :global(.page-intro a:hover) {
+        color: var(--color-secondary);
       }
 
       /* ===== FOOTER ===== */

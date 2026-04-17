@@ -21,6 +21,11 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   })} />
   <h1>📝 Публикации и Статьи</h1>
 
+  <p class="page-intro">
+    Подборка авторских статей и упоминаний Антона Ленева на Habr, Tproger, Instructables,
+    в Игромании, Канобу, DTF и региональных СМИ. <a href="/about">Об авторе →</a>
+  </p>
+
   <section class="section">
     <h2>Мои статьи</h2>
 
@@ -398,11 +403,11 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "Publications by Anton Alenev",
+    "name": "Publications by Anton Lenev",
     "author": {
       "@type": "Person",
       "@id": "https://alenev.ru/#person",
-      "name": "Anton Alenev"
+      "name": "Anton Lenev"
     },
     "itemListElement": [
       {

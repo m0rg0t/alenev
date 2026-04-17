@@ -31,12 +31,23 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
   title="Косплей - Антон Ленев"
   description="Косплей-портфолио Антона Ленева: костюмы Айзека Кларка из Dead Space, Mass Effect, Skyrim, Хищника и другие. Процесс создания, материалы, фотосессии и события."
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': 'https://alenev.ru/' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Косплей', 'item': 'https://alenev.ru/cosplay/' }
+    ]
+  })} />
   <h1>{t('cosplay.title')}</h1>
 
   <section class="intro">
     <p class="lead">
-      Создание костюмов персонажей из игр, фильмов и комиксов — это сочетание креативности,
-      технических навыков и внимания к деталям. Каждый проект — это уникальный вызов.
+      Коллекция косплей-проектов Антона Ленева — костюмы по мотивам Dead Space, Mass Effect,
+      Skyrim, Overwatch, Хищника и русских сказок. В работе сочетаются EVA-фоам, 3D-печать,
+      электроника и подсветка. Костюм Айзека Кларка из Dead Space — один из самых
+      технически сложных проектов, получивший публикации на Habr, DTF и Instructables.
+      <a href="/about">Подробнее об Антоне →</a>
     </p>
   </section>
 
