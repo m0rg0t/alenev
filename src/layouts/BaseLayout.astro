@@ -89,7 +89,9 @@ const schemaOrg = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={ogDescription} />
-    <meta name="keywords" content="Антон Ленев, Антон Ленёв, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги" />
+    <meta name="keywords" content={lang === 'en'
+      ? 'Anton Lenev, Anton Alenev, antonlenev, m0rg0t, programmer, cosplay, podcasts, audiobooks, Rybinsk'
+      : 'Антон Ленев, Антон Ленёв, Антон Аленев, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги, Рыбинск'} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="canonical" href={canonicalUrl} />

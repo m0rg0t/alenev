@@ -69,6 +69,11 @@ const metaDescription = entry.data.character && entry.data.franchise
     <div class="badge-row">
       <span class="badge character">{entry.data.character}</span>
       <span class="badge franchise">{entry.data.franchise}</span>
+      {entry.data.date && (
+        <time class="badge date" datetime={entry.data.date.toISOString().split('T')[0]}>
+          {entry.data.date.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long' })}
+        </time>
+      )}
     </div>
   )}
 
@@ -158,6 +163,12 @@ const metaDescription = entry.data.character && entry.data.franchise
 
     :global([data-theme="dark"]) .badge.franchise {
       color: #1a1a1a;
+    }
+
+    .badge.date {
+      background: var(--color-surface);
+      color: var(--color-text);
+      font-family: 'Space Grotesk', system-ui, sans-serif;
     }
 
     .description {

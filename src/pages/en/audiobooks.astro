@@ -107,11 +107,11 @@ const audiobooks = [
     <div class="books-grid">
       {audiobooks.map((book) => (
         <article class="book-card">
-          <a href={book.url} target="_blank" rel="noopener">
+          <a href={book.url} target="_blank" rel="noopener" hreflang="ru">
             <img src={`/audiobooks/${book.cover}`} alt={book.title} />
             <div class="book-info">
-              <h3>{book.title}</h3>
-              <p class="author">{book.author}</p>
+              <h3 lang="ru">{book.title}</h3>
+              <p class="author" lang="ru">{book.author}</p>
             </div>
           </a>
         </article>
