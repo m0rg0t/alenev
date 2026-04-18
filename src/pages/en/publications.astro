@@ -251,25 +251,6 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
   </section>
 
-  <section class="section">
-    <h2>Achievements</h2>
-
-    <article class="achievement">
-      <h3>🏆 Tinkoff Competition (3rd place, 2013) — Windows Phone app</h3>
-      <p>Award ceremony for a Windows Phone app at the Tinkoff Bank competition.</p>
-      {/* Disabled direct Meta links (FB album/photo) — Meta is banned as extremist in RU.
-          Original links:
-            https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807
-            https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808
-      */}
-      {archivesByUrl.has("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808") && (
-        <div class="links">
-          <a href={`/archive/${archivesByUrl.get("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808")}`} class="archive-link">Archived photo</a>
-        </div>
-      )}
-    </article>
-  </section>
-
   <style>
     /* Page Title */
     h1 {

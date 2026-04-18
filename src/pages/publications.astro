@@ -258,25 +258,6 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
   </section>
 
-  <section class="section">
-    <h2>Достижения</h2>
-
-    <article class="achievement">
-      <h3>🏆 Тинькофф конкурс (3 место, 2013) — Windows Phone приложение</h3>
-      <p>Награждение на конкурсе Тинькофф Банка за приложение для Windows Phone.</p>
-      {/* Disabled direct Meta links (FB album/photo) — Meta признана экстремистской в РФ.
-          Original links:
-            https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807
-            https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808
-      */}
-      {archivesByUrl.has("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808") && (
-        <div class="links">
-          <a href={`/archive/${archivesByUrl.get("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808")}`} class="archive-link">Архив фото</a>
-        </div>
-      )}
-    </article>
-  </section>
-
   <style>
     /* Page Title */
     h1 {

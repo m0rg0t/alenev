@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const archives = await getCollection('archives');
+const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 
 // TODO: fill in `uploadDate` (YYYY-MM-DD) for each talk to enable Google video rich results.
 const talks = [
@@ -176,6 +180,21 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
+    <h2>Навыки для Яндекс.Алисы</h2>
+
+    <article class="project">
+      <h3>Былина о Святогоре</h3>
+      <p>
+        Голосовой навык для умной колонки Яндекс.Алиса, рассказывающий древнерусскую былину о богатыре Святогоре.
+        Интерактивное повествование с элементами выбора развития сюжета.
+      </p>
+      <div class="links">
+        <a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor" target="_blank" rel="noopener">Открыть в Яндекс.Диалогах</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section">
     <h2>Выступления</h2>
 
     {talks.map(talk => (
@@ -187,6 +206,25 @@ const videoSchemas = talks.map(t => {
         </div>
       </article>
     ))}
+  </section>
+
+  <section class="section">
+    <h2>Награды и достижения</h2>
+
+    <article class="project">
+      <h3>🏆 Тинькофф конкурс (3 место, 2013) — Windows Phone приложение</h3>
+      <p>Награждение на конкурсе Тинькофф Банка за приложение для Windows Phone.</p>
+      {/* Disabled direct Meta links (FB album/photo) — Meta признана экстремистской в РФ.
+          Original links:
+            https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807
+            https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808
+      */}
+      {archivesByUrl.has("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808") && (
+        <div class="links">
+          <a href={`/archive/${archivesByUrl.get("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808")}`}>Архив фото</a>
+        </div>
+      )}
+    </article>
   </section>
 
   <section class="section">

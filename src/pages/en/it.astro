@@ -1,5 +1,9 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const archives = await getCollection('archives');
+const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 ---
 
 <BaseLayout
@@ -105,6 +109,21 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   </section>
 
   <section class="section">
+    <h2>Yandex Alice Skills</h2>
+
+    <article class="project">
+      <h3>Bylina o Svyatogor</h3>
+      <p>
+        A voice skill for the Yandex Alice smart speaker, narrating an ancient Russian bylina (epic tale) about the hero Svyatogor.
+        Interactive storytelling with plot choice elements.
+      </p>
+      <div class="links">
+        <a href="https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor" target="_blank" rel="noopener">Open in Yandex Dialogs</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section">
     <h2>Talks/Presentations</h2>
 
     <article class="talk">
@@ -147,6 +166,25 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div class="links">
         <a href="https://www.youtube.com/watch?v=kzzYJEoJXzo" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Awards & Achievements</h2>
+
+    <article class="project">
+      <h3>🏆 Tinkoff Competition (3rd place, 2013) — Windows Phone app</h3>
+      <p>Award ceremony for a Windows Phone app at the Tinkoff Bank competition.</p>
+      {/* Disabled direct Meta links (FB album/photo) — Meta is banned as extremist in RU.
+          Original links:
+            https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807
+            https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808
+      */}
+      {archivesByUrl.has("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808") && (
+        <div class="links">
+          <a href={`/archive/${archivesByUrl.get("https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808")}`}>Archived photo</a>
+        </div>
+      )}
     </article>
   </section>
 
