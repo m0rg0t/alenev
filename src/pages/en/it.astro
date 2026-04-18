@@ -60,9 +60,58 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </article>
 
     <article class="project">
+      <h3>js-url-downloader</h3>
+      <p>JavaScript utility for batch-downloading files from a list of URLs.</p>
+      <div class="links">
+        <a href="https://github.com/m0rg0t/js-url-downloader" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>content-to-markdown-extension</h3>
+      <p>Chrome/Edge extension that converts web pages and selected content into Markdown.</p>
+      <div class="links">
+        <a href="https://github.com/m0rg0t/content-to-markdown-extension" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project">
       <h3>Flight search app</h3>
       <p>Windows Store app (legacy project).</p>
     </article>
+  </section>
+
+  <section class="section">
+    <h2>VK Mini Apps</h2>
+    <p class="page-intro" style="margin-bottom: 1.5rem;">
+      Mini-apps for VKontakte — entertainment and educational projects.
+    </p>
+
+    <div class="apps-grid">
+      <article class="app-card">
+        <h3>🔮 Tarot</h3>
+        <p>Tarot card readings right inside VK</p>
+        <a href="https://vk.com/app51769331?mid=4443423" target="_blank" rel="noopener">Open app</a>
+      </article>
+
+      <article class="app-card">
+        <h3>⭐ Astroforecast</h3>
+        <p>Astrological forecasts and horoscopes</p>
+        <a href="https://vk.com/app51788038_4443423" target="_blank" rel="noopener">Open app</a>
+      </article>
+
+      <article class="app-card">
+        <h3>💎 Magic Stones</h3>
+        <p>Discover the properties of various gemstones</p>
+        <a href="https://vk.com/app51896624_4443423" target="_blank" rel="noopener">Open app</a>
+      </article>
+
+      <article class="app-card">
+        <h3>ᚱ Runes</h3>
+        <p>Rune divination and interpretation</p>
+        <a href="https://vk.com/app51819171_4443423" target="_blank" rel="noopener">Open app</a>
+      </article>
+    </div>
   </section>
 
   <section class="section">
@@ -86,6 +135,27 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <h3>Will algorithms replace designers in advertising?</h3>
       <div class="links">
         <a href="https://www.youtube.com/live/MxjNTSK-UI4?si=UBY4zgtX6Y2NFdHi" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </article>
+
+    <article class="talk">
+      <h3>EyeLens — Nokia Create Contest</h3>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=RGIRdYbMdaE" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </article>
+
+    <article class="talk">
+      <h3>SIA Russia 2015 Finalist: EyeLens</h3>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=3kBqrkSM83s" target="_blank" rel="noopener">Watch on YouTube</a>
+      </div>
+    </article>
+
+    <article class="talk">
+      <h3>IT Hobbyist — Tproger interview (video)</h3>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=kzzYJEoJXzo" target="_blank" rel="noopener">Watch on YouTube</a>
       </div>
     </article>
   </section>
@@ -198,6 +268,66 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       background: var(--color-primary-dark);
     }
 
+    /* VK Mini Apps grid */
+    .apps-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .app-card {
+      background: var(--color-surface);
+      padding: 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      text-align: center;
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .app-card:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: var(--shadow-offset-hover) var(--shadow-offset-hover) 0 var(--color-border);
+    }
+
+    .app-card:nth-child(1) { border-left: 6px solid var(--color-primary); }
+    .app-card:nth-child(2) { border-left: 6px solid var(--color-accent); }
+    .app-card:nth-child(3) { border-left: 6px solid var(--color-accent-alt); }
+    .app-card:nth-child(4) { border-left: 6px solid var(--color-secondary); }
+
+    :global([data-theme="dark"]) .app-card:nth-child(2) { border-left-color: var(--color-accent); }
+
+    .app-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .app-card p {
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      text-transform: none;
+    }
+
+    .app-card a {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border: var(--border-width) solid var(--color-border);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 2px 2px 0 var(--color-border);
+    }
+
+    .app-card a:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 3px 3px 0 var(--color-border);
+      background: var(--color-primary-dark);
+    }
+
     /* Responsive */
     @media (max-width: 768px) {
       h1 {
@@ -210,6 +340,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       }
 
       .links a {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      .apps-grid { grid-template-columns: 1fr; }
+
+      .app-card { box-shadow: 3px 3px 0 var(--color-border); }
+
+      .app-card a {
         min-height: 44px;
         display: inline-flex;
         align-items: center;

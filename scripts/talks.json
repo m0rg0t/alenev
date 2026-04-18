@@ -1,0 +1,67 @@
+{
+  "$schema": "./talks.schema.md",
+  "talks": [
+    {
+      "id": "spbfrontend-weird-browser-apis",
+      "title": "Странное браузерное API — Дринкап",
+      "description": "Доклад Антона Ленева на встрече SPB Frontend Drinkup о малоизвестных и необычных браузерных API.",
+      "category": "talk",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/watch?v=xdY7BrkbRUo"
+      ]
+    },
+    {
+      "id": "windows-phone-windows8-apps",
+      "title": "Особенности разработки мобильных приложений для Windows Phone и Windows 8",
+      "description": "Доклад Антона Ленева о разработке мобильных приложений для платформ Windows Phone и Windows 8.",
+      "category": "talk",
+      "lang": "ru",
+      "sources": [
+        "https://youtu.be/t1tpZejtXGo"
+      ]
+    },
+    {
+      "id": "algorithms-replacing-designers",
+      "title": "Заменят ли алгоритмы дизайнеров в рекламе?",
+      "description": "Доклад Антона Ленева о применении алгоритмов и ИИ в рекламном дизайне.",
+      "category": "talk",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/live/MxjNTSK-UI4"
+      ]
+    },
+    {
+      "id": "eyelens-nokia-create-contest",
+      "title": "EyeLens — Nokia Create Contest",
+      "description": "Презентация проекта EyeLens (приложение для слабовидящих и людей с нарушениями цветовосприятия) в рамках конкурса Nokia Create.",
+      "category": "pitch",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/watch?v=RGIRdYbMdaE"
+      ]
+    },
+    {
+      "id": "eyelens-sia-russia-2015-finalist",
+      "title": "SIA Russia 2015 Finalist: EyeLens",
+      "description": "Финалистский ролик проекта EyeLens в рамках Social Impact Award Russia 2015.",
+      "category": "pitch",
+      "lang": "ru",
+      "date": "2015",
+      "sources": [
+        "https://www.youtube.com/watch?v=3kBqrkSM83s"
+      ]
+    },
+    {
+      "id": "tproger-hobby-interview",
+      "title": "Хобби айтишника: Tproger интервью (видеоверсия)",
+      "description": "Видеоверсия интервью Антона Ленева на Tproger о хобби айтишника — косплее, 3D-печати и озвучке аудиокниг.",
+      "category": "interview",
+      "lang": "ru",
+      "date": "2025-09-02",
+      "sources": [
+        "https://www.youtube.com/watch?v=kzzYJEoJXzo"
+      ]
+    }
+  ]
+}

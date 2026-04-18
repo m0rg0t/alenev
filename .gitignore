@@ -28,3 +28,7 @@ pnpm-debug.log*
 
 # superpowers brainstorming
 .superpowers/
+
+# archived video backups — large files, keep out of git (see scripts/archive-talks.sh)
+archive/videos/
+
