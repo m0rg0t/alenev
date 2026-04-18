@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && bun run scripts/generate-markdown.ts",
+    "build:markdown": "bun run scripts/generate-markdown.ts",
     "preview": "astro preview",
     "astro": "astro",
     "archive": "bun run scripts/archive-fetcher/index.ts",
@@ -16,6 +17,7 @@
     "astro": "^5.14.7"
   },
   "devDependencies": {
+    "node-html-parser": "^7.1.0",
     "sharp": "^0.34.5"
   }
 }
