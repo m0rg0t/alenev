@@ -75,6 +75,16 @@
         "https://vk.com/press/dev-2025",
         "https://vk.com/wall-166562603_11207"
       ]
+    },
+    {
+      "id": "obsidian-plugin-react-not-needed-stream",
+      "title": "Стрим: плагин для Obsidian и «почему React не нужен»",
+      "description": "Стрим с участием Антона Ленева о разработке плагина для Obsidian и обсуждение тезиса, что React не всегда нужен во фронтенде.",
+      "category": "stream",
+      "lang": "ru",
+      "sources": [
+        "https://vk.com/video220730549_456239696"
+      ]
     }
   ]
 }
