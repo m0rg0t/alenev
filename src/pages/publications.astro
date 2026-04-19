@@ -144,6 +144,17 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>Меняющий реальность</h3>
+      <p>Очерк Газеты Рыбинск о косплее Антона Ленева — как рыбинец превращает игровых и киношных персонажей в костюмы (2018).</p>
+      <div class="links">
+        <a href="https://gazeta-rybinsk.ru/2018/11/17/40482" target="_blank" rel="noopener">Газета Рыбинск</a>
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2018/11/17/40482") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2018/11/17/40482")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>Антон Ленев о конкурсе BudgetApps</h3>
       <div class="links">
         <a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html" target="_blank" rel="noopener">AppTractor</a>

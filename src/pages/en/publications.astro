@@ -137,6 +137,17 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>Reality Shifter</h3>
+      <p>Gazeta Rybinsk feature on Anton Lenev's cosplay — how a Rybinsk local turns game and film characters into real-life costumes (2018).</p>
+      <div class="links">
+        <a href="https://gazeta-rybinsk.ru/2018/11/17/40482" target="_blank" rel="noopener">Gazeta Rybinsk</a>
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2018/11/17/40482") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2018/11/17/40482")}`} class="archive-link">Archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>Anton Lenev on the BudgetApps Competition</h3>
       <div class="links">
         <a href="https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html" target="_blank" rel="noopener">AppTractor</a>
