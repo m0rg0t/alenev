@@ -9,6 +9,9 @@ date: 2018-01-01
 tags: ["русская-сказка", "морозко", "фэнтези", "зима"]
 materials: ["ткань", "мех", "кожа", "дерево"]
 buildTime: "2 месяца"
+socialLinks:
+  - platform: "VK Fest 2023 (фотосет)"
+    url: "https://vk.com/wall-57521509_3188"
 order: 6
 ---
 

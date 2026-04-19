@@ -9,6 +9,9 @@ date: 2018-01-01
 tags: ["russian-fairy-tale", "morozko", "fantasy", "winter"]
 materials: ["fabric", "fur", "leather", "wood"]
 buildTime: "2 months"
+socialLinks:
+  - platform: "VK Fest 2023 (photoset)"
+    url: "https://vk.com/wall-57521509_3188"
 order: 6
 ---
 
