@@ -302,6 +302,19 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>🏆 Косплей как стиль жизни — победа в «Охтакон 2020» (Tribuna.ee)</h3>
+      <p>
+        Репортаж Арсения Денисова с финала фестиваля «Охтакон» в ТЦ «Охта молл» (Санкт-Петербург, 7 марта 2020). Антон Ленев победил в номинации «Лучший косплей» в образе Тора из «Тор: Рагнарёк».
+      </p>
+      <div class="links">
+        <a href="https://tribuna.ee/attributes/kosplay/" target="_blank" rel="noopener">Tribuna.ee</a>
+        {archivesByUrl.has("https://tribuna.ee/attributes/kosplay/") && (
+          <a href={`/archive/${archivesByUrl.get("https://tribuna.ee/attributes/kosplay/")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>🏆 Победа команды Profit Button на PayPal Battle Hack Moscow (2013)</h3>
       <p>
         Команда Profit Button получила специальный приз от Ecwid на хакатоне PayPal Battle Hack 2013 в Москве — за лучшее решение, в котором использована технология Ecwid. Разработанное решение позволяло встраивать виджет интернет-магазина в любое мобильное приложение на iOS и Android без изменения дизайна и кода.

@@ -295,6 +295,19 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>🏆 "Cosplay as a way of life" — "Best Cosplay" win at Ohtacon 2020 (Tribuna.ee)</h3>
+      <p>
+        Arseniy Denisov's report from the Ohtacon cosplay contest final at the Okhta Mall in St. Petersburg (March 7, 2020). Anton Lenev won the "Best Cosplay" nomination as Thor from <em>Thor: Ragnarok</em>.
+      </p>
+      <div class="links">
+        <a href="https://tribuna.ee/attributes/kosplay/" target="_blank" rel="noopener">Tribuna.ee</a>
+        {archivesByUrl.has("https://tribuna.ee/attributes/kosplay/") && (
+          <a href={`/archive/${archivesByUrl.get("https://tribuna.ee/attributes/kosplay/")}`} class="archive-link">Archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>🏆 Profit Button wins PayPal Battle Hack Moscow (2013)</h3>
       <p>
         Profit Button received a special prize from Ecwid at the PayPal Battle Hack 2013 hackathon in Moscow — for the best solution built with Ecwid's technology. The project let any iOS or Android mobile app embed an e-commerce widget without changing the app's design or code.
