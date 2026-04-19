@@ -1,5 +1,7 @@
 ---
+import { Picture } from 'astro:assets';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import skullPinCover from '../../../assets/skull-pin/photo-1.jpg';
 ---
 
 <BaseLayout
@@ -13,7 +15,16 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 
     <article class="project project-card">
       <a href="/en/other/skull-pin" class="cover-link" aria-label="Skull Pin — project page">
-        <img src="/images/skull-pin/photo-1.jpg" alt="Skull Pin accessory from the collection" class="cover" loading="lazy" />
+        <Picture
+          src={skullPinCover}
+          alt="Skull Pin accessory from the collection"
+          formats={['avif', 'webp']}
+          widths={[280, 560, 840]}
+          sizes="(max-width: 640px) 100vw, 280px"
+          class="cover"
+          loading="lazy"
+          decoding="async"
+        />
       </a>
       <div class="card-body">
         <h3>"Skull Pin" Jewelry Brand</h3>
@@ -263,6 +274,12 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
       background: transparent !important;
       box-shadow: none !important;
       border: none !important;
+    }
+
+    .project-card .cover-link picture {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
     .project-card .cover {

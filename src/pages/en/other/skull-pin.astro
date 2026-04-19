@@ -1,13 +1,20 @@
 ---
+import { Picture } from 'astro:assets';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import photo1 from '../../../assets/skull-pin/photo-1.jpg';
+import photo2 from '../../../assets/skull-pin/photo-2.jpg';
+import photo3 from '../../../assets/skull-pin/photo-3.jpg';
+import photo4 from '../../../assets/skull-pin/photo-4.jpg';
+import photo5 from '../../../assets/skull-pin/photo-5.jpg';
+import photo6 from '../../../assets/skull-pin/photo-6.jpg';
 
 const photos = [
-  { src: '/images/skull-pin/photo-1.jpg', alt: 'Skull Pin — leather choker with a bone pendant' },
-  { src: '/images/skull-pin/photo-2.jpg', alt: 'Skull Pin — white choker' },
-  { src: '/images/skull-pin/photo-3.jpg', alt: 'Skull Pin — pink choker' },
-  { src: '/images/skull-pin/photo-4.jpg', alt: 'Skull Pin — blush choker' },
-  { src: '/images/skull-pin/photo-5.jpg', alt: 'Skull Pin — red choker' },
-  { src: '/images/skull-pin/photo-6.jpg', alt: 'Skull Pin — white choker with pendant' },
+  { src: photo1, alt: 'Skull Pin — leather choker with a bone pendant' },
+  { src: photo2, alt: 'Skull Pin — white choker' },
+  { src: photo3, alt: 'Skull Pin — pink choker' },
+  { src: photo4, alt: 'Skull Pin — blush choker' },
+  { src: photo5, alt: 'Skull Pin — red choker' },
+  { src: photo6, alt: 'Skull Pin — white choker with pendant' },
 ];
 ---
 
@@ -41,8 +48,16 @@ const photos = [
     <h2>Gallery</h2>
     <div class="gallery">
       {photos.map((p) => (
-        <a href={p.src} target="_blank" rel="noopener" class="gallery-item">
-          <img src={p.src} alt={p.alt} loading="lazy" />
+        <a href={p.src.src} target="_blank" rel="noopener" class="gallery-item">
+          <Picture
+            src={p.src}
+            alt={p.alt}
+            formats={['avif', 'webp']}
+            widths={[240, 480, 720, 960]}
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 240px"
+            loading="lazy"
+            decoding="async"
+          />
         </a>
       ))}
     </div>
@@ -128,6 +143,12 @@ const photos = [
       box-shadow: 4px 4px 0 var(--color-border);
       overflow: hidden;
       background: var(--color-surface);
+    }
+
+    .gallery-item picture {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
     .gallery-item img {
