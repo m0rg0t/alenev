@@ -275,7 +275,10 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   </section>
 
   <section class="section">
-    <h2>Awards & Achievements</h2>
+    <h2>Hackathons, Contests & Grants</h2>
+    <p class="page-intro" style="margin-bottom: 1.5rem;">
+      Confirmed participations and wins across developer hackathons, app contests, and grant programs.
+    </p>
 
     <article class="project">
       <h3>🏆 VK Dev Grants 2025 — winner with "Otredach"</h3>
@@ -324,6 +327,111 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
       <div class="links">
         <a href="https://vk.com/@4443423-vk-mini-apps-proverka-podpisi-i-nodejs" target="_blank" rel="noopener">Article</a>
         <a href="https://vk.com/wall-166562603_9332" target="_blank" rel="noopener">Win announcement</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 BudgetApps 2015 — winner in the Yandex category</h3>
+      <p>
+        "Where is a Good Place to Live?" took 1st place in the Yandex category of the Russian Ministry of Finance BudgetApps open financial data contest.
+        The web service estimated how attractive a district was for living based on social infrastructure and open public procurement data.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps") && (
+          <a href={`/archive/${archivesByUrl.get("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps")}`}>Ministry of Finance archive</a>
+        )}
+        {archivesByUrl.has("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html")}`}>AppTractor archive</a>
+        )}
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2015/04/29/18147") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2015/04/29/18147")}`}>Gazeta Rybinsk archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Social Impact Award Russia 2015 — finalist with EyeLens</h3>
+      <p>
+        EyeLens, an app for visually impaired users and people with color vision deficiency, reached the finals of Social Impact Award Russia 2015.
+      </p>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=3kBqrkSM83s" target="_blank" rel="noopener">Finalist video</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Nokia Create Contest — finalist with EyeLens</h3>
+      <p>
+        EyeLens participated in Nokia Create as a Windows Phone project helping visually impaired and color-blind users.
+      </p>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=RGIRdYbMdaE" target="_blank" rel="noopener">Project presentation</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Junction 2020 — OwlEye prototype</h3>
+      <p>
+        The first OwlEye prototype was built for Junction 2020: a "parking sensor for humans" shaped as an owl necklace,
+        using an ultrasonic distance sensor, vibration, and sound alerts to warn about nearby obstacles.
+      </p>
+      <div class="links">
+        <a href="https://habr.com/ru/articles/754234/" target="_blank" rel="noopener">Article on Habr</a>
+        <a href="https://github.com/m0rg0t/OwlEye" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Moscow Government Hackathon 2014 — "Where is a Good Place to Live?"</h3>
+      <p>
+        Anton presented "Where is a Good Place to Live?" at a two-day hackathon for mobile apps and web services based on Moscow open data.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://www.m24.ru/videos/svyaz/27042014/50447") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.m24.ru/videos/svyaz/27042014/50447")}`}>M24 archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 PayPal Battle Hack Moscow 2013 — Ecwid special prize</h3>
+      <p>
+        Profit Button received Ecwid's special prize at PayPal Battle Hack 2013 in Moscow for a solution that let mobile apps embed
+        an e-commerce widget without changing the app's design or code.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow") && (
+          <a href={`/archive/${archivesByUrl.get("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow")}`}>Spark archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 HackPoint 3.0 — regional hackathon in Cherepovets (2014)</h3>
+      <p>
+        Participation in the HackPoint 3.0 regional hackathon in Cherepovets (October 17–19, 2014). 48 hours to build
+        prototypes — mobile apps and web services. Recap video published by the organizers in December 2014.
+      </p>
+      <div class="links">
+        <a href="https://vk.com/wall-51121552_949" target="_blank" rel="noopener">VK post</a>
+        <a href="https://www.youtube.com/watch?v=lkO7DcZPaWU" target="_blank" rel="noopener">Recap video</a>
+        {archivesByUrl.has("https://vk.com/wall-51121552_949") && (
+          <a href={`/archive/${archivesByUrl.get("https://vk.com/wall-51121552_949")}`}>Archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 OpenPolice 2013 — 2nd place with "Where is the local officer?"</h3>
+      <p>
+        "Where is the local officer?", a Windows Phone app, took 2nd place in the Mobile App category of the OpenPolice contest.
+        According to Polit.ru, the project also grew out of a two-day hackathon where it became one of the laureates.
+      </p>
+      <div class="links">
+        <a href="https://polit.ru/articles/strana/gde-uchastkovyy-2013-07-04/" target="_blank" rel="noopener">Polit.ru</a>
+        {archivesByUrl.has("https://www.youtube.com/watch?v=HmDg23YXG5w") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.youtube.com/watch?v=HmDg23YXG5w")}`}>Talk archive</a>
+        )}
       </div>
     </article>
 

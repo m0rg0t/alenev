@@ -315,7 +315,10 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
-    <h2>Награды и достижения</h2>
+    <h2>Хакатоны, конкурсы и гранты</h2>
+    <p class="page-intro" style="margin-bottom: 1.5rem;">
+      Подборка подтверждённых участий и побед в разработческих хакатонах, конкурсах приложений и грантовых программах.
+    </p>
 
     <article class="project">
       <h3>🏆 VK Dev Grants 2025 — победитель с проектом «Отредач»</h3>
@@ -364,6 +367,111 @@ const videoSchemas = talks.map(t => {
       <div class="links">
         <a href="https://vk.com/@4443423-vk-mini-apps-proverka-podpisi-i-nodejs" target="_blank" rel="noopener">Статья</a>
         <a href="https://vk.com/wall-166562603_9332" target="_blank" rel="noopener">Анонс победы</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 BudgetApps 2015 — победитель в номинации «Яндекс»</h3>
+      <p>
+        Проект «Где жить хорошо?» занял 1 место в номинации «Яндекс» конкурса Минфина России на открытых финансовых данных BudgetApps.
+        Веб-сервис оценивал привлекательность района для жизни по объектам социальной инфраструктуры и открытым данным о госзакупках.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps") && (
+          <a href={`/archive/${archivesByUrl.get("https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps")}`}>Минфин (архив)</a>
+        )}
+        {archivesByUrl.has("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html")}`}>AppTractor (архив)</a>
+        )}
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2015/04/29/18147") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2015/04/29/18147")}`}>Газета Рыбинск (архив)</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Social Impact Award Russia 2015 — финалист с EyeLens</h3>
+      <p>
+        EyeLens, приложение для слабовидящих и людей с нарушениями цветовосприятия, вышло в финал Social Impact Award Russia 2015.
+      </p>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=3kBqrkSM83s" target="_blank" rel="noopener">Финалистский ролик</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Nokia Create Contest — финалист с EyeLens</h3>
+      <p>
+        EyeLens участвовал в конкурсе Nokia Create как проект на Windows Phone для помощи слабовидящим и дальтоникам.
+      </p>
+      <div class="links">
+        <a href="https://www.youtube.com/watch?v=RGIRdYbMdaE" target="_blank" rel="noopener">Презентация проекта</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Junction 2020 — прототип OwlEye</h3>
+      <p>
+        На хакатоне Junction 2020 появился первый прототип OwlEye — «парктроник для человека» в виде умного ожерелья-совы
+        с ультразвуковым дальномером, вибрацией и звуковым сигналом для предупреждения о препятствиях.
+      </p>
+      <div class="links">
+        <a href="https://habr.com/ru/articles/754234/" target="_blank" rel="noopener">Статья на Хабр</a>
+        <a href="https://github.com/m0rg0t/OwlEye" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 Хакатон Правительства Москвы 2014 — «Где жить хорошо?»</h3>
+      <p>
+        Антон представил приложение «Где жить хорошо?» на двухдневном марафоне разработчиков мобильных приложений и веб-сервисов
+        по открытым данным Москвы.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://www.m24.ru/videos/svyaz/27042014/50447") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.m24.ru/videos/svyaz/27042014/50447")}`}>М24 (архив)</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏅 HackPoint 3.0 — областной хакатон в Череповце (2014)</h3>
+      <p>
+        Участие в областном хакатоне HackPoint 3.0 в Череповце (17–19 октября 2014). 48 часов на реализацию прототипов — от мобильных приложений до веб-сервисов.
+      </p>
+      <div class="links">
+        <a href="https://vk.com/wall-51121552_949" target="_blank" rel="noopener">Пост VK</a>
+        <a href="https://www.youtube.com/watch?v=lkO7DcZPaWU" target="_blank" rel="noopener">Отчётное видео</a>
+        {archivesByUrl.has("https://vk.com/wall-51121552_949") && (
+          <a href={`/archive/${archivesByUrl.get("https://vk.com/wall-51121552_949")}`}>Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 PayPal Battle Hack Moscow 2013 — специальный приз Ecwid</h3>
+      <p>
+        Команда Profit Button получила специальный приз Ecwid на PayPal Battle Hack 2013 в Москве за решение,
+        позволяющее встраивать виджет интернет-магазина в мобильные приложения без изменения дизайна и кода.
+      </p>
+      <div class="links">
+        {archivesByUrl.has("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow") && (
+          <a href={`/archive/${archivesByUrl.get("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow")}`}>Spark (архив)</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
+      <h3>🏆 OpenPolice 2013 — 2 место с «Где участковый?»</h3>
+      <p>
+        Приложение «Где участковый?» для Windows Phone заняло 2 место в номинации «Мобильное приложение» конкурса «Открытая полиция».
+        По данным Polit.ru, проект также вырос из двухдневного хакатона и там тоже оказался лауреатом.
+      </p>
+      <div class="links">
+        <a href="https://polit.ru/articles/strana/gde-uchastkovyy-2013-07-04/" target="_blank" rel="noopener">Polit.ru</a>
+        {archivesByUrl.has("https://www.youtube.com/watch?v=HmDg23YXG5w") && (
+          <a href={`/archive/${archivesByUrl.get("https://www.youtube.com/watch?v=HmDg23YXG5w")}`}>Доклад (архив)</a>
+        )}
       </div>
     </article>
 
