@@ -13,7 +13,7 @@ docker-compose up -d
 # Сайт будет доступен на http://localhost:8080
 
 # Или development версию с hot reload
-docker-compose -f docker-compose.dev.yml up
+docker-compose -f docker-compose.dev.yaml up
 # Сайт будет доступен на http://localhost:4321
 ```
 
@@ -52,17 +52,17 @@ docker stop alenev && docker rm alenev
 
 ## Development (с hot reload)
 
-Для разработки с автоматической перезагрузкой используйте `docker-compose.dev.yml`:
+Для разработки с автоматической перезагрузкой используйте `docker-compose.dev.yaml`:
 
 ```bash
 # Запустить dev сервер
-docker-compose -f docker-compose.dev.yml up
+docker-compose -f docker-compose.dev.yaml up
 
 # Или в фоновом режиме
-docker-compose -f docker-compose.dev.yml up -d
+docker-compose -f docker-compose.dev.yaml up -d
 
 # Остановить
-docker-compose -f docker-compose.dev.yml down
+docker-compose -f docker-compose.dev.yaml down
 ```
 
 Сайт будет доступен на `http://localhost:4321` (или на порту, указанном в `.env`) с hot reload.
@@ -91,7 +91,7 @@ docker image prune
 
 - `Dockerfile` - Multi-stage build для production (bun + nginx)
 - `docker-compose.yaml` - Production конфигурация
-- `docker-compose.dev.yml` - Development конфигурация с hot reload
+- `docker-compose.dev.yaml` - Development конфигурация с hot reload
 - `nginx.conf` - Nginx конфигурация для production
 - `.dockerignore` - Файлы, исключаемые из Docker build context
 - `.env` - Переменные окружения (порты и конфигурация)
@@ -137,7 +137,7 @@ docker-compose up -d
 PORT_PROD=3000 docker-compose up -d
 
 # Development на порту 5173
-PORT_DEV=5173 docker-compose -f docker-compose.dev.yml up -d
+PORT_DEV=5173 docker-compose -f docker-compose.dev.yaml up -d
 ```
 
 **Способ 3: Без .env файла**
@@ -161,7 +161,7 @@ echo "PORT_PROD=3000" >> .env
 docker-compose up -d
 
 # Для development
-PORT_DEV=5173 docker-compose -f docker-compose.dev.yml up -d
+PORT_DEV=5173 docker-compose -f docker-compose.dev.yaml up -d
 ```
 
 **Узнать, какой процесс занимает порт** (macOS/Linux):

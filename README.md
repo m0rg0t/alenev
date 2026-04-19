@@ -1,43 +1,86 @@
-# Astro Starter Kit: Minimal
+# Anton Lenev - Personal Website
 
-```sh
-bun create astro@latest -- --template minimal
+Персональный сайт Антона Ленёва, построенный на Astro 5.14+.
+
+## 🚀 Запуск проекта
+
+```bash
+# Установка зависимостей
+bun install
+
+# Запуск dev сервера
+bun run dev
+
+# Сборка для продакшена
+bun run build
+
+# Предпросмотр продакшен версии
+bun run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📁 Структура проекта
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
+```
 /
-├── public/
+├── public/              # Статические файлы
+├── docs/                # Проектная документация и чеклисты
 ├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+│   ├── pages/          # Страницы сайта
+│   │   ├── index.astro           # Главная (RU)
+│   │   ├── it.astro              # IT проекты
+│   │   ├── podcasts.astro        # Подкасты
+│   │   ├── audiobooks.astro      # Аудиокниги
+│   │   ├── cosplay/              # Косплей
+│   │   ├── publications.astro    # Публикации
+│   │   ├── other/                # Другие проекты
+│   │   └── en/                   # Английские версии
+│   ├── layouts/         # Layouts
+│   │   └── BaseLayout.astro
+│   ├── components/      # Компоненты
+│   ├── content/         # Контент коллекции
+│   └── i18n.ts         # Утилиты интернационализации
+├── backup/              # Старая версия сайта (OpenAI генератор)
+└── astro.config.mjs
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🌐 Мультиязычность
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Сайт поддерживает два языка:
+- **Русский** (по умолчанию) - `/`, `/it`, `/podcasts` и т.д.
+- **Английский** - `/en`, `/en/it`, `/en/podcasts` и т.д.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📝 Разделы сайта
 
-## 🧞 Commands
+- **IT** - Разработка, проекты, выступления
+- **Подкасты** - "Косплей и прочие штуки"
+- **Аудиокниги** - Озвучка на Litres
+- **Косплей** - Фото и видео костюмов
+- **Публикации** - Статьи и упоминания в СМИ
+- **Другое** - VK Mini apps, Яндекс навыки
 
-All commands are run from the root of the project, from a terminal:
+## 🛠️ Технологии
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+- [Astro](https://astro.build) 5.14+
+- TypeScript
+- Bun runtime
+- CSS Variables для темизации
+- Встроенная i18n система Astro
 
-## 👀 Want to learn more?
+## 📦 Деплой
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Сайт генерирует статические HTML файлы и может быть размещён на любом хостинге:
+- Netlify
+- Vercel
+- GitHub Pages
+- Cloudflare Pages
+
+## 📚 Подробнее
+
+Смотрите [CLAUDE.md](./CLAUDE.md) для детальной информации об архитектуре проекта.
+
+Дополнительная документация:
+- [Docker](./docs/docker.md)
+- [Миграция на Astro](./docs/migration-astro.md)
+- [SEO checklist](./docs/seo-checklist.md)
+- [Задачи по архивам](./docs/archive-tasks.md)
+- [Обслуживание репозитория](./docs/repository-maintenance.md)
