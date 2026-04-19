@@ -25,7 +25,60 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         Unique hair accessories: clips, combs and other accessories created with 3D printing
         and traditional craft techniques.
       </p>
-      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
+      <div class="gallery">
+        <a href="/images/skull-pin/photo-1.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-1.jpg" alt="Skull Pin accessory from the collection" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-2.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-2.jpg" alt="Skull Pin accessory" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-3.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-3.jpg" alt="Skull Pin accessory" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-4.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-4.jpg" alt="Skull Pin accessory" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-5.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-5.jpg" alt="Skull Pin accessory" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-6.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-6.jpg" alt="Skull Pin accessory" loading="lazy" />
+        </a>
+      </div>
+      <div class="project-links">
+        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
+        <a href="https://vk.com/wall-212438347_48" target="_blank" rel="noopener">Photo post</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Public Art & 3D Printing</h2>
+
+    <article class="project">
+      <h3>Kinetic sculptures on the streets of Rybinsk</h3>
+      <p>
+        A series of 3D-printed kinetic sculptures on a water theme, appearing on the embankments and in the parks of Rybinsk.
+        The shapes are designed to "catch" the wind and rotate, producing a quasi-organic visual effect.
+        This extends the <em>Rybinsk Secrets</em> series — small art objects waiting for passers-by in unexpected corners of the city.
+      </p>
+      <div class="video-embed">
+        <iframe
+          src="https://vk.com/video_ext.php?oid=4443423&id=456240267&hd=2"
+          width="853"
+          height="480"
+          frameborder="0"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+          allowfullscreen
+          title="Kinetic sculptures — public art in Rybinsk"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="project-links">
+        <a href="https://vk.com/wall4443423_2886" target="_blank" rel="noopener">Author's VK post</a>
+        <a href="https://vk.com/wall4443423_2893" target="_blank" rel="noopener">Series continuation</a>
+        <a href="https://vk.com/wall-114389229_92521" target="_blank" rel="noopener">"Taiyaki" café mention</a>
+      </div>
     </article>
   </section>
 
@@ -188,6 +241,59 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
       background: var(--color-primary-dark);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+
+    .gallery-item {
+      padding: 0 !important;
+      background: transparent !important;
+      box-shadow: 3px 3px 0 var(--color-border) !important;
+      border: var(--border-width) solid var(--color-border);
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .video-embed {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 1rem 0;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 4px 4px 0 var(--color-border);
+      background: #000;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     @media (max-width: 768px) {

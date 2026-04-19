@@ -30,10 +30,63 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <article class="project">
       <h3>Бренд украшений "Skull Pin"</h3>
       <p>
-        Уникальные украшения для волос: заколки, гребни и другие аксессуары, создаваемые с помощью 3D печати
+        Уникальные украшения для волос: заколки, гребни и другие аксессуары, создаваемые с помощью 3D-печати
         и традиционных ремесленных техник.
       </p>
-      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+      <div class="gallery">
+        <a href="/images/skull-pin/photo-1.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-1.jpg" alt="Skull Pin — украшение из коллекции" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-2.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-2.jpg" alt="Skull Pin — украшение" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-3.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-3.jpg" alt="Skull Pin — украшение" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-4.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-4.jpg" alt="Skull Pin — украшение" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-5.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-5.jpg" alt="Skull Pin — украшение" loading="lazy" />
+        </a>
+        <a href="/images/skull-pin/photo-6.jpg" target="_blank" rel="noopener" class="gallery-item">
+          <img src="/images/skull-pin/photo-6.jpg" alt="Skull Pin — украшение" loading="lazy" />
+        </a>
+      </div>
+      <div class="project-links">
+        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK группа</a>
+        <a href="https://vk.com/wall-212438347_48" target="_blank" rel="noopener">Пост с фото</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2>Public Art и 3D-печать</h2>
+
+    <article class="project">
+      <h3>Кинетические скульптуры на улицах Рыбинска</h3>
+      <p>
+        Серия 3D-печатных кинетических скульптур на водную тематику, которые появляются на набережных и в парках Рыбинска.
+        Формы специально спроектированы так, чтобы «захватывать» ветер и вращаться — так получается околоорганический визуальный эффект.
+        Это продолжение серии <em>Рыбинские секретики</em>: небольшие арт-объекты, встречающие прохожих в самых неожиданных местах города.
+      </p>
+      <div class="video-embed">
+        <iframe
+          src="https://vk.com/video_ext.php?oid=4443423&id=456240267&hd=2"
+          width="853"
+          height="480"
+          frameborder="0"
+          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+          allowfullscreen
+          title="Кинетические скульптуры — public art в Рыбинске"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="project-links">
+        <a href="https://vk.com/wall4443423_2886" target="_blank" rel="noopener">Пост автора (ВК)</a>
+        <a href="https://vk.com/wall4443423_2893" target="_blank" rel="noopener">Продолжение серии</a>
+        <a href="https://vk.com/wall-114389229_92521" target="_blank" rel="noopener">Упоминание от кафе «Тайяки»</a>
+      </div>
     </article>
   </section>
 
@@ -196,6 +249,59 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
       background: var(--color-primary-dark);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin: 1rem 0;
+    }
+
+    .gallery-item {
+      padding: 0 !important;
+      background: transparent !important;
+      box-shadow: 3px 3px 0 var(--color-border) !important;
+      border: var(--border-width) solid var(--color-border);
+      overflow: hidden;
+      aspect-ratio: 3 / 4;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+
+    .video-embed {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 1rem 0;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 4px 4px 0 var(--color-border);
+      background: #000;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     @media (max-width: 768px) {

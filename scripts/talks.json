@@ -85,6 +85,147 @@
       "sources": [
         "https://vk.com/video220730549_456239696"
       ]
+    },
+    {
+      "id": "spbfrontend-drinkup-wysiwyg",
+      "title": "We need to go deeper: дорога к WYSIWYG — SPB Frontend Drinkup",
+      "description": "Доклад Антона Ленева на встрече SPB Frontend Drinkup о пути к собственному WYSIWYG-редактору: с какими проблемами столкнулись, как их решали и куда это привело.",
+      "category": "talk",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/watch?v=CEYy-knCG5w"
+      ]
+    },
+    {
+      "id": "gde-uchastkovy-wp8",
+      "title": "«Где участковый?» — приложение для Windows Phone и Windows 8",
+      "description": "Доклад Антона Ленева о проекте «Где участковый?» — приложении на основе данных openpolice.ru для Windows Phone и Windows 8.",
+      "category": "talk",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/watch?v=HmDg23YXG5w"
+      ]
+    },
+    {
+      "id": "vladilen-vk-fresh-code-2023",
+      "title": "VK Fresh Code 2023 — влог Владилена Минина",
+      "description": "Блогер Владилен Минин снял влог о церемонии награждения VK Fresh Code 2023: тест-драйв мини-приложений победителей (включая проекты Антона Ленева) и закулисье конкурса.",
+      "category": "press",
+      "lang": "ru",
+      "date": "2023",
+      "sources": [
+        "https://www.youtube.com/watch?v=jjVvxWlKwZc",
+        "https://vk.com/wall-166562603_6616"
+      ]
+    },
+    {
+      "id": "vk-mini-apps-podcast-2024",
+      "title": "Подкаст VK Mini Apps с Антоном Ленёвым",
+      "description": "Подкаст команды VK Mini Apps с Антоном Ленёвым — победителем VK Fresh Code 2023 и CTO Viewst: путь разработчика, мини-приложения без технического бэкграунда, роль CTO в стартапе и баланс проектов.",
+      "category": "podcast",
+      "lang": "ru",
+      "date": "2024",
+      "sources": [
+        "https://vk.com/video-166562603_456239313",
+        "https://vk.com/wall-166562603_8087"
+      ]
+    },
+    {
+      "id": "vk-mini-apps-podcast-bts",
+      "title": "Закулисье съёмки подкаста VK Mini Apps",
+      "description": "Короткий ролик о процессе съёмки подкаста VK Mini Apps с Антоном Ленёвым.",
+      "category": "making-of",
+      "lang": "ru",
+      "date": "2024",
+      "sources": [
+        "https://vk.com/video-166562603_456239315",
+        "https://vk.com/wall-166562603_8107"
+      ]
+    },
+    {
+      "id": "cosplay-stream-2019",
+      "title": "Вечерний стрим 17:40: косплей с Антоном Ленёвым (Рыбинск, 2019)",
+      "description": "Стрим «17:40» из Рыбинска с гостем Антоном Ленёвым — разговор о косплее: костюмы, материалы, мероприятия и путь в сообщество.",
+      "category": "stream",
+      "lang": "ru",
+      "date": "2019-04-26",
+      "sources": [
+        "https://www.youtube.com/watch?v=E6M5PwOPUUI"
+      ]
+    },
+    {
+      "id": "public-art-rybinsk-kinetic-sculptures",
+      "title": "Public art: 3D-печатные кинетические скульптуры в Рыбинске",
+      "description": "Серия 3D-печатных кинетических скульптур Антона Ленева на набережных и в парках Рыбинска. Фигуры специально спроектированы так, чтобы «ловить» ветер и вращаться, создавая околоорганический эффект.",
+      "category": "project",
+      "lang": "ru",
+      "sources": [
+        "https://vk.com/video4443423_456240267",
+        "https://vk.com/video4443423_456240268",
+        "https://vk.com/video4443423_456240269",
+        "https://vk.com/video4443423_456240270",
+        "https://vk.com/video4443423_456240271",
+        "https://vk.com/video4443423_456240272",
+        "https://vk.com/video4443423_456240273",
+        "https://vk.com/video4443423_456240274",
+        "https://vk.com/wall4443423_2886"
+      ]
+    },
+    {
+      "id": "public-art-rybinsk-2",
+      "title": "Public art: 3D-печать в городской среде Рыбинска (часть 2)",
+      "description": "Продолжение серии public-art проектов Антона Ленева с использованием 3D-печати в Рыбинске.",
+      "category": "project",
+      "lang": "ru",
+      "sources": [
+        "https://vk.com/video4443423_456240275",
+        "https://vk.com/wall4443423_2893"
+      ]
+    },
+    {
+      "id": "dead-space-photoset-gabi",
+      "title": "Dead Space косплей — о фотосете Дмитрия Габдукаева (PhotoArt by Gabi)",
+      "description": "Видео о фотосете костюма Isaac Clarke (Dead Space 2 Advanced Suit) Антона Ленева — процесс съёмки и обработки фотографий от Дмитрия Габдукаева (PhotoArt by Gabi).",
+      "category": "making-of",
+      "lang": "ru",
+      "sources": [
+        "https://vk.com/video-138904538_456239103",
+        "https://vk.com/wall-45608457_12205"
+      ]
+    },
+    {
+      "id": "vk-fresh-code-2023-ceremony",
+      "title": "VK Fresh Code 2023 — церемония награждения",
+      "description": "Видео церемонии награждения грантового конкурса VK Fresh Code 2023 для начинающих разработчиков мини-приложений. Антон Ленёв — один из победителей.",
+      "category": "press",
+      "lang": "ru",
+      "date": "2023",
+      "sources": [
+        "https://vk.com/video-166562603_456239170",
+        "https://vk.com/wall-166562603_6228"
+      ]
+    },
+    {
+      "id": "nebezdela-ep65-cosplay",
+      "title": "«Не без дела» #65: Антон Ленёв — Костюм из коврика для йоги",
+      "description": "Гостевой выпуск подкаста «Не без дела» с Антоном Ленёвым о косплее — про путь в сообщество, крафт костюмов, мастеров на все руки и быт фестивалей.",
+      "category": "podcast",
+      "lang": "ru",
+      "date": "2020-10-28",
+      "sources": [
+        "https://nebezdela.mave.digital/ep-65",
+        "https://api.mave.digital/storage/podcasts/b23fba55-ca34-407b-9f32-09856f0fe8c8/episodes/15b2dbb1-2f6b-47a6-be8d-c4d5695c3526.mp3"
+      ]
+    },
+    {
+      "id": "asiavol-jury-defile-mccree",
+      "title": "ASIAVOL — дефиле жюри: McCree (Overwatch)",
+      "description": "Выход Антона Ленева в роли McCree из Overwatch во время дефиле жюри на фестивале ASIAVOL.",
+      "category": "cosplay",
+      "lang": "ru",
+      "sources": [
+        "https://www.youtube.com/watch?v=oc0lnoCJdpQ"
+      ]
     }
   ]
 }

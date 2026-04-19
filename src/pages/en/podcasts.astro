@@ -45,6 +45,26 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </section>
 
+  <section class="guest-section">
+    <h2 class="guest-heading">Guest appearances</h2>
+
+    <article class="guest-card">
+      <h3>"Ne Bez Dela" #65 — A costume made from a yoga mat</h3>
+      <p class="meta">Guest episode · October 28, 2020 · 18 min · Russian</p>
+      <p class="description">
+        A conversation about cosplay: the path into the community, why "jack of all trades" is the base requirement for a cosplayer, crafting costumes out of unusual materials (yes, including yoga mats), festival life, and what keeps people spending a full year on a single costume.
+      </p>
+      <audio controls preload="none" class="audio-player">
+        <source src="https://api.mave.digital/storage/podcasts/b23fba55-ca34-407b-9f32-09856f0fe8c8/episodes/15b2dbb1-2f6b-47a6-be8d-c4d5695c3526.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+      <div class="guest-links">
+        <a href="https://nebezdela.mave.digital/ep-65" target="_blank" rel="noopener" class="btn-primary">Open on Mave</a>
+        <a href="https://vk.com/nebezdela" target="_blank" rel="noopener" class="btn-secondary">"Ne Bez Dela" show</a>
+      </div>
+    </article>
+  </section>
+
   <style>
     /* Page Title */
     h1 {
@@ -171,6 +191,90 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
     .section {
       margin-top: 3rem;
+    }
+
+    .guest-section {
+      margin-top: 3rem;
+    }
+
+    .guest-heading {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      background: var(--color-accent-alt);
+      color: var(--color-text);
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    :global([data-theme="dark"]) .guest-heading { color: #1a1a1a; }
+
+    .guest-card {
+      background: var(--color-surface);
+      padding: 1.75rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: 4px 4px 0 var(--color-border);
+      margin-bottom: 1.5rem;
+    }
+
+    .guest-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+      color: var(--color-text);
+    }
+
+    .guest-card .meta {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .guest-card .description {
+      color: var(--color-text);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .audio-player {
+      width: 100%;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .guest-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .guest-card .btn-primary,
+    .guest-card .btn-secondary {
+      padding: 0.65rem 1.25rem;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .guest-card .btn-primary {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .guest-card .btn-secondary {
+      background: var(--color-surface);
+      color: var(--color-text);
+    }
+
+    .guest-card .btn-primary:hover,
+    .guest-card .btn-secondary:hover {
+      transform: translate(-2px, -2px);
+      box-shadow: 5px 5px 0 var(--color-border);
     }
 
     .section h2 {
