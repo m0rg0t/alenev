@@ -179,6 +179,17 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>"Where is it Good to Live?": an IT specialist's answer</h3>
+      <p>Gazeta Rybinsk interview with developer Anton Lenev about a web service that rates neighborhoods for livability (2015).</p>
+      <div class="links">
+        <a href="https://gazeta-rybinsk.ru/2015/04/29/18147" target="_blank" rel="noopener">Gazeta Rybinsk</a>
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2015/04/29/18147") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2015/04/29/18147")}`} class="archive-link">Archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>IT Hobbyist: From Cosplay to 3D-Printed Costumes and Audiobook Narration</h3>
       <div class="links">
         <a href="https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig" target="_blank" rel="noopener">Tproger</a>

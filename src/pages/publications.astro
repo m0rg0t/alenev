@@ -186,6 +186,17 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="mention">
+      <h3>«Где жить хорошо?»: ответ IT-специалиста</h3>
+      <p>Интервью Газеты Рыбинск с разработчиком Антоном Леневым о веб-сервисе для оценки привлекательности районов для проживания (2015).</p>
+      <div class="links">
+        <a href="https://gazeta-rybinsk.ru/2015/04/29/18147" target="_blank" rel="noopener">Газета Рыбинск</a>
+        {archivesByUrl.has("https://gazeta-rybinsk.ru/2015/04/29/18147") && (
+          <a href={`/archive/${archivesByUrl.get("https://gazeta-rybinsk.ru/2015/04/29/18147")}`} class="archive-link">Архив</a>
+        )}
+      </div>
+    </article>
+
+    <article class="mention">
       <h3>Хобби айтишника: от косплея до 3D-печати костюмов и озвучки аудиокниг</h3>
       <div class="links">
         <a href="https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig" target="_blank" rel="noopener">Tproger</a>
