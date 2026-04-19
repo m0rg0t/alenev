@@ -1,6 +1,9 @@
 ---
+import { Picture } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getCollection } from 'astro:content';
+import vkOffice1 from '../../assets/vk-office/vk-office-1.jpg';
+import vkOffice2 from '../../assets/vk-office/vk-office-2.jpg';
 
 const archives = await getCollection('archives');
 const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
@@ -261,8 +264,8 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
         ></iframe>
       </div>
       <div class="photos-row">
-        <img src="/images/podcasts/vk-office-1.jpg" alt="Anton Lenev at VK office, May 2024" loading="lazy" />
-        <img src="/images/podcasts/vk-office-2.jpg" alt="Anton Lenev at VK office" loading="lazy" />
+        <Picture src={vkOffice1} alt="Anton Lenev at VK office, May 2024" formats={['avif', 'webp']} widths={[440, 880]} sizes="(min-width: 640px) 440px, 100vw" loading="lazy" decoding="async" />
+        <Picture src={vkOffice2} alt="Anton Lenev at VK office" formats={['avif', 'webp']} widths={[440, 880]} sizes="(min-width: 640px) 440px, 100vw" loading="lazy" decoding="async" />
       </div>
       <div class="links">
         <a href="https://vk.com/wall-166562603_8107" target="_blank" rel="noopener">VK post (BTS)</a>
@@ -446,6 +449,12 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 0.75rem;
       margin-top: 1rem;
+    }
+
+    .photos-row picture {
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
     .photos-row img {

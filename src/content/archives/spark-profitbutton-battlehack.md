@@ -12,7 +12,7 @@ tags:
   - profit-button
   - paypal
   - ecwid
-  - 2013
+  - "2013"
 ---
 
 # Победа команды Profit Button на PayPal Battle Hack Moscow

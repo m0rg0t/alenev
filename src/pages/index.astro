@@ -1,6 +1,9 @@
 ---
+import { Picture } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { useTranslations } from '../i18n';
+import antonLenev from '../assets/homepage/anton-lenev.jpg';
+import antonLenevArt from '../assets/homepage/anton-lenev-art.jpg';
 
 const t = useTranslations('ru');
 ---
@@ -23,14 +26,8 @@ const t = useTranslations('ru');
     </p>
 
     <div class="about-images">
-      <picture>
-        <source type="image/webp" srcset="/images/anton-lenev-300.webp 1x, /images/anton-lenev-600.webp 2x" />
-        <img src="/images/anton-lenev.jpg" alt="Anton Lenev" width="853" height="1280" fetchpriority="high" style="max-width:300px;width:100%;height:auto;" />
-      </picture>
-      <picture>
-        <source type="image/webp" srcset="/images/anton-lenev-art-300.webp 1x, /images/anton-lenev-art-600.webp 2x" />
-        <img src="/images/anton-lenev-art.jpg" alt="Anton Lenev Art" width="1280" height="1280" loading="lazy" style="max-width:300px;width:100%;height:auto;" />
-      </picture>
+      <Picture src={antonLenev} alt="Anton Lenev" formats={['avif', 'webp']} widths={[300, 600, 900]} sizes="300px" fetchpriority="high" decoding="async" />
+      <Picture src={antonLenevArt} alt="Anton Lenev Art" formats={['avif', 'webp']} widths={[300, 600, 900]} sizes="300px" loading="lazy" decoding="async" />
     </div>
   </section>
 
@@ -157,9 +154,16 @@ const t = useTranslations('ru');
       margin-top: 2rem;
     }
 
+    .about-images picture {
+      display: block;
+      max-width: 300px;
+      width: 100%;
+    }
+
     .about-images img {
       max-width: 300px;
       width: 100%;
+      height: auto;
       border: var(--border-width) solid var(--color-border);
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
@@ -169,7 +173,7 @@ const t = useTranslations('ru');
       box-shadow: 8px 8px 0 var(--color-border);
     }
 
-    .about-images img:nth-child(even):hover {
+    .about-images picture:nth-child(even) img:hover {
       transform: translate(-4px, -4px) rotate(1deg);
     }
 
