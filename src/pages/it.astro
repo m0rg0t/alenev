@@ -120,8 +120,18 @@ const videoSchemas = talks.map(t => {
     </article>
 
     <article class="project">
-      <h3>Rybinsk Secrets</h3>
-      <p>Туристический проект для города Рыбинска (в разработке).</p>
+      <h3>Рыбинские секретики</h3>
+      <p>Городской некоммерческий проект: 3D-печатные фигурки-маскоты по районам Рыбинска с QR-кодами и мобильным приложением, которое «оживляет» персонажей и рассказывает о районе. Запущен в 2025 году.</p>
+      <div class="links">
+        <a href="https://vk.com/wall-111904385_97643" target="_blank" rel="noopener">Вести Ярославль (видео)</a>
+        <a href="https://vk.com/wall-70020805_367739" target="_blank" rel="noopener">Рыбинск 40 (видео)</a>
+        {archivesByUrl.has("https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html") && (
+          <a href={`/archive/${archivesByUrl.get("https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html")}`} class="archive-link">Черёмуха (архив)</a>
+        )}
+        {archivesByUrl.has("https://vesti-yaroslavl.ru/novosti/item/95879-na-ulitsakh-rybinska-ustanavlivayut-figurki-v-stile-personazhej-multfilmov") && (
+          <a href={`/archive/${archivesByUrl.get("https://vesti-yaroslavl.ru/novosti/item/95879-na-ulitsakh-rybinska-ustanavlivayut-figurki-v-stile-personazhej-multfilmov")}`} class="archive-link">Вести (архив)</a>
+        )}
+      </div>
     </article>
 
     <article class="project">
