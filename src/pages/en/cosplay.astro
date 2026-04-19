@@ -127,7 +127,7 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
       </p>
       <div class="video-embed">
         <iframe
-          src="https://vk.com/video_ext.php?oid=220916317&id=456240978&hd=2"
+          src="https://vk.com/video_ext.php?oid=220916317&id=456240978&hash=342872c403b95e08&hd=2"
           width="853"
           height="480"
           frameborder="0"
@@ -191,6 +191,16 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
       border-left: 8px solid var(--color-primary);
       box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
     }
+
+    .lead a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+
+    .lead a:hover { color: var(--color-secondary); }
+
+    :global([data-theme="dark"]) .lead a { color: var(--color-accent); }
 
     .costumes-section, .events-section { margin-bottom: 4rem; }
 

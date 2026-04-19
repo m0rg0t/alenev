@@ -1,5 +1,5 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
@@ -8,46 +8,22 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 >
   <h1>🎯 Other Projects</h1>
 
-  <p class="page-intro">
-    VK Mini Apps moved to the <a href="/en/it">IT Projects →</a> section
-  </p>
-
-  <p class="page-intro">
-    Yandex Alice skills moved to <a href="/en/it">IT Projects →</a>
-  </p>
-
   <section class="section">
     <h2>Creative Projects</h2>
 
-    <article class="project">
-      <h3>Skull Pin Jewelry Brand</h3>
-      <p>
-        Unique hair accessories: clips, combs and other accessories created with 3D printing
-        and traditional craft techniques.
-      </p>
-      <div class="gallery">
-        <a href="/images/skull-pin/photo-1.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-1.jpg" alt="Skull Pin accessory from the collection" loading="lazy" />
-        </a>
-        <a href="/images/skull-pin/photo-2.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-2.jpg" alt="Skull Pin accessory" loading="lazy" />
-        </a>
-        <a href="/images/skull-pin/photo-3.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-3.jpg" alt="Skull Pin accessory" loading="lazy" />
-        </a>
-        <a href="/images/skull-pin/photo-4.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-4.jpg" alt="Skull Pin accessory" loading="lazy" />
-        </a>
-        <a href="/images/skull-pin/photo-5.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-5.jpg" alt="Skull Pin accessory" loading="lazy" />
-        </a>
-        <a href="/images/skull-pin/photo-6.jpg" target="_blank" rel="noopener" class="gallery-item">
-          <img src="/images/skull-pin/photo-6.jpg" alt="Skull Pin accessory" loading="lazy" />
-        </a>
-      </div>
-      <div class="project-links">
-        <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
-        <a href="https://vk.com/wall-212438347_48" target="_blank" rel="noopener">Photo post</a>
+    <article class="project project-card">
+      <a href="/en/other/skull-pin" class="cover-link" aria-label="Skull Pin — project page">
+        <img src="/images/skull-pin/photo-1.jpg" alt="Skull Pin accessory from the collection" class="cover" loading="lazy" />
+      </a>
+      <div class="card-body">
+        <h3>"Skull Pin" Jewelry Brand</h3>
+        <p>
+          Unique hair and neck accessories — clips, combs, chokers and more — made with 3D printing and traditional craft techniques.
+        </p>
+        <div class="project-links">
+          <a href="/en/other/skull-pin" class="btn-more">See more →</a>
+          <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK Group</a>
+        </div>
       </div>
     </article>
   </section>
@@ -64,7 +40,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       </p>
       <div class="video-embed">
         <iframe
-          src="https://vk.com/video_ext.php?oid=4443423&id=456240267&hd=2"
+          src="https://vk.com/video_ext.php?oid=4443423&id=456240267&hash=d153a86b7aada30c&hd=2"
           width="853"
           height="480"
           frameborder="0"
@@ -271,32 +247,63 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       background: var(--color-primary-dark);
     }
 
-    .gallery {
+    .project-card {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      gap: 0.75rem;
-      margin: 1rem 0;
-    }
-
-    .gallery-item {
+      grid-template-columns: 280px 1fr;
+      gap: 1.5rem;
+      align-items: start;
       padding: 0 !important;
-      background: transparent !important;
-      box-shadow: 3px 3px 0 var(--color-border) !important;
-      border: var(--border-width) solid var(--color-border);
       overflow: hidden;
-      aspect-ratio: 3 / 4;
     }
 
-    .gallery-item img {
+    .project-card .cover-link {
+      display: block;
+      padding: 0 !important;
+      margin: 0 !important;
+      background: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    .project-card .cover {
       width: 100%;
       height: 100%;
+      aspect-ratio: 3 / 4;
       object-fit: cover;
       display: block;
+      border-right: var(--border-width) solid var(--color-border);
       transition: transform 0.2s ease;
     }
 
-    .gallery-item:hover img {
-      transform: scale(1.05);
+    .project-card .cover-link:hover .cover {
+      transform: scale(1.03);
+    }
+
+    .project-card .card-body {
+      padding: 1.5rem 1.5rem 1.5rem 0.5rem;
+    }
+
+    .project-card .btn-more {
+      background: var(--color-accent) !important;
+      color: #1a1a1a !important;
+    }
+
+    :global([data-theme="dark"]) .project-card .btn-more {
+      color: #1a1a1a !important;
+    }
+
+    @media (max-width: 640px) {
+      .project-card {
+        grid-template-columns: 1fr;
+      }
+      .project-card .cover {
+        aspect-ratio: 4 / 3;
+        border-right: none;
+        border-bottom: var(--border-width) solid var(--color-border);
+      }
+      .project-card .card-body {
+        padding: 1.25rem;
+      }
     }
 
     .project-links {

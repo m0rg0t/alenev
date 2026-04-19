@@ -1,0 +1,174 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const photos = [
+  { src: '/images/skull-pin/photo-1.jpg', alt: 'Skull Pin — кожаный чокер с костяной подвеской' },
+  { src: '/images/skull-pin/photo-2.jpg', alt: 'Skull Pin — белый чокер' },
+  { src: '/images/skull-pin/photo-3.jpg', alt: 'Skull Pin — розовый чокер' },
+  { src: '/images/skull-pin/photo-4.jpg', alt: 'Skull Pin — пудровый чокер' },
+  { src: '/images/skull-pin/photo-5.jpg', alt: 'Skull Pin — красный чокер' },
+  { src: '/images/skull-pin/photo-6.jpg', alt: 'Skull Pin — белый чокер с подвеской' },
+];
+---
+
+<BaseLayout
+  title="Skull Pin — украшения из кожи и 3D-печати | Антон Ленев"
+  description="Бренд украшений Skull Pin: кожаные чокеры, заколки и аксессуары ручной работы с подвесками из 3D-печати. Галерея работ и ссылки на VK."
+>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      { '@type': 'ListItem', 'position': 1, 'name': 'Главная', 'item': 'https://alenev.ru/' },
+      { '@type': 'ListItem', 'position': 2, 'name': 'Другое', 'item': 'https://alenev.ru/other/' },
+      { '@type': 'ListItem', 'position': 3, 'name': 'Skull Pin', 'item': 'https://alenev.ru/other/skull-pin/' }
+    ]
+  })} />
+
+  <p class="breadcrumb"><a href="/other">← Другие проекты</a></p>
+  <h1>🖤 Skull Pin</h1>
+
+  <section class="intro">
+    <p class="lead">
+      <strong>Skull Pin</strong> — небольшой бренд украшений: кожаные чокеры и аксессуары ручной работы,
+      дополненные подвесками, напечатанными на 3D-принтере. Каждая вещь собирается вручную,
+      сочетая традиционные ремесленные техники (работа с кожей, фурнитура) и современные
+      технологии (3D-проектирование и печать).
+      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">Сообщество в VK →</a>
+    </p>
+  </section>
+
+  <section class="gallery-section">
+    <h2>Галерея</h2>
+    <div class="gallery">
+      {photos.map((p) => (
+        <a href={p.src} target="_blank" rel="noopener" class="gallery-item">
+          <img src={p.src} alt={p.alt} loading="lazy" />
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="links-section">
+    <h2>Где следить</h2>
+    <div class="links">
+      <a href="https://vk.com/skull_pin" target="_blank" rel="noopener">VK — skull_pin</a>
+      <a href="https://vk.com/wall-212438347_48" target="_blank" rel="noopener">Пост с галереей</a>
+    </div>
+  </section>
+
+  <style>
+    .breadcrumb {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .breadcrumb a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+    :global([data-theme="dark"]) .breadcrumb a {
+      color: var(--color-accent);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      color: var(--color-text);
+      text-transform: uppercase;
+      display: inline-block;
+      background: var(--color-accent);
+      padding: 0.75rem 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+    :global([data-theme="dark"]) h1 { color: #1a1a1a; }
+
+    .intro { margin-bottom: 3rem; }
+
+    .lead {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: var(--color-text);
+      background: var(--color-surface);
+      padding: 2rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .lead a {
+      color: var(--color-primary-dark);
+      text-decoration: underline;
+      font-weight: 700;
+    }
+    :global([data-theme="dark"]) .lead a { color: var(--color-accent); }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: inline-block;
+      background: var(--color-primary);
+      color: white;
+      padding: 0.5rem 1rem;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 3px 3px 0 var(--color-border);
+      text-transform: uppercase;
+    }
+
+    .gallery-section { margin-bottom: 3rem; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      display: block;
+      aspect-ratio: 3 / 4;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 4px 4px 0 var(--color-border);
+      overflow: hidden;
+      background: var(--color-surface);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.25s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.04);
+    }
+
+    .links-section { margin-bottom: 4rem; }
+
+    .links-section .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .links-section .links a {
+      padding: 0.65rem 1.25rem;
+      background: var(--color-primary);
+      color: white;
+      text-decoration: none;
+      border: var(--border-width) solid var(--color-border);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      box-shadow: 3px 3px 0 var(--color-border);
+    }
+
+    .links-section .links a:hover {
+      transform: translate(-1px, -1px);
+      box-shadow: 4px 4px 0 var(--color-border);
+      background: var(--color-primary-dark);
+    }
+  </style>
+</BaseLayout>
