@@ -35,3 +35,12 @@ archive/videos/
 # original cosplay JPGs — kept locally as backup, WebP derivatives live in public/cosplay/
 archive/cosplay-originals-jpg/
 
+# Full local `archive/` tree (research notes, PDFs, raw mp3s, video dumps) — keep out of git
+archive/
+
+# Claude Code local session data
+.claude/
+
+# Playwright screenshot dumps (regenerate via scripts/capture_*.py when needed)
+screenshots/
+
