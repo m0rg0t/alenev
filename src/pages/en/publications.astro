@@ -165,11 +165,13 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 
     <article class="mention">
       <h3>Video: Where is it Good to Live? (hackathon)</h3>
+      <p>Presentation of the "Where is it Good to Live" app at the Moscow Government "Hackathon" marathon (apps.mos.ru), April 2014.</p>
       <div class="links">
         <a href="https://www.m24.ru/videos/svyaz/27042014/50447" target="_blank" rel="noopener">M24</a>
         {archivesByUrl.has("https://www.m24.ru/videos/svyaz/27042014/50447") && (
           <a href={`/archive/${archivesByUrl.get("https://www.m24.ru/videos/svyaz/27042014/50447")}`} class="archive-link">Archive</a>
         )}
+        <a href="https://vk.com/wall4443423_2328" target="_blank" rel="noopener">VKontakte post</a>
       </div>
     </article>
 

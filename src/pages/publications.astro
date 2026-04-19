@@ -172,11 +172,13 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
 
     <article class="mention">
       <h3>Видео: Где жить хорошо? (хакатон)</h3>
+      <p>Презентация приложения «Где жить хорошо» на марафоне «Хакатон» Правительства Москвы (apps.mos.ru), апрель 2014.</p>
       <div class="links">
         <a href="https://www.m24.ru/videos/svyaz/27042014/50447" target="_blank" rel="noopener">М24</a>
         {archivesByUrl.has("https://www.m24.ru/videos/svyaz/27042014/50447") && (
           <a href={`/archive/${archivesByUrl.get("https://www.m24.ru/videos/svyaz/27042014/50447")}`} class="archive-link">Архив</a>
         )}
+        <a href="https://vk.com/wall4443423_2328" target="_blank" rel="noopener">Пост ВКонтакте</a>
       </div>
     </article>
 
