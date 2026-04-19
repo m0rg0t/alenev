@@ -32,3 +32,6 @@ pnpm-debug.log*
 # archived video backups — large files, keep out of git (see scripts/archive-talks.sh)
 archive/videos/
 
+# original cosplay JPGs — kept locally as backup, WebP derivatives live in public/cosplay/
+archive/cosplay-originals-jpg/
+
