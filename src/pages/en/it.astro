@@ -407,6 +407,20 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
 
     <article class="project">
+      <h3>🥈 HackPoint 2.0 — 2nd place at the regional hackathon in Cherepovets (2013)</h3>
+      <p>
+        Second place at the HackPoint 2.0 regional hackathon in Cherepovets (November 22–24, 2013). Second edition
+        of the HackPoint series — "the point where an idea turns into a prototype".
+      </p>
+      <div class="links">
+        <a href="https://vk.com/wall-51121552_325" target="_blank" rel="noopener">VK post</a>
+        {archivesByUrl.has("https://vk.com/wall-51121552_325") && (
+          <a href={`/archive/${archivesByUrl.get("https://vk.com/wall-51121552_325")}`}>Archive</a>
+        )}
+      </div>
+    </article>
+
+    <article class="project">
       <h3>🏅 HackPoint 3.0 — regional hackathon in Cherepovets (2014)</h3>
       <p>
         Participation in the HackPoint 3.0 regional hackathon in Cherepovets (October 17–19, 2014). 48 hours to build
