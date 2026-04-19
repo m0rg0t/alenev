@@ -62,6 +62,19 @@
       "sources": [
         "https://www.youtube.com/watch?v=kzzYJEoJXzo"
       ]
+    },
+    {
+      "id": "vk-dev-grants-2025-otredach",
+      "title": "VK Dev Grants 2025 — победа проекта «Отредач»",
+      "description": "Видео с пресс-релиза VK Dev Grants 2025. AI-проект «Отредач» Антона Ленева стал одним из победителей программы грантов для разработчиков VK Mini Apps.",
+      "category": "press",
+      "lang": "ru",
+      "date": "2025",
+      "sources": [
+        "https://vk.com/video-166562603_456239396",
+        "https://vk.com/press/dev-2025",
+        "https://vk.com/wall-166562603_11207"
+      ]
     }
   ]
 }
