@@ -293,6 +293,19 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
         <a href="https://www.reddit.com/r/cosplayprops/comments/b3fzz0/self_wip_dead_space_2_rig_from_eva_and_genuine/" target="_blank" rel="noopener">Reddit r/cosplayprops</a>
       </div>
     </article>
+
+    <article class="mention">
+      <h3>🏆 Profit Button wins PayPal Battle Hack Moscow (2013)</h3>
+      <p>
+        Profit Button received a special prize from Ecwid at the PayPal Battle Hack 2013 hackathon in Moscow — for the best solution built with Ecwid's technology. The project let any iOS or Android mobile app embed an e-commerce widget without changing the app's design or code.
+      </p>
+      <div class="links">
+        <a href="https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow" target="_blank" rel="noopener">Spark.ru</a>
+        {archivesByUrl.has("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow") && (
+          <a href={`/archive/${archivesByUrl.get("https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow")}`} class="archive-link">Archive</a>
+        )}
+      </div>
+    </article>
   </section>
 
   <style>
