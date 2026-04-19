@@ -3,6 +3,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 const audiobooks = [
   {
+    title: "Сила малых вещей",
+    author: "Антон Ленев (автор и чтец)",
+    cover: "sila-malyh-veschey.jpg",
+    url: "https://www.litres.ru/audiobook/anton-lenev/sila-malyh-veschey-71540566/"
+  },
+  {
     title: "Адские секретарши и властный босс",
     author: "Татьяна Охитина",
     cover: "adskie-sekretarshi.jpg",
@@ -114,6 +120,18 @@ const audiobooks = [
   </section>
 
   <section class="books">
+    <h2>Номинации</h2>
+    <article class="book-card" style="margin-bottom:2rem;">
+      <div class="book-info">
+        <h3>🏆 Voice Your Book 2024 — лонг-лист</h3>
+        <p class="author">Рассказ «Сила малых вещей» (авторская озвучка) попал в лонг-лист номинантов конкурса Voice Your Book 2024 от SelfPub.</p>
+        <div class="links" style="margin-top:0.75rem;">
+          <a href="https://landing.selfpub.ru/voice-your-book-2024-winners" target="_blank" rel="noopener">Победители и номинанты</a>
+          <a href="https://vk.com/wall-157242843_50081" target="_blank" rel="noopener">Пост в VK</a>
+        </div>
+      </div>
+    </article>
+
     <h2>Мои аудиокниги</h2>
     <div class="books-grid">
       {audiobooks.map((book) => (
