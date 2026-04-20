@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeCard from '../../components/CostumeCard.astro';
 import EventCard from '../../components/EventCard.astro';
+import VKVideo from '../../components/VKVideo.astro';
 import { useTranslations } from '../../i18n';
 
 const t = useTranslations('en');
@@ -140,16 +141,7 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
         McCree (Konstantin Logvinov, Igor Krivonogov), Ashe, Genji and Zarya.
       </p>
       <div class="video-embed">
-        <iframe
-          src="https://vk.com/video_ext.php?oid=220916317&id=456240978&hash=342872c403b95e08&hd=2"
-          width="853"
-          height="480"
-          frameborder="0"
-          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-          allowfullscreen
-          title="Overwatch Cosplayers Assemble"
-          loading="lazy"
-        ></iframe>
+        <VKVideo oid="220916317" videoId="456240978" title="Overwatch Cosplayers Assemble" lang="en" />
       </div>
       <div class="links">
         <a href="https://vk.com/wall-79997904_596356" target="_blank" rel="noopener">VK post</a>

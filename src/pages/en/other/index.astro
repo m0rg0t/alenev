@@ -1,6 +1,7 @@
 ---
 import { Picture } from 'astro:assets';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import VKVideo from '../../../components/VKVideo.astro';
 import skullPinCover from '../../../assets/skull-pin/photo-1.jpg';
 ---
 
@@ -50,16 +51,7 @@ import skullPinCover from '../../../assets/skull-pin/photo-1.jpg';
         This extends the <em>Rybinsk Secrets</em> series — small art objects waiting for passers-by in unexpected corners of the city.
       </p>
       <div class="video-embed">
-        <iframe
-          src="https://vk.com/video_ext.php?oid=4443423&id=456240267&hash=d153a86b7aada30c&hd=2"
-          width="853"
-          height="480"
-          frameborder="0"
-          allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-          allowfullscreen
-          title="Kinetic sculptures — public art in Rybinsk"
-          loading="lazy"
-        ></iframe>
+        <VKVideo oid="4443423" videoId="456240267" title="Kinetic sculptures — public art in Rybinsk" lang="en" />
       </div>
       <div class="project-links">
         <a href="https://vk.com/wall4443423_2886" target="_blank" rel="noopener">Author's VK post</a>
