@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeCard from '../../components/CostumeCard.astro';
 import EventCard from '../../components/EventCard.astro';
-import VKVideo from '../../components/VKVideo.astro';
 import { useTranslations } from '../../i18n';
 
 const t = useTranslations('ru');
@@ -140,45 +139,9 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
       </div>
     </article>
 
-    <article class="video-article">
-      <h3>Overwatch Cosplayers Assemble — совместный подарок к годовщине игры</h3>
-      <p>
-        Специальный ролик сообщества к годовщине Overwatch: 19 косплееров собрали небольшую «перекличку» героев.
-        Антон Ленёв — один из трёх McCree в ролике.
-        Остальные в кадре: Милена Дерека (Мэй), Анастасия Галузина и Кристина Волкова (D.Va), Алена Сысуева и Ольга Хаку (Ангел),
-        Денис Цукрин (Крысавчик), Филипп Шипилов (Торбьорн), Станислава Анушкина (Бригитта),
-        Владимир Мальгин и Neo Geisha (Солдат 76), Люциан Маклауд (Жнец), Алёна Тен (Роковая вдова),
-        Машка Желнова (Ана), Константин Логвинов и Игорь Кривоногов (Маккри), Алиса Варшавская (Эш),
-        Vitaliy Joiner (Гэндзи), Дашуля Шустова (Заря).
-      </p>
-      <div class="video-embed">
-        <VKVideo oid="220916317" videoId="456240978" hash="342872c403b95e08" title="Overwatch Cosplayers Assemble" />
-      </div>
-      <div class="links">
-        <a href="https://vk.com/wall-79997904_596356" target="_blank" rel="noopener">Пост ВКонтакте</a>
-        <a href="https://vk.com/video220916317_456240978" target="_blank" rel="noopener">Видео в VK</a>
-      </div>
-    </article>
-
-    <article class="video-article">
-      <h3>ASIAVOL — дефиле жюри: McCree (Overwatch)</h3>
-      <p>
-        Выход Антона Ленёва в роли McCree из Overwatch во время дефиле жюри на фестивале ASIAVOL.
-      </p>
-      <div class="video-embed">
-        <iframe
-          src="https://www.youtube.com/embed/oc0lnoCJdpQ"
-          title="ASIAVOL | Дефиле жюри — Антон Ленев (McCree / Overwatch)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-      </div>
-      <div class="links">
-        <a href="https://www.youtube.com/watch?v=oc0lnoCJdpQ" target="_blank" rel="noopener">Смотреть на YouTube</a>
-      </div>
-    </article>
+    <p class="see-more-note">
+      Видео по конкретным костюмам смотрите на странице костюма, например <a href="/cosplay/mccree">Маккри (Overwatch)</a>.
+    </p>
   </section>
 
   <style>

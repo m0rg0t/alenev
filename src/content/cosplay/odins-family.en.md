@@ -1,5 +1,5 @@
 ---
-title: "Odin's Family"
+title: "Thor: Ragnarok — outdoor photo session"
 lang: en
 costume: "odins-family"
 folder: "odins_family"
@@ -7,8 +7,8 @@ coverImage: "IMG_9589-Edit-4.thumb.webp"
 date: 2019-09-14
 photographer: ""
 location: ""
-tags: ["mythology", "norse", "group-shoot"]
+tags: ["marvel", "thor", "ragnarok", "outdoor"]
 order: 10
 ---
 
-Group photo session inspired by Norse mythology. The characters of Odin's family are captured against natural landscapes reminiscent of the harsh lands of Midgard. Rocks, forest, and dramatic lighting created an epic atmosphere of Nordic sagas.
+Outdoor photo session of the Thor costume from *Thor: Ragnarok*. The Sakaaran gladiator look is captured against rocks, forest, and dramatic lighting to highlight the wild side of Ragnarok and the Asgardian aesthetic.

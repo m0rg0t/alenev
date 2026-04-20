@@ -3,7 +3,6 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeCard from '../../components/CostumeCard.astro';
 import EventCard from '../../components/EventCard.astro';
-import VKVideo from '../../components/VKVideo.astro';
 import { useTranslations } from '../../i18n';
 
 const t = useTranslations('en');
@@ -132,42 +131,9 @@ function getCostumeTitles(costumeSlugs: string[]): string[] {
       </div>
     </article>
 
-    <article class="video-article">
-      <h3>Overwatch Cosplayers Assemble — community tribute on the game's anniversary</h3>
-      <p>
-        A community "roll-call" of Overwatch heroes produced as a collective gift for the game's anniversary — 19 cosplayers in character.
-        Anton Lenev appears as one of three McCrees in the video. Other heroes on screen include
-        Mei, D.Va (×2), Mercy (×2), Junkrat, Torbjörn, Brigitte, Soldier: 76 (×2), Reaper, Widowmaker, Ana,
-        McCree (Konstantin Logvinov, Igor Krivonogov), Ashe, Genji and Zarya.
-      </p>
-      <div class="video-embed">
-        <VKVideo oid="220916317" videoId="456240978" hash="342872c403b95e08" title="Overwatch Cosplayers Assemble" />
-      </div>
-      <div class="links">
-        <a href="https://vk.com/wall-79997904_596356" target="_blank" rel="noopener">VK post</a>
-        <a href="https://vk.com/video220916317_456240978" target="_blank" rel="noopener">Video on VK</a>
-      </div>
-    </article>
-
-    <article class="video-article">
-      <h3>ASIAVOL — jury defile: McCree (Overwatch)</h3>
-      <p>
-        Anton Lenev's jury defile at the ASIAVOL festival as McCree from Overwatch.
-      </p>
-      <div class="video-embed">
-        <iframe
-          src="https://www.youtube.com/embed/oc0lnoCJdpQ"
-          title="ASIAVOL | Jury defile — Anton Lenev (McCree / Overwatch)"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          loading="lazy"
-        ></iframe>
-      </div>
-      <div class="links">
-        <a href="https://www.youtube.com/watch?v=oc0lnoCJdpQ" target="_blank" rel="noopener">Watch on YouTube</a>
-      </div>
-    </article>
+    <p class="see-more-note">
+      For costume-specific videos, see the costume page — e.g. <a href="/en/cosplay/mccree">McCree (Overwatch)</a>.
+    </p>
   </section>
 
   <style>

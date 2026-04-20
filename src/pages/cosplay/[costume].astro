@@ -100,6 +100,7 @@ const metaDescription = entry.data.character && entry.data.franchise
         return (
           <article class="video-article">
             {video.title && <h3>{video.title}</h3>}
+            {video.description && <p class="video-description">{video.description}</p>}
             <div class="video-embed">
               {video.embed === 'youtube' && ytId && (
                 <iframe
@@ -249,6 +250,12 @@ const metaDescription = entry.data.character && entry.data.franchise
       margin-bottom: 0.75rem;
       text-transform: uppercase;
       color: var(--color-text);
+    }
+
+    .video-description {
+      color: var(--color-text-muted);
+      line-height: 1.6;
+      margin-bottom: 1rem;
     }
 
     .video-embed {

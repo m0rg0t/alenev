@@ -28,6 +28,7 @@ const costumesCollection = defineCollection({
     videos: z.array(z.object({
       url: z.string(),
       title: z.string().optional(),
+      description: z.string().optional(),
       embed: z.enum(['youtube', 'vk']).optional(),
       oid: z.union([z.string(), z.number()]).optional(),
       videoId: z.union([z.string(), z.number()]).optional(),

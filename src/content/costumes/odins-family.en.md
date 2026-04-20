@@ -1,19 +1,19 @@
 ---
-title: "Odin's Family"
+title: "Thor from Thor: Ragnarok"
 lang: en
 costumeId: "odins-family"
-character: "Odin's Family"
-franchise: "Norse Mythology"
+character: "Thor Odinson"
+franchise: "Thor: Ragnarok (Marvel)"
 coverImage: "/cosplay/odins_family/IMG_9589-Edit-4.thumb.webp"
 date: 2019-08-01
-tags: ["mythology", "norse", "odin", "fantasy"]
+tags: ["marvel", "thor", "ragnarok", "asgard"]
 materials: ["EVA foam", "leather", "fur", "metal", "fabric"]
 buildTime: "3 months"
 order: 7
 ---
 
-A group cosplay inspired by Norse mythology, recreating the look of Odin's family. The project brought together several costumes in a unified thematic composition inspired by Nordic legends.
+Thor costume from Marvel Studios' *Thor: Ragnarok* — the Sakaaran gladiator look: breastplate, bracers, cape, weaponry. Reference is Chris Hemsworth's final costume from the climactic scenes of the film.
 
-Each costume features elements made from EVA foam, genuine leather, and fur. The armor is decorated with runic patterns and characteristic Scandinavian ornaments. Weapons and shields are crafted with attention to historical and mythological detail.
+The armor is EVA foam, thermoformed and painted with a weathered finish for a "living metal" look. The cape is heavy fabric; the hammer and weapons are EVA with a metallic paint treatment. Leather and fur accents echo the Asgardian / Norse aesthetic.
 
-The photo shoot took place outdoors, among forests and rocks, perfectly complementing the mythological theme of the characters.
+In this costume Anton Lenev **won the "Best Cosplay" category** at the Ohtacon festival final at the Okhta Mall in St. Petersburg on March 7, 2020. The photo shoot was done outdoors — among forests and rocks — underscoring the wild, untamed side of Ragnarok.
