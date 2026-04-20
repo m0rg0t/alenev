@@ -25,6 +25,14 @@ const costumesCollection = defineCollection({
       role: z.string().optional(),
       url: z.string().url().optional(),
     })).optional(),
+    videos: z.array(z.object({
+      url: z.string(),
+      title: z.string().optional(),
+      embed: z.enum(['youtube', 'vk']).optional(),
+      oid: z.union([z.string(), z.number()]).optional(),
+      videoId: z.union([z.string(), z.number()]).optional(),
+      hash: z.string().optional(),
+    })).optional(),
     order: z.number().optional(),
   }),
 });

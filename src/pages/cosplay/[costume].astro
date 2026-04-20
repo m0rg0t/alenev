@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeMeta from '../../components/CostumeMeta.astro';
 import ShootCard from '../../components/ShootCard.astro';
+import VKVideo from '../../components/VKVideo.astro';
 import { useTranslations } from '../../i18n';
 
 const t = useTranslations('ru');
@@ -90,6 +91,40 @@ const metaDescription = entry.data.character && entry.data.franchise
     socialLinks={entry.data.socialLinks}
     lang="ru"
   />
+
+  {entry.data.videos && entry.data.videos.length > 0 && (
+    <section class="videos-section">
+      <h2>Видео</h2>
+      {entry.data.videos.map((video) => {
+        const ytId = video.embed === 'youtube' ? video.videoId : null;
+        return (
+          <article class="video-article">
+            {video.title && <h3>{video.title}</h3>}
+            <div class="video-embed">
+              {video.embed === 'youtube' && ytId && (
+                <iframe
+                  src={`https://www.youtube.com/embed/${ytId}`}
+                  title={video.title}
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                  loading="lazy"
+                ></iframe>
+              )}
+              {video.embed === 'vk' && video.oid && video.videoId && video.hash && (
+                <VKVideo oid={video.oid} videoId={video.videoId} hash={video.hash} title={video.title ?? entry.data.title} />
+              )}
+            </div>
+            {video.url && (
+              <div class="video-links">
+                <a href={video.url} target="_blank" rel="noopener">Смотреть на источнике →</a>
+              </div>
+            )}
+          </article>
+        );
+      })}
+    </section>
+  )}
 
   {shoots.length > 0 && (
     <section class="shoots-section">
@@ -193,6 +228,59 @@ const metaDescription = entry.data.character && entry.data.franchise
     .shoots-section {
       margin-top: 3rem;
       margin-bottom: 3rem;
+    }
+
+    .videos-section {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .video-article {
+      background: var(--color-surface);
+      padding: 1.5rem 1.5rem 1.5rem 2rem;
+      margin-bottom: 1.5rem;
+      border: var(--border-width) solid var(--color-border);
+      border-left: 8px solid var(--color-primary);
+      box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border);
+    }
+
+    .video-article h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      color: var(--color-text);
+    }
+
+    .video-embed {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      margin: 0.5rem 0;
+      border: var(--border-width) solid var(--color-border);
+      box-shadow: 4px 4px 0 var(--color-border);
+      background: #000;
+    }
+
+    .video-embed iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-links {
+      margin-top: 0.75rem;
+    }
+
+    .video-links a {
+      color: var(--color-primary-dark);
+      font-weight: 600;
+      text-decoration: underline;
+    }
+
+    :global([data-theme="dark"]) .video-links a {
+      color: var(--color-accent);
     }
 
     h2 {

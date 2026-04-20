@@ -9,6 +9,11 @@ date: 2018-06-01
 tags: ["overwatch", "blizzard", "шутер", "ковбой"]
 materials: ["EVA foam", "термопластик", "ткань", "акриловые краски", "LED"]
 buildTime: "4 месяца"
+videos:
+  - embed: youtube
+    videoId: "oc0lnoCJdpQ"
+    url: "https://www.youtube.com/watch?v=oc0lnoCJdpQ"
+    title: "ASIAVOL — дефиле жюри: Маккри (Overwatch)"
 order: 1
 ---
 

@@ -9,6 +9,11 @@ date: 2018-06-01
 tags: ["overwatch", "blizzard", "shooter", "cowboy"]
 materials: ["EVA foam", "thermoplastic", "fabric", "acrylic paints", "LED"]
 buildTime: "4 months"
+videos:
+  - embed: youtube
+    videoId: "oc0lnoCJdpQ"
+    url: "https://www.youtube.com/watch?v=oc0lnoCJdpQ"
+    title: "ASIAVOL — jury defile: McCree (Overwatch)"
 order: 1
 ---
 
