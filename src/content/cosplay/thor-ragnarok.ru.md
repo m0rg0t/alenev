@@ -1,8 +1,8 @@
 ---
 title: "Тор: Рагнарёк — фотосессия на природе"
 lang: ru
-costume: "odins-family"
-folder: "odins_family"
+costume: "thor-ragnarok"
+folder: "thor_ragnarok"
 coverImage: "IMG_9589-Edit-4.thumb.webp"
 date: 2019-09-14
 photographer: ""
