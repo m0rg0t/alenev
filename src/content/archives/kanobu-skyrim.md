@@ -24,6 +24,8 @@ images:
 
 *Это архивная копия статьи. [Оригинал на kanobu.ru](https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/)*
 
+*Подробнее о [костюме Драконорождённого](/cosplay/dovahkiin/) в коллекции автора.*
+
 ---
 
 ![Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim - изображение обложка](https://cdn.kanobu.ru/articles/pics/4995a4fc-9d92-47c1-ab50-03697d0148bb.jpg)
@@ -50,3 +52,7 @@ images:
 ![Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim - фото 9](http://u.kanobu.ru/editor/images/25/1b94c136-5387-4655-82e4-457dc73fc69d.jpg)
 
 ![Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim - фото 10](http://u.kanobu.ru/editor/images/93/c7ef1244-ba9c-42d3-aea4-ef719ed0cb10.jpg)
+
+---
+
+← Вернуться к [странице костюма Драконорождённого](/cosplay/dovahkiin/)
