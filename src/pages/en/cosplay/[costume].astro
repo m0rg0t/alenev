@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import CostumeMeta from '../../../components/CostumeMeta.astro';
 import ShootCard from '../../../components/ShootCard.astro';
+import EventCard from '../../../components/EventCard.astro';
 import VKVideo from '../../../components/VKVideo.astro';
 import { useTranslations } from '../../../i18n';
 
@@ -22,6 +23,10 @@ const { Content } = await entry.render();
 
 const shoots = (await getCollection('cosplay'))
   .filter(s => s.data.lang === 'en' && s.data.costume === entry.data.costumeId)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const events = (await getCollection('cosplay-events'))
+  .filter(e => e.data.lang === 'en' && e.data.costumes.includes(entry.data.costumeId))
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 
@@ -84,6 +89,25 @@ const shoots = (await getCollection('cosplay'))
     </section>
   )}
 
+  {events.length > 0 && (
+    <section class="events-section">
+      <h2>{t('cosplay.events')}</h2>
+      <div class="events-grid">
+        {events.map(event => (
+          <EventCard
+            title={event.data.title}
+            slug={event.data.costumeId}
+            coverImage={event.data.coverImage}
+            date={event.data.date?.toLocaleDateString('en-US', { year: 'numeric', month: 'long' })}
+            location={event.data.location}
+            costumeTitles={[]}
+            lang="en"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
   {shoots.length > 0 && (
     <section class="shoots-section">
       <h2>{t('cosplay.shoots')}</h2>
@@ -122,6 +146,8 @@ const shoots = (await getCollection('cosplay'))
     .description :global(p) { margin-bottom: 1rem; }
     .description :global(p:last-child) { margin-bottom: 0; }
     .shoots-section { margin-top: 3rem; margin-bottom: 3rem; }
+    .events-section { margin-top: 3rem; margin-bottom: 3rem; }
+    .events-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
     .videos-section { margin-top: 3rem; margin-bottom: 3rem; }
     .video-article { background: var(--color-surface); padding: 1.5rem 1.5rem 1.5rem 2rem; margin-bottom: 1.5rem; border: var(--border-width) solid var(--color-border); border-left: 8px solid var(--color-primary); box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border); }
     .video-article h3 { font-size: 1.1rem; margin-bottom: 0.75rem; text-transform: uppercase; color: var(--color-text); }
@@ -136,6 +162,6 @@ const shoots = (await getCollection('cosplay'))
     .back-link-wrapper { margin-top: 2rem; }
     .back-link { display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-surface); color: var(--color-text); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); }
     .back-link:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--color-border); background: var(--color-accent); color: #1a1a1a; }
-    @media (max-width: 768px) { h1 { font-size: 1.75rem; } .shoots-grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { h1 { font-size: 1.75rem; } .shoots-grid { grid-template-columns: 1fr; } .events-grid { grid-template-columns: 1fr; } }
   </style>
 </BaseLayout>

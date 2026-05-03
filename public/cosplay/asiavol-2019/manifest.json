@@ -1,0 +1,47 @@
+{
+  "images": [
+    {
+      "original": "asiavol-01.jpg",
+      "webp": "asiavol-01.webp",
+      "thumb": "asiavol-01.thumb.webp",
+      "width": 1280,
+      "height": 854
+    },
+    {
+      "original": "asiavol-02.jpg",
+      "webp": "asiavol-02.webp",
+      "thumb": "asiavol-02.thumb.webp",
+      "width": 1280,
+      "height": 854
+    },
+    {
+      "original": "asiavol-03.jpg",
+      "webp": "asiavol-03.webp",
+      "thumb": "asiavol-03.thumb.webp",
+      "width": 721,
+      "height": 1080
+    },
+    {
+      "original": "asiavol-04.jpg",
+      "webp": "asiavol-04.webp",
+      "thumb": "asiavol-04.thumb.webp",
+      "width": 720,
+      "height": 1080
+    },
+    {
+      "original": "asiavol-05.jpg",
+      "webp": "asiavol-05.webp",
+      "thumb": "asiavol-05.thumb.webp",
+      "width": 1280,
+      "height": 853
+    },
+    {
+      "original": "asiavol-06.jpg",
+      "webp": "asiavol-06.webp",
+      "thumb": "asiavol-06.thumb.webp",
+      "width": 682,
+      "height": 1024
+    }
+  ],
+  "video": null
+}

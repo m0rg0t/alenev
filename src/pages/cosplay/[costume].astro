@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeMeta from '../../components/CostumeMeta.astro';
 import ShootCard from '../../components/ShootCard.astro';
+import EventCard from '../../components/EventCard.astro';
 import VKVideo from '../../components/VKVideo.astro';
 import { useTranslations } from '../../i18n';
 
@@ -22,6 +23,10 @@ const { Content } = await entry.render();
 
 const shoots = (await getCollection('cosplay'))
   .filter(s => s.data.lang === 'ru' && s.data.costume === entry.data.costumeId)
+  .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
+
+const events = (await getCollection('cosplay-events'))
+  .filter(e => e.data.lang === 'ru' && e.data.costumes.includes(entry.data.costumeId))
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 
 const pageUrl = `https://alenev.ru/cosplay/${entry.data.costumeId}/`;
@@ -127,6 +132,25 @@ const metaDescription = entry.data.character && entry.data.franchise
     </section>
   )}
 
+  {events.length > 0 && (
+    <section class="events-section">
+      <h2>{t('cosplay.events')}</h2>
+      <div class="events-grid">
+        {events.map(event => (
+          <EventCard
+            title={event.data.title}
+            slug={event.data.costumeId}
+            coverImage={event.data.coverImage}
+            date={event.data.date?.toLocaleDateString('ru-RU', { year: 'numeric', month: 'long' })}
+            location={event.data.location}
+            costumeTitles={[]}
+            lang="ru"
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
   {shoots.length > 0 && (
     <section class="shoots-section">
       <h2>{t('cosplay.shoots')}</h2>
@@ -229,6 +253,17 @@ const metaDescription = entry.data.character && entry.data.franchise
     .shoots-section {
       margin-top: 3rem;
       margin-bottom: 3rem;
+    }
+
+    .events-section {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .events-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
     }
 
     .videos-section {
@@ -338,6 +373,10 @@ const metaDescription = entry.data.character && entry.data.franchise
       }
 
       .shoots-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .events-grid {
         grid-template-columns: 1fr;
       }
     }
