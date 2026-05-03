@@ -162,6 +162,21 @@ async function processFolder(folderPath: string, folderName: string): Promise<vo
 
   const entries = await readdir(folderPath, { withFileTypes: true });
   const manifest: Manifest = { images: [], video: null };
+  const manifestPath = join(folderPath, 'manifest.json');
+
+  // Load previous manifest so we can preserve `original` filenames (and recover
+  // webp-only folders where original JPGs are no longer present on disk — e.g.
+  // when only optimized webp files are committed to git).
+  let previousManifest: Manifest = { images: [], video: null };
+  if (existsSync(manifestPath)) {
+    try {
+      previousManifest = JSON.parse(await readFile(manifestPath, 'utf-8')) as Manifest;
+    } catch {}
+  }
+  const previousByWebp = new Map(previousManifest.images.map(e => [e.webp, e]));
+
+  // Track filenames present in the folder for fast lookup during recovery pass.
+  const fileNames = new Set(entries.filter(e => e.isFile()).map(e => e.name));
 
   let processedCount = 0;
   let skippedCount = 0;
@@ -207,14 +222,44 @@ async function processFolder(folderPath: string, folderName: string): Promise<vo
     }
   }
 
+  // Recovery pass: include webp files that have no current JPG/PNG original
+  // but do have a sibling .thumb.webp — these are valid optimized assets that
+  // must stay in the manifest even when originals aren't on disk.
+  const coveredWebp = new Set(manifest.images.map(e => e.webp));
+  let recoveredCount = 0;
+
+  for (const entry of entries) {
+    if (!entry.isFile()) continue;
+    const name = entry.name;
+    if (!name.endsWith('.webp') || name.endsWith('.thumb.webp')) continue;
+    if (coveredWebp.has(name)) continue;
+    const thumbName = `${basename(name, '.webp')}.thumb.webp`;
+    if (!fileNames.has(thumbName)) continue;
+
+    try {
+      const meta = await sharp(join(folderPath, name)).metadata();
+      if (!meta.width || !meta.height) continue;
+      const previous = previousByWebp.get(name);
+      manifest.images.push({
+        original: previous?.original ?? name,
+        webp: name,
+        thumb: thumbName,
+        width: meta.width,
+        height: meta.height,
+      });
+      recoveredCount++;
+    } catch (err) {
+      console.warn(`  ⚠ Could not read metadata for orphan webp ${name}:`, err);
+    }
+  }
+
   // Sort images by filename for consistent order
   manifest.images.sort((a, b) => a.original.localeCompare(b.original));
 
   // Write manifest
-  const manifestPath = join(folderPath, 'manifest.json');
   await writeFile(manifestPath, JSON.stringify(manifest, null, 2), 'utf-8');
 
-  console.log(`  ✓ ${processedCount} images processed, ${skippedCount} skipped`);
+  console.log(`  ✓ ${processedCount} images processed, ${skippedCount} skipped${recoveredCount > 0 ? `, ${recoveredCount} recovered from existing webp` : ''}`);
   console.log(`  ✓ manifest.json written`);
 }
 
