@@ -6,11 +6,9 @@ category: "article"
 archiveDate: 2025-01-12
 publishDate: 2023-08-15
 description: "Статья о проекте OwlEye — умном ожерелье для помощи слабовидящим людям"
-coverImage: "/archives/habr-owleye/cover.jpg"
 tags: ["OwlEye", "accessibility", "Arduino", "wearable"]
 ---
 
-# Ожерелье OwlEye — помощь слабовидящим
 
 *Это архивная копия статьи. [Оригинал на Habr](https://habr.com/ru/articles/754234/)*
 

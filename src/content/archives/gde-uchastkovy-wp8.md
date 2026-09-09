@@ -10,7 +10,6 @@ videos:
     title: "«Где участковый?» — WP8 app"
 ---
 
-# «Где участковый?» — приложение для Windows Phone и Windows 8 на данных openpolice.ru
 
 *Это архивная текстовая версия доклада. [Видео на YouTube](https://www.youtube.com/watch?v=HmDg23YXG5w).*
 

@@ -11,7 +11,6 @@ videos:
     title: "Влог Владилена Минина с VK Fresh Code 2023"
 ---
 
-# VK Fresh Code 2023 — влог Владилена Минина (конспект)
 
 *Это конспект влога Владилена Минина. [Смотреть на YouTube](https://www.youtube.com/watch?v=jjVvxWlKwZc) · [Зеркало ВКонтакте](https://vk.com/wall-166562603_6616).*
 

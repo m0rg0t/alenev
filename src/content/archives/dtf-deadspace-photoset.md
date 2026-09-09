@@ -22,7 +22,6 @@ images:
   - "/archives/dtf-deadspace-photoset/image-12.jpg"
 ---
 
-# Dead Space 2 | Isaac Clarke | Антон Ленев — Косплей на DTF
 
 *Это архивная копия статьи. [Оригинал на dtf.ru](https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev)*
 

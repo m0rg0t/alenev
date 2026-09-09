@@ -26,7 +26,6 @@ images:
   - "/archives/cheremuha-predator/image-17.jpg"
 ---
 
-# Рыбинский «Хищник» Антон Ленёв: про косплей и Comic Con
 
 *Это архивная копия статьи. [Оригинал на Черемуха](https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html)*
 

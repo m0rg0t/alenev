@@ -12,7 +12,6 @@ images:
   - "/archives/rybinsknote-midjourney/image-2.gif"
 ---
 
-# Рыбинец запустил проект «Районы города глазами Midjourney»
 
 *Это архивная копия статьи. [Оригинал на RybinskNote](https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/)*
 

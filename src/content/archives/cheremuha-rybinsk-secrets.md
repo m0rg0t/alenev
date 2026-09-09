@@ -19,7 +19,6 @@ images:
   - "/archives/cheremuha-rybinsk-secrets/image-10.jpg"
 ---
 
-# Воробей для Веретья, Лис для Скомороховой горы. В городе появились «Рыбинские секретики»
 
 *Это архивная копия статьи. [Оригинал на Черемуха](https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html)*
 

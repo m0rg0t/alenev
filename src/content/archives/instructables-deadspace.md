@@ -12,7 +12,6 @@ images:
   - "/archives/instructables-deadspace/image-2.webp"
 ---
 
-# Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke
 
 *Это архивная копия статьи. [Оригинал на Instructables](https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/)*
 

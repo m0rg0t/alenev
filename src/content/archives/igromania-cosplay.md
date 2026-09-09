@@ -28,7 +28,6 @@ images:
   - "/archives/igromania-cosplay/image-19.jpg"
 ---
 
-# Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 — Игромания
 
 *Это архивная копия статьи. [Оригинал на www.igromania.ru](https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html)*
 
@@ -70,7 +69,7 @@ images:
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 10](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/0fb6af1c7d759923_1200xH.jpg)
 
-[Дарья Кравец](https://vk.com/fishy3) из Санкт-Петербурга — частая гостья нашей подборки. Ранее она уже не раз появлялась в наших публикациях, и чаще всего в роли чародеек из ведьмачьей саги — летом мы выкладывали ее косплей [Йеннифэр](/article/29333/Pyatnichnyy_kospley_Dragon_Age_II_Resident_Evil_3_Witchblade_Van_Helsing_i_drugoe.html), а осенью — фотосет в роли [Трисс Меригольд](/article/29612/Pyatnichnyy_kospley_Tolko_Vedmak_3.html). Чтобы собрать полный комплект, предлагаем вам оценить её версию княжны Цириллы. Какой из образов вам больше по душе?
+[Дарья Кравец](https://vk.com/fishy3) из Санкт-Петербурга — частая гостья нашей подборки. Ранее она уже не раз появлялась в наших публикациях, и чаще всего в роли чародеек из ведьмачьей саги — летом мы выкладывали ее косплей [Йеннифэр](https://www.igromania.ru/article/29333/Pyatnichnyy_kospley_Dragon_Age_II_Resident_Evil_3_Witchblade_Van_Helsing_i_drugoe.html), а осенью — фотосет в роли [Трисс Меригольд](https://www.igromania.ru/article/29612/Pyatnichnyy_kospley_Tolko_Vedmak_3.html). Чтобы собрать полный комплект, предлагаем вам оценить её версию княжны Цириллы. Какой из образов вам больше по душе?
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 11](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/d32c0feb3618567c_1200xH.jpg)
 
@@ -107,7 +106,7 @@ images:
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 22](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/fc79acb9aa65bb75_1200xH.jpg)
 
-Исключительно прекрасные и не менее опасные Чунь Ли и Кэмми знакомы всем геймерам. В этот раз их образы примерили девушки под никами Rin и [Sai Westwood](https://vk.com/misaki_sai), фотограф: [PUGOFFKA](https://vk.com/pugoffka_sama). Кстати, совсем недавно мы публиковали пару снимков с героинями [Чунь Ли и Кэмми](/article/29872/Pyatnichnyy_kospley_Overwatch_Vedmak_Street_Fighter_NieR_Automata_Dota_2.html) от команды «OAO ~ Ну вы поняли».
+Исключительно прекрасные и не менее опасные Чунь Ли и Кэмми знакомы всем геймерам. В этот раз их образы примерили девушки под никами Rin и [Sai Westwood](https://vk.com/misaki_sai), фотограф: [PUGOFFKA](https://vk.com/pugoffka_sama). Кстати, совсем недавно мы публиковали пару снимков с героинями [Чунь Ли и Кэмми](https://www.igromania.ru/article/29872/Pyatnichnyy_kospley_Overwatch_Vedmak_Street_Fighter_NieR_Automata_Dota_2.html) от команды «OAO ~ Ну вы поняли».
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 23](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/10549329119f54e2_1200xH.jpg)
 
@@ -119,7 +118,7 @@ images:
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 26](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/ea9e325572047bb1_1200xH.jpg)
 
-Саша Санжев по праву может считаться одним из лучших косплееров России. Образов у него не так много, но исполнение каждого — на очень высоком уровне. Мы уже выкладывали его косплей Звёздного Лорда из [«Стражей Галактики»](/article/29137/Pyatnichnyy_kospley_WoW_Tomb_Raider_Strazhi_Galaktiki_League_of_Legends_NieR_Automata_Igra_prestolov_i_Overwatch.html) и фестивальные снимки [Солдата-76](/article/29761/Pyatnichnyy_kospley_esche_bolshe_Overwatch.html), а теперь можем поделиться и отличными студийными фотографиями.
+Саша Санжев по праву может считаться одним из лучших косплееров России. Образов у него не так много, но исполнение каждого — на очень высоком уровне. Мы уже выкладывали его косплей Звёздного Лорда из [«Стражей Галактики»](https://www.igromania.ru/article/29137/Pyatnichnyy_kospley_WoW_Tomb_Raider_Strazhi_Galaktiki_League_of_Legends_NieR_Automata_Igra_prestolov_i_Overwatch.html) и фестивальные снимки [Солдата-76](https://www.igromania.ru/article/29761/Pyatnichnyy_kospley_esche_bolshe_Overwatch.html), а теперь можем поделиться и отличными студийными фотографиями.
 
 ![Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 - фото 27](https://newcdn.igromania.ru/mnt/articles/7/6/0/9/c/b/29906/html/more/a8d030530f80f31d_1200xH.jpg)
 

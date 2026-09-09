@@ -29,7 +29,6 @@ images:
   - "/archives/habr-deadspace-cosplay/image-19.jpg"
 ---
 
-# Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2
 
 *Это архивная копия статьи. [Оригинал на Habr](https://habr.com/ru/articles/482280/)*
 

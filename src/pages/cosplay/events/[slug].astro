@@ -124,7 +124,7 @@ const metaDescription = entry.data.location && entry.data.date
   {manifest.images.length > 0 && entry.data.folder && (
     <section class="gallery-section">
       <h2>{t('cosplay.photos')} ({manifest.images.length})</h2>
-      <CosplayGallery images={manifest.images} folder={entry.data.folder} />
+      <CosplayGallery title={entry.data.title} images={manifest.images} folder={entry.data.folder} />
       <Lightbox />
     </section>
   )}

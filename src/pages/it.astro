@@ -85,19 +85,18 @@ const talks = [
   },
 ];
 
-const videoSchemas = talks.map(t => {
+const videoSchemas = talks.filter(t => /^\d{4}-\d{2}-\d{2}$/.test(t.uploadDate)).map(t => {
   const schema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
     'name': t.name,
     'description': t.description,
     'thumbnailUrl': `https://img.youtube.com/vi/${t.videoId}/hqdefault.jpg`,
-    'contentUrl': t.url,
     'embedUrl': t.embedUrl,
-    'author': { '@id': 'https://alenev.ru/#person' },
+    'about': { '@id': 'https://alenev.ru/#person' },
     'inLanguage': 'ru',
   };
-  if (t.uploadDate) schema.uploadDate = t.uploadDate;
+  if (/^\d{4}-\d{2}-\d{2}$/.test(t.uploadDate)) schema.uploadDate = t.uploadDate;
   return schema;
 });
 ---
@@ -124,8 +123,19 @@ const videoSchemas = talks.map(t => {
     <a href="/about">Подробнее о карьере и образовании →</a>
   </p>
 
+<nav class="page-toc" aria-label="На этой странице"><a href="#projects">Pet Проекты</a><a href="#mini-apps">VK Mini Apps</a><a href="#alice">Навыки для Яндекс.Алисы</a><a href="#talks">Выступления</a><a href="#awards">Хакатоны, конкурсы и гранты</a><a href="#experience">Опыт работы</a></nav>
   <section class="section">
-    <h2>Pet Проекты</h2>
+    <h2 id="experience">Опыт работы</h2>
+    <p>CTO/Frontend Developer в Viewst Inc</p>
+    <p>Образование: Рыбинская Государственная Авиационная Технологическая Академия им. П.А. Соловьёва (2006-2011)</p>
+    <div class="links">
+      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 репозиториев)</a>
+      <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 id="projects">Pet Проекты</h2>
 
     <article class="project">
       <h3>OwlEye</h3>
@@ -195,7 +205,7 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
-    <h2>VK Mini Apps</h2>
+    <h2 id="mini-apps">VK Mini Apps</h2>
     <p class="page-intro" style="margin-bottom: 1.5rem;">
       Мини-приложения для ВКонтакте — развлекательные и познавательные проекты.
     </p>
@@ -228,7 +238,7 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
-    <h2>Навыки для Яндекс.Алисы</h2>
+    <h2 id="alice">Навыки для Яндекс.Алисы</h2>
 
     <article class="project">
       <h3>Былина о Святогоре</h3>
@@ -243,7 +253,7 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
-    <h2>Выступления</h2>
+    <h2 id="talks">Выступления</h2>
 
     {talks.map(talk => (
       <article class="talk">
@@ -298,7 +308,7 @@ const videoSchemas = talks.map(t => {
   </section>
 
   <section class="section">
-    <h2>Хакатоны, конкурсы и гранты</h2>
+    <h2 id="awards">Хакатоны, конкурсы и гранты</h2>
     <p class="page-intro" style="margin-bottom: 1.5rem;">
       Подборка подтверждённых участий и побед в разработческих хакатонах, конкурсах приложений и грантовых программах.
     </p>
@@ -479,17 +489,11 @@ const videoSchemas = talks.map(t => {
     </article>
   </section>
 
-  <section class="section">
-    <h2>Опыт работы</h2>
-    <p>CTO/Frontend Developer в Viewst Inc</p>
-    <p>Образование: Рыбинская Государственная Авиационная Технологическая Академия им. П.А. Соловьёва (2006-2011)</p>
-    <div class="links">
-      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 репозиториев)</a>
-      <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
-    </div>
-  </section>
+
 
   <style>
+    .page-toc { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0 2rem; }
+    .page-toc a { color: var(--color-text); padding: 0.5rem 0.75rem; border: 2px solid currentColor; }
     /* Page Title */
     h1 {
       font-size: 2.5rem;
@@ -517,7 +521,7 @@ const videoSchemas = talks.map(t => {
       margin-bottom: 1.5rem;
       display: inline-block;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       padding: 0.5rem 1rem;
       border: var(--border-width) solid var(--color-border);
       box-shadow: 3px 3px 0 var(--color-border);
@@ -614,7 +618,7 @@ const videoSchemas = talks.map(t => {
     .links a {
       padding: 0.5rem 1rem;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       text-decoration: none;
       border: var(--border-width) solid var(--color-border);
       font-size: 0.8rem;
@@ -626,7 +630,7 @@ const videoSchemas = talks.map(t => {
     .links a:hover {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
-      background: var(--color-primary-dark);
+      background: var(--color-primary-hover);
     }
 
     /* VK Mini Apps grid */
@@ -674,7 +678,7 @@ const videoSchemas = talks.map(t => {
       display: inline-block;
       padding: 0.5rem 1rem;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       text-decoration: none;
       border: var(--border-width) solid var(--color-border);
       font-size: 0.8rem;
@@ -686,7 +690,7 @@ const videoSchemas = talks.map(t => {
     .app-card a:hover {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
-      background: var(--color-primary-dark);
+      background: var(--color-primary-hover);
     }
 
     /* Responsive */

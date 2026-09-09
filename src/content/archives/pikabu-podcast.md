@@ -17,7 +17,6 @@ images:
   - "/archives/pikabu-podcast/image-8.png"
 ---
 
-# Подкаст «Косплей и прочие штуки» — как, зачем и о чем?
 
 *Это архивная копия. [Оригинал на Pikabu](https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532)*
 

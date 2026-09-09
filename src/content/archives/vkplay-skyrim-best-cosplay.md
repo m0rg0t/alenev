@@ -42,11 +42,10 @@ images:
 tags: ["skyrim", "the-elder-scrolls", "косплей", "vk-play", "подборка", "довакин"]
 ---
 
-# Лучший косплей по мотивам The Elder Scrolls V: Skyrim
 
 *Это архивная копия статьи. [Оригинал на VK Play Media](https://vkplay.ru/media/feat/luchshij_kosplej_po_motivam_the_elder_scrolls_v_skyrim/)*
 
-*Эта подборка содержит фотографию Антона Ленева в [костюме Драконорождённого](/cosplay/dovahkiin/) — см. фото №21 в галерее ниже.*
+*Эта подборка содержит фотографию Антона Ленева в [костюме Драконорождённого](https://vkplay.ru/cosplay/dovahkiin/) — см. фото №21 в галерее ниже.*
 
 ---
 
@@ -120,7 +119,7 @@ tags: ["skyrim", "the-elder-scrolls", "косплей", "vk-play", "подбор
 *Тёмный ассасин от MientowaCosplay*
 
 ![Антон Ленев (Драконорождённый) и Полина Суровегина (Эйла)](/archives/vkplay-skyrim-best-cosplay/image-21.jpg)
-*[Антон Ленев (Драконорождённый)](/cosplay/dovahkiin/) и Полина Суровегина (Эйла). Фотограф — Gabardin*
+*[Антон Ленев (Драконорождённый)](https://vkplay.ru/cosplay/dovahkiin/) и Полина Суровегина (Эйла). Фотограф — Gabardin*
 
 ![Niacosplay и её убийца из Тёмного братства](/archives/vkplay-skyrim-best-cosplay/image-22.jpg)
 *Niacosplay и её убийца из Тёмного братства. Фото от Dzeta&Aiger*
@@ -151,4 +150,4 @@ tags: ["skyrim", "the-elder-scrolls", "косплей", "vk-play", "подбор
 
 ---
 
-← Вернуться к [странице костюма Драконорождённого](/cosplay/dovahkiin/)
+← Вернуться к [странице костюма Драконорождённого](https://vkplay.ru/cosplay/dovahkiin/)

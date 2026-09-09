@@ -8,7 +8,6 @@ publishDate: 2025-09-17
 description: "Наша съемочная группа познакомилась с героями и автором проекта"
 ---
 
-# На улицах Рыбинска устанавливают фигурки в стиле персонажей мультфильмов - Вести Ярославль
 
 *Это архивная копия статьи. [Оригинал на vesti-yaroslavl.ru](https://vesti-yaroslavl.ru/novosti/item/95879-na-ulitsakh-rybinska-ustanavlivayut-figurki-v-stile-personazhej-multfilmov)*
 
@@ -38,9 +37,9 @@ description: "Наша съемочная группа познакомилас�
 
 А еще в Рыбинск уже приехал воробей Толя Бульварный. "Своим" он вскоре станет для жителей микрорайона Веретье. Пока в планах автора проекта "Рыбинские секретики" установить на улицах города 13 персонажей. Приложение подскажет, где их найти. А главное - превратит обычную прогулку в настоящее приключение.
 
-Автор: [Вероника Чигилейчик](/zhurnalisty-televideniya/itemlist/user/1498-veponikachigileychik)
+Автор: [Вероника Чигилейчик](https://vesti-yaroslavl.ru/zhurnalisty-televideniya/itemlist/user/1498-veponikachigileychik)
 
-[Смотреть ещё](/novosti/item/95880-v-tutaeve-s-noyabrya-nachnut-testirovat-sudna-na-vozdushnoj-podushke)
+[Смотреть ещё](https://vesti-yaroslavl.ru/novosti/item/95880-v-tutaeve-s-noyabrya-nachnut-testirovat-sudna-na-vozdushnoj-podushke)
 
 ![](https://px201.medhills.ru/s.gif?mh_id=77f09bb53861be2e590b6c3ce0d071c0&mh_news=%D0%9D%D0%B0+%D1%83%D0%BB%D0%B8%D1%86%D0%B0%D1%85+%D0%A0%D1%8B%D0%B1%D0%B8%D0%BD%D1%81%D0%BA%D0%B0+%D1%83%D1%81%D1%82%D0%B0%D0%BD%D0%B0%D0%B2%D0%BB%D0%B8%D0%B2%D0%B0%D1%8E%D1%82+%D1%84%D0%B8%D0%B3%D1%83%D1%80%D0%BA%D0%B8+%D0%B2+%D1%81%D1%82%D0%B8%D0%BB%D0%B5+%D0%BF%D0%B5%D1%80%D1%81%D0%BE%D0%BD%D0%B0%D0%B6%D0%B5%D0%B9+%D0%BC%D1%83%D0%BB%D1%8C%D1%82%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%D0%BE%D0%B2mh_tags=&mh_page=https://vesti-yarosalvl.ru/novosti/item/95879-na-ulitsakh-rybinska-ustanavlivayut-figurki-v-stile-personazhej-multfilmov)
 

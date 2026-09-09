@@ -38,7 +38,7 @@ const costumes = (await getCollection('costumes'))
 const costume = costumes[0];
 ---
 
-<BaseLayout title={`${entry.data.title} - Cosplay`}>
+<BaseLayout title={`${entry.data.title} — Photo shoot — Anton Lenev`} description={`${entry.data.title} — a cosplay photo shoot with Anton Lenev. ${entry.data.location ? 'Location: ' + entry.data.location + '. ' : ''}${entry.data.photographer ? 'Photography: ' + entry.data.photographer + '.' : ''}`} image={entry.data.coverImage}>
   <h1>{entry.data.title}</h1>
 
   <CosplayMeta
@@ -70,7 +70,7 @@ const costume = costumes[0];
   {manifest.images.length > 0 && (
     <section class="gallery-section">
       <h2>{t('cosplay.photos')} ({manifest.images.length})</h2>
-      <CosplayGallery images={manifest.images} folder={entry.data.folder} />
+      <CosplayGallery title={entry.data.title} images={manifest.images} folder={entry.data.folder} />
       <Lightbox />
     </section>
   )}
@@ -92,7 +92,7 @@ const costume = costumes[0];
     .video-player { width: 100%; max-width: 800px; border: var(--border-width) solid var(--color-border); box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--color-border); }
     .video-title { margin-top: 0.5rem; font-weight: 700; color: var(--color-text-muted); text-transform: uppercase; font-size: 0.85rem; }
     .gallery-section { margin-bottom: 3rem; }
-    h2 { font-size: 1.5rem; margin-bottom: 2rem; display: inline-block; background: var(--color-primary); color: white; padding: 0.5rem 1rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); text-transform: uppercase; }
+    h2 { font-size: 1.5rem; margin-bottom: 2rem; display: inline-block; background: var(--color-primary); color: var(--color-on-primary); padding: 0.5rem 1rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); text-transform: uppercase; }
     .back-link-wrapper { margin-top: 2rem; }
     .back-link { display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-surface); color: var(--color-text); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); }
     .back-link:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 var(--color-border); background: var(--color-accent); color: #1a1a1a; }

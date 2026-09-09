@@ -1,13 +1,13 @@
 ---
 title: "Определены победители конкурса Минфина России на открытых финансовых данных «BudgetApps»"
 originalUrl: "https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps"
+description: "Результаты конкурса BudgetApps 2015 на открытых финансовых данных: публикация Минфина России о победителях и награждении."
 sourceName: "Минфин РФ"
 category: "media"
 archiveDate: 2026-01-11
 coverImage: "/archives/minfin-budgetapps/cover.png"
 ---
 
-# Определены победители конкурса Минфина России на открытых финансовых данных «BudgetApps»
 
 *Это архивная копия статьи. [Оригинал на Минфин РФ](https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps)*
 

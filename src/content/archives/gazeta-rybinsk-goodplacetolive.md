@@ -15,7 +15,6 @@ images:
   - "/archives/gazeta-rybinsk-goodplacetolive/image-5.jpg"
 ---
 
-# «Где жить хорошо?»: ответ IT-специалиста | Темы#
 
 *Это архивная копия статьи. [Оригинал на Газета Рыбинск](https://gazeta-rybinsk.ru/2015/04/29/18147)*
 
@@ -67,9 +66,9 @@ images:
 
 [бизнес](https://gazeta-rybinsk.ru/tag/biznes) [наши люди](https://gazeta-rybinsk.ru/tag/nashi-lyudi) [профессия](https://gazeta-rybinsk.ru/tag/professiya) [хобби](https://gazeta-rybinsk.ru/tag/hobbi)  
 
-Комментарии Отправляя комментарий, я даю [согласие на обработку персональных данных](/soglasie).
+Комментарии Отправляя комментарий, я даю [согласие на обработку персональных данных](https://gazeta-rybinsk.ru/soglasie).
 
-### Добавить комментарий [Отменить ответ](/2015/04/29/18147#respond)
+### Добавить комментарий [Отменить ответ](https://gazeta-rybinsk.ru/2015/04/29/18147#respond)
 
 Ваш адрес email не будет опубликован. Обязательные поля помечены \*
 

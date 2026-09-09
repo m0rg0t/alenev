@@ -30,7 +30,7 @@ const events = (await getCollection('cosplay-events'))
   .sort((a, b) => (a.data.order ?? 99) - (b.data.order ?? 99));
 ---
 
-<BaseLayout title={`${entry.data.title} - Cosplay`}>
+<BaseLayout title={`${entry.data.title} — Costume by Anton Lenev`} description={`${entry.data.title}: a cosplay costume by Anton Lenev. ${entry.data.materials?.length ? 'Materials: ' + entry.data.materials.join(', ') + '. ' : ''}Build details, photo shoots and events.`} image={entry.data.coverImage}>
   <h1>{entry.data.title}</h1>
 
   {entry.data.character && entry.data.franchise && (
@@ -157,7 +157,7 @@ const events = (await getCollection('cosplay-events'))
     .video-links { margin-top: 0.75rem; }
     .video-links a { color: var(--color-primary-dark); font-weight: 600; text-decoration: underline; }
     :global([data-theme="dark"]) .video-links a { color: var(--color-accent); }
-    h2 { font-size: 1.5rem; margin-bottom: 2rem; display: inline-block; background: var(--color-primary); color: white; padding: 0.5rem 1rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); text-transform: uppercase; }
+    h2 { font-size: 1.5rem; margin-bottom: 2rem; display: inline-block; background: var(--color-primary); color: var(--color-on-primary); padding: 0.5rem 1rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); text-transform: uppercase; }
     .shoots-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
     .back-link-wrapper { margin-top: 2rem; }
     .back-link { display: inline-block; padding: 0.75rem 1.5rem; background: var(--color-surface); color: var(--color-text); text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 0.875rem; border: var(--border-width) solid var(--color-border); box-shadow: 3px 3px 0 var(--color-border); }

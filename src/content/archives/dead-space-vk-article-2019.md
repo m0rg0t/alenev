@@ -150,7 +150,6 @@ tags:
   - процесс
   - "2019"
 ---
-# Dead Space 2 — создание костюма Advanced Suit Айзека Кларка
 
 *Это архивная копия авторской статьи Антона Ленева (m0rg0t) о создании костюма Advanced Suit Айзека Кларка из Dead Space 2. Оригинал — [в VK Articles](https://vk.com/@m0rg0t-dead-space-2-sozdanie-kostuma-advanced-suit-aizeka-klarka). Завершён в 2019 году.*
 

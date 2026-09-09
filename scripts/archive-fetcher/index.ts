@@ -260,6 +260,13 @@ async function fetchPage(url: string): Promise<{
     contentSelector = ".step";
   }
 
+  // Resolve publisher links before copying HTML out of its original document.
+  $("a[href]").each((_, el) => {
+    const href = $(el).attr("href");
+    if (!href) return;
+    try { $(el).attr("href", new URL(href, url).href); } catch { /* Keep malformed links for review. */ }
+  });
+
   // Get content HTML
   let contentHtml = "";
   $(contentSelector).each((_, el) => {

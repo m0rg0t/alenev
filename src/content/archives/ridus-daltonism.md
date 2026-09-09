@@ -13,7 +13,6 @@ images:
   - "/archives/ridus-daltonism/image-2.webp"
 ---
 
-# Программист из Рыбинска создал уникальное приложение для дальтоников
 
 *Это архивная копия статьи. [Оригинал на www.ridus.ru](https://www.ridus.ru/news/151954.html)*
 

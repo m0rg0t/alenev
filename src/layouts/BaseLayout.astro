@@ -39,7 +39,14 @@ const enUrl = new URL(enPath, Astro.site).href;
 
 // Pages that exist only in Russian (no English equivalent route).
 // For these, omit the EN hreflang to avoid pointing at a soft-404.
-const hasEnAlternate = !Astro.url.pathname.startsWith('/archive/');
+const isNotFound = /^\/(?:en\/)?404(?:\.html|\/)?$/.test(Astro.url.pathname);
+const hasEnAlternate = !isNotFound && !Astro.url.pathname.startsWith('/archive/');
+const currentPath = Astro.url.pathname.replace(/\/$/, '') || '/';
+const navItems = ['home', 'it', 'podcasts', 'audiobooks', 'cosplay', 'publications', 'other'].map(key => {
+  const href = (lang === 'en' ? '/en' : '') + (key === 'home' ? '/' : '/' + key);
+  const normalized = href.replace(/\/$/, '') || '/';
+  return { key, href, label: t(('nav.' + key) as Parameters<typeof t>[0]), active: currentPath === normalized || (key !== 'home' && currentPath.startsWith(normalized + '/')) };
+});
 
 const schemaOrg = {
   '@context': 'https://schema.org',
@@ -95,18 +102,14 @@ const schemaOrg = {
       : 'Антон Ленев, Антон Ленёв, Антон Аленев, Anton Lenev, antonlenev, m0rg0t, программист, косплей, подкасты, аудиокниги, Рыбинск'} />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="canonical" href={canonicalUrl} />
+    {!isNotFound && <link rel="canonical" href={canonicalUrl} />}
+    {isNotFound && <meta name="robots" content="noindex" />}
 
-    {/* Preload hero image on homepage — it's the LCP element on desktop.
-        WebP 600w covers 2x DPR at rendered 300px width. */}
-    {(Astro.url.pathname === '/' || Astro.url.pathname === '/en/') && (
-      <link rel="preload" as="image" href="/images/anton-lenev-600.webp" type="image/webp" fetchpriority="high" />
-    )}
 
     <!-- hreflang -->
-    <link rel="alternate" hreflang="ru" href={ruUrl} />
+    {!isNotFound && <link rel="alternate" hreflang="ru" href={ruUrl} />}
     {hasEnAlternate && <link rel="alternate" hreflang="en" href={enUrl} />}
-    <link rel="alternate" hreflang="x-default" href={ruUrl} />
+    {!isNotFound && <link rel="alternate" hreflang="x-default" href={ruUrl} />}
 
     <!-- Open Graph -->
     <meta property="og:type" content={ogType} />
@@ -140,6 +143,13 @@ const schemaOrg = {
     </script>
 
     <style>
+      .skip-link { position: fixed; top: -100px; left: 1rem; z-index: 10000; padding: 0.75rem 1rem; background: var(--color-surface); color: var(--color-text); }
+      .skip-link:focus { top: 0; }
+      :global(a) { color: var(--color-primary-dark); }
+      :global(:focus-visible) { outline: 3px solid var(--color-text); outline-offset: 4px; }
+      :global([id]) { scroll-margin-top: 6rem; }
+      nav a[aria-current="page"] { border-color: currentColor; }
+
       /* ===== NEO-BRUTALISM DESIGN SYSTEM ===== */
 
       :root {
@@ -150,7 +160,9 @@ const schemaOrg = {
         --color-text: #1a1a1a;
         --color-text-muted: #4a4a4a;
         --color-primary: #FF6B35;
-        --color-primary-dark: #E85A24;
+        --color-primary-dark: #B83D0E;
+        --color-primary-hover: #F58254;
+        --color-on-primary: #1a1a1a;
         --color-secondary: #FF4444;
         --color-accent: #FFD93D;
         --color-accent-alt: #6BCB77;
@@ -312,7 +324,7 @@ const schemaOrg = {
 
       .lang-switcher a:hover:not(.active) {
         background: var(--color-primary);
-        color: white;
+        color: var(--color-on-primary);
       }
 
       /* Theme Toggle Button */
@@ -460,7 +472,7 @@ const schemaOrg = {
         display: inline-block;
         padding: 0.75rem 1.5rem;
         background: var(--color-primary);
-        color: white;
+        color: var(--color-on-primary);
         text-decoration: none;
         border: var(--border-width) solid var(--color-border);
         font-weight: 700;
@@ -473,7 +485,7 @@ const schemaOrg = {
       .btn:hover {
         transform: translate(-2px, -2px);
         box-shadow: 5px 5px 0 var(--color-border);
-        background: var(--color-primary-dark);
+        background: var(--color-primary-hover);
       }
 
       .btn:active {
@@ -553,7 +565,7 @@ const schemaOrg = {
       .project .links a {
         padding: 0.5rem 1rem;
         background: var(--color-primary);
-        color: white;
+        color: var(--color-on-primary);
         text-decoration: none;
         border: var(--border-width) solid var(--color-border);
         font-weight: 700;
@@ -651,34 +663,29 @@ const schemaOrg = {
     </style>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">{lang === 'en' ? 'Skip to content' : 'Перейти к содержимому'}</a>
     <header>
       <div class="container">
         <div class="header-inner">
-          <button class="nav-toggle" onclick="toggleNav()" aria-label="Menu">
+          <button class="nav-toggle" onclick="toggleNav()" aria-controls="main-nav" aria-expanded="false" aria-label={lang === 'en' ? 'Menu' : 'Меню'}>
             <span></span>
             <span></span>
             <span></span>
           </button>
 
-          <nav id="main-nav">
-            <a href={lang === 'en' ? '/en' : '/'}>{t('nav.home')}</a>
-            <a href={lang === 'en' ? '/en/it' : '/it'}>{t('nav.it')}</a>
-            <a href={lang === 'en' ? '/en/podcasts' : '/podcasts'}>{t('nav.podcasts')}</a>
-            <a href={lang === 'en' ? '/en/audiobooks' : '/audiobooks'}>{t('nav.audiobooks')}</a>
-            <a href={lang === 'en' ? '/en/cosplay' : '/cosplay'}>{t('nav.cosplay')}</a>
-            <a href={lang === 'en' ? '/en/publications' : '/publications'}>{t('nav.publications')}</a>
-            <a href={lang === 'en' ? '/en/other' : '/other'}>{t('nav.other')}</a>
+          <nav id="main-nav" aria-label={lang === 'en' ? 'Main navigation' : 'Основная навигация'}>
+            {navItems.map(item => <a href={item.href} aria-current={item.active ? 'page' : undefined}>{item.label}</a>)}
           </nav>
 
           <div class="header-controls">
             <div class="lang-switcher">
-              <a href={ruPath || '/'} class={lang === 'ru' ? 'active' : undefined} hreflang="ru">RU</a>
+              <a href={isNotFound ? '/' : ruPath || '/'} class={lang === 'ru' ? 'active' : undefined} hreflang="ru">RU</a>
               {hasEnAlternate && (
                 <a href={enPath} class={lang === 'en' ? 'active' : undefined} hreflang="en">EN</a>
               )}
             </div>
 
-            <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+            <button class="theme-toggle" onclick="toggleTheme()" aria-label={lang === 'en' ? 'Toggle theme' : 'Сменить тему'}>
               <span class="icon-sun">&#9728;</span>
               <span class="icon-moon">&#9790;</span>
             </button>
@@ -687,7 +694,7 @@ const schemaOrg = {
       </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container" tabindex="-1">
       <slot />
     </main>
 
@@ -722,9 +729,26 @@ const schemaOrg = {
       });
 
       // Mobile navigation toggle
-      window.toggleNav = function() {
-        document.getElementById('main-nav').classList.toggle('open');
+      const nav = document.getElementById('main-nav');
+      const navToggle = document.querySelector('.nav-toggle');
+      const setNavOpen = (open) => {
+        nav.classList.toggle('open', open);
+        navToggle.setAttribute('aria-expanded', String(open));
       };
+      window.toggleNav = () => setNavOpen(!nav.classList.contains('open'));
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && nav.classList.contains('open')) {
+          setNavOpen(false);
+          navToggle.focus();
+        }
+      });
+      document.addEventListener('click', (event) => {
+        if (!nav.contains(event.target) && !navToggle.contains(event.target)) setNavOpen(false);
+      });
+      nav.addEventListener('click', (event) => {
+        if (event.target.closest('a')) setNavOpen(false);
+      });
+      window.matchMedia('(min-width: 769px)').addEventListener('change', () => setNavOpen(false));
     </script>
   </body>
 </html>

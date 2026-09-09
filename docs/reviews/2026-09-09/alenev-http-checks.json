@@ -1,0 +1,52 @@
+[
+  [
+    "http://alenev.ru/",
+    "200 https://alenev.ru/ 1",
+    ""
+  ],
+  [
+    "http://www.alenev.ru/",
+    "404 http://www.alenev.ru/ 0",
+    ""
+  ],
+  [
+    "https://www.alenev.ru/",
+    "000 https://www.alenev.ru/ 0",
+    "curl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+  ],
+  [
+    "https://alenev.ru/robots.txt",
+    "200 https://alenev.ru/robots.txt 0",
+    ""
+  ],
+  [
+    "https://alenev.ru/sitemap-0.xml",
+    "200 https://alenev.ru/sitemap-0.xml 0",
+    ""
+  ],
+  [
+    "https://alenev.ru/seo-audit-missing-0909",
+    "404 https://alenev.ru/seo-audit-missing-0909 0",
+    ""
+  ],
+  [
+    "https://alenev.ru/it/",
+    "200 https://alenev.ru/it/ 0",
+    ""
+  ],
+  [
+    "https://alenev.ru/it",
+    "200 https://alenev.ru/it/ 1",
+    ""
+  ],
+  [
+    "https://alenev.ru/it/index.html",
+    "200 https://alenev.ru/it/index.html 0",
+    ""
+  ],
+  [
+    "https://alenev.ru/llms.txt",
+    "200 https://alenev.ru/llms.txt 0",
+    ""
+  ]
+]

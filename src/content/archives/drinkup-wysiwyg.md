@@ -10,7 +10,6 @@ videos:
     title: "We need to go deeper: дорога к WYSIWYG"
 ---
 
-# We need to go deeper: куда нас привела дорога к WYSIWYG
 
 *Текстовая версия доклада Антона Ленева на SPB Frontend Drinkup. [Оригинал на YouTube](https://www.youtube.com/watch?v=CEYy-knCG5w).*
 

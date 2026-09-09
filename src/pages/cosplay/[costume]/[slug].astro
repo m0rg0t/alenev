@@ -40,7 +40,7 @@ const costumes = (await getCollection('costumes'))
 const costume = costumes[0];
 ---
 
-<BaseLayout title={`${entry.data.title} - Косплей`}>
+<BaseLayout title={`${entry.data.title} — Фотосессия — Антон Ленев`} description={`Фотосессия «${entry.data.title}» — косплей Антона Ленева. ${entry.data.location ? 'Место: ' + entry.data.location + '. ' : ''}${entry.data.photographer ? 'Фотограф: ' + entry.data.photographer + '.' : ''}`} image={entry.data.coverImage}>
   <h1>{entry.data.title}</h1>
 
   <CosplayMeta
@@ -74,7 +74,7 @@ const costume = costumes[0];
   {manifest.images.length > 0 && (
     <section class="gallery-section">
       <h2>{t('cosplay.photos')} ({manifest.images.length})</h2>
-      <CosplayGallery images={manifest.images} folder={entry.data.folder} />
+      <CosplayGallery title={entry.data.title} images={manifest.images} folder={entry.data.folder} />
       <Lightbox />
     </section>
   )}
@@ -153,7 +153,7 @@ const costume = costumes[0];
       margin-bottom: 2rem;
       display: inline-block;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       padding: 0.5rem 1rem;
       border: var(--border-width) solid var(--color-border);
       box-shadow: 3px 3px 0 var(--color-border);

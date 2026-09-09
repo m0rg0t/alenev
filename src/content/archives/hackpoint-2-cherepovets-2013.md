@@ -19,7 +19,6 @@ tags:
   - "2013"
 ---
 
-# HackPoint 2.0 — 2 место на областном хакатоне в Череповце
 
 *Это архивная заметка об участии Антона Ленева в областном хакатоне HackPoint 2.0 (Череповец, 22–24 ноября 2013 г.). [Пост со стены сообщества HackPoint](https://vk.com/wall-51121552_325).*
 
@@ -36,4 +35,4 @@ tags:
 - [Пост сообщества HackPoint ВКонтакте](https://vk.com/wall-51121552_325)
 - [Репортаж на YouTube (видеоканал города Череповца)](https://www.youtube.com/watch?v=C8Mz7Cp_4Ls)
 - [cherinfo.ru](http://www.cherinfo.ru/)
-- См. также: [HackPoint 3.0 (2014)](/archive/hackpoint-3-cherepovets-2014)
+- См. также: [HackPoint 3.0 (2014)](https://vk.com/archive/hackpoint-3-cherepovets-2014)

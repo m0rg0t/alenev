@@ -29,7 +29,6 @@ images:
   - "/archives/dtf-deadspace-howto/image-19.jpg"
 ---
 
-# Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2 — Косплей на DTF
 
 *Это архивная копия статьи. [Оригинал на dtf.ru](https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2)*
 

@@ -29,7 +29,6 @@ images:
   - "/archives/habr-dalle2/image-19.jpg"
 ---
 
-# DALL·E 2 — мои первые эксперименты с возможностями нейросети
 
 *Это архивная копия статьи. [Оригинал на Habr](https://habr.com/ru/articles/680136/)*
 

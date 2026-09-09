@@ -44,3 +44,11 @@ _config.yml
 # Docker files (not needed in build context)
 docker-compose*.yml
 Dockerfile
+
+# Local research, reviews and additional checkouts are not site assets
+/archive/
+/docs/
+/.worktrees/
+/screenshots/
+/.agents/
+/.codex/

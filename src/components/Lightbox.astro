@@ -1,13 +1,15 @@
 ---
+import { getLangFromUrl } from '../i18n';
+const isRu = getLangFromUrl(Astro.url) === 'ru';
 // Lightbox component — no props needed.
 // Reads image data from #lightbox-data script tag in the DOM.
 ---
 
-<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label={isRu ? 'Просмотр фотографий' : 'Photo viewer'} hidden>
   <div class="lightbox-backdrop"></div>
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <button class="lightbox-prev" aria-label="Previous">&#8249;</button>
-  <button class="lightbox-next" aria-label="Next">&#8250;</button>
+  <button class="lightbox-close" aria-label={isRu ? 'Закрыть' : 'Close'}>&times;</button>
+  <button class="lightbox-prev" aria-label={isRu ? 'Предыдущее фото' : 'Previous'}>&#8249;</button>
+  <button class="lightbox-next" aria-label={isRu ? 'Следующее фото' : 'Next'}>&#8250;</button>
   <div class="lightbox-content">
     <img class="lightbox-image" alt="" />
   </div>
@@ -15,6 +17,7 @@
 </div>
 
 <style>
+  .lightbox[hidden] { display: none; }
   .lightbox {
     position: fixed;
     top: 0;
@@ -89,7 +92,7 @@
     transform: translate(-2px, -2px);
     box-shadow: 5px 5px 0 var(--color-border);
     background: var(--color-secondary);
-    color: white;
+    color: var(--color-on-primary);
   }
 
   .lightbox-prev,
@@ -129,7 +132,7 @@
     transform: translateY(-50%) translate(-2px, -2px);
     box-shadow: 5px 5px 0 var(--color-border);
     background: var(--color-primary);
-    color: white;
+    color: var(--color-on-primary);
   }
 
   .lightbox-counter {
@@ -194,6 +197,8 @@
     const backdrop = lightbox.querySelector('.lightbox-backdrop') as HTMLElement;
 
     let images: string[] = [];
+    let returnFocus: HTMLElement | null = null;
+    let previousOverflow = "";
     let currentIndex = 0;
     let touchStartX = 0;
     let touchStartY = 0;
@@ -210,8 +215,14 @@
 
     function show(index: number) {
       if (images.length === 0) return;
+      const opening = !lightbox.hasAttribute('data-active');
+      if (opening) {
+        returnFocus = document.activeElement as HTMLElement;
+        previousOverflow = document.body.style.overflow;
+      }
       currentIndex = ((index % images.length) + images.length) % images.length;
       image.src = images[currentIndex];
+      image.alt = document.querySelector(`[data-lightbox-trigger][data-index="${currentIndex}"] img`)?.getAttribute('alt') || '';
       counter.textContent = `${currentIndex + 1} / ${images.length}`;
       lightbox.removeAttribute('hidden');
       // Trigger reflow for transition
@@ -219,18 +230,14 @@
       lightbox.setAttribute('data-active', '');
       document.body.style.overflow = 'hidden';
       preloadAdjacent();
-      closeBtn.focus();
+      if (opening) closeBtn.focus();
     }
 
     function hide() {
       lightbox.removeAttribute('data-active');
-      document.body.style.overflow = '';
-      // Wait for fade-out transition
-      setTimeout(function () {
-        if (!lightbox.hasAttribute('data-active')) {
-          lightbox.setAttribute('hidden', '');
-        }
-      }, 200);
+      lightbox.setAttribute('hidden', '');
+      document.body.style.overflow = previousOverflow;
+      returnFocus?.focus();
     }
 
     function prev() {

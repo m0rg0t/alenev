@@ -39,7 +39,7 @@ const linkedCostumes = entry.data.costumes
   .filter(Boolean);
 ---
 
-<BaseLayout title={`${entry.data.title} - Cosplay`}>
+<BaseLayout title={`${entry.data.title} — Cosplay event — Anton Lenev`} description={`Anton Lenev at ${entry.data.title}${entry.data.location ? ' in ' + entry.data.location : ''}. Cosplay costumes, event photographs and related projects.`} image={entry.data.coverImage}>
   <h1>{entry.data.title}</h1>
 
   <div class="event-info">
@@ -78,7 +78,7 @@ const linkedCostumes = entry.data.costumes
   {manifest.images.length > 0 && entry.data.folder && (
     <section class="gallery-section">
       <h2>{t('cosplay.photos')} ({manifest.images.length})</h2>
-      <CosplayGallery images={manifest.images} folder={entry.data.folder} />
+      <CosplayGallery title={entry.data.title} images={manifest.images} folder={entry.data.folder} />
       <Lightbox />
     </section>
   )}

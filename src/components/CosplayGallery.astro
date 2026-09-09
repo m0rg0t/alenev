@@ -1,10 +1,13 @@
 ---
+import { getLangFromUrl } from '../i18n';
+const isRu = getLangFromUrl(Astro.url) === 'ru';
 interface Props {
+  title?: string;
   images: Array<{ webp: string; thumb: string; width: number; height: number }>;
   folder: string;
 }
 
-const { images, folder } = Astro.props;
+const { images, folder, title = isRu ? 'Косплей' : 'Cosplay' } = Astro.props;
 
 const lightboxData = images.map((img) => `/cosplay/${folder}/${img.webp}`);
 ---
@@ -17,14 +20,14 @@ const lightboxData = images.map((img) => `/cosplay/${folder}/${img.webp}`);
         data-lightbox-trigger
         data-index={index}
         type="button"
-        aria-label={`View photo ${index + 1}`}
+        aria-label={`${isRu ? 'Открыть фото' : 'View photo'} ${index + 1}`}
       >
         <img
           src={`/cosplay/${folder}/${image.thumb}`}
           width={image.width}
           height={image.height}
           loading="lazy"
-          alt={`Photo ${index + 1}`}
+          alt={`${title} — ${isRu ? 'фото' : 'photo'} ${index + 1}`}
         />
       </button>
     ))}

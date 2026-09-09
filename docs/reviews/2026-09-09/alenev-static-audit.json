@@ -1,0 +1,1696 @@
+[
+  {
+    "url": "/yandex_9402ac7900e76ecd.html",
+    "title": "",
+    "description": null,
+    "h1": 0,
+    "canonical": null,
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [],
+    "videos": []
+  },
+  {
+    "url": "/",
+    "title": "Антон Ленев — Программист, Косплеер, Подкастер",
+    "description": "Антон Ленев — программист, косплеер, начитчик аудиокниг и ведущий подкаста из Рыбинска. IT-статьи, подкасты, косплей и публикации.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/404.html",
+    "title": "Страница не найдена — 404",
+    "description": "Запрошенная страница не найдена. Вернитесь на главную или используйте навигацию.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/404/",
+    "brokenLinks": [
+      "/en/404/"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [
+      "https://alenev.ru/en/404/"
+    ],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/audiobooks/",
+    "title": "Аудиокниги - Антон Ленев",
+    "description": "Аудиокниги в озвучке Антона Ленева. Более 12 произведений на платформе Litres: художественная литература, классика, фэнтези и нон-фикшн.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/audiobooks/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/publications/",
+    "title": "Публикации - Антон Ленев",
+    "description": "Статьи и публикации Антона Ленева на Habr, Tproger, Instructables и в других изданиях. Темы: косплей, электроника, ИИ, программирование.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/publications/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/it/",
+    "title": "IT Проекты - Антон Ленев",
+    "description": "IT-проекты, выступления и опыт разработки Антона Ленева — CTO/Frontend Developer, контрибьютор открытого кода. OwlEye, Skull Pin, доклады SPBFrontend.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/it/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject",
+      "VideoObject"
+    ],
+    "videos": [
+      {
+        "name": "Странное браузерное API — Дринкап",
+        "uploadDate": null,
+        "contentUrl": "https://www.youtube.com/watch?v=xdY7BrkbRUo&ab_channel=SPBFrontend"
+      },
+      {
+        "name": "Особенности разработки мобильных приложений для Windows Phone и Windows 8",
+        "uploadDate": null,
+        "contentUrl": "https://youtu.be/t1tpZejtXGo"
+      },
+      {
+        "name": "Заменят ли алгоритмы дизайнеров в рекламе?",
+        "uploadDate": null,
+        "contentUrl": "https://www.youtube.com/live/MxjNTSK-UI4"
+      },
+      {
+        "name": "EyeLens — Nokia Create Contest",
+        "uploadDate": null,
+        "contentUrl": "https://www.youtube.com/watch?v=RGIRdYbMdaE"
+      },
+      {
+        "name": "SIA Russia 2015 Finalist: EyeLens",
+        "uploadDate": "2015",
+        "contentUrl": "https://www.youtube.com/watch?v=3kBqrkSM83s"
+      },
+      {
+        "name": "Хобби айтишника: Tproger-интервью (видеоверсия)",
+        "uploadDate": "2025-09-02",
+        "contentUrl": "https://www.youtube.com/watch?v=kzzYJEoJXzo"
+      },
+      {
+        "name": "We need to go deeper: куда нас привела дорога к WYSIWYG — SPB Frontend Drinkup",
+        "uploadDate": null,
+        "contentUrl": "https://www.youtube.com/watch?v=CEYy-knCG5w"
+      },
+      {
+        "name": "«Где участковый?»: приложение для Windows Phone и Windows 8",
+        "uploadDate": null,
+        "contentUrl": "https://www.youtube.com/watch?v=HmDg23YXG5w"
+      },
+      {
+        "name": "VK Fresh Code 2023 — влог Владилена Минина",
+        "uploadDate": "2023",
+        "contentUrl": "https://www.youtube.com/watch?v=jjVvxWlKwZc"
+      }
+    ]
+  },
+  {
+    "url": "/other/",
+    "title": "Другие проекты - Антон Ленев",
+    "description": "VK Mini Apps, навыки для Яндекс.Алисы, бренд украшений Skull Pin и менторство Антона Ленева. Сборник побочных и творческих проектов.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/other/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/about/",
+    "title": "Об Антоне Леневе — программист, чтец, косплеер из Рыбинска",
+    "description": "Биография Антона Ленева: программист и CTO в Viewst Inc, чтец аудиокниг на Litres, ведущий подкаста «Косплей и прочие штуки», косплеер. Рыбинск, Россия.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/about/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/podcasts/",
+    "title": "Подкасты - Антон Ленев",
+    "description": "«Косплей и прочие штуки» — подкаст Антона Ленева о косплее, поп-культуре и творчестве. Слушайте на Spotify, Apple Podcasts, Яндекс.Музыке и других платформах.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/podcasts/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/",
+    "title": "Anton Lenev — Developer, Cosplayer, Podcaster",
+    "description": "Anton Lenev — programmer, cosplayer, audiobook narrator and podcast host from Rybinsk, Russia. IT articles, podcasts, cosplay and publications.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/",
+    "title": "Косплей - Антон Ленев",
+    "description": "Косплей-портфолио Антона Ленева: костюмы Айзека Кларка из Dead Space, Mass Effect, Skyrim, Хищника и другие. Процесс создания, материалы, фотосессии и события.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/thor-ragnarok/",
+    "title": "Тор из «Тор: Рагнарёк» - Косплей",
+    "description": "Косплей-костюм Тор Одинсон (Тор: Рагнарёк (Marvel)) от Антона Ленева. Материалы: EVA-пена, натуральная кожа растительного дубления, фанера (лазерная резка), 3D-печать, ткань для штор, Plastidip / жидкая резина, морилка + льняное масло (для кожи), акрил, аэрограф, матовый акриловый лак, Bubblestar, герметик. Время создания: год (премьера на Старконе 2018).",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/thor-ragnarok/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mccree/",
+    "title": "Маккри - Косплей",
+    "description": "Косплей-костюм Джесси Маккри (Overwatch) от Антона Ленева. Материалы: EVA foam, термопластик, ткань, акриловые краски, LED. Время создания: 4 месяца.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mccree/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/predator/",
+    "title": "Хищник - Косплей",
+    "description": "Косплей-костюм Хищник (Скар) (Predator) от Антона Ленева. Материалы: латекс, EVA foam, силикон, акриловые краски, LED. Время создания: 6 месяцев.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/predator/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/morozko/",
+    "title": "Морозко — Иванушка - Косплей",
+    "description": "Косплей-костюм «Морозко — Иванушка» от Антона Ленева. Процесс создания, материалы, фотосессии.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/morozko/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/dovahkiin/",
+    "title": "Довакин - Косплей",
+    "description": "Косплей-костюм Довакин (The Elder Scrolls V: Skyrim) от Антона Ленева. Материалы: EVA foam, кожа, мех, термопластик, акриловые краски. Время создания: 3 месяца.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/dovahkiin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/dead-space/",
+    "title": "Dead Space 2 — Advanced Suit - Косплей",
+    "description": "Косплей-костюм Айзек Кларк (Dead Space 2) от Антона Ленева. Материалы: EVA foam (50 и 70 шор), натуральная кожа растительного дубления, прозрачный ПЭТ-пластик (светящиеся элементы), бифлекс с нейросетевым апскейлом текстуры (1024 → 12000 px), Arduino Uno + Nano, WS2801 RGB LED, сервоприводы SG90, IR-датчик + NRF24L01 (беспроводное управление), фанера (лазерная резка, плазменный резак), Bubblestar, Plastidip, акрил, аэрограф. Время создания: 5 месяцев.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/dead-space/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mass-effect/",
+    "title": "Mass Effect - Косплей",
+    "description": "Косплей-костюм Коммандер Шепард (Mass Effect) от Антона Ленева. Материалы: EVA foam, термопластик, акриловые краски, LED. Время создания: 4 месяца.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mass-effect/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "VisualArtwork",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mass-effect/mass-effect-travel/",
+    "title": "Mass Effect — тревел-съёмка - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mass-effect/mass-effect-travel/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/asiavol-2019/",
+    "title": "ASIAVOL [V] 2019 (член жюри) - Косплей",
+    "description": "ASIAVOL [V] 2019 (член жюри) — Вологда, январь 2019 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/asiavol-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/fap-2019/",
+    "title": "FAP 2019 — Festival of Asian Popular culture - Косплей",
+    "description": "FAP 2019 — Festival of Asian Popular culture — Ярославль, ДК им. А. М. Добрынина, май 2019 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/fap-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/bubble-comics-con-2021/",
+    "title": "BUBBLE Comics Con 2021 - Косплей",
+    "description": "BUBBLE Comics Con 2021 — Москва, август 2021 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/bubble-comics-con-2021/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/ohtakon-2020/",
+    "title": "Охтакон 2020 - Косплей",
+    "description": "Охтакон 2020 — Санкт-Петербург, ТЦ «Охта молл», март 2020 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/ohtakon-2020/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/fap-2015/",
+    "title": "FAP 2015 - Косплей",
+    "description": "FAP 2015 — Ярославль, январь 2015 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/fap-2015/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/igromir-2018/",
+    "title": "Игромир 2018 - Косплей",
+    "description": "Игромир 2018 — Москва, Крокус Экспо, октябрь 2018 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/igromir-2018/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/events/avaexpo-2015/",
+    "title": "АваЭкспо 2015 - Косплей",
+    "description": "АваЭкспо 2015 — Санкт-Петербург, январь 2015 г.. Антон Ленев на мероприятии в косплее.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/events/avaexpo-2015/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "Event",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/dead-space/dead-space-2019/",
+    "title": "Dead Space — съёмка 2019 - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/dead-space/dead-space-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/dovahkiin/dovahkiin-gabi/",
+    "title": "Довакин — съёмка с Gabi - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/dovahkiin/dovahkiin-gabi/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/morozko/morozko-ivanushka/",
+    "title": "Морозко — Иванушка - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/morozko/morozko-ivanushka/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/predator/predators-2016/",
+    "title": "Хищники — съёмка 2016 - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/predator/predators-2016/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/predator/predator-scar/",
+    "title": "Хищник Скар - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/predator/predator-scar/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mccree/mccree/",
+    "title": "Маккри — студийная съёмка - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mccree/mccree/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mccree/mccree-underwater/",
+    "title": "Маккри — подводная съёмка - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mccree/mccree-underwater/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/mccree/mccree-gabardin/",
+    "title": "Маккри — съёмка на Габардине - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/mccree/mccree-gabardin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/cosplay/thor-ragnarok/thor-ragnarok/",
+    "title": "Тор: Рагнарёк — фотосессия на природе - Косплей",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 1,
+    "canonical": "https://alenev.ru/cosplay/thor-ragnarok/thor-ragnarok/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/audiobooks/",
+    "title": "Audiobooks — Anton Lenev",
+    "description": "Audiobooks narrated by Anton Lenev. Narrator of over 12 titles on the Litres platform.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/audiobooks/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/publications/",
+    "title": "Publications — Anton Lenev",
+    "description": "Articles and publications by Anton Lenev on Habr, Instructables and other platforms. Topics: cosplay, electronics, AI, programming.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/publications/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/it/",
+    "title": "IT Projects — Anton Lenev",
+    "description": "IT projects, programming talks and development experience by Anton Lenev — CTO/Frontend Developer, open-source contributor.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/it/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/other/",
+    "title": "Other Projects — Anton Lenev",
+    "description": "VK Mini Apps, Yandex Alice skills, the Skull Pin jewelry brand, and mentoring by Anton Lenev.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/other/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/about/",
+    "title": "About Anton Lenev — programmer, narrator, cosplayer from Rybinsk",
+    "description": "Biography of Anton Lenev: programmer and CTO at Viewst Inc, audiobook narrator on Litres, host of the «Cosplay and Other Things» podcast, cosplayer. Rybinsk, Russia.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/about/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/podcasts/",
+    "title": "Podcasts — Anton Lenev",
+    "description": "Cosplay and Other Things — a podcast by Anton Lenev about cosplay, pop culture and creativity. Available on Spotify, Apple Podcasts and more.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/podcasts/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/",
+    "title": "Cosplay - Anton Lenev",
+    "description": "Cosplay portfolio by Anton Lenev: costumes from Dead Space, Mass Effect, Skyrim, Predator and more. Build logs, materials, photo shoots, and event coverage.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/thor-ragnarok/",
+    "title": "Thor from Thor: Ragnarok - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/thor-ragnarok/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mccree/",
+    "title": "McCree - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mccree/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/predator/",
+    "title": "Predator - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/predator/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/morozko/",
+    "title": "Morozko — Ivanushka - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/morozko/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/dovahkiin/",
+    "title": "Dovahkiin - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/dovahkiin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/dead-space/",
+    "title": "Dead Space 2 — Advanced Suit - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/dead-space/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mass-effect/",
+    "title": "Mass Effect - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mass-effect/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mass-effect/mass-effect-travel/",
+    "title": "Mass Effect — Travel Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mass-effect/mass-effect-travel/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/asiavol-2019/",
+    "title": "ASIAVOL [V] 2019 (jury member) - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/asiavol-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/fap-2019/",
+    "title": "FAP 2019 — Festival of Asian Popular Culture - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/fap-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/bubble-comics-con-2021/",
+    "title": "BUBBLE Comics Con 2021 - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/bubble-comics-con-2021/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/ohtakon-2020/",
+    "title": "Ohtacon 2020 - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/ohtakon-2020/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/fap-2015/",
+    "title": "FAP 2015 - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/fap-2015/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/igromir-2018/",
+    "title": "IgroMir 2018 - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/igromir-2018/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/events/avaexpo-2015/",
+    "title": "AvaExpo 2015 - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/events/avaexpo-2015/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/dead-space/dead-space-2019/",
+    "title": "Dead Space — 2019 Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/dead-space/dead-space-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/dovahkiin/dovahkiin-gabi/",
+    "title": "Dovahkiin — Gabi Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/dovahkiin/dovahkiin-gabi/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/morozko/morozko-ivanushka/",
+    "title": "Morozko — Ivanushka - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/morozko/morozko-ivanushka/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/predator/predators-2016/",
+    "title": "Predators — 2016 Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/predator/predators-2016/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/predator/predator-scar/",
+    "title": "Predator Scar - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/predator/predator-scar/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mccree/mccree/",
+    "title": "McCree — Studio Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mccree/mccree/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mccree/mccree-underwater/",
+    "title": "McCree — Underwater Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mccree/mccree-underwater/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/mccree/mccree-gabardin/",
+    "title": "McCree — Gabardin Shoot - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/mccree/mccree-gabardin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/cosplay/thor-ragnarok/thor-ragnarok/",
+    "title": "Thor: Ragnarok — outdoor photo session - Cosplay",
+    "description": "Programmer, developer, cosplayer, audiobook narrator and podcast host from Rybinsk",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/cosplay/thor-ragnarok/thor-ragnarok/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/en/other/skull-pin/",
+    "title": "Skull Pin — leather + 3D-print jewelry | Anton Lenev",
+    "description": "Skull Pin: handmade leather chokers, clips and accessories with 3D-printed pendants. Gallery of recent pieces and links to the VK community.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/en/other/skull-pin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/other/skull-pin/",
+    "title": "Skull Pin — украшения из кожи и 3D-печати | Антон Ленев",
+    "description": "Бренд украшений Skull Pin: кожаные чокеры, заколки и аксессуары ручной работы с подвесками из 3D-печати. Галерея работ и ссылки на VK.",
+    "h1": 1,
+    "canonical": "https://alenev.ru/other/skull-pin/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite",
+      "BreadcrumbList"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/gazeta-rybinsk-goodplacetolive/",
+    "title": "«Где жить хорошо?»: ответ IT-специалиста | Темы# - Архив",
+    "description": "Как узнать, насколько новый город или незнакомый район привлекателен для проживания? Эту проблему решает веб-сервис, созданный рыбинцем Антоном Леневым. ",
+    "h1": 3,
+    "canonical": "https://alenev.ru/archive/gazeta-rybinsk-goodplacetolive/",
+    "brokenLinks": [
+      "/2015/04/29/18147#respond",
+      "/soglasie"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/m24-hackathon/",
+    "title": "На \"Хакатоне\" представили приложение \"Где жить хорошо\" - Архив",
+    "description": "В рамках марафона \"Хакатон\" разработчик Антон Ленев представил приложение \"Где жить хорошо\", которое поможет при выборе квартиры",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/m24-hackathon/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/instructables-owleye/",
+    "title": "OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate  - Архив",
+    "description": "OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate : Ones i was going to take part in Junction 2020 hackathon, and i get an idea - why not to try to make simple device what can help visually impaired better navigate in space and that look like necklace? And thats why i decide to make OwlEye project (n…",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/instructables-owleye/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/habr-owleye/",
+    "title": "Ожерелье OwlEye — помощь слабовидящим - Архив",
+    "description": "Статья о проекте OwlEye — умном ожерелье для помощи слабовидящим людям",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/habr-owleye/",
+    "brokenLinks": [],
+    "brokenAssets": [
+      "/archives/habr-owleye/cover.jpg"
+    ],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/dtf-deadspace-howto/",
+    "title": "Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2 — Косплей на DTF - Архив",
+    "description": "На DTF мне не попадалось особо много статей освещающих тему косплея с точки зрения того как делаются все эти костюмы, поэтому я решил это исправить и рассказать о том как я делал косплей на персонажа Айзека Кларка из игры Dead Space 2.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/dtf-deadspace-howto/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/vkplay-skyrim-best-cosplay/",
+    "title": "Лучший косплей по мотивам The Elder Scrolls V: Skyrim - Архив",
+    "description": "Подборка из 30 запоминающихся косплей-образов по мотивам The Elder Scrolls V: Skyrim — Драконорождённые, Эйлы Охотницы, ассасины Тёмного Братства и не только. Среди них — Антон Ленев в роли Драконорождённого и Полина Суровегина в образе Эйлы Охотницы (фото: ~Gabardin).",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/vkplay-skyrim-best-cosplay/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/yarreg-daltonism/",
+    "title": "Программист из Рыбинска создал мобильное приложение для дальтоников- Яррег - новости Ярославской области - Архив",
+    "description": "Программист из Рыбинска Антон Ленев разрабатывает приложение EyeLens, которое поможет людям, страдающим дальтонизмом, различать цвета, читать разноцветные надписи на вывесках или упаковках товаров.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/yarreg-daltonism/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/drinkup-wysiwyg/",
+    "title": "We need to go deeper: дорога к WYSIWYG — SPB Frontend Drinkup - Архив",
+    "description": "Доклад Антона Ленева на SPB Frontend Drinkup о том, как в Viewst писали собственный WYSIWYG-редактор, какие грабли встретились по пути и почему не стоит повторять.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/drinkup-wysiwyg/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/dtf-deadspace-photoset/",
+    "title": "Dead Space 2 | Isaac Clarke | Антон Ленев — Косплей на DTF - Архив",
+    "description": "Fandom: Dead Space 2Character: Isaac ClarkeCosplayer: Антон ЛеневPhoto, edit: Gabi",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/dtf-deadspace-photoset/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/minfin-budgetapps/",
+    "title": "Определены победители конкурса Минфина России на открытых финансовых данных «BudgetApps» - Архив",
+    "description": "Программист, разработчик, косплеер, чтец аудиокниг и ведущий подкаста из Рыбинска",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/minfin-budgetapps/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/tproger-hobby/",
+    "title": "Хобби айтишника: от косплея до 3D-печати костюмов и озвучки аудиокниг - Архив",
+    "description": "CTO стартапа о хобби: как косплей, 3D-печать костюмов и озвучка книг спасают от выгорания в IT. Личный опыт Антона Ленева в подкасте Tproger.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/tproger-hobby/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/habr-deadspace-cosplay/",
+    "title": "Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2 - Архив",
+    "description": "Зачем и о чем? На хабре мне не попадалось статей освещающих тему косплея с точки зрения того как делаются все эти костюмы, поэтому я решил это исправить и рассказать о том как я делал косплей на...",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/habr-deadspace-cosplay/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/igromania-cosplay/",
+    "title": "Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 — Игромания - Архив",
+    "description": "В этот раз, чтобы угодить всем, одна половина героев нашей подборки принадлежит к сильному полу, а вторая — к прекрасному. Напомним нашим читателям, что косплей — это весёлое и творческое хобби для всех без исключения, вне зависимости от",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/igromania-cosplay/",
+    "brokenLinks": [
+      "/article/29137/Pyatnichnyy_kospley_WoW_Tomb_Raider_Strazhi_Galaktiki_League_of_Legends_NieR_Automata_Igra_prestolov_i_Overwatch.html",
+      "/article/29333/Pyatnichnyy_kospley_Dragon_Age_II_Resident_Evil_3_Witchblade_Van_Helsing_i_drugoe.html",
+      "/article/29612/Pyatnichnyy_kospley_Tolko_Vedmak_3.html",
+      "/article/29761/Pyatnichnyy_kospley_esche_bolshe_Overwatch.html",
+      "/article/29872/Pyatnichnyy_kospley_Overwatch_Vedmak_Street_Fighter_NieR_Automata_Dota_2.html"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/ridus-daltonism/",
+    "title": "Программист из Рыбинска создал уникальное приложение для дальтоников - Архив",
+    "description": "<p> Подборка медицинских цветовых фильтров поможет  людям с проблемным цветовосприятием. </p>",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/ridus-daltonism/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/instructables-owl-led/",
+    "title": "Owl Necklace With LED Eyes - Архив",
+    "description": "Owl Necklace With LED Eyes: Ones i find chip that i was going to use cosplay, and then i decide - why not to make some interesting jewelry? And here we are, with owl with led eyes activated by sound :) ",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/instructables-owl-led/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/cosplay-stream-2019/",
+    "title": "Вечерний стрим «17:40»: косплей с Антоном Ленёвым (Рыбинск, 2019) - Архив",
+    "description": "Антон Ленёв в гостях у рыбинского вечернего стрима «17:40»: о косплее, создании костюмов, материалах, фестивалях и советах новичкам.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/cosplay-stream-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/gazeta-rybinsk-owleye/",
+    "title": "Слабовидящему поможет сова - Архив",
+    "description": "Изобретение рыбинца предупредит человека со слабым зрением, что впереди препятствие",
+    "h1": 3,
+    "canonical": "https://alenev.ru/archive/gazeta-rybinsk-owleye/",
+    "brokenLinks": [
+      "/2020/11/21/77291#respond",
+      "/soglasie"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/habr-dalle2/",
+    "title": "DALL·E 2 — мои первые эксперименты с возможностями нейросети - Архив",
+    "description": "Еще в прошлом году я в свое время подавался в лист ожидания для того чтобы опробовать нейросеть GPT3 для генерации текстов, и спустя достаточно длительное ожидание она попала ко мне в руки, и даже в...",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/habr-dalle2/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/dead-space-vk-article-2019/",
+    "title": "Dead Space 2 — создание костюма Advanced Suit Айзека Кларка - Архив",
+    "description": "Авторский разбор создания костюма Advanced Suit Айзека Кларка из Dead Space 2: печать текстуры на бифлексе с нейросетевым апскейлом 1024→12000px, электроника RIG на Arduino Uno + WS2801 + SG90 + IR + NRF24L01, шлем из EVA по Pepakura, плазменный резак по Fusion 360 с лазерной резкой фанеры.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/dead-space-vk-article-2019/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/gde-uchastkovy-wp8/",
+    "title": "«Где участковый?» — приложение для Windows Phone и Windows 8 на данных openpolice.ru - Архив",
+    "description": "Доклад Антона Ленева о приложении «Где участковый?» для Windows Phone и Windows 8 на данных openpolice.ru: хакатон, AR, геймификация и уроки.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/gde-uchastkovy-wp8/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/vk-mini-apps-podcast-2024/",
+    "title": "Подкаст VK Mini Apps с Антоном Ленёвым (конспект) - Архив",
+    "description": "Конспект подкаста VK Mini Apps с Антоном Ленёвым: путь в разработке, опыт VK Fresh Code, работа CTO в Viewst и борьба с перфекционизмом.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/vk-mini-apps-podcast-2024/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/cheremuha-rybinsk-secrets/",
+    "title": "Воробей для Веретья, Лис для Скомороховой горы. В городе появились «Рыбинские секретики» - Архив",
+    "description": "[caption id=\"attachment_98179\" align=\"alignnone\" width=\"750\"] Фото со страницы Антона Ленёва во «ВКонтакте»[/caption]Посмотреть вокруг и разглядеть в ...",
+    "h1": 3,
+    "canonical": "https://alenev.ru/archive/cheremuha-rybinsk-secrets/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/hackpoint-3-cherepovets-2014/",
+    "title": "HackPoint 3.0 — областной хакатон в Череповце (отчётное видео) - Архив",
+    "description": "Отчётное видео с областного хакатона HackPoint 3.0 в Череповце (17–19 октября 2014). 48 часов на прототипы — о процессе работы и результатах команд.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/hackpoint-3-cherepovets-2014/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/kanobu-skyrim/",
+    "title": "Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim - Архив",
+    "description": "Косплееры Антон Ленев и Munyash в образе Довакина и Эйлы Охотницы из игры The Elder Scrolls 5: Skyrim. Фото: ~Gabardin.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/kanobu-skyrim/",
+    "brokenLinks": [
+      "/games/the-elder-scrolls-v-skyrim/"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/pikabu-podcast/",
+    "title": "Подкаст «Косплей и прочие штуки» — как, зачем и о чем? - Архив",
+    "description": "Пост о запуске подкаста про косплей и смежные темы",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/pikabu-podcast/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/vesti-yaroslavl-rybinsk-secrets/",
+    "title": "На улицах Рыбинска устанавливают фигурки в стиле персонажей мультфильмов - Вести Ярославль - Архив",
+    "description": "Наша съемочная группа познакомилась с героями и автором проекта",
+    "h1": 4,
+    "canonical": "https://alenev.ru/archive/vesti-yaroslavl-rybinsk-secrets/",
+    "brokenLinks": [
+      "/novosti/item/95880-v-tutaeve-s-noyabrya-nachnut-testirovat-sudna-na-vozdushnoj-podushke",
+      "/zhurnalisty-televideniya/itemlist/user/1498-veponikachigileychik"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/cheremuha-predator/",
+    "title": "Рыбинский «Хищник» Антон Ленёв: про косплей и Comic Con - Архив",
+    "description": "Бытует мнение, что жить в Рыбинске скучно: сходить некуда, заняться нечем, из карьерных перспектив только заводы. Тем интереснее рассказывать о людях,...",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/cheremuha-predator/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/nebezdela-ep65-cosplay/",
+    "title": "«Не без дела» #65: Антон Ленёв — Костюм из коврика для йоги - Архив",
+    "description": "Гостевой выпуск подкаста «Не без дела»: Антон Ленёв рассказывает о косплее — от Евы и коврика для йоги до фестивалей, аниматронной пушки хищника и быта в костюме.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/nebezdela-ep65-cosplay/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/gazeta-rybinsk-cosplay-2018/",
+    "title": "Меняющий реальность - Архив",
+    "description": "Косплей в Рыбинске? Почему бы и нет, если у тебя буйное воображение, умелые руки и большое желание примерить на себя образы киношных героев",
+    "h1": 3,
+    "canonical": "https://alenev.ru/archive/gazeta-rybinsk-cosplay-2018/",
+    "brokenLinks": [
+      "/2018/11/17/40482#respond",
+      "/soglasie"
+    ],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/thor-process-vk-article-2018/",
+    "title": "Процесс создания костюма Тора из «Тор: Рагнарёк» - Архив",
+    "description": "Авторский разбор процесса создания костюма Тора из «Тор: Рагнарёк»: мечи на лазерной резке фанеры, EVA-поножа/наплечник/шлем с Plastidip-базой, натуральная кожа растительного дубления для нагрудника, 3D-печать пряжки. Премьера — Старкон 2018.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/thor-process-vk-article-2018/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/vladilen-vk-fresh-code-2023/",
+    "title": "VK Fresh Code 2023 — влог Владилена Минина (конспект) - Архив",
+    "description": "Конспект влога Владилена Минина с церемонии VK Fresh Code 2023: тест-драйв мини-приложений, закулисье конкурса и интервью с Антоном Леневым.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/vladilen-vk-fresh-code-2023/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/rybinsknote-midjourney/",
+    "title": "Рыбинец запустил проект «Районы города глазами Midjourney» - Архив",
+    "description": "Создатель 3D-моделей Антон Ленёв представил портреты пяти микрорайонов Рыбинска.   Пользователи интернета с увлечением взаимодействуют с искусственным интеллектом. Некоторое время назад россияне стали заказывать у нейросети Midjourney портреты городов, где проживают. При желании на pikabu.ru можно н",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/rybinsknote-midjourney/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/hackpoint-2-cherepovets-2013/",
+    "title": "HackPoint 2.0 — 2 место на областном хакатоне в Череповце - Архив",
+    "description": "Областной хакатон HackPoint 2.0 в Череповце (22–24 ноября 2013). Антон Ленев занял 2 место.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/hackpoint-2-cherepovets-2013/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/apptractor-budgetapps/",
+    "title": "Антон Ленев («Где жить хорошо») о конкурсе BudgetApps - Архив",
+    "description": "Со всеми победителями вы можете ознакомиться на официальном сайте, а мы пообщались с Антоном Леневым, руководителем проекта ",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/apptractor-budgetapps/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/spark-profitbutton-battlehack/",
+    "title": "Победа команды Profit Button на PayPal Battle Hack Moscow - Архив",
+    "description": "Команда Profit Button получила специальный приз от Ecwid на хакатоне PayPal Battle Hack 2013 в Москве — за лучшее решение с использованием технологии Ecwid.",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/spark-profitbutton-battlehack/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/instructables-deadspace/",
+    "title": "Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke - Архив",
+    "description": "Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke: I have been planning to do a cosplay on Isaac Clarke from Dead Space 2 for a long time so I tried to make as many interesting technical solutions as possible. Finally, I was able to get to it. If some points do not seem to be clear enough - please l…",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/instructables-deadspace/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  },
+  {
+    "url": "/archive/tribuna-ohtakon-2020/",
+    "title": "Косплей как стиль жизни — финал «Охтакон» в Петербурге (Tribuna.ee) - Архив",
+    "description": "Репортаж Tribuna.ee с финала конкурса косплея фестиваля «Охтакон» в ТЦ «Охта молл» (Санкт-Петербург, 7 марта 2020). Антон Ленев победил в номинации «Лучший косплей» в образе Тора из «Тор: Рагнарёк».",
+    "h1": 2,
+    "canonical": "https://alenev.ru/archive/tribuna-ohtakon-2020/",
+    "brokenLinks": [],
+    "brokenAssets": [],
+    "badAlternates": [],
+    "types": [
+      "Person",
+      "WebSite"
+    ],
+    "videos": []
+  }
+]

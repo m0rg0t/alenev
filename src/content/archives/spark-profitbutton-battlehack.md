@@ -15,7 +15,6 @@ tags:
   - "2013"
 ---
 
-# Победа команды Profit Button на PayPal Battle Hack Moscow
 
 *Это архивная копия записи в блоге проекта Profit Button на Spark.ru. [Оригинал на Spark.ru](https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow) — опубликовано 10 сентября 2013.*
 

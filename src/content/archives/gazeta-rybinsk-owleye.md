@@ -15,7 +15,6 @@ images:
   - "/archives/gazeta-rybinsk-owleye/image-5.jpg"
 ---
 
-# Слабовидящему поможет сова
 
 *Это архивная копия статьи. [Оригинал на Газета Рыбинск](https://gazeta-rybinsk.ru/2020/11/21/77291)*
 
@@ -59,9 +58,9 @@ _Читайте новости Рыбинска в нашем Telegram-кана�
 
 [медицина](https://gazeta-rybinsk.ru/tag/medicina) [наука](https://gazeta-rybinsk.ru/tag/nauka) [наши люди](https://gazeta-rybinsk.ru/tag/nashi-lyudi) [хобби](https://gazeta-rybinsk.ru/tag/hobbi)  
 
-Комментарии Отправляя комментарий, я даю [согласие на обработку персональных данных](/soglasie).
+Комментарии Отправляя комментарий, я даю [согласие на обработку персональных данных](https://gazeta-rybinsk.ru/soglasie).
 
-### Добавить комментарий [Отменить ответ](/2020/11/21/77291#respond)
+### Добавить комментарий [Отменить ответ](https://gazeta-rybinsk.ru/2020/11/21/77291#respond)
 
 Ваш адрес email не будет опубликован. Обязательные поля помечены \*
 

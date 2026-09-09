@@ -12,7 +12,6 @@ images:
   - "/archives/instructables-owleye/image-2.webp"
 ---
 
-# OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate 
 
 *Это архивная копия статьи. [Оригинал на Instructables](https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/)*
 

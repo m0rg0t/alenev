@@ -15,7 +15,6 @@ images:
   - "/archives/apptractor-budgetapps/image-5.jpg"
 ---
 
-# Антон Ленев («Где жить хорошо») о конкурсе BudgetApps
 
 *Это архивная копия статьи. [Оригинал на AppTractor](https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html)*
 

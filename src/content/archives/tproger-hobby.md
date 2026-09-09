@@ -25,7 +25,6 @@ images:
   - "/archives/tproger-hobby/image-16.jpg"
 ---
 
-# Хобби айтишника: от косплея до 3D-печати костюмов и озвучки аудиокниг
 
 *Это архивная копия статьи. [Оригинал на tproger.ru](https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig)*
 

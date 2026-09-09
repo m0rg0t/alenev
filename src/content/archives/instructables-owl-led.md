@@ -13,7 +13,6 @@ images:
   - "/archives/instructables-owl-led/image-2.webp"
 ---
 
-# Owl Necklace With LED Eyes
 
 *Это архивная копия статьи. [Оригинал на Instructables](https://www.instructables.com/Owl-Necklace-With-LED-Eyes/)*
 

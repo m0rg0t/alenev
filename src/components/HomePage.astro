@@ -1,0 +1,203 @@
+---
+import { Picture } from 'astro:assets';
+import portrait from '../assets/homepage/anton-lenev.jpg';
+import owl from '../assets/homepage/owleye.jpg';
+import deadSpace from '../assets/homepage/dead-space.webp';
+import podcast from '../assets/homepage/podcast.webp';
+interface Props { lang: 'ru' | 'en' }
+const { lang } = Astro.props;
+const en = lang === 'en';
+const prefix = en ? '/en' : '';
+const copy = en ? {
+  first: 'Anton', last: 'Lenev', kicker: 'Code. Craft. Voice.',
+  intro: 'I build web products, bring characters to life and tell stories with my voice.',
+  detail: 'Developer, cosplayer, audiobook narrator and podcast host. Based in Rybinsk, Russia.',
+  work: 'Explore my work', contact: 'Get in touch', about: 'More about me',
+  selected: 'Different worlds. My work.', selectedNote: 'A few projects to start with',
+  directions: 'More to explore', directionsNote: 'Projects, stories and things I care about',
+  invitation: 'Let’s make something interesting.', contactNote: 'For projects, talks, narration and conversations — send me a message.',
+  write: 'Message me on Telegram', location: 'Rybinsk, Russia', portrait: 'Anton Lenev',
+} : {
+  first: 'Антон', last: 'Ленев', kicker: 'Код. Крафт. Голос.',
+  intro: 'Разрабатываю веб-продукты, оживляю персонажей и рассказываю истории голосом.',
+  detail: 'Программист, косплеер, чтец аудиокниг и ведущий подкаста. Живу в Рыбинске.',
+  work: 'Посмотреть работы', contact: 'Связаться', about: 'Подробнее обо мне',
+  selected: 'Разные миры. Мои работы.', selectedNote: 'Несколько проектов для знакомства',
+  directions: 'Что ещё посмотреть', directionsNote: 'Проекты, истории и то, что мне интересно',
+  invitation: 'Давайте сделаем что-то интересное.', contactNote: 'Проекты, выступления, озвучка или просто разговор — напишите мне.',
+  write: 'Написать в Telegram', location: 'Рыбинск, Россия', portrait: 'Антон Ленев',
+};
+const works = [
+  { title: 'OwlEye', kind: en ? 'Development · Electronics' : 'Разработка · Электроника', description: en ? 'A wearable owl that helps people with visual impairments navigate their surroundings.' : 'Умное ожерелье-сова, которое помогает слабовидящим ориентироваться в пространстве.', image: owl, alt: en ? 'OwlEye: an owl-shaped wearable device held in a hand' : 'OwlEye — устройство в форме совы в руке', href: '/it/#projects', style: 'owl' },
+  { title: 'Dead Space', kind: en ? 'Cosplay · Making' : 'Косплей · Крафт', description: en ? 'Isaac Clarke’s Advanced Suit: five months of craft, electronics and attention to detail.' : 'Advanced Suit Айзека Кларка: пять месяцев крафта, электроники и работы с деталями.', image: deadSpace, alt: en ? 'Anton Lenev as Isaac Clarke, with illuminated armor' : 'Антон Ленев в костюме Айзека Кларка со светящейся бронёй', href: '/cosplay/dead-space/', style: 'dead-space' },
+  { title: en ? 'Cosplay and Other Things' : 'Косплей и прочие штуки', kind: en ? 'Podcast · Conversations' : 'Подкаст · Разговоры', description: en ? 'Conversations about costumes, creative people and the things that inspire us.' : 'Разговоры о костюмах, творческих людях и вещах, которые нас увлекают.', image: podcast, alt: en ? 'Cover of the Cosplay and Other Things podcast' : 'Обложка подкаста «Косплей и прочие штуки»', href: '/podcasts/', style: 'podcast' },
+];
+const directions = en ? [
+  ['IT & development', 'Projects, talks and professional experience', '/it/'],
+  ['Cosplay', 'Costumes, photo shoots and festivals', '/cosplay/'],
+  ['Podcasts', 'My show and guest appearances', '/podcasts/'],
+  ['Audiobooks', 'Stories narrated for Litres', '/audiobooks/'],
+  ['Publications', 'Articles, interviews and media mentions', '/publications/'],
+  ['Apps & other projects', 'Mini apps, voice skills and experiments', '/other/'],
+] : [
+  ['IT и разработка', 'Проекты, выступления и профессиональный опыт', '/it/'],
+  ['Косплей', 'Костюмы, фотосессии и фестивали', '/cosplay/'],
+  ['Подкасты', 'Свой подкаст и выпуски в гостях', '/podcasts/'],
+  ['Аудиокниги', 'Истории в моей озвучке на Литрес', '/audiobooks/'],
+  ['Публикации', 'Статьи, интервью и упоминания в СМИ', '/publications/'],
+  ['Приложения и другое', 'Мини-приложения, навыки и эксперименты', '/other/'],
+];
+---
+
+<div class="home-page">
+  <section class="hero" aria-labelledby="intro-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span aria-hidden="true"></span>{copy.kicker}</p>
+      <h1 id="intro-title">{copy.first}<br /><span>{copy.last}</span></h1>
+      <p class="intro">{copy.intro}</p>
+      <p class="detail">{copy.detail}</p>
+      <div class="hero-actions">
+        <a class="primary-action" href="#works">{copy.work}<span aria-hidden="true">↘</span></a>
+        <a class="text-action" href={`${prefix}/about/`}>{copy.about}<span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <figure class="portrait">
+      <Picture src={portrait} alt={copy.portrait} formats={['avif', 'webp']} widths={[360, 600, 900]} sizes="(max-width: 640px) 128px, (max-width: 1000px) 40vw, 420px" loading="eager" fetchpriority="high" />
+      <figcaption><span aria-hidden="true">↗</span>{copy.location}</figcaption>
+    </figure>
+  </section>
+
+  <section class="work-section" id="works" aria-labelledby="works-title">
+    <div class="section-heading"><h2 id="works-title">{copy.selected}</h2><p>{copy.selectedNote}</p></div>
+    <div class="work-grid">
+      {works.map(work => (
+        <a class={`work-card ${work.style}`} href={`${prefix}${work.href}`}>
+          <div class="work-image"><Picture src={work.image} alt={work.alt} formats={['avif', 'webp']} widths={[400, 640, 900]} sizes="(max-width: 640px) calc(100vw - 32px), 33vw" loading="lazy" /></div>
+          <div class="work-copy"><p class="work-kind">{work.kind}</p><h3>{work.title}<span aria-hidden="true">↗</span></h3><p class="work-description">{work.description}</p></div>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="directions" aria-labelledby="directions-title">
+    <div class="section-heading"><h2 id="directions-title">{copy.directions}</h2><p>{copy.directionsNote}</p></div>
+    <div class="direction-grid">
+      {directions.map(([name, description, href], index) => (
+        <a class="direction-link" href={`${prefix}${href}`}><span class="direction-number" aria-hidden="true">0{index + 1}</span><div><h3>{name}</h3><p>{description}</p></div><span class="direction-arrow" aria-hidden="true">↗</span></a>
+      ))}
+    </div>
+  </section>
+
+  <section class="contact" aria-labelledby="contact-title">
+    <div><p class="eyebrow">{copy.contact}</p><h2 id="contact-title">{copy.invitation}</h2><p>{copy.contactNote}</p></div>
+    <a class="primary-action" href="https://t.me/AntonLenev" target="_blank" rel="noopener">{copy.write}<span aria-hidden="true">↗</span></a>
+  </section>
+  <nav class="social-links" aria-label={en ? 'Social profiles' : 'Социальные сети'}>
+    <a href="https://github.com/m0rg0t/" target="_blank" rel="noopener">GitHub ↗</a>
+    <a href="https://vk.com/m0rg0t" target="_blank" rel="noopener">VK ↗</a>
+    <a href="https://twitter.com/m0rg0t" target="_blank" rel="noopener">Twitter ↗</a>
+    <a href="https://www.linkedin.com/in/anton-lenev-98414530/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </nav>
+</div>
+
+<style>
+  * { box-sizing: border-box; }
+  h1, h2, h3, p, figure { margin: 0; }
+  .home-page { --line: #d5d0c7; font-family: system-ui, -apple-system, sans-serif; padding-top: 2.5rem; }
+  :global([data-theme="dark"]) .home-page { --line: #505050; }
+  h1, h2, h3 { text-transform: none; letter-spacing: -0.04em; line-height: 1.1; }
+  a { color: inherit; }
+  .hero { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(2rem, 6vw, 6rem); align-items: center; padding: 1rem 0 4.5rem; }
+  .eyebrow { display: flex; align-items: center; gap: 0.6rem; font-size: 0.8rem; font-weight: 650; letter-spacing: 0.08em; text-transform: uppercase; }
+  .eyebrow > span { width: 10px; height: 10px; border-radius: 50%; background: var(--color-text); box-shadow: 0 0 0 5px var(--color-accent); margin: 0 5px; }
+  h1 { font-size: clamp(4rem, 7.5vw, 6.5rem); font-weight: 750; margin: 1.5rem 0 1.75rem; }
+  h1 > span { background: linear-gradient(transparent 72%, var(--color-accent) 72%); }
+  :global([data-theme="dark"]) h1 > span { background: none; text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 0.09em; text-underline-offset: 0.08em; }
+  .intro { max-width: 560px; font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.5; letter-spacing: -0.025em; }
+  .detail { max-width: 470px; color: var(--color-text-muted); line-height: 1.65; margin-top: 1rem; }
+  .hero-actions { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem; }
+  .primary-action { display: inline-flex; justify-content: space-between; align-items: center; gap: 1.5rem; padding: 0.9rem 1.2rem; background: #1a1a1a; color: #fff; border: 1px solid #1a1a1a; text-decoration: none; font-size: 0.9rem; font-weight: 650; min-height: 48px; transition: background 160ms, color 160ms; }
+  .primary-action:hover { background: var(--color-accent); color: #1a1a1a; }
+  :global([data-theme="dark"]) .hero .primary-action { background: var(--color-accent); color: #1a1a1a; }
+  :global([data-theme="dark"]) .hero .primary-action:hover { background: #fff; }
+  .text-action { display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px; text-decoration-thickness: 1px; text-underline-offset: 5px; font-size: 0.9rem; }
+  .portrait { position: relative; margin: 0 1rem 0 0; }
+  .portrait::before { content: ''; position: absolute; inset: 1.25rem -1rem -1rem 1.25rem; background: var(--color-accent); z-index: 0; }
+  .portrait :global(picture) { position: relative; display: block; }
+  .portrait :global(img) { display: block; width: 100%; height: 500px; object-fit: cover; object-position: center 40%; filter: saturate(0.85); }
+  figcaption { position: absolute; bottom: 1.25rem; left: -1rem; display: flex; gap: 0.75rem; align-items: center; padding: 0.65rem 1rem; background: var(--color-surface); color: var(--color-text); font-size: 0.85rem; border: 1px solid var(--color-text); }
+  figcaption span { font-size: 1.25rem; }
+  .work-section, .directions { padding: 3rem 0; border-top: 1px solid var(--line); }
+  .section-heading { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 2rem; }
+  h2 { font-size: clamp(1.75rem, 3vw, 2.5rem); font-weight: 650; }
+  .section-heading > p { font-size: 0.85rem; color: var(--color-text-muted); }
+  .work-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem; }
+  .work-card { display: block; min-width: 0; text-decoration: none; }
+  .work-image { aspect-ratio: 4 / 3; overflow: hidden; background: var(--color-surface-alt); }
+  .work-image :global(picture) { display: block; width: 100%; height: 100%; }
+  .work-image :global(img) { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 240ms ease; }
+  .owl .work-image :global(img) { object-position: 68% center; }
+  .dead-space .work-image :global(img) { object-position: center 25%; }
+  .podcast .work-image { background: #273847; }
+  .podcast .work-image :global(img) { object-fit: contain; }
+  .work-card:hover .work-image :global(img) { transform: scale(1.035); }
+  .work-copy { padding: 1.2rem 0 0; }
+  .work-kind { color: var(--color-text-muted); font-size: 0.73rem; letter-spacing: 0.04em; margin-bottom: 0.65rem; }
+  .work-card h3 { display: flex; gap: 1rem; justify-content: space-between; font-size: 1.4rem; font-weight: 650; }
+  .work-card h3 span { font-weight: 400; flex-shrink: 0; }
+  .work-card:hover h3 { text-decoration: underline; text-underline-offset: 5px; }
+  .work-description { color: var(--color-text-muted); font-size: 0.9rem; line-height: 1.6; margin-top: 0.75rem; }
+  .direction-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 3rem; }
+  .direction-link { display: flex; align-items: center; gap: 1rem; border-bottom: 1px solid var(--line); padding: 1.35rem 0; text-decoration: none; }
+  .direction-number { font-size: 0.75rem; color: var(--color-text-muted); align-self: flex-start; margin-top: 0.25rem; }
+  .direction-link h3 { font-size: 1.2rem; font-weight: 600; }
+  .direction-link p { margin-top: 0.4rem; color: var(--color-text-muted); font-size: 0.85rem; line-height: 1.5; }
+  .direction-arrow { margin-left: auto; font-size: 1.25rem; }
+  .direction-link:hover h3 { text-decoration: underline; text-underline-offset: 4px; }
+  .contact { display: flex; justify-content: space-between; align-items: center; gap: 3rem; padding: 2.5rem; margin-top: 2rem; background: var(--color-accent); color: #1a1a1a; }
+  .contact h2 { max-width: 600px; margin: 0.8rem 0; }
+  .contact p:not(.eyebrow) { font-size: 0.95rem; max-width: 520px; line-height: 1.6; }
+  .contact > a { flex-shrink: 0; }
+  .contact > a:hover { background: #fff; }
+  .contact > a:focus-visible { outline-color: #1a1a1a; }
+  .social-links { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 1.5rem; padding-top: 1.25rem; }
+  .social-links a { font-size: 0.8rem; min-height: 44px; display: flex; align-items: center; text-underline-offset: 4px; }
+  @media (max-width: 1000px) {
+    .hero { gap: 2rem; }
+    .portrait :global(img) { height: 440px; }
+    .section-heading { align-items: flex-start; flex-direction: column; gap: 0.75rem; }
+    .contact { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+    .work-grid { gap: 1rem; }
+  }
+  @media (max-width: 640px) {
+    .home-page { padding-top: 1rem; }
+    .hero { grid-template-columns: minmax(0, 1fr) 128px; gap: 1.25rem 1rem; padding-bottom: 2rem; }
+    .hero-copy { display: contents; }
+    .hero .eyebrow { grid-column: 1 / -1; grid-row: 1; }
+    .hero h1 { grid-column: 1; grid-row: 2; align-self: center; }
+    .hero .intro { grid-column: 1 / -1; grid-row: 3; }
+    .hero .detail { grid-column: 1 / -1; grid-row: 4; margin-top: 0; }
+    .hero-actions { grid-column: 1 / -1; grid-row: 5; }
+    .portrait { grid-column: 2; grid-row: 2; align-self: center; }
+    .portrait figcaption { display: none; }
+    h1 { font-size: clamp(2.6rem, 12vw, 4rem); margin: 0; }
+    .hero-actions { gap: 0.75rem; margin-top: 0; }
+    .hero-actions .primary-action { font-size: 0.8rem; gap: 0.75rem; padding: 0.8rem; }
+    .hero-actions .text-action { font-size: 0.8rem; }
+    .detail { font-size: 0.9rem; }
+    .portrait { margin: 0 8px 8px 0; }
+    .portrait::before { inset: 8px -8px -8px 8px; }
+    .portrait :global(img) { height: 152px; object-position: center 35%; }
+    .work-grid, .direction-grid { grid-template-columns: minmax(0, 1fr); }
+    .work-grid { gap: 2rem; }
+    .work-image { aspect-ratio: 4 / 3; }
+    .work-section, .directions { padding: 2rem 0; }
+    .contact { padding: 1.5rem; }
+    .contact > a { width: 100%; gap: 0.75rem; }
+    .social-links { justify-content: flex-start; gap: 1.25rem; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .work-image :global(img), .primary-action { transition: none; }
+    .work-card:hover .work-image :global(img) { transform: none; }
+  }
+</style>

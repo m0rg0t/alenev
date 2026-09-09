@@ -29,8 +29,19 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     <a href="/en/about">More about his career and education →</a>
   </p>
 
+<nav class="page-toc" aria-label="On this page"><a href="#projects">Pet Projects</a><a href="#mini-apps">VK Mini Apps</a><a href="#alice">Yandex Alice Skills</a><a href="#talks">Talks/Presentations</a><a href="#awards">Hackathons, Contests & Grants</a><a href="#experience">Experience</a></nav>
   <section class="section">
-    <h2>Pet Projects</h2>
+    <h2 id="experience">Experience</h2>
+    <p>CTO/Frontend Developer at Viewst Inc</p>
+    <p>Education: Rybinsk State Aviation Technology Academy (RGATA named after P.A. Solovyov), 2006-2011</p>
+    <div class="links">
+      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 repositories)</a>
+      <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 id="projects">Pet Projects</h2>
 
     <article class="project">
       <h3>OwlEye</h3>
@@ -100,7 +111,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   </section>
 
   <section class="section">
-    <h2>VK Mini Apps</h2>
+    <h2 id="mini-apps">VK Mini Apps</h2>
     <p class="page-intro" style="margin-bottom: 1.5rem;">
       Mini-apps for VKontakte — entertainment and educational projects.
     </p>
@@ -133,7 +144,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   </section>
 
   <section class="section">
-    <h2>Yandex Alice Skills</h2>
+    <h2 id="alice">Yandex Alice Skills</h2>
 
     <article class="project">
       <h3>Bylina o Svyatogor</h3>
@@ -148,7 +159,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   </section>
 
   <section class="section">
-    <h2>Talks/Presentations</h2>
+    <h2 id="talks">Talks/Presentations</h2>
 
     <article class="talk">
       <h3>"Strange Browser APIs" — Drinkup</h3>
@@ -258,7 +269,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
   </section>
 
   <section class="section">
-    <h2>Hackathons, Contests & Grants</h2>
+    <h2 id="awards">Hackathons, Contests & Grants</h2>
     <p class="page-intro" style="margin-bottom: 1.5rem;">
       Confirmed participations and wins across developer hackathons, app contests, and grant programs.
     </p>
@@ -440,17 +451,11 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     </article>
   </section>
 
-  <section class="section">
-    <h2>Experience</h2>
-    <p>CTO/Frontend Developer at Viewst Inc</p>
-    <p>Education: Rybinsk State Aviation Technology Academy (RGATA named after P.A. Solovyov), 2006-2011</p>
-    <div class="links">
-      <a href="https://github.com/m0rg0t" target="_blank" rel="noopener">GitHub (55 repositories)</a>
-      <a href="https://www.slideshare.net/antonlenev" target="_blank" rel="noopener">SlideShare</a>
-    </div>
-  </section>
+
 
   <style>
+    .page-toc { display: flex; gap: 0.75rem; flex-wrap: wrap; margin: 1rem 0 2rem; }
+    .page-toc a { color: var(--color-text); padding: 0.5rem 0.75rem; border: 2px solid currentColor; }
     /* Page Title */
     h1 {
       font-size: 2.5rem;
@@ -478,7 +483,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
       margin-bottom: 1.5rem;
       display: inline-block;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       padding: 0.5rem 1rem;
       border: var(--border-width) solid var(--color-border);
       box-shadow: 3px 3px 0 var(--color-border);
@@ -574,7 +579,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     .links a {
       padding: 0.5rem 1rem;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       text-decoration: none;
       border: var(--border-width) solid var(--color-border);
       font-size: 0.8rem;
@@ -586,7 +591,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     .links a:hover {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
-      background: var(--color-primary-dark);
+      background: var(--color-primary-hover);
     }
 
     /* VK Mini Apps grid */
@@ -634,7 +639,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
       display: inline-block;
       padding: 0.5rem 1rem;
       background: var(--color-primary);
-      color: white;
+      color: var(--color-on-primary);
       text-decoration: none;
       border: var(--border-width) solid var(--color-border);
       font-size: 0.8rem;
@@ -646,7 +651,7 @@ const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
     .app-card a:hover {
       transform: translate(-1px, -1px);
       box-shadow: 3px 3px 0 var(--color-border);
-      background: var(--color-primary-dark);
+      background: var(--color-primary-hover);
     }
 
     /* Responsive */
