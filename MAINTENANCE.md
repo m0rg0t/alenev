@@ -35,7 +35,11 @@ verification. There is no merge or deployment job in the new workflow.
 
 Local verification: 17 unit tests, zero type errors/warnings (19 existing
 deprecation/unused-symbol hints remain), all 104 routes and 103 Markdown twins.
-Live registry graph audits were not run; this is not a zero-vulnerability claim.
+The authorized 2026-10-03 audit found and then cleared patched mdast-util-to-hast
+and picomatch advisories through compatible transitive updates. The final root
+audit reports only the unpatched cache-policy advisory below; the separate
+archive-fetcher audit reports no findings. This is not a zero-vulnerability claim
+for the full site toolchain.
 Astro still declares the unpatched build-time `http-cache-semantics` advisory
 [GHSA-ch52-4w7c-c8xp](https://github.com/advisories/GHSA-ch52-4w7c-c8xp).
 The deployed image serves static files with nginx and does not ship Node/Bun

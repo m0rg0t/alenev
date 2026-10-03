@@ -46,6 +46,8 @@ try {
     await trigger.click();
     await page.locator('.lightbox-close').click();
     assert.equal(await page.locator('#lightbox').getAttribute('hidden'), '');
+    assert.equal(await trigger.evaluate(element => element === document.activeElement), true);
+    await page.evaluate(() => scrollTo(0, 0));
     await page.screenshot({ path: `${output}/gallery-${width}.png`, fullPage: true });
     results.push(`${width}px: full artwork, repeated viewer open/next/Escape/Close and focus return`);
     await context.close();
