@@ -2,22 +2,33 @@
   "name": "alenev-astro",
   "type": "module",
   "version": "1.0.0",
+  "packageManager": "bun@1.4.2",
+  "engines": { "node": ">=24.15.0 <25", "bun": ">=1.4.2" },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build && bun run scripts/generate-markdown.ts",
     "build:markdown": "bun run scripts/generate-markdown.ts",
     "preview": "astro preview",
+    "check": "astro check",
+    "test": "bun test scripts",
+    "verify:build": "bun run scripts/verify-build.ts",
+    "test:browser": "node scripts/browser-smoke.mjs",
     "astro": "astro",
     "archive": "bun run scripts/archive-fetcher/index.ts",
     "optimize:cosplay": "bun run scripts/optimize-cosplay-images.ts"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.6.0",
-    "@fontsource/space-grotesk": "^5.2.10",
-    "astro": "^5.14.7"
+    "@astrojs/sitemap": "^3.7.4",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "astro": "^7.3.5"
   },
   "devDependencies": {
-    "node-html-parser": "^7.1.0",
-    "sharp": "^0.34.5"
+    "@astrojs/check": "^0.9.10",
+    "@types/bun": "^1.4.2",
+    "@types/node": "^24.19.1",
+    "typescript": "~6.0.3",
+    "playwright": "^1.63.0",
+    "node-html-parser": "^9.0.4",
+    "sharp": "^0.35.5"
   }
 }

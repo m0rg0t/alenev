@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+**/node_modules/
+.verification-tmp/
+output/
 
 # Build output
 dist/

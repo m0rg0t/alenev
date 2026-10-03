@@ -135,7 +135,10 @@ const schemaOrg = {
     <script is:inline>
       (function() {
         const getTheme = () => {
-          if (localStorage.getItem('theme')) return localStorage.getItem('theme');
+          try {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'light' || saved === 'dark') return saved;
+          } catch { /* Storage can be unavailable in restricted browser contexts. */ }
           return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
         };
         document.documentElement.setAttribute('data-theme', getTheme());
@@ -718,12 +721,14 @@ const schemaOrg = {
         const current = document.documentElement.getAttribute('data-theme');
         const newTheme = current === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
+        try { localStorage.setItem('theme', newTheme); } catch { /* The current page still switches theme. */ }
       };
 
       // Listen for system preference changes
       window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-        if (!localStorage.getItem('theme')) {
+        let saved = null;
+        try { saved = localStorage.getItem('theme'); } catch { /* Follow the system when storage is unavailable. */ }
+        if (saved !== 'light' && saved !== 'dark') {
           document.documentElement.setAttribute('data-theme', e.matches ? 'dark' : 'light');
         }
       });

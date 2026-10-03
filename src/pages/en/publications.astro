@@ -4,7 +4,7 @@ import { getCollection } from 'astro:content';
 
 // Get all archives to check which publications have archived versions
 const archives = await getCollection('archives');
-const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.slug]));
+const archivesByUrl = new Map(archives.map(a => [a.data.originalUrl, a.id]));
 ---
 
 <BaseLayout

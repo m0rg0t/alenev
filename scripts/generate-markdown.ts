@@ -16,7 +16,6 @@ import { join, relative } from 'node:path';
 import { parse, type HTMLElement, type Node, NodeType } from 'node-html-parser';
 
 const DIST_DIR = join(import.meta.dir, '..', 'dist');
-const SITE_ORIGIN = 'https://alenev.ru';
 
 // Skip pages that have no agent-readable content.
 const SKIP_FILES = new Set([
@@ -41,7 +40,7 @@ async function walk(dir: string): Promise<string[]> {
 
 function inlineText(node: Node): string {
   if (node.nodeType === NodeType.TEXT_NODE) {
-    return node.rawText.replace(/\s+/g, ' ');
+    return node.text.replace(/\s+/g, ' ');
   }
   if (node.nodeType !== NodeType.ELEMENT_NODE) return '';
   const el = node as HTMLElement;
@@ -81,7 +80,7 @@ function inlineText(node: Node): string {
 
 function blockify(node: Node, depth = 0): string {
   if (node.nodeType === NodeType.TEXT_NODE) {
-    const t = node.rawText.trim();
+    const t = node.text.trim();
     return t ? t : '';
   }
   if (node.nodeType !== NodeType.ELEMENT_NODE) return '';
@@ -137,12 +136,13 @@ function blockify(node: Node, depth = 0): string {
         const bullet = ordered ? `${i + 1}.` : '-';
         // A <li> may contain inline or block content. Prefer inline rendering;
         // fall back to blockify for nested lists.
-        const nested = (li as HTMLElement).querySelector('ul, ol');
-        if (nested) {
-          const lead = inlineText(li as HTMLElement)
+        const isList = (node: Node) => node.nodeType === NodeType.ELEMENT_NODE && ['ul', 'ol'].includes((node as HTMLElement).tagName.toLowerCase());
+        const nested = li.childNodes.filter(isList);
+        if (nested.length) {
+          const lead = li.childNodes.filter(node => !isList(node)).map(inlineText).join('')
             .replace(/\s+/g, ' ')
             .trim();
-          const sub = blockify(nested, depth + 1).trim();
+          const sub = nested.map(node => blockify(node, depth + 1).trim()).join('\n');
           const indented = sub
             .split('\n')
             .map((l) => (l ? `  ${l}` : l))
@@ -178,7 +178,7 @@ function blockify(node: Node, depth = 0): string {
   }
 }
 
-function htmlToMarkdown(html: string, htmlPath: string): { md: string; tokens: number } {
+export function htmlToMarkdown(html: string): { md: string; tokens: number } {
   const root = parse(html, { comment: false });
 
   const title = root.querySelector('title')?.text?.trim() ?? '';
@@ -222,7 +222,7 @@ async function main() {
     if (SKIP_FILES.has(rel) || SKIP_FILES.has(rel.split('/').pop()!)) continue;
 
     const html = await readFile(file, 'utf8');
-    const { md, tokens } = htmlToMarkdown(html, file);
+    const { md, tokens } = htmlToMarkdown(html);
     const mdPath = file.replace(/\.html$/, '.md');
     await writeFile(mdPath, md, 'utf8');
     // Sibling file holding the token count — nginx can expose it as x-markdown-tokens.
@@ -232,7 +232,7 @@ async function main() {
   console.log(`[markdown] wrote ${written} .md files under ${relative(process.cwd(), DIST_DIR)}/`);
 }
 
-main().catch((err) => {
+if (import.meta.main) main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
