@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import CostumeCard from '../../../../components/CostumeCard.astro';
 import CosplayGallery from '../../../../components/CosplayGallery.astro';
@@ -20,7 +20,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 let manifest = { images: [], video: null } as { images: Array<{ webp: string; thumb: string; width: number; height: number }>; video: string | null };
 if (entry.data.folder) {

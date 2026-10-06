@@ -186,8 +186,9 @@ const isRu = getLangFromUrl(Astro.url) === 'ru';
 
 <script>
   (function () {
-    const lightbox = document.getElementById('lightbox');
-    if (!lightbox) return;
+    const lightboxElement = document.getElementById('lightbox');
+    if (!lightboxElement) return;
+    const lightbox = lightboxElement;
 
     const image = lightbox.querySelector('.lightbox-image') as HTMLImageElement;
     const counter = lightbox.querySelector('.lightbox-counter') as HTMLElement;

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Personal website for Anton Lenev built with Astro 5.14+. The site showcases different aspects of Anton's work and interests:
+Personal website for Anton Lenev built with Astro 7.3+. The site showcases different aspects of Anton's work and interests:
 - **IT**: Development projects, talks, and technical articles
 - **Podcasts**: "Cosplay and Other Things" podcast
 - **Audiobooks**: Voice narration work on Litres platform
@@ -101,7 +101,7 @@ Each category page follows a consistent pattern:
 
 - The old site generator (using OpenAI) has been moved to `backup/` folder
 - Content is currently hardcoded in pages (no CMS)
-- Site uses Astro 5.14.7 features
+- Site uses Astro 7.3.5 with content-layer collections (`src/content.config.ts`, glob loaders); see MAINTENANCE.md
 - Runtime: Bun
 - No client-side JavaScript framework (pure Astro)
 - Responsive design with mobile-first approach

@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import CostumeMeta from '../../components/CostumeMeta.astro';
 import ShootCard from '../../components/ShootCard.astro';
@@ -19,7 +19,7 @@ export async function getStaticPaths() {
 }
 
 const { entry } = Astro.props;
-const { Content } = await entry.render();
+const { Content } = await render(entry);
 
 const shoots = (await getCollection('cosplay'))
   .filter(s => s.data.lang === 'ru' && s.data.costume === entry.data.costumeId)
@@ -156,7 +156,7 @@ const metaDescription = entry.data.character && entry.data.franchise
       <h2>{t('cosplay.shoots')}</h2>
       <div class="shoots-grid">
         {shoots.map(shoot => {
-          const shootSlug = shoot.slug.replace(/ru$/, '');
+          const shootSlug = shoot.id.replace(/ru$/, '');
           return (
             <ShootCard
               title={shoot.data.title}

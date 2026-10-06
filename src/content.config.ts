@@ -1,8 +1,10 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
+import { glob } from 'astro/loaders';
 
 // Costumes — characters/outfits with materials, links, franchise info
 const costumesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/costumes' }),
   schema: z.object({
     title: z.string(),
     lang: z.enum(['ru', 'en']),
@@ -10,7 +12,7 @@ const costumesCollection = defineCollection({
     character: z.string().optional(),
     franchise: z.string().optional(),
     coverImage: z.string(),
-    date: z.date().optional(),
+    date: z.coerce.date().optional(),
     tags: z.array(z.string()).optional(),
     materials: z.array(z.string()).optional(),
     buildTime: z.string().optional(),
@@ -40,14 +42,14 @@ const costumesCollection = defineCollection({
 
 // Photo shoots — individual sessions linked to a costume
 const cosplayCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/cosplay' }),
   schema: z.object({
     title: z.string(),
     lang: z.enum(['ru', 'en']),
     costume: z.string(),
     folder: z.string(),
     coverImage: z.string(),
-    date: z.date().optional(),
+    date: z.coerce.date().optional(),
     photographer: z.string().optional(),
     photographerUrl: z.string().url().optional(),
     location: z.string().optional(),
@@ -63,12 +65,12 @@ const cosplayCollection = defineCollection({
 
 // Events — conventions, festivals referencing one or more costumes
 const cosplayEventsCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/cosplay-events' }),
   schema: z.object({
     title: z.string(),
     lang: z.enum(['ru', 'en']),
     costumeId: z.string(),
-    date: z.date().optional(),
+    date: z.coerce.date().optional(),
     location: z.string().optional(),
     coverImage: z.string(),
     folder: z.string().optional(),
@@ -87,14 +89,14 @@ const cosplayEventsCollection = defineCollection({
 });
 
 const archivesCollection = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/[^_]*.md', base: './src/content/archives' }),
   schema: z.object({
     title: z.string(),
     originalUrl: z.string().url(),
     sourceName: z.string(),
     category: z.enum(['article', 'media', 'achievement']),
-    archiveDate: z.date(),
-    publishDate: z.date().optional(),
+    archiveDate: z.coerce.date(),
+    publishDate: z.coerce.date().optional(),
     description: z.string().optional(),
     coverImage: z.string().optional(),
     images: z.array(z.string()).optional(),

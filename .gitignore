@@ -44,3 +44,6 @@ archive/
 # Playwright screenshot dumps (regenerate via scripts/capture_*.py when needed)
 screenshots/
 
+# Local verification evidence
+.verification-tmp/
+output/

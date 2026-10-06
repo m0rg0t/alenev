@@ -15,6 +15,8 @@
  *   bun run scripts/archive-fetcher/index.ts https://habr.com/ru/articles/754234/ --slug habr-owleye
  */
 
+import { archiveFrontmatter, validateArchiveCategory, validateArchiveSlug } from "./validation";
+
 import * as cheerio from "cheerio";
 import TurndownService from "turndown";
 import * as fs from "fs";
@@ -82,8 +84,8 @@ function generateSlug(url: string, title?: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9-]/g, "-")
     .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "")
-    .substring(0, 30);
+    .substring(0, 30)
+    .replace(/^-+|-+$/g, "");
 
   return `${source}-${cleanPart || "archive"}`;
 }
@@ -462,21 +464,7 @@ async function createArchive(
   }
 
   // Create Markdown file
-  const yamlContent = Object.entries(frontmatter)
-    .map(([key, value]) => {
-      if (Array.isArray(value)) {
-        return `${key}:\n${value.map((v) => `  - "${v}"`).join("\n")}`;
-      }
-      // Dates should not be quoted (archiveDate, publishDate)
-      if (key.endsWith("Date")) {
-        return `${key}: ${value}`;
-      }
-      if (typeof value === "string" && value.includes('"')) {
-        return `${key}: '${value}'`;
-      }
-      return `${key}: "${value}"`;
-    })
-    .join("\n");
+  const yamlContent = archiveFrontmatter(frontmatter);
 
   const mdContent = `---
 ${yamlContent}
@@ -501,7 +489,8 @@ ${pageData.content}
 }
 
 // Main
-const slug = customSlug || generateSlug(url);
+const slug = validateArchiveSlug(customSlug || generateSlug(url));
+validateArchiveCategory(category);
 createArchive(url, slug, category).catch((error) => {
   console.error("Error:", error.message);
   process.exit(1);
