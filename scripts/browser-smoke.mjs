@@ -6,7 +6,7 @@ const base = process.env.E2E_BASE_URL ?? 'http://127.0.0.1:8080';
 assert.ok(['127.0.0.1', 'localhost'].includes(new URL(base).hostname), 'Use a local verification server');
 const output = 'output/maintenance-browser';
 await mkdir(output, { recursive: true });
-const browser = await chromium.launch({ headless: true, chromiumSandbox: true, executablePath: process.env.E2E_CHROME ?? '/usr/bin/google-chrome' });
+const browser = await chromium.launch({ headless: true, chromiumSandbox: true, ...(process.env.E2E_CHROME ? { executablePath: process.env.E2E_CHROME } : { channel: 'chrome' }) });
 const errors = [];
 const results = [];
 try {

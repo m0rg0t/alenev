@@ -84,8 +84,8 @@ function generateSlug(url: string, title?: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9-]/g, "-")
     .replace(/-+/g, "-")
-    .replace(/^-|-$/g, "")
-    .substring(0, 30);
+    .substring(0, 30)
+    .replace(/^-+|-+$/g, "");
 
   return `${source}-${cleanPart || "archive"}`;
 }

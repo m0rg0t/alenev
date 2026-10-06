@@ -15,7 +15,7 @@ import { readdir, readFile, writeFile, stat } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { parse, type HTMLElement, type Node, NodeType } from 'node-html-parser';
 
-const DIST_DIR = join(import.meta.dir, '..', 'dist');
+export const DIST_DIR = join(import.meta.dir, '..', 'dist');
 
 // Skip pages that have no agent-readable content.
 const SKIP_FILES = new Set([
@@ -24,7 +24,7 @@ const SKIP_FILES = new Set([
   'yandex_9402ac7900e76ecd.html',
 ]);
 
-async function walk(dir: string): Promise<string[]> {
+export async function walk(dir: string): Promise<string[]> {
   const entries = await readdir(dir, { withFileTypes: true });
   const files: string[] = [];
   for (const entry of entries) {
@@ -37,6 +37,11 @@ async function walk(dir: string): Promise<string[]> {
   }
   return files;
 }
+
+const isList = (node: Node) =>
+  node.nodeType === NodeType.ELEMENT_NODE && ['ul', 'ol'].includes((node as HTMLElement).tagName.toLowerCase());
+
+export const estimateTokens = (md: string) => Math.ceil(md.length / 4);
 
 function inlineText(node: Node): string {
   if (node.nodeType === NodeType.TEXT_NODE) {
@@ -136,13 +141,12 @@ function blockify(node: Node, depth = 0): string {
         const bullet = ordered ? `${i + 1}.` : '-';
         // A <li> may contain inline or block content. Prefer inline rendering;
         // fall back to blockify for nested lists.
-        const isList = (node: Node) => node.nodeType === NodeType.ELEMENT_NODE && ['ul', 'ol'].includes((node as HTMLElement).tagName.toLowerCase());
         const nested = li.childNodes.filter(isList);
         if (nested.length) {
-          const lead = li.childNodes.filter(node => !isList(node)).map(inlineText).join('')
+          const lead = li.childNodes.filter((child) => !isList(child)).map(inlineText).join('')
             .replace(/\s+/g, ' ')
             .trim();
-          const sub = nested.map(node => blockify(node, depth + 1).trim()).join('\n');
+          const sub = nested.map((list) => blockify(list, depth + 1).trim()).join('\n');
           const indented = sub
             .split('\n')
             .map((l) => (l ? `  ${l}` : l))
@@ -204,7 +208,7 @@ export function htmlToMarkdown(html: string): { md: string; tokens: number } {
 
   // Rough token count — 4 chars per token is the standard heuristic used by
   // Cloudflare's x-markdown-tokens header.
-  const tokens = Math.ceil(md.length / 4);
+  const tokens = estimateTokens(md);
   return { md, tokens };
 }
 

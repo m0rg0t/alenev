@@ -13,7 +13,7 @@ export function validateArchiveCategory(value: string): 'article' | 'media' | 'a
 
 /** JSON quoted scalars are valid YAML and safely escape quotes and line breaks. */
 export function archiveFrontmatter(data: Record<string, unknown>): string {
-  return Object.entries(data).map(([key, value]) => {
+  return Object.entries(data).filter(([, value]) => value !== undefined).map(([key, value]) => {
     if (key.endsWith('Date') && typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)) return `${key}: ${value}`;
     if (Array.isArray(value)) return `${key}:\n${value.map(item => `  - ${JSON.stringify(item)}`).join('\n')}`;
     return `${key}: ${JSON.stringify(value)}`;
