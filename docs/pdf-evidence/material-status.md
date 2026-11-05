@@ -96,7 +96,7 @@
 | <http://moscow.battlehack.org/idea/702> | Сетевая ошибка или тайм-аут |
 | <http://digitaloctober.ru/ru/events/hakafon_paypal_battle_hack_v_do> | Страница не найдена |
 | <https://github.com/m0rg0t/GoodPlaceToLive/tree/web-js> | PDF-фрагмент сохранён — [открыть PDF](../../public/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=23) |
-| <https://github.com/m0rg0t/DeadSpace2_rig_cosplay> | Ошибка сервера |
+| <https://github.com/m0rg0t/DeadSpace2_rig_cosplay> | Повторно открылась; [PDF-фрагмент](../../public/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1). Ранее был ответ 504. |
 | <https://vk.com/video-176027821_456239022> | Капча / проверка доступа |
 | <https://vk.com/video-176027821_456239023> | Капча / проверка доступа |
 | <https://yadi.sk/d/99gb81cUzQZcgg> | Видна папка; файлы слишком велики для обычного PR |

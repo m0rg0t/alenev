@@ -1013,6 +1013,285 @@
       "httpStatus": 404,
       "status": "not_found",
       "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "context-01",
+      "url": "http://age71.ru/index.php?option=com",
+      "checkedAt": "2026-11-05T09:43:00.733Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Проверка усечённого адреса вернула 404.",
+      "relation": "Усечённый при извлечении адрес; настоящая ссылка — context-02.",
+      "correctUrl": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474"
+    },
+    {
+      "id": "context-02",
+      "url": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474",
+      "checkedAt": "2026-11-05T09:43:01.378Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Исходная страница ответила 404.",
+      "relation": "Ссылка на работу другого участника конкурса BudgetApps."
+    },
+    {
+      "id": "context-03",
+      "url": "http://budgetapps.ru/",
+      "checkedAt": "2026-11-05T09:43:01.812Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Перенаправляет на сторонний сервис кредитов; историческая страница отсутствует.",
+      "relation": "Главная страница конкурса BudgetApps, адрес встречается в интервью."
+    },
+    {
+      "id": "context-04",
+      "url": "http://budgetapps.ru/contest",
+      "checkedAt": "2026-11-05T09:43:01.814Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Перенаправляет на сторонний сервис кредитов; не является исторической страницей конкурса.",
+      "relation": "Вариант уже проверенного /contest#winners; фрагмент #winners не отправляется серверу.",
+      "duplicateOf": "http://budgetapps.ru/contest#winners"
+    },
+    {
+      "id": "context-05",
+      "url": "http://fastled.io/",
+      "checkedAt": "2026-11-05T09:43:07.242Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница библиотеки; материал другого автора, не личная публикация.",
+      "relation": "Документация сторонней библиотеки FastLED, упомянутой в инструкции."
+    },
+    {
+      "id": "context-06",
+      "url": "http://goodplacetolive.azurewebsites.net/",
+      "checkedAt": "2026-11-05T09:43:01.722Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается; содержимое не загружено.",
+      "relation": "Бывшая web-версия проекта «Где жить хорошо?» из сюжета Москва 24."
+    },
+    {
+      "id": "context-07",
+      "url": "http://moscow.battlehack.org/",
+      "checkedAt": "2026-11-05T09:43:01.833Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается.",
+      "relation": "Страница организаторов Battle Hack; связана с ранее проверенной ссылкой на питч."
+    },
+    {
+      "id": "context-08",
+      "url": "http://ria56.ru/posts/836546454156416465476464.htm",
+      "checkedAt": "2026-11-05T09:43:19.950Z",
+      "httpStatus": null,
+      "status": "timeout",
+      "note": "При загрузке истёк тайм-аут.",
+      "relation": "Ссылка на работу другого участника BudgetApps."
+    },
+    {
+      "id": "context-09",
+      "url": "http://www.cherinfo.ru/",
+      "checkedAt": "2026-11-05T09:43:14.047Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась главная страница портала, не конкретный репортаж.",
+      "relation": "Главная страница городского портала Череповца — источник репортажа, ссылка на конкретное видео учтена отдельно."
+    },
+    {
+      "id": "context-10",
+      "url": "http://www.e-xecutive.ru/community/articles/1957516/?page=0",
+      "checkedAt": "2026-11-05T09:43:12.412Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась статья; связь с Антоном не установлена.",
+      "relation": "Материал другого участника BudgetApps."
+    },
+    {
+      "id": "context-11",
+      "url": "http://www.kenlandrum.com/kl",
+      "checkedAt": "2026-11-05T09:43:12.483Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый адрес вернул 404.",
+      "relation": "Усечённый при извлечении URL; полный адрес шаблонов — context-12.",
+      "correctUrl": "http://www.kenlandrum.com/kl_website/artwork/spider.html"
+    },
+    {
+      "id": "context-12",
+      "url": "http://www.kenlandrum.com/kl_website/artwork/spider.html",
+      "checkedAt": "2026-11-05T09:43:17.137Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Страница шаблонов открылась; это сторонние изображения, не работа Антона.",
+      "relation": "Работа Ken Landrum с шаблонами костюма Человека-паука, указанная как референс в инструкции."
+    },
+    {
+      "id": "context-13",
+      "url": "http://www.zelao.ru/ru/shownews/24303/prosvetitelskiy-proekt-tyi-ne-odin-v-svoem-jilische/",
+      "checkedAt": "2026-11-05T09:43:31.547Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Перенаправляет на страницу 404.",
+      "relation": "Материал другого участника BudgetApps."
+    },
+    {
+      "id": "context-14",
+      "url": "https://a360.co/2ySiKwp",
+      "checkedAt": "2026-11-05T09:43:24.668Z",
+      "httpStatus": 403,
+      "status": "authorization_required",
+      "note": "Autodesk отвечает 403 Unauthorized; содержимое и файлы не открывались.",
+      "relation": "Ссылка автора на файлы модели в Autodesk Fusion 360."
+    },
+    {
+      "id": "context-15",
+      "url": "https://cosplay-podcast.ru",
+      "checkedAt": "2026-11-05T09:43:23.234Z",
+      "httpStatus": null,
+      "status": "tls_error",
+      "note": "Браузер сообщает ERR_SSL_PROTOCOL_ERROR; страницу получить не удалось.",
+      "relation": "Сайт подкаста «Косплей и прочие штуки», указанный в архивной карточке."
+    },
+    {
+      "id": "context-16",
+      "url": "https://darovska.com/",
+      "checkedAt": "2026-11-05T09:43:29.942Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылся сайт ведущей; это профиль, не публикация Антона.",
+      "relation": "Сайт ведущей интервью Tproger Маши Даровской."
+    },
+    {
+      "id": "context-17",
+      "url": "https://fabricondemand.com/ken/landrum.html",
+      "checkedAt": "2026-11-05T09:43:35.737Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Запрошенный путь перенаправлен на главную; исходная страница не подтверждена.",
+      "relation": "Сайт печати на ткани, на который ссылается инструкция."
+    },
+    {
+      "id": "context-18",
+      "url": "https://github.com/m0rg0t/DeadSpace2",
+      "checkedAt": "2026-11-05T09:43:38.225Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый URL вернул 404; полный адрес проверен отдельно и сохранён в PDF.",
+      "relation": "Усечённый URL из Markdown; полный репозиторий — https://github.com/m0rg0t/DeadSpace2_rig_cosplay.",
+      "correctUrl": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay"
+    },
+    {
+      "id": "context-19",
+      "url": "https://itunes.apple.com/ru/app/imonitoring/id914242894?mt=8",
+      "checkedAt": "2026-11-05T09:43:39.468Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "App Store ответил 404.",
+      "relation": "Приложение другого участника BudgetApps."
+    },
+    {
+      "id": "context-20",
+      "url": "https://kanobu.ru/games/the-elder-scrolls-v-skyrim/",
+      "checkedAt": "2026-11-05T09:43:53.949Z",
+      "httpStatus": null,
+      "status": "timeout",
+      "note": "При загрузке истёк тайм-аут.",
+      "relation": "Страница игры Skyrim, ссылка для контекста материала Kanobu."
+    },
+    {
+      "id": "context-21",
+      "url": "https://kunjut.com/",
+      "checkedAt": "2026-11-05T09:43:51.414Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница сервиса; не личная публикация.",
+      "relation": "Сервис печати на ткани, указанный в инструкции."
+    },
+    {
+      "id": "context-22",
+      "url": "https://openai.com/dall-e-2/",
+      "checkedAt": "2026-11-05T09:43:44.709Z",
+      "httpStatus": 403,
+      "status": "access_check",
+      "note": "Сайт ответил 403 и показал проверку; она не обходилась.",
+      "relation": "Страница DALL·E 2, указанная как техническая справка в статье."
+    },
+    {
+      "id": "context-23",
+      "url": "https://openpolice.ru",
+      "checkedAt": "2026-11-05T09:43:47.863Z",
+      "httpStatus": 200,
+      "status": "archive_notice",
+      "note": "Сайт сообщает, что проект переведён в архив; исходные данные и страница приложения не отображаются.",
+      "relation": "Портал открытых данных «Открытая полиция», на котором основывался проект «Где участковый?»."
+    },
+    {
+      "id": "context-24",
+      "url": "https://spb-frontend.ru/",
+      "checkedAt": "2026-11-05T09:43:51.834Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница сообщества; запись выступления учитывается отдельно.",
+      "relation": "Сайт сообщества SPB Frontend, организовавшего выступление."
+    },
+    {
+      "id": "context-25",
+      "url": "https://vk.com/video-176027821",
+      "checkedAt": "2026-11-05T09:43:55.083Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый адрес вернул 404; полные видео ранее показали капчу.",
+      "relation": "Усечённый адрес из Markdown; полные ссылки — VK-видео 456239022 и 456239023, проверены ранее.",
+      "correctUrls": [
+        "https://vk.com/video-176027821_456239022",
+        "https://vk.com/video-176027821_456239023"
+      ]
+    },
+    {
+      "id": "context-26",
+      "url": "https://www.deviantart.com/toughraid3r37890/art/Dead-Space-2-Advanced-Suit-211534367",
+      "checkedAt": "2026-11-05T09:43:59.563Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Страница открылась; изображение другого автора не копировалось в PDF.",
+      "relation": "Работа toughraid3r37890 на DeviantArt, указанная автором инструкции в качестве референса."
+    },
+    {
+      "id": "context-27",
+      "url": "https://www.sksprops.com/",
+      "checkedAt": "2026-11-05T09:44:01.203Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Сайт открылся; сторонние материалы не копировались.",
+      "relation": "Сайт SKS Props, упомянутый как источник референсов для изготовления резака."
+    },
+    {
+      "id": "context-28",
+      "url": "https://www.sticknfind.com/",
+      "checkedAt": "2026-11-05T09:43:54.527Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается.",
+      "relation": "Сайт производителя маяков Stick’n’Find, упомянутых как приз конкурса."
+    },
+    {
+      "id": "context-29",
+      "url": "https://twitter.com/Troxx_cosplay/status/1550895846031609857?s=20&t=7yKufqLykT0iM7OjzXEdaQ",
+      "checkedAt": "2026-11-05T09:44:20.234Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "Браузер вернул ERR_HTTP_RESPONSE_CODE_FAILURE; содержимое поста не подтверждено, вход и ограничения не обходились.",
+      "relation": "Конкретный пост Troxx_cosplay, на который автор ссылается как на референс в статье о DALL·E 2; не профиль и не работа Антона."
+    },
+    {
+      "id": "repo-correct",
+      "url": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay",
+      "checkedAt": "2026-11-05T09:45:16.167Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Шапка публичного репозитория открылась; сохранён PDF-фрагмент. Исходный код в PDF не включён.",
+      "relation": "Полный адрес авторского репозитория костюма Dead Space 2; ранее запрос временно вернул 504.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1"
     }
   ]
 }

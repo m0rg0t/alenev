@@ -124,20 +124,29 @@
     {
       "url": "http://age71.ru/index.php?option=com",
       "canonical": "http://age71.ru/index.php?option=com",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "extraction_artifact",
+      "reason": "Усечённый при извлечении адрес; настоящая ссылка — context-02.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:00.733Z"
+      },
+      "correctUrl": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474"
     },
     {
       "url": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474",
       "canonical": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "other_contestant",
+      "reason": "Ссылка на работу другого участника конкурса BudgetApps.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:01.378Z"
+      }
     },
     {
       "url": "http://alenev.ru",
@@ -169,20 +178,29 @@
     {
       "url": "http://budgetapps.ru/",
       "canonical": "http://budgetapps.ru/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "competition_site",
+      "reason": "Главная страница конкурса BudgetApps, адрес встречается в интервью.",
       "paths": [
         "src/content/archives/apptractor-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "changed_destination",
+        "checkedAt": "2026-11-05T09:43:01.812Z"
+      }
     },
     {
       "url": "http://budgetapps.ru/contest",
       "canonical": "http://budgetapps.ru/contest",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "duplicate_variant",
+      "reason": "Вариант уже проверенного /contest#winners; фрагмент #winners не отправляется серверу.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "changed_destination",
+        "checkedAt": "2026-11-05T09:43:01.814Z"
+      },
+      "duplicateOf": "http://budgetapps.ru/contest#winners"
     },
     {
       "url": "http://budgetapps.ru/contest#winners",
@@ -213,20 +231,28 @@
     {
       "url": "http://fastled.io/",
       "canonical": "http://fastled.io/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Документация сторонней библиотеки FastLED, упомянутой в инструкции.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:07.242Z"
+      }
     },
     {
       "url": "http://goodplacetolive.azurewebsites.net/",
       "canonical": "http://goodplacetolive.azurewebsites.net/",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "related_project",
+      "reason": "Бывшая web-версия проекта «Где жить хорошо?» из сюжета Москва 24.",
       "paths": [
         "src/content/archives/m24-hackathon.md"
-      ]
+      ],
+      "verification": {
+        "status": "dns_failure",
+        "checkedAt": "2026-11-05T09:43:01.722Z"
+      }
     },
     {
       "url": "http://goodplacetolive.ru",
@@ -293,11 +319,15 @@
     {
       "url": "http://moscow.battlehack.org/",
       "canonical": "http://moscow.battlehack.org/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "organizer_site",
+      "reason": "Страница организаторов Battle Hack; связана с ранее проверенной ссылкой на питч.",
       "paths": [
         "src/content/archives/spark-profitbutton-battlehack.md"
-      ]
+      ],
+      "verification": {
+        "status": "dns_failure",
+        "checkedAt": "2026-11-05T09:43:01.833Z"
+      }
     },
     {
       "url": "http://moscow.battlehack.org/idea/702",
@@ -315,11 +345,15 @@
     {
       "url": "http://ria56.ru/posts/836546454156416465476464.htm",
       "canonical": "http://ria56.ru/posts/836546454156416465476464.htm",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "other_contestant",
+      "reason": "Ссылка на работу другого участника BudgetApps.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "timeout",
+        "checkedAt": "2026-11-05T09:43:19.950Z"
+      }
     },
     {
       "url": "http://u.kanobu.ru/editor/images/19/04db0c27-ce7a-441a-ae0b-f7cbfa37e94c.jpg",
@@ -433,40 +467,57 @@
     {
       "url": "http://www.cherinfo.ru/",
       "canonical": "http://www.cherinfo.ru/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "organizer_site",
+      "reason": "Главная страница городского портала Череповца — источник репортажа, ссылка на конкретное видео учтена отдельно.",
       "paths": [
         "src/content/archives/hackpoint-2-cherepovets-2013.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:14.047Z"
+      }
     },
     {
       "url": "http://www.e-xecutive.ru/community/articles/1957516/?page=0",
       "canonical": "http://www.e-xecutive.ru/community/articles/1957516/?page=0",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "other_contestant",
+      "reason": "Материал другого участника BudgetApps.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:12.412Z"
+      }
     },
     {
       "url": "http://www.kenlandrum.com/kl",
       "canonical": "http://www.kenlandrum.com/kl",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "extraction_artifact",
+      "reason": "Усечённый при извлечении URL; полный адрес шаблонов — context-12.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:12.483Z"
+      },
+      "correctUrl": "http://www.kenlandrum.com/kl_website/artwork/spider.html"
     },
     {
       "url": "http://www.kenlandrum.com/kl_website/artwork/spider.html",
       "canonical": "http://www.kenlandrum.com/kl_website/artwork/spider.html",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Работа Ken Landrum с шаблонами костюма Человека-паука, указанная как референс в инструкции.",
       "paths": [
         "src/content/archives/dtf-deadspace-howto.md",
         "src/content/archives/habr-deadspace-cosplay.md",
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:17.137Z"
+      }
     },
     {
       "url": "http://www.w3.org/2000/svg",
@@ -480,20 +531,28 @@
     {
       "url": "http://www.zelao.ru/ru/shownews/24303/prosvetitelskiy-proekt-tyi-ne-odin-v-svoem-jilische/",
       "canonical": "http://www.zelao.ru/ru/shownews/24303/prosvetitelskiy-proekt-tyi-ne-odin-v-svoem-jilische/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "other_contestant",
+      "reason": "Материал другого участника BudgetApps.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:31.547Z"
+      }
     },
     {
       "url": "https://a360.co/2ySiKwp",
       "canonical": "https://a360.co/2ySiKwp",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "related_project",
+      "reason": "Ссылка автора на файлы модели в Autodesk Fusion 360.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "authorization_required",
+        "checkedAt": "2026-11-05T09:43:24.668Z"
+      }
     },
     {
       "url": "https://alenev.ru",
@@ -3208,11 +3267,15 @@
     {
       "url": "https://cosplay-podcast.ru",
       "canonical": "https://cosplay-podcast.ru",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "related_project",
+      "reason": "Сайт подкаста «Косплей и прочие штуки», указанный в архивной карточке.",
       "paths": [
         "src/content/archives/nebezdela-ep65-cosplay.md"
-      ]
+      ],
+      "verification": {
+        "status": "tls_error",
+        "checkedAt": "2026-11-05T09:43:23.234Z"
+      }
     },
     {
       "url": "https://cosplay.mave.digital/",
@@ -3241,11 +3304,15 @@
     {
       "url": "https://darovska.com/",
       "canonical": "https://darovska.com/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "profile_or_service",
+      "reason": "Сайт ведущей интервью Tproger Маши Даровской.",
       "paths": [
         "src/content/archives/tproger-hobby.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:29.942Z"
+      }
     },
     {
       "url": "https://dequeuniversity.com/rules/axe/4.12/color-contrast?application=axeAPI",
@@ -3409,12 +3476,16 @@
     {
       "url": "https://fabricondemand.com/ken/landrum.html",
       "canonical": "https://fabricondemand.com/ken/landrum.html",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Сайт печати на ткани, на который ссылается инструкция.",
       "paths": [
         "src/content/archives/dtf-deadspace-howto.md",
         "src/content/archives/habr-deadspace-cosplay.md"
-      ]
+      ],
+      "verification": {
+        "status": "changed_destination",
+        "checkedAt": "2026-11-05T09:43:35.737Z"
+      }
     },
     {
       "url": "https://fonts.googleapis.com",
@@ -3963,11 +4034,16 @@
     {
       "url": "https://github.com/m0rg0t/DeadSpace2",
       "canonical": "https://github.com/m0rg0t/DeadSpace2",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "extraction_artifact",
+      "reason": "Усечённый URL из Markdown; полный репозиторий — https://github.com/m0rg0t/DeadSpace2_rig_cosplay.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:38.225Z"
+      },
+      "correctUrl": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay"
     },
     {
       "url": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay",
@@ -3980,8 +4056,9 @@
         "src/content/archives/instructables-deadspace.md"
       ],
       "verification": {
-        "status": "server_error",
-        "checkedAt": "2026-11-05T09:18:38.521Z"
+        "status": "pdf_excerpt",
+        "checkedAt": "2026-11-05T09:45:16.167Z",
+        "pdf": "/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1"
       }
     },
     {
@@ -6359,11 +6436,15 @@
     {
       "url": "https://itunes.apple.com/ru/app/imonitoring/id914242894?mt=8",
       "canonical": "https://itunes.apple.com/ru/app/imonitoring/id914242894?mt=8",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "other_contestant",
+      "reason": "Приложение другого участника BudgetApps.",
       "paths": [
         "src/content/archives/minfin-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:39.468Z"
+      }
     },
     {
       "url": "https://kanobu.ru/cosplay/dovahkiin/",
@@ -6381,11 +6462,15 @@
     {
       "url": "https://kanobu.ru/games/the-elder-scrolls-v-skyrim/",
       "canonical": "https://kanobu.ru/games/the-elder-scrolls-v-skyrim/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Страница игры Skyrim, ссылка для контекста материала Kanobu.",
       "paths": [
         "src/content/archives/kanobu-skyrim.md"
-      ]
+      ],
+      "verification": {
+        "status": "timeout",
+        "checkedAt": "2026-11-05T09:43:53.949Z"
+      }
     },
     {
       "url": "https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/",
@@ -6403,11 +6488,15 @@
     {
       "url": "https://kunjut.com/",
       "canonical": "https://kunjut.com/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Сервис печати на ткани, указанный в инструкции.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:51.414Z"
+      }
     },
     {
       "url": "https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.apps4russia.ru%2Fru%2Fitogi-konkursa%2F&h=AT031ScaPo5yxafEZT_VodzQMDWAd5d129H8BYMzp0_B3d2CdqrJa7QvEYRvCMJ8dEfx5_3OYEHwsDGr5GtZ9MXrSvNFj8kiSN_4h9_ahOfyhQAuaD1y60f20w45vUicwc68&s=1",
@@ -7598,20 +7687,28 @@
     {
       "url": "https://openai.com/dall-e-2/",
       "canonical": "https://openai.com/dall-e-2/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Страница DALL·E 2, указанная как техническая справка в статье.",
       "paths": [
         "src/content/archives/habr-dalle2.md"
-      ]
+      ],
+      "verification": {
+        "status": "access_check",
+        "checkedAt": "2026-11-05T09:43:44.709Z"
+      }
     },
     {
       "url": "https://openpolice.ru",
       "canonical": "https://openpolice.ru",
-      "category": "related_nested_material",
-      "reason": "Связанный проект или материал, указанный внутри архивной страницы",
+      "category": "related_project",
+      "reason": "Портал открытых данных «Открытая полиция», на котором основывался проект «Где участковый?».",
       "paths": [
         "src/content/archives/gde-uchastkovy-wp8.md"
-      ]
+      ],
+      "verification": {
+        "status": "archive_notice",
+        "checkedAt": "2026-11-05T09:43:47.863Z"
+      }
     },
     {
       "url": "https://openpolice.ru/apps/pc-where-is-policeman/",
@@ -7809,11 +7906,15 @@
     {
       "url": "https://spb-frontend.ru/",
       "canonical": "https://spb-frontend.ru/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "organizer_site",
+      "reason": "Сайт сообщества SPB Frontend, организовавшего выступление.",
       "paths": [
         "src/content/archives/drinkup-wysiwyg.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:51.834Z"
+      }
     },
     {
       "url": "https://sun9-1.userapi.com/s/v1/ig1/5sZXLpjIjGHfbs0W9biH5bXIEp8vvpCzKT4YrbMy17THw_Kkzk7z-14-6IhBZZTUlnAhF_78.jpg?quality=96&as=32x24,48x36,72x54,108x81,160x120,240x180,360x270,480x360,540x405,640x480,720x540,1080x810,1280x960,1440x1080,2048x1536&from=bu&cs=2048x0",
@@ -13095,11 +13196,15 @@
     {
       "url": "https://twitter.com/Troxx_cosplay/status/1550895846031609857?s=20&t=7yKufqLykT0iM7OjzXEdaQ",
       "canonical": "https://twitter.com/Troxx_cosplay/status/1550895846031609857?s=20&t=7yKufqLykT0iM7OjzXEdaQ",
-      "category": "profile_or_service",
-      "reason": "Профиль автора, фотографа, участника или издания; связь указана в контексте исходной статьи",
+      "category": "third_party_post",
+      "reason": "Конкретный пост Troxx_cosplay, на который автор ссылается как на референс в статье о DALL·E 2; не профиль и не работа Антона.",
       "paths": [
         "src/content/archives/habr-dalle2.md"
-      ]
+      ],
+      "verification": {
+        "status": "network_error",
+        "checkedAt": "2026-11-05T09:44:20.234Z"
+      }
     },
     {
       "url": "https://twitter.com/m0rg0t",
@@ -13603,11 +13708,19 @@
     {
       "url": "https://vk.com/video-176027821",
       "canonical": "https://vk.com/video-176027821",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "extraction_artifact",
+      "reason": "Усечённый адрес из Markdown; полные ссылки — VK-видео 456239022 и 456239023, проверены ранее.",
       "paths": [
         "src/content/archives/dtf-deadspace-howto.md",
         "src/content/archives/habr-deadspace-cosplay.md"
+      ],
+      "verification": {
+        "status": "not_found",
+        "checkedAt": "2026-11-05T09:43:55.083Z"
+      },
+      "correctUrls": [
+        "https://vk.com/video-176027821_456239022",
+        "https://vk.com/video-176027821_456239023"
       ]
     },
     {
@@ -14310,11 +14423,15 @@
     {
       "url": "https://www.deviantart.com/toughraid3r37890/art/Dead-Space-2-Advanced-Suit-211534367",
       "canonical": "https://www.deviantart.com/toughraid3r37890/art/Dead-Space-2-Advanced-Suit-211534367",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Работа toughraid3r37890 на DeviantArt, указанная автором инструкции в качестве референса.",
       "paths": [
         "src/content/archives/instructables-deadspace.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:43:59.563Z"
+      }
     },
     {
       "url": "https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807",
@@ -14841,11 +14958,15 @@
     {
       "url": "https://www.sksprops.com/",
       "canonical": "https://www.sksprops.com/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Сайт SKS Props, упомянутый как источник референсов для изготовления резака.",
       "paths": [
         "src/content/archives/dead-space-vk-article-2019.md"
-      ]
+      ],
+      "verification": {
+        "status": "available_context",
+        "checkedAt": "2026-11-05T09:44:01.203Z"
+      }
     },
     {
       "url": "https://www.slideshare.net/antonlenev",
@@ -14860,11 +14981,15 @@
     {
       "url": "https://www.sticknfind.com/",
       "canonical": "https://www.sticknfind.com/",
-      "category": "contextual_reference",
-      "reason": "Ссылка внутри статьи на сторонний проект, инструмент или источник; персональная связь не установлена",
+      "category": "third_party_reference",
+      "reason": "Сайт производителя маяков Stick’n’Find, упомянутых как приз конкурса.",
       "paths": [
         "src/content/archives/apptractor-budgetapps.md"
-      ]
+      ],
+      "verification": {
+        "status": "dns_failure",
+        "checkedAt": "2026-11-05T09:43:54.527Z"
+      }
     },
     {
       "url": "https://www.youtube.com/@vladilenminin",

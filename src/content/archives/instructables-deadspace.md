@@ -18,6 +18,8 @@ images:
 
 [Визуальный фрагмент оригинала (PDF, выпуск 4, стр. 1)](/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=1)
 
+[Репозиторий костюма: фрагмент страницы (PDF)](/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1)
+
 ---
 
 ## Introduction: Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke
