@@ -20,6 +20,9 @@ tags:
 
 ![Команда Profit Button на PayPal Battle Hack Moscow](/archives/spark-profitbutton-battlehack/cover.jpg)
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 3, стр. 2)](/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=2)
+
 ---
 
 Команда **Profit Button** получила специальный приз от **Ecwid** на хакатоне **PayPal Battle Hack 2013** в Москве — за лучшее решение, в котором использована технология Ecwid.

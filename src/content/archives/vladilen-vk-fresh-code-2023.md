@@ -12,6 +12,9 @@ videos:
 ---
 
 
+[Визуальный фрагмент оригинала (PDF, выпуск 4, стр. 6)](/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=6)
+
+
 *Это конспект влога Владилена Минина. [Смотреть на YouTube](https://www.youtube.com/watch?v=jjVvxWlKwZc) · [Зеркало ВКонтакте](https://vk.com/wall-166562603_6616).*
 
 ## Что это за ролик и зачем его смотреть

@@ -31,6 +31,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на www.igromania.ru](https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 4, стр. 3)](/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=3)
+
 ---
 
 
