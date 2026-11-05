@@ -6,7 +6,8 @@ import expected from './fixtures/routes-v5.json';
 import { DIST_DIR, estimateTokens, walk } from './generate-markdown';
 
 const htmlFiles = (await walk(DIST_DIR)).filter(path => !path.includes('yandex_')).sort();
-assert.deepEqual(htmlFiles.map(path => relative(DIST_DIR, path)), expected, 'All 104 pre-upgrade public routes must remain unchanged');
+const expectedRoutes = [...expected, 'pdf-evidence/index.html'].sort();
+assert.deepEqual(htmlFiles.map(path => relative(DIST_DIR, path)), expectedRoutes, 'Pre-upgrade routes and the PDF evidence index must be present');
 let twins = 0;
 for (const path of htmlFiles) {
   const page = parse(await readFile(path, 'utf8'));
@@ -19,4 +20,4 @@ for (const path of htmlFiles) {
   assert.equal(Number(count), estimateTokens(md), `${path}: Markdown token count`);
   twins++;
 }
-console.log(`Verified ${htmlFiles.length} unchanged routes and ${twins} Markdown twins`);
+console.log(`Verified ${htmlFiles.length} routes and ${twins} Markdown twins`);
