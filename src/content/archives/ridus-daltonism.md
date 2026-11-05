@@ -16,6 +16,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на www.ridus.ru](https://www.ridus.ru/news/151954.html)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 3)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=3)
+
 ---
 
      
