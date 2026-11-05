@@ -18,6 +18,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на Газета Рыбинск](https://gazeta-rybinsk.ru/2015/04/29/18147)*
 
+
+[Визуальный фрагмент оригинала (PDF, стр. 5)](/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=5)
+
 ---
 
 [Темы](https://gazeta-rybinsk.ru/category/temy "Темы") 29 апреля 2015 11:39

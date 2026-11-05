@@ -18,6 +18,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на Газета Рыбинск](https://gazeta-rybinsk.ru/2020/11/21/77291)*
 
+
+[Визуальный фрагмент оригинала (PDF, стр. 6)](/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=6)
+
 ---
 
 [Темы](https://gazeta-rybinsk.ru/category/temy "Темы") 21 ноября 2020 10:00

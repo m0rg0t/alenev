@@ -25,6 +25,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на dtf.ru](https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 3, стр. 1)](/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=1)
+
 ---
 
 Fandom: Dead Space 2  

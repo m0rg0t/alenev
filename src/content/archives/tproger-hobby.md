@@ -28,6 +28,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на tproger.ru](https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 2)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=2)
+
 ---
 
 

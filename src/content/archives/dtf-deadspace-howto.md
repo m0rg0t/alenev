@@ -32,6 +32,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на dtf.ru](https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 5)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=5)
+
 ---
 
 ## Зачем и о чем?

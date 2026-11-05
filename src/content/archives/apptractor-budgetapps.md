@@ -18,6 +18,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на AppTractor](https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 1)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=1)
+
 ---
 
 

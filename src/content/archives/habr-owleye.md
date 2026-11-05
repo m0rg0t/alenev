@@ -12,6 +12,9 @@ tags: ["OwlEye", "accessibility", "Arduino", "wearable"]
 
 *Это архивная копия статьи. [Оригинал на Habr](https://habr.com/ru/articles/754234/)*
 
+
+[Визуальный фрагмент оригинала (PDF, стр. 2)](/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=2)
+
 ---
 
 Контент статьи будет добавлен после архивирования с помощью скрипта archive-fetcher.

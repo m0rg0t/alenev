@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import sources from '../data/pdf-evidence.json';
+const materials = sources.filter((source) => source.group === 'other');
+const books = sources.filter((source) => source.group === 'audiobook');
+---
+
+<BaseLayout title="PDF-фрагменты источников — Архив" description="Визуальные фрагменты страниц публикаций, проектов и карточек аудиокниг с указанием источников.">
+  <div class="evidence">
+    <h1>PDF-фрагменты источников</h1>
+    <p>Снимки сохраняют отдельные части страниц и дату получения. Полные статьи, аудио, видео и файлы проектов в них не воспроизведены.</p>
+    <h2>Публикации, проекты и записи</h2>
+    <ul>
+      {materials.map((item) => <li><a href={item.source} target="_blank" rel="noopener">{item.title}</a> — <a href={item.pdf}>фрагмент PDF</a></li>)}
+    </ul>
+    <h2 id="audiobooks">Карточки аудиокниг</h2>
+    <ul>
+      {books.map((item) => <li><a href={item.source} target="_blank" rel="noopener">{item.title}</a> — <a href={item.pdf}>фрагмент PDF</a></li>)}
+    </ul>
+    <p><a href="/publications">← К публикациям</a></p>
+  </div>
+</BaseLayout>
+
+<style>
+  .evidence { max-width: 800px; margin: 0 auto; line-height: 1.65; }
+  h1, h2 { margin: 1.5em 0 0.6em; }
+  li { margin: 0.5em 0; overflow-wrap: anywhere; }
+</style>

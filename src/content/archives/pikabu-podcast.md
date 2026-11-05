@@ -20,6 +20,9 @@ images:
 
 *Это архивная копия. [Оригинал на Pikabu](https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 4)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=4)
+
 ---
 
 Пост о запуске подкаста «Косплей и прочие штуки».

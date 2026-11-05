@@ -11,6 +11,9 @@ coverImage: "/archives/minfin-budgetapps/cover.png"
 
 *Это архивная копия статьи. [Оригинал на Минфин РФ](https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps)*
 
+
+[Визуальный фрагмент оригинала (PDF, выпуск 2, стр. 7)](/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=7)
+
 ---
 
 Торжественная церемония награждения победителей конкурса состоится 25 марта 2015 г. на территории Федерального казначейства (ул. Ильинка, д.7), начало мероприятия в 12 00.

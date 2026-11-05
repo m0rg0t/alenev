@@ -21,6 +21,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на Газета Рыбинск](https://gazeta-rybinsk.ru/2018/11/17/40482)*
 
+
+[Визуальный фрагмент оригинала (PDF, стр. 4)](/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=4)
+
 ---
 
 [Избранное](https://gazeta-rybinsk.ru/category/izbrannoe "Избранное") [Темы](https://gazeta-rybinsk.ru/category/temy "Темы") 17 ноября 2018 10:00
