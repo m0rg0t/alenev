@@ -32,6 +32,9 @@ images:
 
 *Это архивная копия статьи. [Оригинал на Habr](https://habr.com/ru/articles/680136/)*
 
+
+[Визуальный фрагмент оригинала (PDF, стр. 1)](/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=1)
+
 ---
 
 
