@@ -1,0 +1,1297 @@
+{
+  "description": "Результаты отдельных проверок браузером 5 ноября 2026 UTC. HTTP 200 не означает, что материал загрузился. Снимки сохраняют лишь показанные фрагменты.",
+  "items": [
+    {
+      "id": "legacy-01",
+      "url": "https://gazeta-rybinsk.ru/2018/11/13/40444",
+      "checkedAt": "2026-11-05T09:26:04.894Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=24"
+    },
+    {
+      "id": "legacy-02",
+      "url": "https://mariniverse.com/nebezdela-3-11",
+      "checkedAt": "2026-11-05T09:25:59.658Z",
+      "httpStatus": 200,
+      "status": "expired_domain",
+      "note": "На странице сообщение об истечении домена; прежний эпизод не отображается."
+    },
+    {
+      "id": "legacy-03",
+      "url": "https://ryabinsk.bezformata.com/listnews/menyayushij-realnost/71003462/",
+      "checkedAt": "2026-11-05T09:25:58.435Z",
+      "httpStatus": 403,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-04",
+      "url": "https://smartnews.ru/regions/vologda/13437.html#item-198861",
+      "checkedAt": "2026-11-05T09:26:06.354Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=25"
+    },
+    {
+      "id": "legacy-05",
+      "url": "https://vk.com/video-138904538_456239103",
+      "checkedAt": "2026-11-05T09:26:08.851Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-06",
+      "url": "https://vk.com/video-166562603_456239170",
+      "checkedAt": "2026-11-05T09:26:09.563Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-07",
+      "url": "https://vk.com/video-166562603_456239313",
+      "checkedAt": "2026-11-05T09:26:16.188Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-08",
+      "url": "https://vk.com/video-166562603_456239315",
+      "checkedAt": "2026-11-05T09:26:18.126Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-09",
+      "url": "https://vk.com/video-166562603_456239396",
+      "checkedAt": "2026-11-05T09:26:20.843Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-10",
+      "url": "https://vk.com/video220730549_456239696",
+      "checkedAt": "2026-11-05T09:26:19.522Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-11",
+      "url": "https://vk.com/video220916317_456240978",
+      "checkedAt": "2026-11-05T09:26:26.038Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-12",
+      "url": "https://vk.com/video4443423_456240267",
+      "checkedAt": "2026-11-05T09:26:29.236Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "legacy-13",
+      "url": "https://vk.com/video4443423_456240268",
+      "checkedAt": "2026-11-05T09:26:28.822Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-14",
+      "url": "https://vk.com/video4443423_456240269",
+      "checkedAt": "2026-11-05T09:26:29.902Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-15",
+      "url": "https://vk.com/video4443423_456240270",
+      "checkedAt": "2026-11-05T09:26:35.231Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-16",
+      "url": "https://vk.com/video4443423_456240271",
+      "checkedAt": "2026-11-05T09:26:38.548Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-17",
+      "url": "https://vk.com/video4443423_456240272",
+      "checkedAt": "2026-11-05T09:26:38.690Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-18",
+      "url": "https://vk.com/video4443423_456240273",
+      "checkedAt": "2026-11-05T09:26:39.057Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-19",
+      "url": "https://vk.com/video4443423_456240274",
+      "checkedAt": "2026-11-05T09:26:44.354Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-20",
+      "url": "https://vk.com/video4443423_456240275",
+      "checkedAt": "2026-11-05T09:26:47.718Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-21",
+      "url": "https://vk.com/wall-166562603_11207",
+      "checkedAt": "2026-11-05T09:26:44.339Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-22",
+      "url": "https://vk.com/wall-166562603_6228",
+      "checkedAt": "2026-11-05T09:26:44.647Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-23",
+      "url": "https://vk.com/wall-166562603_6616",
+      "checkedAt": "2026-11-05T09:26:50.599Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-24",
+      "url": "https://vk.com/wall-166562603_8087",
+      "checkedAt": "2026-11-05T09:26:50.087Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-25",
+      "url": "https://vk.com/wall-166562603_8107",
+      "checkedAt": "2026-11-05T09:26:50.186Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-26",
+      "url": "https://vk.com/wall-45608457_12205",
+      "checkedAt": "2026-11-05T09:26:53.313Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-27",
+      "url": "https://vk.com/wall-79997904_596356",
+      "checkedAt": "2026-11-05T09:26:55.975Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-28",
+      "url": "https://vk.com/wall4443423_2886",
+      "checkedAt": "2026-11-05T09:26:55.820Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-29",
+      "url": "https://vk.com/wall4443423_2893",
+      "checkedAt": "2026-11-05T09:26:56.235Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "legacy-30",
+      "url": "https://www.facebook.com/photo/?fbid=448239478631419&set=a.424824814306219",
+      "checkedAt": "2026-11-05T09:27:00.767Z",
+      "httpStatus": 200,
+      "status": "sign_in",
+      "note": "Страница требует вход в Facebook; публикация не просмотрена."
+    },
+    {
+      "id": "legacy-31",
+      "url": "https://www.facebook.com/photo/?fbid=478720675574159&set=a.378710025575225",
+      "checkedAt": "2026-11-05T09:27:03.335Z",
+      "httpStatus": 200,
+      "status": "sign_in",
+      "note": "Страница требует вход в Facebook; публикация не просмотрена."
+    },
+    {
+      "id": "legacy-32",
+      "url": "https://www.facebook.com/photo/?fbid=501238709973723&set=a.268597993237797",
+      "checkedAt": "2026-11-05T09:27:03.098Z",
+      "httpStatus": 200,
+      "status": "sign_in",
+      "note": "Страница требует вход в Facebook; публикация не просмотрена."
+    },
+    {
+      "id": "legacy-33",
+      "url": "https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Suit/",
+      "checkedAt": "2026-11-05T09:27:02.845Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "link-001",
+      "url": "https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor",
+      "checkedAt": "2026-11-05T09:11:56.411Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=1"
+    },
+    {
+      "id": "link-002",
+      "url": "https://github.com/m0rg0t/OwlEye",
+      "checkedAt": "2026-11-05T09:12:04.678Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=2"
+    },
+    {
+      "id": "link-003",
+      "url": "https://github.com/m0rg0t/content-to-markdown-extension",
+      "checkedAt": "2026-11-05T09:12:04.878Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=3"
+    },
+    {
+      "id": "link-004",
+      "url": "https://github.com/m0rg0t/js-url-downloader",
+      "checkedAt": "2026-11-05T09:12:05.346Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=4"
+    },
+    {
+      "id": "link-005",
+      "url": "https://habr.com/ru/companies/vk/articles/1011864/",
+      "checkedAt": "2026-11-05T09:12:06.699Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=5"
+    },
+    {
+      "id": "link-006",
+      "url": "https://landing.selfpub.ru/litres_polynbooks-list",
+      "checkedAt": "2026-11-05T09:12:12.397Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=6"
+    },
+    {
+      "id": "link-007",
+      "url": "https://landing.selfpub.ru/sci-fi-2024-winners",
+      "checkedAt": "2026-11-05T09:12:12.499Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=7"
+    },
+    {
+      "id": "link-008",
+      "url": "https://music.yandex.ru/album/11222632",
+      "checkedAt": "2026-11-05T09:12:13.656Z",
+      "httpStatus": 200,
+      "status": "regional_restriction",
+      "note": "Сервис сообщил о недоступности в регионе; аудио не получено."
+    },
+    {
+      "id": "link-009",
+      "url": "https://open.spotify.com/show/73jsU2vpqrcqpFkRQzU3j2",
+      "checkedAt": "2026-11-05T09:12:14.717Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "Spotify показал пустую оболочку; карточка подкаста визуально не подтверждена."
+    },
+    {
+      "id": "link-010",
+      "url": "https://openpolice.ru/apps/pc-where-is-policeman/",
+      "checkedAt": "2026-11-05T09:12:18.891Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "link-011",
+      "url": "https://owleye.space/",
+      "checkedAt": "2026-11-05T09:12:16.908Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "Error: page.goto: net::ERR_SSL_PROTOCOL_ERROR at https://owleye.space/"
+    },
+    {
+      "id": "link-012",
+      "url": "https://podcasts.apple.com/ru/podcast/косплей-и-прочие-штуки/id1520630151",
+      "checkedAt": "2026-11-05T09:12:21.941Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=8"
+    },
+    {
+      "id": "link-013",
+      "url": "https://polit.ru/articles/strana/gde-uchastkovyy-2013-07-04/",
+      "checkedAt": "2026-11-05T09:12:22.149Z",
+      "httpStatus": 403,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "link-014",
+      "url": "https://vk.com/@4443423-it-goroskop-len-kak-dvigatel-razrabotki-i-neozhidannaya-novo",
+      "checkedAt": "2026-11-05T09:12:28.970Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=9"
+    },
+    {
+      "id": "link-015",
+      "url": "https://vk.com/@4443423-vk-mini-apps-proverka-podpisi-i-nodejs",
+      "checkedAt": "2026-11-05T09:12:30.131Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=10"
+    },
+    {
+      "id": "link-016",
+      "url": "https://vk.com/app51769331?mid=4443423",
+      "checkedAt": "2026-11-05T09:12:29.141Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-017",
+      "url": "https://vk.com/app51788038_4443423",
+      "checkedAt": "2026-11-05T09:12:30.647Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-018",
+      "url": "https://vk.com/app51819171_4443423",
+      "checkedAt": "2026-11-05T09:12:36.412Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-019",
+      "url": "https://vk.com/app51896624_4443423",
+      "checkedAt": "2026-11-05T09:12:36.240Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-020",
+      "url": "https://vk.com/app53995977",
+      "checkedAt": "2026-11-05T09:12:37.399Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-021",
+      "url": "https://vk.com/press/dev-2025",
+      "checkedAt": "2026-11-05T09:12:42.000Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=11"
+    },
+    {
+      "id": "link-022",
+      "url": "https://vk.com/press/freshcode-2024-results",
+      "checkedAt": "2026-11-05T09:12:47.975Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=12"
+    },
+    {
+      "id": "link-023",
+      "url": "https://vk.com/video-166562603_456239170",
+      "checkedAt": "2026-11-05T09:12:48.186Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-024",
+      "url": "https://vk.com/video-166562603_456239313",
+      "checkedAt": "2026-11-05T09:12:47.898Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-025",
+      "url": "https://vk.com/video220730549_456239696",
+      "checkedAt": "2026-11-05T09:12:51.791Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-026",
+      "url": "https://vk.com/video220916317_456240978",
+      "checkedAt": "2026-11-05T09:12:58.540Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-027",
+      "url": "https://vk.com/wall-111904385_97643",
+      "checkedAt": "2026-11-05T09:12:55.385Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-028",
+      "url": "https://vk.com/wall-114389229_92521",
+      "checkedAt": "2026-11-05T09:12:55.726Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-029",
+      "url": "https://vk.com/wall-147415323_19590",
+      "checkedAt": "2026-11-05T09:12:59.134Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-030",
+      "url": "https://vk.com/wall-157242843_50081",
+      "checkedAt": "2026-11-05T09:13:02.487Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-031",
+      "url": "https://vk.com/wall-166562603_11207",
+      "checkedAt": "2026-11-05T09:13:03.061Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-032",
+      "url": "https://vk.com/wall-166562603_6228",
+      "checkedAt": "2026-11-05T09:13:05.758Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-033",
+      "url": "https://vk.com/wall-166562603_6616",
+      "checkedAt": "2026-11-05T09:13:08.273Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-034",
+      "url": "https://vk.com/wall-166562603_8107",
+      "checkedAt": "2026-11-05T09:13:10.010Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-035",
+      "url": "https://vk.com/wall-166562603_9332",
+      "checkedAt": "2026-11-05T09:13:10.664Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-036",
+      "url": "https://vk.com/wall-171301168_9014",
+      "checkedAt": "2026-11-05T09:13:12.910Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-037",
+      "url": "https://vk.com/wall-172806430_919",
+      "checkedAt": "2026-11-05T09:13:15.756Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-038",
+      "url": "https://vk.com/wall-174227268_445",
+      "checkedAt": "2026-11-05T09:13:17.341Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-039",
+      "url": "https://vk.com/wall-174227268_551",
+      "checkedAt": "2026-11-05T09:13:18.505Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-040",
+      "url": "https://vk.com/wall-212438347_48",
+      "checkedAt": "2026-11-05T09:13:20.186Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-041",
+      "url": "https://vk.com/wall-21253509_21745",
+      "checkedAt": "2026-11-05T09:13:23.590Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-042",
+      "url": "https://vk.com/wall-36491054_13471",
+      "checkedAt": "2026-11-05T09:13:24.735Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-043",
+      "url": "https://vk.com/wall-57521509_3188",
+      "checkedAt": "2026-11-05T09:13:25.982Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-044",
+      "url": "https://vk.com/wall-70020805_367739",
+      "checkedAt": "2026-11-05T09:13:28.023Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-045",
+      "url": "https://vk.com/wall4443423_2328",
+      "checkedAt": "2026-11-05T09:13:30.908Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-046",
+      "url": "https://vk.com/wall4443423_2491",
+      "checkedAt": "2026-11-05T09:13:32.441Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-047",
+      "url": "https://vk.com/wall4443423_2751",
+      "checkedAt": "2026-11-05T09:13:33.283Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-048",
+      "url": "https://vk.com/wall4443423_2886",
+      "checkedAt": "2026-11-05T09:13:35.657Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-049",
+      "url": "https://vk.com/wall4443423_2893",
+      "checkedAt": "2026-11-05T09:13:38.696Z",
+      "httpStatus": 200,
+      "status": "incomplete",
+      "note": "VK показал загрузочную или регистрационную оболочку без содержимого; HTTP 200 не доказывает публикацию."
+    },
+    {
+      "id": "link-050",
+      "url": "https://vk.com/wall4443423_3028",
+      "checkedAt": "2026-11-05T09:13:39.695Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "link-051",
+      "url": "https://vk.com/wall4443423_3186",
+      "checkedAt": "2026-11-05T09:13:40.439Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "link-052",
+      "url": "https://www.facebook.com/media/set/?set=a.10152601787121808.1073741837.335007141807",
+      "checkedAt": "2026-11-05T09:13:43.812Z",
+      "httpStatus": 200,
+      "status": "sign_in",
+      "note": "Страница требует вход в Facebook; публикация не просмотрена."
+    },
+    {
+      "id": "link-053",
+      "url": "https://www.facebook.com/photo/?fbid=10152601795761808&set=a.10152601787121808",
+      "checkedAt": "2026-11-05T09:13:45.646Z",
+      "httpStatus": 200,
+      "status": "sign_in",
+      "note": "Страница требует вход в Facebook; публикация не просмотрена."
+    },
+    {
+      "id": "link-054",
+      "url": "https://www.litres.ru/audiobook/anton-lenev/sila-malyh-veschey-71540566/",
+      "checkedAt": "2026-11-05T09:13:48.349Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=1"
+    },
+    {
+      "id": "link-055",
+      "url": "https://www.litres.ru/audiobook/dzhon-smit-32488950/introvert-kak-introvertam-obresti-vnutrennuu-silu-zavo-69541339/",
+      "checkedAt": "2026-11-05T09:13:48.543Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=2"
+    },
+    {
+      "id": "link-056",
+      "url": "https://www.litres.ru/audiobook/eposy-legendy-i-skazaniya/ilya-muromec-i-kalin-car-70489246/",
+      "checkedAt": "2026-11-05T09:13:51.573Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=3"
+    },
+    {
+      "id": "link-057",
+      "url": "https://www.litres.ru/audiobook/ilya-solomennyy/sumerechnyy-ohotnik-2-70459078/",
+      "checkedAt": "2026-11-05T09:13:53.482Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=4"
+    },
+    {
+      "id": "link-058",
+      "url": "https://www.litres.ru/audiobook/ilya-solomennyy/sumerechnyy-ohotnik-70246126/",
+      "checkedAt": "2026-11-05T09:13:56.661Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=5"
+    },
+    {
+      "id": "link-059",
+      "url": "https://www.litres.ru/audiobook/katya-li-32368102/zagadat-zhelanie-69829357/",
+      "checkedAt": "2026-11-05T09:13:56.265Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=6"
+    },
+    {
+      "id": "link-060",
+      "url": "https://www.litres.ru/audiobook/maksim-gorkiy/o-nashih-dostizheniyah-69647014/",
+      "checkedAt": "2026-11-05T09:13:59.334Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=7"
+    },
+    {
+      "id": "link-061",
+      "url": "https://www.litres.ru/audiobook/maksim-gorkiy/semen-podyachev-69842725/",
+      "checkedAt": "2026-11-05T09:14:01.182Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=8"
+    },
+    {
+      "id": "link-062",
+      "url": "https://www.litres.ru/audiobook/nik-vinsent-33147955/i-prishel-hruka-71420611/",
+      "checkedAt": "2026-11-05T09:14:03.873Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=9"
+    },
+    {
+      "id": "link-063",
+      "url": "https://www.litres.ru/audiobook/takashi-itiyama/bumazhnyy-dom-70874453/",
+      "checkedAt": "2026-11-05T09:14:05.012Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=10"
+    },
+    {
+      "id": "link-064",
+      "url": "https://www.litres.ru/audiobook/tatyana-ohitina-31323612/adskie-sekretarshi-i-vlastnyy-boss-71470699/",
+      "checkedAt": "2026-11-05T09:14:07.089Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=11"
+    },
+    {
+      "id": "link-065",
+      "url": "https://www.litres.ru/audiobook/vitaliy-aleksandrovi/saga-o-bessmertnyh-duhah-kniga-0-predystoriya-ordena-69546844/",
+      "checkedAt": "2026-11-05T09:14:09.666Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=12"
+    },
+    {
+      "id": "link-066",
+      "url": "https://www.litres.ru/audiobook/vlas-doroshevich/pervaya-progulka-bogdyhana-69549196/",
+      "checkedAt": "2026-11-05T09:14:11.486Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-litres-cards.pdf#page=13"
+    },
+    {
+      "id": "link-067",
+      "url": "https://www.reddit.com/r/cosplayprops/comments/b3fzz0/self_wip_dead_space_2_rig_from_eva_and_genuine/",
+      "checkedAt": "2026-11-05T09:14:10.130Z",
+      "httpStatus": 200,
+      "status": "access_blocked",
+      "note": "Reddit показал блокировку сетевой безопасности; публикация не просмотрена."
+    },
+    {
+      "id": "link-068",
+      "url": "https://www.youtube.com/watch?v=3kBqrkSM83s",
+      "checkedAt": "2026-11-05T09:14:25.273Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "TimeoutError: page.goto: Timeout 18000ms exceeded."
+    },
+    {
+      "id": "link-069",
+      "url": "https://www.youtube.com/watch?v=C8Mz7Cp_4Ls",
+      "checkedAt": "2026-11-05T09:14:17.906Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=13"
+    },
+    {
+      "id": "link-070",
+      "url": "https://www.youtube.com/watch?v=CNzWQgyH4Dk",
+      "checkedAt": "2026-11-05T09:14:17.672Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=14"
+    },
+    {
+      "id": "link-071",
+      "url": "https://www.youtube.com/watch?v=MxjNTSK-UI4",
+      "checkedAt": "2026-11-05T09:14:19.459Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=15"
+    },
+    {
+      "id": "link-072",
+      "url": "https://www.youtube.com/watch?v=RGIRdYbMdaE",
+      "checkedAt": "2026-11-05T09:14:25.922Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=16"
+    },
+    {
+      "id": "link-073",
+      "url": "https://www.youtube.com/watch?v=kzzYJEoJXzo",
+      "checkedAt": "2026-11-05T09:14:25.706Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=17"
+    },
+    {
+      "id": "link-074",
+      "url": "https://www.youtube.com/watch?v=lkO7DcZPaWU",
+      "checkedAt": "2026-11-05T09:14:28.876Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=18"
+    },
+    {
+      "id": "link-075",
+      "url": "https://www.youtube.com/watch?v=oc0lnoCJdpQ",
+      "checkedAt": "2026-11-05T09:14:38.103Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=19"
+    },
+    {
+      "id": "link-076",
+      "url": "https://www.youtube.com/watch?v=t1tpZejtXGo",
+      "checkedAt": "2026-11-05T09:14:32.749Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=20"
+    },
+    {
+      "id": "link-077",
+      "url": "https://www.youtube.com/watch?v=xdY7BrkbRUo",
+      "checkedAt": "2026-11-05T09:14:33.196Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=21"
+    },
+    {
+      "id": "link-078",
+      "url": "https://www.youtube.com/watch?v=y2ymtaTPDUE",
+      "checkedAt": "2026-11-05T09:14:36.876Z",
+      "httpStatus": 200,
+      "status": "age_sign_in",
+      "note": "Для просмотра видео требуется вход из-за возрастного ограничения; не обходилось."
+    },
+    {
+      "id": "nested-01",
+      "url": "http://budgetapps.ru/contest#winners",
+      "checkedAt": "2026-11-05T09:18:37.750Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Домен ведёт на сторонний сервис подбора кредитов; исходная страница конкурса не подтверждена."
+    },
+    {
+      "id": "nested-02",
+      "url": "http://goodplacetolive.ru/",
+      "checkedAt": "2026-11-05T09:18:22.391Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at http://goodplacetolive.ru/"
+    },
+    {
+      "id": "nested-03",
+      "url": "http://moscow.battlehack.org/idea/702",
+      "checkedAt": "2026-11-05T09:18:21.524Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at http://moscow.battlehack.org/idea/702"
+    },
+    {
+      "id": "nested-04",
+      "url": "http://digitaloctober.ru/ru/events/hakafon_paypal_battle_hack_v_do",
+      "checkedAt": "2026-11-05T09:18:29.482Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "nested-05",
+      "url": "https://github.com/m0rg0t/GoodPlaceToLive/tree/web-js",
+      "checkedAt": "2026-11-05T09:18:40.467Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Сохранён визуальный фрагмент; полное содержимое и медиа не сохранены.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=23"
+    },
+    {
+      "id": "nested-06",
+      "url": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay",
+      "checkedAt": "2026-11-05T09:18:38.521Z",
+      "httpStatus": 504,
+      "status": "server_error",
+      "note": "Сервер вернул ошибку или не загрузил материал."
+    },
+    {
+      "id": "nested-07",
+      "url": "https://vk.com/video-176027821_456239022",
+      "checkedAt": "2026-11-05T09:18:39.234Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "nested-08",
+      "url": "https://vk.com/video-176027821_456239023",
+      "checkedAt": "2026-11-05T09:18:47.163Z",
+      "httpStatus": 200,
+      "status": "access_check",
+      "note": "Капча или проверка доступа; не обходилась."
+    },
+    {
+      "id": "nested-09",
+      "url": "https://yadi.sk/d/99gb81cUzQZcgg",
+      "checkedAt": "2026-11-05T09:18:50.411Z",
+      "httpStatus": 200,
+      "status": "large_public_folder",
+      "note": "Видна папка материалов; файлы не скачаны. Один PSD указан 766,5 МБ, TIF — 62,3 МБ, SVG — 34,8 МБ; сервис сообщает о сбоях скачивания."
+    },
+    {
+      "id": "nested-10",
+      "url": "https://vkplay.ru/cosplay/dovahkiin/",
+      "checkedAt": "2026-11-05T09:18:49.689Z",
+      "httpStatus": 200,
+      "status": "not_found",
+      "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "nested-11",
+      "url": "https://kanobu.ru/cosplay/dovahkiin/",
+      "checkedAt": "2026-11-05T09:18:47.633Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Страница вернула 404 или показала страницу «не найдено»."
+    },
+    {
+      "id": "context-01",
+      "url": "http://age71.ru/index.php?option=com",
+      "checkedAt": "2026-11-05T09:43:00.733Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Проверка усечённого адреса вернула 404.",
+      "relation": "Усечённый при извлечении адрес; настоящая ссылка — context-02.",
+      "correctUrl": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474"
+    },
+    {
+      "id": "context-02",
+      "url": "http://age71.ru/index.php?option=com_content&view=article&id=77&Itemid=474",
+      "checkedAt": "2026-11-05T09:43:01.378Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Исходная страница ответила 404.",
+      "relation": "Ссылка на работу другого участника конкурса BudgetApps."
+    },
+    {
+      "id": "context-03",
+      "url": "http://budgetapps.ru/",
+      "checkedAt": "2026-11-05T09:43:01.812Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Перенаправляет на сторонний сервис кредитов; историческая страница отсутствует.",
+      "relation": "Главная страница конкурса BudgetApps, адрес встречается в интервью."
+    },
+    {
+      "id": "context-04",
+      "url": "http://budgetapps.ru/contest",
+      "checkedAt": "2026-11-05T09:43:01.814Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Перенаправляет на сторонний сервис кредитов; не является исторической страницей конкурса.",
+      "relation": "Вариант уже проверенного /contest#winners; фрагмент #winners не отправляется серверу.",
+      "duplicateOf": "http://budgetapps.ru/contest#winners"
+    },
+    {
+      "id": "context-05",
+      "url": "http://fastled.io/",
+      "checkedAt": "2026-11-05T09:43:07.242Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница библиотеки; материал другого автора, не личная публикация.",
+      "relation": "Документация сторонней библиотеки FastLED, упомянутой в инструкции."
+    },
+    {
+      "id": "context-06",
+      "url": "http://goodplacetolive.azurewebsites.net/",
+      "checkedAt": "2026-11-05T09:43:01.722Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается; содержимое не загружено.",
+      "relation": "Бывшая web-версия проекта «Где жить хорошо?» из сюжета Москва 24."
+    },
+    {
+      "id": "context-07",
+      "url": "http://moscow.battlehack.org/",
+      "checkedAt": "2026-11-05T09:43:01.833Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается.",
+      "relation": "Страница организаторов Battle Hack; связана с ранее проверенной ссылкой на питч."
+    },
+    {
+      "id": "context-08",
+      "url": "http://ria56.ru/posts/836546454156416465476464.htm",
+      "checkedAt": "2026-11-05T09:43:19.950Z",
+      "httpStatus": null,
+      "status": "timeout",
+      "note": "При загрузке истёк тайм-аут.",
+      "relation": "Ссылка на работу другого участника BudgetApps."
+    },
+    {
+      "id": "context-09",
+      "url": "http://www.cherinfo.ru/",
+      "checkedAt": "2026-11-05T09:43:14.047Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась главная страница портала, не конкретный репортаж.",
+      "relation": "Главная страница городского портала Череповца — источник репортажа, ссылка на конкретное видео учтена отдельно."
+    },
+    {
+      "id": "context-10",
+      "url": "http://www.e-xecutive.ru/community/articles/1957516/?page=0",
+      "checkedAt": "2026-11-05T09:43:12.412Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась статья; связь с Антоном не установлена.",
+      "relation": "Материал другого участника BudgetApps."
+    },
+    {
+      "id": "context-11",
+      "url": "http://www.kenlandrum.com/kl",
+      "checkedAt": "2026-11-05T09:43:12.483Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый адрес вернул 404.",
+      "relation": "Усечённый при извлечении URL; полный адрес шаблонов — context-12.",
+      "correctUrl": "http://www.kenlandrum.com/kl_website/artwork/spider.html"
+    },
+    {
+      "id": "context-12",
+      "url": "http://www.kenlandrum.com/kl_website/artwork/spider.html",
+      "checkedAt": "2026-11-05T09:43:17.137Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Страница шаблонов открылась; это сторонние изображения, не работа Антона.",
+      "relation": "Работа Ken Landrum с шаблонами костюма Человека-паука, указанная как референс в инструкции."
+    },
+    {
+      "id": "context-13",
+      "url": "http://www.zelao.ru/ru/shownews/24303/prosvetitelskiy-proekt-tyi-ne-odin-v-svoem-jilische/",
+      "checkedAt": "2026-11-05T09:43:31.547Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Перенаправляет на страницу 404.",
+      "relation": "Материал другого участника BudgetApps."
+    },
+    {
+      "id": "context-14",
+      "url": "https://a360.co/2ySiKwp",
+      "checkedAt": "2026-11-05T09:43:24.668Z",
+      "httpStatus": 403,
+      "status": "authorization_required",
+      "note": "Autodesk отвечает 403 Unauthorized; содержимое и файлы не открывались.",
+      "relation": "Ссылка автора на файлы модели в Autodesk Fusion 360."
+    },
+    {
+      "id": "context-15",
+      "url": "https://cosplay-podcast.ru",
+      "checkedAt": "2026-11-05T09:43:23.234Z",
+      "httpStatus": null,
+      "status": "tls_error",
+      "note": "Браузер сообщает ERR_SSL_PROTOCOL_ERROR; страницу получить не удалось.",
+      "relation": "Сайт подкаста «Косплей и прочие штуки», указанный в архивной карточке."
+    },
+    {
+      "id": "context-16",
+      "url": "https://darovska.com/",
+      "checkedAt": "2026-11-05T09:43:29.942Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылся сайт ведущей; это профиль, не публикация Антона.",
+      "relation": "Сайт ведущей интервью Tproger Маши Даровской."
+    },
+    {
+      "id": "context-17",
+      "url": "https://fabricondemand.com/ken/landrum.html",
+      "checkedAt": "2026-11-05T09:43:35.737Z",
+      "httpStatus": 200,
+      "status": "changed_destination",
+      "note": "Запрошенный путь перенаправлен на главную; исходная страница не подтверждена.",
+      "relation": "Сайт печати на ткани, на который ссылается инструкция."
+    },
+    {
+      "id": "context-18",
+      "url": "https://github.com/m0rg0t/DeadSpace2",
+      "checkedAt": "2026-11-05T09:43:38.225Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый URL вернул 404; полный адрес проверен отдельно и сохранён в PDF.",
+      "relation": "Усечённый URL из Markdown; полный репозиторий — https://github.com/m0rg0t/DeadSpace2_rig_cosplay.",
+      "correctUrl": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay"
+    },
+    {
+      "id": "context-19",
+      "url": "https://itunes.apple.com/ru/app/imonitoring/id914242894?mt=8",
+      "checkedAt": "2026-11-05T09:43:39.468Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "App Store ответил 404.",
+      "relation": "Приложение другого участника BudgetApps."
+    },
+    {
+      "id": "context-20",
+      "url": "https://kanobu.ru/games/the-elder-scrolls-v-skyrim/",
+      "checkedAt": "2026-11-05T09:43:53.949Z",
+      "httpStatus": null,
+      "status": "timeout",
+      "note": "При загрузке истёк тайм-аут.",
+      "relation": "Страница игры Skyrim, ссылка для контекста материала Kanobu."
+    },
+    {
+      "id": "context-21",
+      "url": "https://kunjut.com/",
+      "checkedAt": "2026-11-05T09:43:51.414Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница сервиса; не личная публикация.",
+      "relation": "Сервис печати на ткани, указанный в инструкции."
+    },
+    {
+      "id": "context-22",
+      "url": "https://openai.com/dall-e-2/",
+      "checkedAt": "2026-11-05T09:43:44.709Z",
+      "httpStatus": 403,
+      "status": "access_check",
+      "note": "Сайт ответил 403 и показал проверку; она не обходилась.",
+      "relation": "Страница DALL·E 2, указанная как техническая справка в статье."
+    },
+    {
+      "id": "context-23",
+      "url": "https://openpolice.ru",
+      "checkedAt": "2026-11-05T09:43:47.863Z",
+      "httpStatus": 200,
+      "status": "archive_notice",
+      "note": "Сайт сообщает, что проект переведён в архив; исходные данные и страница приложения не отображаются.",
+      "relation": "Портал открытых данных «Открытая полиция», на котором основывался проект «Где участковый?»."
+    },
+    {
+      "id": "context-24",
+      "url": "https://spb-frontend.ru/",
+      "checkedAt": "2026-11-05T09:43:51.834Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Открылась страница сообщества; запись выступления учитывается отдельно.",
+      "relation": "Сайт сообщества SPB Frontend, организовавшего выступление."
+    },
+    {
+      "id": "context-25",
+      "url": "https://vk.com/video-176027821",
+      "checkedAt": "2026-11-05T09:43:55.083Z",
+      "httpStatus": 404,
+      "status": "not_found",
+      "note": "Усечённый адрес вернул 404; полные видео ранее показали капчу.",
+      "relation": "Усечённый адрес из Markdown; полные ссылки — VK-видео 456239022 и 456239023, проверены ранее.",
+      "correctUrls": [
+        "https://vk.com/video-176027821_456239022",
+        "https://vk.com/video-176027821_456239023"
+      ]
+    },
+    {
+      "id": "context-26",
+      "url": "https://www.deviantart.com/toughraid3r37890/art/Dead-Space-2-Advanced-Suit-211534367",
+      "checkedAt": "2026-11-05T09:43:59.563Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Страница открылась; изображение другого автора не копировалось в PDF.",
+      "relation": "Работа toughraid3r37890 на DeviantArt, указанная автором инструкции в качестве референса."
+    },
+    {
+      "id": "context-27",
+      "url": "https://www.sksprops.com/",
+      "checkedAt": "2026-11-05T09:44:01.203Z",
+      "httpStatus": 200,
+      "status": "available_context",
+      "note": "Сайт открылся; сторонние материалы не копировались.",
+      "relation": "Сайт SKS Props, упомянутый как источник референсов для изготовления резака."
+    },
+    {
+      "id": "context-28",
+      "url": "https://www.sticknfind.com/",
+      "checkedAt": "2026-11-05T09:43:54.527Z",
+      "httpStatus": null,
+      "status": "dns_failure",
+      "note": "DNS-имя не разрешается.",
+      "relation": "Сайт производителя маяков Stick’n’Find, упомянутых как приз конкурса."
+    },
+    {
+      "id": "context-29",
+      "url": "https://twitter.com/Troxx_cosplay/status/1550895846031609857?s=20&t=7yKufqLykT0iM7OjzXEdaQ",
+      "checkedAt": "2026-11-05T09:44:20.234Z",
+      "httpStatus": null,
+      "status": "network_error",
+      "note": "Браузер вернул ERR_HTTP_RESPONSE_CODE_FAILURE; содержимое поста не подтверждено, вход и ограничения не обходились.",
+      "relation": "Конкретный пост Troxx_cosplay, на который автор ссылается как на референс в статье о DALL·E 2; не профиль и не работа Антона."
+    },
+    {
+      "id": "repo-correct",
+      "url": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay",
+      "checkedAt": "2026-11-05T09:45:16.167Z",
+      "httpStatus": 200,
+      "status": "pdf_excerpt",
+      "note": "Шапка публичного репозитория открылась; сохранён PDF-фрагмент. Исходный код в PDF не включён.",
+      "relation": "Полный адрес авторского репозитория костюма Dead Space 2; ранее запрос временно вернул 504.",
+      "pdf": "/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1"
+    }
+  ]
+}

@@ -3,6 +3,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 const audiobooks = [
   {
+    title: "Не беспокойся, я люблю тебя…",
+    author: "Виталий Александрович Кириллов",
+    cover: "ne-bespokoisya-ya-lyublyu-tebya.webp",
+    url: "https://www.litres.ru/audiobook/vitaliy-aleksandrovich-kirillov/ne-bespokoisia-ia-liubliu-tebia-74727652/"
+  },
+  {
     title: "Адские секретарши и властный босс",
     author: "Татьяна Охитина",
     cover: "adskie-sekretarshi.jpg",
@@ -147,6 +153,7 @@ const audiobooks = [
       </div>
     </article>
 
+    <p><a href="/en/pdf-evidence#audiobooks">PDF excerpts of audiobook listings →</a></p>
     <h2>Audiobooks narrated by Anton Lenev</h2>
     <div class="books-grid">
       {audiobooks.map((book) => (
