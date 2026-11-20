@@ -1,6 +1,6 @@
 # Инвентаризация PDF-свидетельств
 
-Снимок основной ветки: `e42f20e280c6743c4f74c2b133efc3637d418651`. Проверка браузером 5 ноября 2026 года; время получения для сохранённых фрагментов указано в PDF в UTC.
+Снимок основной ветки: `e42f20e280c6743c4f74c2b133efc3637d418651`. Первая проверка браузером 5 ноября 2026 года; время получения для сохранённых фрагментов указано в PDF в UTC.
 
 Первые четыре PDF содержат **двадцать пять фрагментов** шапок страниц с названиями и авторами, а также краткие конспекты. Они не являются полными копиями статей и не доказывают содержание за пределами показанного. Материалы включают авторские страницы и публикации других авторов; авторство указано отдельно для каждого фрагмента. Изображения и полные чужие статьи в эти PDF не включены.
 
@@ -17,8 +17,8 @@
 | Карточка | Исходный адрес | Результат |
 | --- | --- | --- |
 | `apptractor-budgetapps` | https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html | PDF, выпуск 2, страница 1; фрагмент шапки |
-| `cheremuha-predator` | https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html | Тайм-аут загрузки; не сохранено |
-| `cheremuha-rybinsk-secrets` | https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html | Тайм-аут загрузки; не сохранено |
+| `cheremuha-predator` | https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html | [Фрагмент от 20 ноября](../../public/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=1) |
+| `cheremuha-rybinsk-secrets` | https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html | [Фрагмент от 20 ноября](../../public/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=2) |
 | `cosplay-stream-2019` | https://www.youtube.com/watch?v=E6M5PwOPUUI | PDF, выпуск 3, страница 4; фрагмент шапки; видео не сохранено |
 | `dead-space-vk-article-2019` | https://vk.com/@m0rg0t-dead-space-2-sozdanie-kostuma-advanced-suit-aizeka-klarka | PDF, выпуск 2, страница 6; фрагмент шапки |
 | `drinkup-wysiwyg` | https://www.youtube.com/watch?v=CEYy-knCG5w | PDF, выпуск 3, страница 5; фрагмент шапки; видео не сохранено |
@@ -37,13 +37,13 @@
 | `instructables-deadspace` | https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/ | PDF, выпуск 4, страница 1; фрагмент шапки |
 | `instructables-owl-led` | https://www.instructables.com/Owl-Necklace-With-LED-Eyes/ | PDF, выпуск 3, страница 3; фрагмент шапки |
 | `instructables-owleye` | https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/ | PDF, выпуск 4, страница 2; фрагмент шапки |
-| `kanobu-skyrim` | https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/ | Открылась при одной проверке, затем снова капча; PDF не сохранён |
+| `kanobu-skyrim` | https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/ | [Фрагмент от 20 ноября](../../public/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=4) |
 | `m24-hackathon` | https://www.m24.ru/videos/svyaz/27042014/50447 | Видео; PDF не создан, видеосодержимое не сохранено. На сайте заявлены ограничения на копирование; права не проверены |
 | `minfin-budgetapps` | https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps | PDF, выпуск 2, страница 7; фрагмент шапки |
 | `nebezdela-ep65-cosplay` | https://nebezdela.mave.digital/ep-65 | PDF, выпуск 4, страница 5; аудио не сохранено |
 | `pikabu-podcast` | https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532 | PDF, выпуск 2, страница 4; фрагмент шапки |
 | `ridus-daltonism` | https://www.ridus.ru/news/151954.html | PDF, выпуск 2, страница 3; фрагмент шапки |
-| `rybinsknote-midjourney` | https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/ | Тайм-аут загрузки; не сохранено |
+| `rybinsknote-midjourney` | https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/ | [Фрагмент от 20 ноября](../../public/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=3) |
 | `spark-profitbutton-battlehack` | https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow | PDF, выпуск 3, страница 2; фрагмент шапки |
 | `thor-process-vk-article-2018` | https://vk.com/@m0rg0t-process-sozdaniya-kostuma-tora-iz-tor-ragnerek | Дополнительный PDF, страница 22; повторно открылась |
 | `tproger-hobby` | https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig | PDF, выпуск 2, страница 2; фрагмент шапки |
@@ -62,11 +62,23 @@
 
 [Репозиторий Dead Space 2 — 1 страница](../../public/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf). SHA-256: `9ecbb2ad44fdae9a04f81ac6faecfb4ee99882cf45c32b2d957a0de7701bb591`. Размер: 91 552 байт.
 
+## Дополнение от 20 ноября 2026 года
+
+Три новых PDF содержат 15 фрагментов. В них сохранены выбранные строки исходных страниц в едином печатном оформлении, с атрибуцией, прямыми ссылками и временем получения. Снимки от 5 ноября сохраняют исходное оформление страниц. Карточка Reddit подготовлена по официальному встраиваемому предпросмотру; он подтверждает заголовок и автора, но не содержит даты публикации. Статья SinoBot и объединённый PR проекта сохранены на отдельных страницах.
+
+[Публикации и упоминания — 11 страниц](../../public/archives/pdf-evidence/2026-11-20-media-excerpts.pdf). SHA-256: `64185268b37f0c2d1c0353b23d3291d59c67e7ad14624827a3938dc94573160e`. Размер: 203 987 байт.
+
+[Sesame Robot — 3 страницы](../../public/archives/pdf-evidence/2026-11-20-sesame-robot.pdf). SHA-256: `96363e654d62252401e3c067699a2173dfd69304ce40dd1945ed018d377143c4`. Размер: 138 988 байт.
+
+[«Не беспокойся, я люблю тебя…» на Литрес — 1 страница](../../public/archives/pdf-evidence/2026-11-20-litres-74727652.pdf). SHA-256: `920c59d5f5b0927de17b4740007afc222a652186317fd3a868b6c18e2826049a`. Размер: 80 030 байт.
+
+Четыре ранее недоступные публикации открылись. Для Яррег повторные запросы завершились тайм-аутом; Вести Ярославль вернули страницу проверки доступа. В PDF вошли семь источников из [PR #7](https://github.com/m0rg0t/alenev/pull/7). Итоговый индекс содержит **79 фрагментов в 10 PDF**, в том числе 14 карточек аудиокниг.
+
 ## Классификация и ограничения
 
 В `classified-links.json` каждому из 1 582 найденных адресов назначены категория, причина и исходные файлы. Из них 1 105 отмечены как изображения или медиафайлы, 138 как внутренние адреса сайта, 37 как исходные адреса архивных карточек, 90 как ссылки на отдельные материалы действующего сайта; последние включают варианты одного и того же URL. Дополнительно выделены ссылки из списка выступлений и старой копии, вложенные источники, профили, навигация, техническая документация и редакционные рекомендации. Это классификация кандидатов, а не утверждение об их доступности или о правах на содержимое.
 
-Из 37 архивных карточек PDF-фрагменты сохранены для 26. Для остальных причины указаны в таблице; результаты первых 122 дополнительных попыток (включая повторы) перечислены по адресам в [таблице проверок](material-status.md), а последующие 30 — в [разборе контекста](context-status.md). Двадцать две ранее неразобранные контекстные ссылки проверены; некоторые оказались сторонними референсами или артефактами извлечения. Результаты и остальные непройденные источники приведены отдельно.
+В первом выпуске из 37 архивных карточек PDF-фрагменты сохранены для 26. Для остальных причины указаны в таблице; результаты первых 122 дополнительных попыток (включая повторы) перечислены по адресам в [таблице проверок](material-status.md), а последующие 30 — в [разборе контекста](context-status.md). Двадцать две ранее неразобранные контекстные ссылки проверены; некоторые оказались сторонними референсами или артефактами извлечения. Результаты и остальные непройденные источники приведены отдельно.
 
 ## Остальные ссылки
 

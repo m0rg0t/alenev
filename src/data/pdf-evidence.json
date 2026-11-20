@@ -1,5 +1,281 @@
 [
   {
+    "title": "Рыбинский «Хищник» Антон Ленёв: про косплей и Comic Con",
+    "source": "https://cheremuha.com/2016/10/13/ryibinskiy-hischnik-anton-lenyov-pro-kospley-i-comic-con.html",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=1",
+    "group": "publication",
+    "archiveId": "cheremuha-predator"
+  },
+  {
+    "title": "Воробей для Веретья, Лис для Скомороховой горы. В городе появились «Рыбинские секретики»",
+    "source": "https://cheremuha.com/2025/08/18/vorobej-dlya-veretya-lis-dlya-skomoroxovoj-gory-v-gorode-poyavilis-rybinskie-sekretiki.html",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=2",
+    "group": "publication",
+    "archiveId": "cheremuha-rybinsk-secrets"
+  },
+  {
+    "title": "Рыбинец запустил проект «Районы города глазами Midjourney»",
+    "source": "https://www.rybinsknote.ru/2023/02/27/rybinec-zapustil-proekt-rajony-goroda-glazami-midjourney/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=3",
+    "group": "publication",
+    "archiveId": "rybinsknote-midjourney"
+  },
+  {
+    "title": "Косплей дня: Довакин и Эйла Охотница из The Elder Scrolls V: Skyrim",
+    "source": "https://kanobu.ru/news/kosplej-dnya-dovakin-i-ejla-ohotnitsa-iz-the-elder-scrolls-v-skyrim-392953/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=4",
+    "group": "publication",
+    "archiveId": "kanobu-skyrim"
+  },
+  {
+    "title": "Три социальных IT-проекта победили на вторых межрегиональных соревнованиях в Череповце «Hack-Point 2.0»",
+    "source": "https://www.cher-city.ru/gorod/tri_socialnyh_it_proekta_pobedili_na_vtoryh_mezhregion",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=5",
+    "group": "publication",
+    "archiveId": "cher-city-hackpoint-2013"
+  },
+  {
+    "title": "Как строить карьеру тимлидам и СТО: рефлексия, планирование и карьерный роадмап",
+    "source": "https://habr.com/ru/companies/getmeit/articles/594811/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=6",
+    "group": "publication",
+    "archiveId": "habr-getmeit-career"
+  },
+  {
+    "title": "Герои напильника и паяльника: итоги сезона DIY",
+    "source": "https://habr.com/ru/specials/757220/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=7",
+    "group": "publication",
+    "archiveId": "habr-diy-season-2023"
+  },
+  {
+    "title": "Nokia Announces Winners of Its Contest for Windows Phone Apps for Vision-Impaired Users",
+    "source": "https://blogs.microsoft.com/accessibility/nokia-announces-winners-of-its-contest-for-windows-phone-apps-for-vision-impaired-users-2/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=8",
+    "group": "publication",
+    "archiveId": "microsoft-eyelens-nokia"
+  },
+  {
+    "title": "Рыбинцы на фестивале азиатской культуры",
+    "source": "https://rweek.ru/2016/04/21/rybincy-na-festivale-aziatskoj-kultury/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=9",
+    "group": "publication",
+    "archiveId": "rweek-fap-2016"
+  },
+  {
+    "title": "Catputer",
+    "source": "https://altstrument.org/firmware/m5stack-cardputer/catputer",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=10",
+    "group": "publication",
+    "archiveId": "altstrument-catputer"
+  },
+  {
+    "title": "20+ душевных фото людей, чье хобби — преображаться в любимых и знакомых всем нам персонажей",
+    "source": "https://adme.media/articles/20-dushevnyh-foto-lyudej-che-hobbi-preobrazhatsya-v-lyubimyh-i-znakomyh-vsem-nam-personazhej-2554818/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-media-excerpts.pdf#page=11",
+    "group": "publication",
+    "archiveId": "adme-ivanushka"
+  },
+  {
+    "title": "Building a Quadruped Robot from Scratch: The Complete ESP32 + 3D Printing Open-Source Guide",
+    "source": "https://sinobot.vercel.app/en/hands-on/esp32-quadruped-diy-lab",
+    "pdf": "/archives/pdf-evidence/2026-11-20-sesame-robot.pdf#page=1",
+    "group": "other"
+  },
+  {
+    "title": "First robot build in my life - based on quadrupedal sesame-robot esp32 project",
+    "source": "https://www.reddit.com/r/robotics/comments/1ttzjre/first_robot_build_in_my_life_based_on_quadrupedal/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-sesame-robot.pdf#page=2",
+    "group": "other"
+  },
+  {
+    "title": "feat(firmware): set up WiFi from the web UI (no re-flash) (#69)",
+    "source": "https://github.com/dorianborian/sesame-robot/pull/69",
+    "pdf": "/archives/pdf-evidence/2026-11-20-sesame-robot.pdf#page=3",
+    "group": "other"
+  },
+  {
+    "title": "Не беспокойся, я люблю тебя…",
+    "source": "https://www.litres.ru/audiobook/vitaliy-aleksandrovich-kirillov/ne-bespokoisia-ia-liubliu-tebia-74727652/",
+    "pdf": "/archives/pdf-evidence/2026-11-20-litres-74727652.pdf#page=1",
+    "group": "audiobook"
+  },
+  {
+    "title": "Антон Ленев («Где жить хорошо») о конкурсе BudgetApps",
+    "source": "https://apptractor.ru/info/interview/anton-lenev-gde-zhit-horosho-o-konkurse-budgetapps.html",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=1",
+    "group": "publication",
+    "archiveId": "apptractor-budgetapps"
+  },
+  {
+    "title": "Вечерний стрим «17:40»: косплей с Антоном Ленёвым (Рыбинск, 2019)",
+    "source": "https://www.youtube.com/watch?v=E6M5PwOPUUI",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=4",
+    "group": "other",
+    "archiveId": "cosplay-stream-2019"
+  },
+  {
+    "title": "Dead Space 2 — создание костюма Advanced Suit Айзека Кларка",
+    "source": "https://vk.com/@m0rg0t-dead-space-2-sozdanie-kostuma-advanced-suit-aizeka-klarka",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=6",
+    "group": "publication",
+    "archiveId": "dead-space-vk-article-2019"
+  },
+  {
+    "title": "We need to go deeper: дорога к WYSIWYG — SPB Frontend Drinkup",
+    "source": "https://www.youtube.com/watch?v=CEYy-knCG5w",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=5",
+    "group": "other",
+    "archiveId": "drinkup-wysiwyg"
+  },
+  {
+    "title": "Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2 — Косплей на DTF",
+    "source": "https://dtf.ru/s/cosplay/642209-kak-delaetsya-kosplej-cozdanie-kostyuma-advanced-suit-ajzeka-klarka-iz-igry-dead-space-2",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=5",
+    "group": "publication",
+    "archiveId": "dtf-deadspace-howto"
+  },
+  {
+    "title": "Dead Space 2 | Isaac Clarke | Антон Ленев — Косплей на DTF",
+    "source": "https://dtf.ru/s/cosplay/888165-dead-space-2-isaac-clarke-anton-lenev",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=1",
+    "group": "publication",
+    "archiveId": "dtf-deadspace-photoset"
+  },
+  {
+    "title": "Меняющий реальность",
+    "source": "https://gazeta-rybinsk.ru/2018/11/17/40482",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=4",
+    "group": "publication",
+    "archiveId": "gazeta-rybinsk-cosplay-2018"
+  },
+  {
+    "title": "«Где жить хорошо?»: ответ IT-специалиста | Темы#",
+    "source": "https://gazeta-rybinsk.ru/2015/04/29/18147",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=5",
+    "group": "publication",
+    "archiveId": "gazeta-rybinsk-goodplacetolive"
+  },
+  {
+    "title": "Слабовидящему поможет сова",
+    "source": "https://gazeta-rybinsk.ru/2020/11/21/77291",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=6",
+    "group": "publication",
+    "archiveId": "gazeta-rybinsk-owleye"
+  },
+  {
+    "title": "«Где участковый?» — приложение для Windows Phone и Windows 8 на данных openpolice.ru",
+    "source": "https://www.youtube.com/watch?v=HmDg23YXG5w",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=6",
+    "group": "other",
+    "archiveId": "gde-uchastkovy-wp8"
+  },
+  {
+    "title": "DALL·E 2 — мои первые эксперименты с возможностями нейросети",
+    "source": "https://habr.com/ru/articles/680136/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=1",
+    "group": "publication",
+    "archiveId": "habr-dalle2"
+  },
+  {
+    "title": "Как делается косплей. Cоздание костюма Advanced Suit Aйзека Кларка из игры Dead Space 2",
+    "source": "https://habr.com/ru/articles/482280/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=3",
+    "group": "publication",
+    "archiveId": "habr-deadspace-cosplay"
+  },
+  {
+    "title": "Ожерелье OwlEye — помощь слабовидящим",
+    "source": "https://habr.com/ru/articles/754234/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts.pdf#page=2",
+    "group": "publication",
+    "archiveId": "habr-owleye"
+  },
+  {
+    "title": "Пятничный косплей: Wolfenstein, Street Fighter, Dark Souls 3 — Игромания",
+    "source": "https://www.igromania.ru/article/29906/Pyatnichnyy_kospley_Wolfenstein_Street_Fighter_Dark_Souls_3.html",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=3",
+    "group": "publication",
+    "archiveId": "igromania-cosplay"
+  },
+  {
+    "title": "Dead Space 2 Cosplay — Creating the «Advanced Suit» Suit of Isaac Clarke",
+    "source": "https://www.instructables.com/Dead-Space-2-Cosplay-Creating-the-Advanced-Suit-Su/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=1",
+    "group": "publication",
+    "archiveId": "instructables-deadspace"
+  },
+  {
+    "title": "Owl Necklace With LED Eyes",
+    "source": "https://www.instructables.com/Owl-Necklace-With-LED-Eyes/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=3",
+    "group": "publication",
+    "archiveId": "instructables-owl-led"
+  },
+  {
+    "title": "OwlEye Necklace - Jewelry That Helps Visually Impaired People Navigate ",
+    "source": "https://www.instructables.com/OwlEye-Necklace-Jewelry-That-Helps-Visually-Impair/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=2",
+    "group": "publication",
+    "archiveId": "instructables-owleye"
+  },
+  {
+    "title": "Определены победители конкурса Минфина России на открытых финансовых данных «BudgetApps»",
+    "source": "https://minfin.gov.ru/ru/document?id_4=113821-opredeleny_pobediteli_konkursa_minfina_rossii_na_otkrytykh_finansovykh_dannykh_budgetapps",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=7",
+    "group": "publication",
+    "archiveId": "minfin-budgetapps"
+  },
+  {
+    "title": "«Не без дела» #65: Антон Ленёв — Костюм из коврика для йоги",
+    "source": "https://nebezdela.mave.digital/ep-65",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=5",
+    "group": "other",
+    "archiveId": "nebezdela-ep65-cosplay"
+  },
+  {
+    "title": "Подкаст «Косплей и прочие штуки» — как, зачем и о чем?",
+    "source": "https://pikabu.ru/story/podkast_kospley_i_prochie_shtuki__kak_zachem_i_o_chem_7635532",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=4",
+    "group": "publication",
+    "archiveId": "pikabu-podcast"
+  },
+  {
+    "title": "Программист из Рыбинска создал уникальное приложение для дальтоников",
+    "source": "https://www.ridus.ru/news/151954.html",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=3",
+    "group": "publication",
+    "archiveId": "ridus-daltonism"
+  },
+  {
+    "title": "Победа команды Profit Button на PayPal Battle Hack Moscow",
+    "source": "https://spark.ru/startup/profitbutton/blog/549/pobeda-komandi-profit-button-na-paypal-battle-hack-moscow",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-3.pdf#page=2",
+    "group": "publication",
+    "archiveId": "spark-profitbutton-battlehack"
+  },
+  {
+    "title": "Хобби айтишника: от косплея до 3D-печати костюмов и озвучки аудиокниг",
+    "source": "https://tproger.ru/articles/hobbi-ajtiwnika--ot-kospleya-do-3d-pechati-kostyumov-i-ozvuchki-audioknig",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-2.pdf#page=2",
+    "group": "publication",
+    "archiveId": "tproger-hobby"
+  },
+  {
+    "title": "Косплей как стиль жизни — финал «Охтакон» в Петербурге (Tribuna.ee)",
+    "source": "https://tribuna.ee/attributes/kosplay/",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=4",
+    "group": "publication",
+    "archiveId": "tribuna-ohtakon-2020"
+  },
+  {
+    "title": "VK Fresh Code 2023 — влог Владилена Минина (конспект)",
+    "source": "https://www.youtube.com/watch?v=jjVvxWlKwZc",
+    "pdf": "/archives/pdf-evidence/2026-11-05-publication-excerpts-4.pdf#page=6",
+    "group": "other",
+    "archiveId": "vladilen-vk-fresh-code-2023"
+  },
+  {
     "title": "Былина о Святогоре",
     "source": "https://dialogs.yandex.ru/store/skills/b1d41565-bylina-o-svyatogor",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=1",
@@ -27,7 +303,7 @@
     "title": "От шутки к популярному продукту — Habr",
     "source": "https://habr.com/ru/companies/vk/articles/1011864/",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=5",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "«Магия текста. Магия голоса» — лонг-лист",
@@ -51,25 +327,25 @@
     "title": "ИТ Гороскоп — статья VK",
     "source": "https://vk.com/@4443423-it-goroskop-len-kak-dvigatel-razrabotki-i-neozhidannaya-novo",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=9",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "VK Mini Apps: проверка подписи — статья VK",
     "source": "https://vk.com/@4443423-vk-mini-apps-proverka-podpisi-i-nodejs",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=10",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "VK Dev Grants 2025 — пресс-релиз",
     "source": "https://vk.com/press/dev-2025",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=11",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "VK Fresh Code 2024 — пресс-релиз",
     "source": "https://vk.com/press/freshcode-2024-results",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=12",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "Hack Point 2.0 — видеозапись",
@@ -129,7 +405,8 @@
     "title": "Процесс создания костюма Тора — статья VK",
     "source": "https://vk.com/@m0rg0t-process-sozdaniya-kostuma-tora-iz-tor-ragnerek",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=22",
-    "group": "other"
+    "group": "publication",
+    "archiveId": "thor-process-vk-article-2018"
   },
   {
     "title": "«Где жить хорошо?» — репозиторий web-js",
@@ -219,18 +496,19 @@
     "title": "«Рыбинские известия» — анонс номера 2018 года",
     "source": "https://gazeta-rybinsk.ru/2018/11/13/40444",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=24",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "SmartNews — HackPoint 2.0",
     "source": "https://smartnews.ru/regions/vologda/13437.html#item-198861",
     "pdf": "/archives/pdf-evidence/2026-11-05-additional-sources.pdf#page=25",
-    "group": "other"
+    "group": "publication"
   },
   {
     "title": "Dead Space 2 — репозиторий RIG",
     "source": "https://github.com/m0rg0t/DeadSpace2_rig_cosplay",
     "pdf": "/archives/pdf-evidence/2026-11-05-deadspace-repository.pdf#page=1",
-    "group": "other"
+    "group": "other",
+    "archiveId": "instructables-deadspace"
   }
 ]
