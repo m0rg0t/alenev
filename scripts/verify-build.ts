@@ -4,6 +4,7 @@ import assert from 'node:assert/strict';
 import { parse } from 'node-html-parser';
 import expected from './fixtures/routes-v5.json';
 import evidence from '../src/data/pdf-evidence.json';
+import fullPages from '../src/data/pdf-full-pages.json';
 import { DIST_DIR, estimateTokens, walk } from './generate-markdown';
 
 const htmlFiles = (await walk(DIST_DIR)).filter(path => !path.includes('yandex_')).sort();
@@ -21,18 +22,19 @@ for (const path of htmlFiles) {
   twins++;
 }
 
-const publicLinks = new Set(evidence.map(item => item.pdf));
-assert.equal(publicLinks.size, evidence.length, 'Each PDF page should be listed once');
+const archives = [...fullPages, ...evidence];
+const publicLinks = new Set(archives.map(item => item.pdf));
+assert.equal(publicLinks.size, archives.length, 'Each PDF link should be listed once');
 for (const route of ['pdf-evidence', 'en/pdf-evidence']) {
   const page = parse(await readFile(`${DIST_DIR}/${route}/index.html`, 'utf8'));
   const links = page.querySelectorAll('main a[type="application/pdf"]');
-  assert.equal(links.length, evidence.length, `${route}: PDF excerpt count`);
-  assert.deepEqual(new Set(links.map(link => link.getAttribute('href'))), publicLinks, `${route}: PDF excerpt links`);
+  assert.equal(links.length, archives.length, `${route}: PDF link count`);
+  assert.deepEqual(new Set(links.map(link => link.getAttribute('href'))), publicLinks, `${route}: PDF links`);
 }
 
 const checkedPdfs = new Set<string>();
-for (const { pdf, archiveId } of evidence) {
-  assert.match(pdf, /^\/archives\/pdf-evidence\/[a-z\d-]+\.pdf#page=[1-9]\d*$/);
+for (const { pdf, archiveId } of archives) {
+  assert.match(pdf, /^\/archives\/pdf-evidence\/(?:full\/[a-z\d-]+\.pdf|[a-z\d-]+\.pdf#page=[1-9]\d*)$/);
   const file = pdf.split('#')[0];
   if (!checkedPdfs.has(file)) {
     const contents = await readFile(`${DIST_DIR}${file}`);
@@ -41,8 +43,8 @@ for (const { pdf, archiveId } of evidence) {
   }
   if (archiveId) {
     const page = parse(await readFile(`${DIST_DIR}/archive/${archiveId}/index.html`, 'utf8'));
-    assert.ok(page.querySelector(`a[href="${pdf}"]`), `${archiveId}: PDF excerpt link`);
+    assert.ok(page.querySelector(`a[href="${pdf}"]`), `${archiveId}: archive PDF link`);
   }
 }
 
-console.log(`Verified ${htmlFiles.length} routes, ${twins} Markdown twins and ${evidence.length} PDF excerpt links`);
+console.log(`Verified ${htmlFiles.length} routes, ${twins} Markdown twins and ${archives.length} PDF links`);

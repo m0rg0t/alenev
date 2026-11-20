@@ -2,19 +2,24 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getLangFromUrl } from '../i18n';
 import sources from '../data/pdf-evidence.json';
+import fullPages from '../data/pdf-full-pages.json';
 
 const isEnglish = getLangFromUrl(Astro.url) === 'en';
-const title = isEnglish ? 'PDF source excerpts' : 'PDF-фрагменты источников';
+const title = isEnglish ? 'PDF archive' : 'PDF-архив источников';
 const description = isEnglish
-  ? 'Archived excerpts from publications, project pages, and audiobook listings.'
-  : 'Архивные фрагменты публикаций, страниц проектов и карточек аудиокниг.';
+  ? 'Full-page screenshots of publications and archived excerpts from project and audiobook pages.'
+  : 'Полные снимки публикаций и архивные фрагменты страниц проектов и аудиокниг.';
 const introduction = isEnglish
   ? 'The PDFs contain screenshots of the original pages, with source links and capture dates.'
   : 'В PDF собраны снимки исходных страниц со ссылками и датами получения.';
-const sections = [
-  { group: 'publication', id: 'publications', title: isEnglish ? 'Publications and media mentions' : 'Публикации и упоминания в СМИ' },
+const excerptSections = [
+  { group: 'publication', id: 'publications', title: isEnglish ? 'Article and media excerpts' : 'Фрагменты статей и упоминаний в СМИ' },
   { group: 'other', id: 'projects', title: isEnglish ? 'Projects and recordings' : 'Проекты и записи' },
   { group: 'audiobook', id: 'audiobooks', title: isEnglish ? 'Audiobook listings' : 'Карточки аудиокниг' },
+];
+const sections = [
+  { id: 'full-articles', title: isEnglish ? 'Full-page article screenshots' : 'Полные снимки статей', items: fullPages },
+  ...excerptSections.map(({ group, id, title }) => ({ id, title, items: sources.filter((item) => item.group === group) })),
 ];
 const originalLabel = isEnglish ? 'Original' : 'Оригинал';
 const archiveLabel = isEnglish ? 'Archive (Russian)' : 'Архив';
@@ -24,15 +29,18 @@ const archiveLabel = isEnglish ? 'Archive (Russian)' : 'Архив';
   <div class="evidence">
     <h1>{title}</h1>
     <p>{introduction}</p>
-    {sections.map(({ group, id, title }) => (
+    {sections.map(({ items, id, title }) => (
       <section aria-labelledby={id}>
         <h2 id={id}>{title}</h2>
         <ul>
-          {sources.filter((item) => item.group === group).map((item) => (
+          {items.map((item) => (
             <li>
               <a href={item.pdf} type="application/pdf">{item.title} (PDF)</a>
               <span class="links">
                 <a href={item.source} target="_blank" rel="noopener" aria-label={`${originalLabel} · ${item.title}`}>{originalLabel}</a>
+                {'replay' in item && item.replay && (
+                  <a href={item.replay} target="_blank" rel="noopener" aria-label={`Wayback Machine · ${item.title}`}>Wayback Machine</a>
+                )}
                 {item.archiveId && (
                   <a href={`/archive/${item.archiveId}/`} aria-label={`${archiveLabel} · ${item.title}`}>{archiveLabel}</a>
                 )}

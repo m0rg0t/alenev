@@ -1,6 +1,7 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import sources from '../data/pdf-evidence.json';
+import fullPages from '../data/pdf-full-pages.json';
 import { getLangFromUrl } from '../i18n';
 
 interface Props {
@@ -12,6 +13,7 @@ const { data } = entry;
 
 const lang = getLangFromUrl(Astro.url);
 const evidence = sources.filter((source) => source.archiveId === entry.id);
+const fullPage = fullPages.find((source) => source.archiveId === entry.id);
 
 const categoryLabels = {
   article: lang === 'ru' ? 'Статья' : 'Article',
@@ -59,8 +61,15 @@ const formatDate = (date: Date) => {
     <a href={data.originalUrl} class="original-link" target="_blank" rel="noopener">
       {lang === 'ru' ? 'Открыть оригинал' : 'View Original'} &rarr;
     </a>
-    {evidence.length > 0 && (
+    {(fullPage || evidence.length > 0) && (
       <ul class="evidence-links">
+        {fullPage && (
+          <li>
+            <a href={fullPage.pdf} type="application/pdf">
+              {lang === 'ru' ? 'Полный снимок оригинала (PDF)' : 'Full-page screenshot (PDF)'}
+            </a>
+          </li>
+        )}
         {evidence.map((source) => (
           <li>
             <a href={source.pdf} type="application/pdf">
